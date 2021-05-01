@@ -1,0 +1,71 @@
+Daily Test
+ 
+ProgramID- 13088
+
+Unfolded Right Triangular Pyramid
+
+The program must accept 4 characters and an integer N as the input. The 4 characters represent the 4 faces of a right triangular pyramid
+ as given below.
+4 1 2
+* 3 *
+The integer N represents the size of each face of the right triangular pyramid. The program must print the 4 faces of the unfolded 
+right triangular pyramid as mentioned above. The empty spaces in the unfolded right triangular pyramid must be printed as asterisks.
+
+Boundary Condition(s):
+3 <= N <= 50
+
+Input Format:
+The first line contains 4 characters separated by a space.
+The second line contains N.
+
+Output Format:
+The first 2*N lines containing the 4 faces of the unfolded right triangular pyramid.
+
+Example Input/Output 1:
+Input:
+a b c d
+3
+
+Output:
+d d d a b b b
+*d d a a b b*
+**d a a a b**
+****c c c****
+*****c c*****
+******c******
+
+Explanation:
+Here N = 3, so the size of each face of the triangular pyramid is 3 (i.e., 3 row in each face).
+The character 'a' represents the face 1.
+The character 'b' represents the face 2.
+The character 'c' represents the face 3.
+The character 'd' represents the face 4.
+The asterisks in the unfolded right triangular pyramid represent the empty spaces.
+Hence the output is
+d d d a b b b
+*d d a a b b*
+**d a a a b**
+****c c c****
+*****c c*****
+******c******
+
+Example Input/Output 2:
+Input:
+W X Y Z
+6
+
+Output:
+Z Z Z Z Z Z W X X X X X X
+*Z Z Z Z Z W W X X X X X*
+**Z Z Z Z W W W X X X X**
+***Z Z Z W W W W X X X***
+****Z Z W W W W W X X****
+*****Z W W W W W W X*****
+*******Y Y Y Y Y Y*******
+********Y Y Y Y Y********
+*********Y Y Y Y*********
+**********Y Y Y**********
+***********Y Y***********
+************Y************
+
+Max Execution Time Limit: 50 millisecs
