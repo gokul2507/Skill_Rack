@@ -1,0 +1,49 @@
+Daily Test
+ 
+ProgramID- 12560
+
+Mobile Keypad Combinations
+
+There are 9 keys in a mobile. The keys and the corresponding characters are given below.
+1 -> @ _
+2 -> a b c
+3 -> d e f
+4 -> g h i
+5 -> j k l
+6 -> m n o
+7 -> p q r s
+8 -> t u v
+9 -> w x y z
+The program must accept an integer N as the input. The program must print all combinations of words that are formed using the keys in N.
+
+Boundary Condition(s):
+1 <= N <= 99999
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first line contains the all combinations of words that are formed using the keys in N.
+
+Example Input/Output 1:
+Input:
+23
+
+Output:
+ad ae af bd be bf cd ce cf
+
+Explanation:
+Here N=23.
+The characters in the key 2 are a b c.
+The characters in the key 3 are d e f.
+All the combinations of words that are formed using the keys 2 and 3 are given below.
+ad ae af bd be bf cd ce cf
+
+Example Input/Output 2:
+Input:
+834
+
+Output:
+tdg tdh tdi teg teh tei tfg tfh tfi udg udh udi ueg ueh uei ufg ufh ufi vdg vdh vdi veg veh vei vfg vfh vfi
+
+Max Execution Time Limit: 50 millisecs

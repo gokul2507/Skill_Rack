@@ -1,0 +1,63 @@
+Daily Challenge
+ 
+ProgramID- 12990
+
+Classroom - Seating Arrangement
+In a classroom, there are R*C chairs arranged as a matrix. There are R*C students and they are grouped based on the marks they score. The groups are numbered from 1 to N. The values of R, C and the number of students in each group are passed as the input. The program must form an integer matrix representing the R*C chairs in the classroom. The class teacher wants to seat the students based on the following conditions.
+- The 1st row of the matrix represents the Rth row of the classroom and the Rth row of the matrix represents the 1st row of the classroom.
+- The students must sit from the 1st row of the classroom (left to right).
+- The order of the students is from the 1st group to the Nth group (i.e., the students who belong to the group 1 must be seated in the first row of the classroom, the students who belong to the group 2 must start from where the previous group ended, then the remaining students must be seated in the remaining rows based on the group).
+Finally, the program must print the integer matrix representing the seating arrangement of the classroom, where each integer represents the number of the students in the group as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= N <= 50
+1 <= Number of students in each group <= 2500
+
+Input Format:
+The first line contains R, C and N separated by a space.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first R lines, each contains C integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+5 4 3
+5 8 7
+
+Output:
+3 3 3 3
+2 3 3 3
+2 2 2 2
+1 2 2 2
+1 1 1 1
+
+Explanation:
+Here N = 3, and the number of students in the 3 groups are 5, 8 and 7.
+In the 1st row of the classroom, 4 students from the group 1 are seated.
+In the 2st row of the classroom, 1 student from the group 1 and 3 students from the group 2 are seated.
+In the 3rd row of the classroom, 4 students from the group 2 are seated.
+In the 4th row of the classroom, 1 student from the group 2 and 3 students from the group 3 are seated.
+In the 5th row of the classroom, 4 students from the group 3 are seated.
+Hence the output is
+3 3 3 3
+2 3 3 3
+2 2 2 2
+1 2 2 2
+1 1 1 1
+
+Example Input/Output 2:
+Input:
+6 7 6
+12 7 4 8 5 6
+
+Output:
+5 6 6 6 6 6 6
+4 4 4 5 5 5 5
+3 3 4 4 4 4 4
+2 2 2 2 2 3 3
+1 1 1 1 1 2 2
+1 1 1 1 1 1 1
+
+Max Execution Time Limit: 50 millisecs

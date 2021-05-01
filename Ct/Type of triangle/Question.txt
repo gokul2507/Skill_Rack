@@ -1,0 +1,47 @@
+Type of triangle (Id-3021)
+
+Given three sides A, B and C of a triangle print the type of triangle as any one of equilateral, isosceles, scalene
+
+- equilateral triangle has all three sides equal.
+- isosceles triangle has any of the two sides equal.
+- scalene triangle has all three sides of different length.
+
+Input Format:
+The first line contains A.
+The second line contains B.
+The third line contains C.
+
+Output Format:
+The first line contains the type of triangle.
+
+Boundary Conditions:
+1 <= A, B, C <= 99999
+
+Example Input/Output 1:
+Input:
+5
+5
+5
+
+Output:
+equilateral
+
+Example Input/Output 2:
+Input:
+25
+25
+40
+
+Output:
+isosceles
+
+Example Input/Output 3:
+Input:
+5
+4
+3
+
+Output:
+scalene
+
+Max Execution Time Limit: 5000 millisecs

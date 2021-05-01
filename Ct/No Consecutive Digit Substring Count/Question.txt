@@ -1,0 +1,39 @@
+No Consecutive Digit Substring Count (Id-1757) 
+ 
+Orlando wants to print the count of substrings in a digit string value S (which contains only digits 0 to 9) based on the condition that the given substring cannot contain two consecutive digits repeated. 
+
+Input Format: 
+
+First line contains total number of test cases, denoted by T Next T lines will contain the value of S. 
+
+Output Format: 
+
+The count of the substrings which do not contain two consecutive digits repeated. 
+
+Boundary Conditions / Constraints: 
+
+1 <= T <= 25 
+1 <= Length of S <= 100000 
+
+Example Input/Output 1: 
+
+Input: 
+
+3 
+14886 
+1056 
+776 
+
+Output: 
+
+9 
+10 
+4 
+
+Explanation: 
+
+For 14886, the possible 9 substrings are 1,4,8,8,6,14,48,86,148 
+For 1056, the possible 10 substrings are 1,0,5,6,10,05,56,105,056,1056 
+For 776, the possible 4 substrings are 7,7,6,76 
+
+Max Execution Time Limit: 5000 millisecs

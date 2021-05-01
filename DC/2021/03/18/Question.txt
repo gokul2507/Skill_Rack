@@ -1,0 +1,104 @@
+Daily Challenge ProgramID- 12675 
+Multi-Storey Car Parking Lot
+The program must accept an integer matrix of size R*C representing a multi-storey car parking lot. The integer 0 represents an empty slot and the integer 1 represents a car. The entry point is always present at the bottom-right of the ground floor. The way to reach the 1st floor is on the left side of the ground floor. The way to reach the 2nd floor is on the right side of the 1st floor. Similarly, the ways to the remaining floors are present on the left side and right side alternatively. A person wants to park his car in the first occurring empty slot on or above the Xth floor. The value of X is also passed as the input. The program must print the instructions he needs to follow to park his car as the output. The instructions must be in the following formats.
+-> L followed by an integer K - It indicates that he needs to move K slots towards left.
+-> R followed by an integer K - It indicates that he needs to move K slots towards right.
+-> U - It indicates that he needs to go to the next floor.
+Note: At least one parking slot is always empty on or above the Xth floor.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+0 <= X < R
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each containing C integers separated by a space.
+
+Output Format:
+The lines containing the parking instructions.
+
+Example Input/Output 1:
+Input:
+5 7
+1 0 0 0 0 0 0
+1 1 0 0 1 1 0
+0 1 1 0 1 1 0
+1 1 1 1 1 1 1
+1 1 1 1 1 1 1
+3
+
+Output:
+L 7
+U
+R 7
+U
+L 7
+U
+R 3
+
+Explanation:
+Here X = 3, the first occurring empty slot on the 3th floor is highlighted below.
+1 0 0 0 0 0 0 (4th Floor)
+1 1 0 0 1 1 0 (3rd Floor)
+0 1 1 0 1 1 0 (2nd Floor)
+1 1 1 1 1 1 1 (1st Floor)
+1 1 1 1 1 1 1 (Ground Floor)
+The instructions to park his car are given below.
+L 7
+U
+R 7
+U
+L 7
+U
+R 3
+
+Example Input/Output 2:
+Input:
+8 5
+0 0 0 0 0
+0 0 0 0 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 0
+2
+
+Output:
+L 5
+U
+R 5
+U
+L 5
+U
+R 5
+U
+L 5
+U
+R 5
+U
+L 2
+
+Example Input/Output 3:
+Input:
+4 5
+1 0 1 1 1
+0 0 1 0 1
+1 0 0 1 0
+1 0 1 1 1
+0
+
+Output:
+L 4
+
+Explanation:
+Here X = 0, which represents the ground floor.
+The first occurring empty slot on the ground floor is highlighted below.
+1 0 1 1 1
+0 0 1 0 1
+1 0 0 1 0
+1 0 1 1 1
+The instruction to park his car is given below.
+L 4
+Max Execution Time Limit: 50 millisecs

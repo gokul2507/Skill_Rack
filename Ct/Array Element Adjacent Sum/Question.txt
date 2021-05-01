@@ -1,0 +1,34 @@
+Array Element Adjacent Sum (Id-3015)
+
+Given an Array of length N, the program must print the sum of adjacent numbers of elements present in the array.
+
+Input Format:
+First line contains N.
+Second line contains N element values seperated by a space.
+
+Output Format:
+Adjacent sum of N elements seperated by a space.
+Boundary Conditions:
+2 <= N <= 100
+ 
+Example Input/Output 1:
+Input:
+5
+1 1 1 1 1
+
+Output:
+1 2 2 2 1
+Example Input/Output 2:
+Input:
+10
+7 9 3 7 9 1 10 2 9 7
+Output:
+9 10 16 12 8 19 3 19 9 9
+Example Input/Output 3:
+Input:
+2
+1 2
+Output:
+2 1
+
+Max Execution Time Limit: 5000 millisecs

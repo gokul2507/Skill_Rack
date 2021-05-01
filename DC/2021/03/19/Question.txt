@@ -1,0 +1,67 @@
+Daily Challenge  ProgramID- 12557  
+
+Very Hard Integers 
+
+The program must accept two integers N and H as the input. If the binary representation of an integer contains 101, then it is a hard integer. 
+The hardness of an integer H is equal to the number of occurrences of 101 in its binary representation (with overlapping). The program must print the number of integers from 1 to N having the hardness greater than or equal to H as the output. 
+
+Boundary Condition(s): 
+
+1 <= N <= 10^6 1 <= H <= 9 
+
+Input Format: 
+
+The first line contains N and H separated by a space. 
+
+Output Format: 
+
+The first line contains an integer representing the number of integers from 1 to N having the hardness greater than or equal to H. 
+
+Example Input/Output 1: 
+
+Input: 
+
+50 1 
+
+Output: 
+
+20 
+
+Explanation: Here N = 50 and H = 1. The integers having the hardness greater than or equal to 1 are given below. 
+
+5 -> 101 -> H = 1 
+10 -> 1010 -> H = 1 
+11 -> 1011 -> H = 1 
+13 -> 1101 -> H = 1 
+20 -> 10100 -> H = 1 
+21 -> 10101 -> H = 2 
+22 -> 10110 -> H = 1 
+23 -> 10111 -> H = 1 
+26 -> 11010 -> H = 1 
+27 -> 11011 -> H = 1 
+29 -> 11101 -> H = 1 
+37 -> 100101 -> H = 1 
+40 -> 101000 -> H = 1 
+41 -> 101001 -> H = 1 
+42 -> 101010 -> H = 2 
+43 -> 101011 -> H = 2 
+44 -> 101100 -> H = 1 
+45 -> 101101 -> H = 2 
+46 -> 101110 -> H = 1 
+47 -> 101111 -> H = 1 
+
+Example Input/Output 2: 
+
+Input: 
+
+500 3 
+
+Output: 
+
+22 
+
+Explanation: Here N = 500 and H = 3. The integers having the hardness greater than or equal to 3 are given below. 
+
+85 170 171 173 181 213 340 341 342 343 346 347 349 362 363 365 373 426 427 429 437 469 
+
+Max Execution Time Limit: 100 millisecs

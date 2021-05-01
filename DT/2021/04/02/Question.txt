@@ -1,0 +1,45 @@
+Daily Test
+ 
+ProgramID- 12716
+ 
+Combinations - Insert + or -
+The program must accept N integers as the input. The program must insert + or - between adjacent integers so that the value of the expression is S and print the count of 
+such possible combinations.
+
+Boundary Condition(s):
+2 <= N <= 20
+Each integer value is from 1 to 1000.
+0 <= S <= 30000
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+The third line contains S.
+
+Output Format:
+The first line contains an integer representing the count of possible combinations based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5
+4 2 8 9 3
+10
+
+Output:
+1
+
+Explanation:
+Here the desired sum S is 10.
+Only one combination of 4+2-8+9+3 = 10 is possible.
+Hence 1 is printed as the output.
+
+Example Input/Output 2:
+Input:
+5
+5 5 5 5 5
+15
+
+Output:
+4
+
+Max Execution Time Limit: 200 millisecs

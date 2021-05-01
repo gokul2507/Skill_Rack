@@ -1,0 +1,46 @@
+Daily Test ProgramID- 12761 
+
+Hurricane - Garden Trees
+In a garden, N trees are planted in a row. Each tree has a certain height. The distance between each tree is X. If a hurricane hits a tree on the right, it will fall on its left side. If a hurricane hits a tree on the left, it will fall on its right side. If one tree falls on another tree, that tree will also fall on the same side. The program must accept N integers representing the heights of N trees and the values of X, D as the input. The character D represents the side in which the hurricane hits (R - right and L - left). Finally, the program must print the number of trees that fell after the hurricane as the output.
+
+Boundary Condition(s):
+2 <= N <= 1000
+1 <= Height of each tree, X <= 100
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+The third line contains X and D separated by a space.
+
+Output Format:
+The first line contains the number of trees that fell after the hurricane.
+
+Example Input/Output 1:
+Input:
+7
+2 8 7 3 6 5 8
+3 R
+
+Output:
+4
+
+Explanation:
+Here X = 3 and D = R.
+The distance between each tree is 3.
+The hurricane hits the rightmost tree (7th tree).
+The 7th tree falls due to the hurricane.
+The 6th tree falls due to the 7th tree.
+The 5th tree falls due to the 7th tree and the 6th tree.
+The 4th tree falls due to the 5th tree.
+No trees fell on the first 3 trees, so they remain the same.
+The number of trees that fell after the hurricane is 4, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+8
+10 3 9 4 3 12 15 9
+4 L
+
+Output:
+5
+Max Execution Time Limit: 50 millisecs

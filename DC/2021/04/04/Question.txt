@@ -1,0 +1,78 @@
+Daily Challenge
+ 
+ProgramID- 12924
+ Find Submatrix - Missing Vertical Edges
+The program must accept two integer matrices M1 and M2 as the input. Both M1 and M2 represent the same matrix of size R*C, but the left edge of a submatrix is missing in M1, the right edge of the same submatrix is missing in M2. The program must find the submatrix and print it as the output.
+Note: The R*C matrix contains only unique integers.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Matrix element value <= 10^4
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains the integer values representing the matrix M1.
+The next R lines from the (R+2)nd line, each contains the integer values representing the matrix M2.
+
+Output Format:
+The lines containing the integer values representing the submatrix.
+
+Example Input/Output 1:
+Input:
+5 5
+35 96 85 26 84
+66 63 58 73
+20 12 76 38
+43 40 86 44
+41 72 52 51 34
+35 96 85 26 84
+66 63 27 58
+20 12 95 76
+43 40 22 86
+41 72 52 51 34
+
+Output:
+27 58 73
+95 76 38
+22 86 44
+
+Explanation:
+Here R = 5 and C = 5.
+The left edge of the submatrix is missing in M1.
+The right edge of the submatrix is missing in M2.
+The original 5*5 submatrix is given below.
+35 96 85 26 84
+66 63 27 58 73
+20 12 95 76 38
+43 40 22 86 44
+41 72 52 51 34
+The submatrix highlighted in the above 5*5 matrix is printed as the output.
+
+Example Input/Output 2:
+Input:
+8 8
+33 27 97 11 72 77 12 31
+99 21 49 60 10 23 36 91
+47 90 20 30 32 98 44
+61 43 24 78 67 83 22
+17 55 92 66 80 86 63
+84 76 38 93 34 79 62
+37 94 14 88 40 54 57
+52 87 26 75 85 64 70 65
+33 27 97 11 72 77 12 31
+99 21 49 60 10 23 36 91
+47 96 90 20 32 98 44
+61 81 43 24 67 83 22
+17 95 55 92 80 86 63
+84 45 76 38 34 79 62
+37 82 94 14 40 54 57
+52 87 26 75 85 64 70 65
+
+Output:
+96 90 20 30
+81 43 24 78
+95 55 92 66
+45 76 38 93
+82 94 14 88
+
+Max Execution Time Limit: 50 millisecs

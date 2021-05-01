@@ -1,0 +1,21 @@
+1 to N - Forward and Reverse Interlaced (Id-2953)
+
+The program must accept a number N and print the numbers from 1 to N in both forward and reverse direction interlaced with each other.
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first line contains the values from 1 to N in both forward and reverse direction interlaced with each other.
+
+Boundary Conditions:
+1 <= N <= 500
+
+Example Input/Output 1:
+Input:
+9
+
+Output:
+1 9 2 8 3 7 4 6 5 5 6 4 7 3 8 2 9 1
+
+Max Execution Time Limit: 5000 millisecs

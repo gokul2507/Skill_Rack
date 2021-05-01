@@ -1,0 +1,94 @@
+Daily Test
+ 
+ProgramID- 12919
+
+Sort Submatrices - Maximum Sum
+The program must accept a integer matrix of size N*N and an integer K as the input. The program must sort the submatrices of size K*K based on the sum of all the integers 
+in the matrix (in descending order). If two or more submatrices have the same sum, then the program must sort those submatrices in the order of their occurrence. Finally, 
+the program must print the modified matrix as the output.
+Note: The value of N is always a multiple of K.
+
+Boundary Condition(s):
+2 <= K <= N <= 50
+1 <= Matrix element value <= 1000
+
+Input Format:
+The first line contains N.
+The next N lines, each contains N integers separated by a space.
+The (N+2)th line contains K.
+
+Output Format:
+The first N lines, each contains N integers separated by a space.
+
+Example Input/Output 1:
+Input:
+6
+1 5 8 7 8 4
+5 8 8 9 7 6
+7 3 3 2 7 5
+6 9 2 3 2 8
+2 1 1 3 4 1
+5 2 2 1 2 3
+2
+
+Output:
+8 7 8 4 7 3
+8 9 7 6 6 9
+7 5 1 5 3 2
+2 8 5 8 2 3
+2 1 4 1 1 3
+5 2 2 3 2 1
+
+Explanation:
+Here N = 6 and K = 2. So there are 9 submatrices of size 2*2.
+The sum of the 1st submatrix is 19.
+The sum of the 2nd submatrix is 32.
+The sum of the 3rd submatrix is 25.
+The sum of the 4th submatrix is 25.
+The sum of the 5th submatrix is 10.
+The sum of the 6th submatrix is 22.
+The sum of the 7th submatrix is 10.
+The sum of the 8th submatrix is 7.
+The sum of the 9th submatrix is 10.
+So they are sorted based on the sum and the modified matrix is printed as the output.
+
+Example Input/Output 2:
+Input:
+12
+8 9 1 2 7 1 5 1 1 4 7 9
+2 4 8 2 1 2 7 9 8 9 5 9
+6 7 6 7 8 7 8 9 2 1 5 3
+8 5 3 8 1 4 9 4 2 2 1 3
+3 9 6 9 6 6 7 9 7 9 2 2
+6 3 6 4 3 7 2 6 8 2 9 2
+6 4 7 8 9 7 4 3 3 5 1 6
+7 3 2 8 9 5 1 9 2 7 7 1
+6 2 6 3 2 7 2 6 7 1 6 8
+8 8 5 5 4 5 1 4 7 8 5 4
+3 8 3 6 4 4 7 4 2 6 3 8
+8 3 7 5 6 6 2 8 9 9 2 1
+6
+
+Output:
+6 4 7 8 9 7 5 1 1 4 7 9
+7 3 2 8 9 5 7 9 8 9 5 9
+6 2 6 3 2 7 8 9 2 1 5 3
+8 8 5 5 4 5 9 4 2 2 1 3
+3 8 3 6 4 4 7 9 7 9 2 2
+8 3 7 5 6 6 2 6 8 2 9 2
+8 9 1 2 7 1 4 3 3 5 1 6
+2 4 8 2 1 2 1 9 2 7 7 1
+6 7 6 7 8 7 2 6 7 1 6 8
+8 5 3 8 1 4 1 4 7 8 5 4
+3 9 6 9 6 6 7 4 2 6 3 8
+6 3 6 4 3 7 2 8 9 9 2 1
+
+Explanation:
+Here N = 12 and K = 6. So there are 4 submatrices of size 6*6.
+The sum of the 1st submatrix is 185.
+The sum of the 2nd submatrix is 188.
+The sum of the 3rd submatrix is 199.
+The sum of the 4th submatrix is 169.
+So they are sorted based on the sum and the modified matrix is printed as the output.
+
+Max Execution Time Limit: 50 millisecs

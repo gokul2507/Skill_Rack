@@ -1,0 +1,50 @@
+Daily Test  ProgramID- 12734
+
+Cut Down & Plant - Trees
+In a garden, there are N trees from left to right. The height of each tree is passed as input to the program. The gardener wants to cut down T trees completely from left to right, but if he cuts a tree of height H, then he must plant certain number of trees based on the following conditions.
+- If H is odd, then he must plant H trees of height ranging from 1 to H on the rightmost end.
+- If H is even, then he must plant H/2 trees of height ranging from H/2 to 1 on the rightmost end.
+The value of T is also passed as the input to the program. The program must print the number of trees remaining in the garden after cutting down T trees as the output.
+
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Height of each tree <= 50
+1 <= T <= 1000
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+The third line contains T.
+
+Output Format:
+The first line contains the number of trees remaining in the garden after cutting down T trees.
+
+Example Input/Output 1:
+Input:
+4
+4 3 5 2
+6
+
+Output:
+11
+
+Explanation:
+After cutting down the 1st tree, the trees in the garden become 3 5 2 2 1.
+After cutting down the 2nd tree, the trees in the garden become 5 2 2 1 1 2 3.
+After cutting down the 3rd tree, the trees in the garden become 2 2 1 1 2 3 1 2 3 4 5.
+After cutting down the 4th tree, the trees in the garden become 2 1 1 2 3 1 2 3 4 5 1.
+After cutting down the 5th tree, the trees in the garden become 1 1 2 3 1 2 3 4 5 1 1.
+After cutting down the 6th tree, the trees in the garden become 1 2 3 1 2 3 4 5 1 1 1.
+Now 11 trees remaining in the garden, so 11 is printed as the output.
+
+Example Input/Output 2:
+Input:
+7
+6 4 2 2 5 13 4
+10
+
+Output:
+29
+
+Max Execution Time Limit: 50 millisecs
+

@@ -1,0 +1,41 @@
+Squares Between A and B (Id-1858) 
+
+Given two numbers A and B, the program must find the square numbers which lie between A and B(inclusive) and print them as output. 
+
+Input Format: 
+
+The first line will contain A The second line will contain B 
+
+Output Format: 
+
+The square numbers which lie between A and B separated by a comma 
+
+Constraints: 
+
+1 <= A <= 1000000 
+1 <= B <= 1000000 
+A <= B 
+
+Example Input/Output 1: 
+
+Input: 
+
+18 
+100 
+
+Output: 
+
+25,36,49,64,81,100 
+
+Example Input/Output 2: 
+
+Input: 
+
+1 
+1 
+
+Output: 
+
+1 
+
+Max Execution Time Limit: 5000 millisecs

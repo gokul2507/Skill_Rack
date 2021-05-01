@@ -1,0 +1,48 @@
+Daily Challenge
+ 
+ProgramID- 12579
+
+Fibonacci Series - Reverse & Sum
+
+The program must accept an integer N as the input. The program must print the first N terms in the following series.
+0, 1, 1, 2, 3, 5, 8, 13, 39, 124, 514, 836, 1053, 4139, ... and so on.
+In the above series, the first term is always 0, the second term is always 1 and the remaining terms are formed by adding the reverse of previous two terms.
+
+Boundary Condition(s):
+1 <= N <= 50
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first line contains the first N terms in the above mentioned series separated by a space.
+
+Example Input/Output 1:
+Input:
+11
+
+Output:
+0 1 1 2 3 5 8 13 39 124 514
+
+Explanation:
+Here N=11 and the first two terms in the series are 0 and 1.
+The 3rd term in the series is 1 (0 + 1).
+The 4th term in the series is 2 (1 + 1).
+The 5th term in the series is 3 (1 + 2).
+The 6th term in the series is 5 (2 + 3).
+The 7th term in the series is 8 (3 + 5).
+The 8th term in the series is 13 (5 + 8).
+The 9th term in the series is 39 (8 + 31).
+The 10th term in the series is 124 (31 + 93).
+The 11th term in the series is 514 (93 + 421).
+Hence the output is
+0 1 1 2 3 5 8 13 39 124 514
+
+Example Input/Output 2:
+Input:
+5
+
+Output:
+0 1 1 2 3
+
+Max Execution Time Limit: 50 millisecs

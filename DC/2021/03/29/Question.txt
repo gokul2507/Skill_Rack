@@ -1,0 +1,44 @@
+Daily Challenge  ProgramID-12698
+
+function encloseWordsWithinDoubleQuotes 
+
+The function/method encloseWordsWithinDoubleQuotes accepts two arguments - S and W. The string S contains multiple words. The string W represents a word to be enclosed within 
+double quotes. The function/method encloseWordsWithinDoubleQuotes must form a new string representing the string S in which all the occurrences of the word W enclosed within 
+the double quotes. Then the function must return the new string. Your task is to implement the function encloseWordsWithinDoubleQuotes so that it passes all the test cases. 
+
+IMPORTANT: Do not write the main() function as it is already defined. 
+
+Boundary Condition(s): 
+1 <= Length of S, W <= 100 
+
+Example Input/Output 1: 
+
+Input: 
+fox lion tiger doll cat lion lion 
+
+Output: 
+Old String: fox lion tiger doll cat lion 
+New String: fox "lion" tiger doll cat "lion" 
+
+Explanation: 
+All occurrences of lion in S are enclosed within double quotes. Hence the new string becomes "lion" tiger doll cat "lion". 
+
+Example Input/Output 2: 
+
+Input: 
+pen Pen paper pen pad PEN pencil pen open pen pen 
+
+Output: 
+Old String: pen Pen paper pen pad PEN pencil pen open pen 
+New String: "pen" Pen paper "pen" pad PEN pencil "pen" open "pen" 
+
+Example Input/Output 3: 
+
+Input: 
+asdfasdf asdf asdfasdf asdf asdfasdfasdf asdf 
+
+Output: 
+Old String: asdfasdf asdf asdfasdf asdf asdfasdfasdf 
+New String: asdfasdf "asdf" asdfasdf "asdf" asdfasdfasdf 
+
+Max Execution Time Limit: 50 millisecs

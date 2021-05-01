@@ -1,0 +1,60 @@
+Daily Test
+ 
+ProgramID- 12913
+ 
+Submatrix with Maximum Sum - Border
+The program must accept an integer matrix of size R*C as the input. The program must print the 2*2 submatrix that occurs in the border of the given matrix and having 
+the maximum sum. If two or more such submatrices having the same maximum sum, then the program must print the first occurring 2*2 submatrix in clockwise direction as the output.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Matrix element value <= 1000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+
+Output Format:
+The first line contains the 2*2 submatrix that occurs in the border of the given matrix and having the maximum sum.
+
+Example Input/Output 1:
+Input:
+4 5
+5 1 9 1 7
+4 5 8 4 4
+1 4 8 3 5
+6 4 7 5 3
+
+Output:
+1 9
+5 8
+
+Explanation:
+There are three 2*2 submatrices that occur in the border and having the same maximum sum as 23.
+1 9
+5 8
+
+8 3
+7 5
+
+4 8
+4 7
+
+So the first occurring 2*2 submatrix in clockwise direction is printed as the output.
+1 9
+5 8
+
+Example Input/Output 2:
+Input:
+5 5
+22 15 20 21 18
+19 13 10 12 18
+11 18 28 10 16
+10 10 12 23 15
+24 16 19 16 13
+
+Output:
+12 23
+19 16
+
+Max Execution Time Limit: 50 millisecs

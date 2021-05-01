@@ -1,0 +1,67 @@
+Daily Test
+ 
+ProgramID- 12805
+
+Positions - Rook & Bishop
+The program must accept the position of a rook and the position of a bishop in a chess board of size 8*8 as the input. The program must generate a matrix of 8*8 representing 
+the chess board and fill the matrix based on the following conditions.
+- The position of the rook must be filled with the character R.
+- The position of the bishop must be filled with the character B.
+- All positions where the rook can move must be filled with the character r.
+- All positions where the bishop can move must be filled with the character b.
+- If both rook and bishop meet in a position(other than the positions of the rook and the bishop), then it must be filled with the character x.
+- All remaining positions must be filled with 0.
+Finally, the program must print the matrix as the output.
+
+Note:
+In Chess, rook can move any direction vertically or horizontally. For this program, the movement can happen till the end of the board is reached.
+In Chess, bishop can move any direction diagonally. For this program, the movement can happen till the end of the board is reached.
+
+Input Format:
+The first line contains two integer values representing the position of a rook in a chess board.
+The second line contains two integer values representing the position of a bishop in a chess board.
+
+Output Format:
+The lines contain a matrix representing the chess board.
+
+Example Input/Output 1:
+Input:
+6 7
+4 3
+
+Output:
+0 0 0 0 0 b r 0
+b 0 0 0 b 0 r 0
+0 b 0 b 0 0 r 0
+0 0 B 0 0 0 r 0
+0 b 0 b 0 0 r 0
+x r r r x r R r
+0 0 0 0 0 b r 0
+0 0 0 0 0 0 x 0
+
+Explanation:
+The position of the rook is (6, 7), which is filled with the character R.
+The position of the bishop is (4, 3), which is filled with the character B.
+All positions where the rook can move are filled with the character r.
+All positions where the bishop can move are filled with the character b.
+The positions where both the rook and the bishop meet are give below.
+(6, 1), (6, 5) and (8, 7).
+So they are filled with the character x.
+All remaining positions are filled with 0.
+
+Example Input/Output 2:
+Input:
+3 4
+3 5
+
+Output:
+0 0 b r 0 0 b 0
+0 0 0 x 0 b 0 0
+r r r R B r r r
+0 0 0 x 0 b 0 0
+0 0 b r 0 0 b 0
+0 b 0 r 0 0 0 b
+b 0 0 r 0 0 0 0
+0 0 0 r 0 0 0 0
+
+Max Execution Time Limit: 50 millisecs

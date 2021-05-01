@@ -1,0 +1,65 @@
+Daily Test
+ 
+ProgramID- 13152
+
+Name Shuffling Game
+The program must accept the first name and the last name of N persons as the input. The program must shuffle the names based on the following conditions.
+- The first names must be sorted based on the first alphabet. If two or more first names start with the same alphabet, then those names must be sorted in the order of 
+their occurrence.
+- The last names must be sorted based on the last alphabet. If two or more last names end with the same alphabet, then those names must be sorted in the order of their 
+occurrence.
+Finally, the program must print the revised names as the output.
+
+Boundary Condition(s):
+2 <= N <= 50
+2 <= Length of first name, last name <= 20
+
+Input Format:
+The first line contains N.
+The next N lines contain the first name and the last name of N persons.
+
+Output Format:
+The first N lines contain the revised names.
+
+Example Input/Output 1:
+Input:
+4
+virat kohli
+sanju samson
+hardik pandya
+sachin tendulkar
+
+Output:
+hardik pandya
+sanju kohli
+sachin samson
+virat tendulkar
+
+Explanation:
+After sorting the names based on the given conditions, the names become
+hardik pandya
+sanju kohli
+sachin samson
+virat tendulkar
+
+Example Input/Output 2:
+Input:
+7
+babloo john
+pavin hector
+mambo kavin
+jhanvi helen
+rachel lavanya
+bhuvana deepa
+pravin oliver
+
+Output:
+babloo lavanya
+bhuvana deepa
+jhanvi john
+mambo kavin
+pavin helen
+pravin hector
+rachel oliver
+
+Max Execution Time Limit: 50 millisecs

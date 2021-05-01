@@ -1,0 +1,98 @@
+#include<stdio.h>
+#include <stdlib.h>
+struct Node
+{
+    int data;
+    struct Node* left;
+    struct Node* right;
+};
+typedef struct Node node;
+node* new_node(int x)
+{
+    struct Node *p;
+    p = malloc(sizeof(node));
+    p->data = x;
+    p->left = NULL;
+    p->right= NULL;
+    return p;
+}
+node* insert(node *root, int x)
+{
+    if(root==NULL)
+        return new_node(x);
+    else if(x>root->data)
+        root->right= insert(root->right, x);
+    else if(x<root->data)
+        root->left = insert(root->left,x);
+    else 
+    printf("%d already inserted\n",x);
+    return root;
+}
+void search(node *root, int x)
+{
+    if(root==NULL){
+        printf("Data not found");
+    }
+    else if(root->data==x){
+    	int k=1;
+    	if(root->left){
+    		k=0;
+    		printf("left value %d is %d\n",root->data,root->left->data);
+    	}
+    	else
+    	    printf("No left value for %d\n",x);
+    	if(root->right){
+    		k=0;
+    		printf("right value %d is %d",root->data,root->right->data);
+    	}
+    	else
+    	printf("No right value for %d",x);
+    }
+    else if(x>root->data)
+        search(root->right, x);
+    else
+        search(root->left,x);
+}
+void inorder(node *root){
+    if(root==NULL)
+    return;
+    inorder(root->left);
+    printf("%d ",root->data);
+    inorder(root->right);
+}
+void preorder(node *root){
+    if(root==NULL)
+    return;
+    printf("%d ",root->data);
+    preorder(root->left);
+    preorder(root->right);
+}
+void postorder(node *root){
+    if(root==NULL)
+    return;
+    postorder(root->left);
+    postorder(root->right);
+    printf("%d ",root->data);
+}
+int main()
+{
+    int n;
+    scanf("%d ",&n);
+    int z[n];
+    for(int i=0;i<n;i++)
+    scanf("%d ",&z[i]);
+    node *root;
+    root = new_node(z[0]);
+    int da;
+    scanf("%d ",&da);
+    for(int i=1;i<n;i++){
+        insert(root,z[i]);
+    }
+    search(root,da);
+    printf("\nInorder Traversal:-  ");
+    inorder(root);
+    printf("\nPreorder Traversal:-  ");
+    preorder(root);
+    printf("\nPostorder Traversal:-  ");
+    postorder(root);
+}

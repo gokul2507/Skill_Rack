@@ -1,0 +1,72 @@
+Daily Challenge
+ 
+ProgramID- 13087
+
+Unfolded Cube Pattern
+The program must accept 6 characters and an integer N as the input. The 6 characters represent the 6 faces of a cube as given below.
+* 6 * *
+4 1 2 3
+* 5 * *
+The integer N represents the size of each face (NxN grid) in the cube. The program must print the 6 faces of the cube in the unfolded cube format as mentioned above. 
+The empty spaces in the unfolded cube must be printed as asterisks.
+
+Boundary Condition(s):
+2 <= N <= 20
+
+Input Format:
+The first line contains 6 characters separated by a space.
+The second line contains N.
+
+Output Format:
+The first (3*N) lines, each contains (4*N) characters separated by a space.
+
+Example Input/Output 1:
+Input:
+a b c d e f
+3
+
+Output:
+* * * f f f * * * * * *
+* * * f f f * * * * * *
+* * * f f f * * * * * *
+d d d a a a b b b c c c
+d d d a a a b b b c c c
+d d d a a a b b b c c c
+* * * e e e * * * * * *
+* * * e e e * * * * * *
+* * * e e e * * * * * *
+
+Explanation:
+Here N = 3, so the size of each face in the cube is 3*3.
+The face 1 grid contains the character 'a'.
+The face 2 grid contains the character 'b'.
+The face 3 grid contains the character 'c'.
+The face 4 grid contains the character 'd'.
+The face 5 grid contains the character 'e'.
+The face 6 grid contains the character 'f'.
+The empty spaces are replaced with the asterisks.
+Hence the output is
+* * * f f f * * * * * *
+* * * f f f * * * * * *
+* * * f f f * * * * * *
+d d d a a a b b b c c c
+d d d a a a b b b c c c
+d d d a a a b b b c c c
+* * * e e e * * * * * *
+* * * e e e * * * * * *
+* * * e e e * * * * * *
+
+Example Input/Output 2:
+Input:
+S E A R C H
+2
+
+Output:
+* * H H * * * *
+* * H H * * * *
+R R S S E E A A
+R R S S E E A A
+* * C C * * * *
+* * C C * * * *
+
+Max Execution Time Limit: 50 millisecs

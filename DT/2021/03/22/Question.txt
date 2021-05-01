@@ -1,0 +1,68 @@
+Daily Test ProgramID- 12931 
+
+Matrix - Missing Row and Column
+The program must accept an integer matrix M and two integer arrays A1, A2 as the input. The size of the integer matrix M is R*C but exactly one row and one column are missing. The size of the integer array A1 is C, which represents the row that is not in the given matrix(i.e., the missing row). The size of the integer array A2 is R, which represents the column that is not in the given matrix(i.e., the missing column). The program must reconstruct the matrix with R rows and C columns. Then the program must print the matrix of size R*C as the output.
+Note: The matrix M always contains unique integers.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^4
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R-1 lines, each contains C-1 integer values separated by a space.
+The (R+1)th line contains C integer values separated by a space.
+The (R+2)th line contains R integer values separated by a space.
+
+Output Format:
+The first R lines, each contains C integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+6 7
+87 86 73 75 66 52
+24 35 10 44 58 74
+82 41 23 56 40 53
+25 72 36 37 42 90
+15 76 49 54 78 83
+81 68 48 64 28 77 47
+55 43 28 80 30 91
+
+Output:
+87 86 73 75 55 66 52
+24 35 10 44 43 58 74
+81 68 48 64 28 77 47
+82 41 23 56 80 40 53
+25 72 36 37 30 42 90
+15 76 49 54 91 78 83
+
+Explanation:
+After reconstructing the matrix by adding the missing row and column, the matrix becomes
+87 86 73 75 55 66 52
+24 35 10 44 43 58 74
+81 68 48 64 28 77 47
+82 41 23 56 80 40 53
+25 72 36 37 30 42 90
+15 76 49 54 91 78 83
+
+Example Input/Output 2:
+Input:
+7 5
+52 70 84 60
+37 75 49 62
+91 25 36 18
+53 68 86 90
+45 15 42 67
+77 28 92 71
+74 14 72 76 44
+47 72 31 29 13 99 97
+
+Output:
+52 70 47 84 60
+74 14 72 76 44
+37 75 31 49 62
+91 25 29 36 18
+53 68 13 86 90
+45 15 99 42 67
+77 28 97 92 71
+Max Execution Time Limit: 50 millisecs

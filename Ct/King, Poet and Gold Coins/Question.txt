@@ -1,0 +1,36 @@
+King, Poet and Gold Coins (Id-3004)
+
+A king was happy with the skills of a poet and hence wanted to reward him. The king placed N boxes in a straight line each with certain number of gold coins - C(1) .... C(N) 
+in it.
+The poet can pick any number of boxes but if the poet selected any box, then he should not pick the boxes which are adjacent to it (either to it's left or right). The poet 
+also cannot rearrange the boxes.
+Given N and the coins C(i) (where i= 1 to N) in each of the boxes, find the maximum gold coins M, the poet can earn as his reward by picking the boxes.
+
+Input Format:
+The first line contains N.
+The second line contains N positive integers representing the gold coins in each of the boxes 1 to N.
+
+Output Format:
+The first line contains M which represents the maximum number of gold coins the poet can earn as reward.
+
+Boundary Conditions:
+3 <= N <= 999999
+1 <= C(i) <= 100
+
+Example Input/Output 1:
+Input:
+4
+5 3 11 20
+
+Output:
+25
+
+Example Input/Output 2:
+Input:
+7
+10 20 15 1 9 12 5
+
+Output:
+39
+
+Max Execution Time Limit: 5000 millisecs

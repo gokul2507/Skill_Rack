@@ -1,0 +1,75 @@
+Daily Test
+ 
+ProgramID- 12527
+
+Form Integers - Unit Digits Circularly
+
+The program must accept a list of N integers as the input. The program must form another list of integers based on the following conditions.
+- The 1st integer is formed using the unit digits of the first three integers. After forming the 1st integer, the unit digits must be removed from those three integers.
+- The 2nd integer is formed using the unit digits of the next three integers. After forming the 2nd integer, the unit digits must be removed from those three integers.
+- The 3rd integer is formed using the unit digits of the next three integers. After forming the 3rd integer, the unit digits must be removed from those three integers.
+- Similarly, the program must form the integers using the unit digits of every three integers circularly.
+- Once all the digits of an integer are removed, then the integer itself removed from the given integers.
+- An integer is formed only if at least 3 integers are present in the list (i.e., it stops forming the integers when the number of integers in the given list is less than 3).
+Finally, the program must print the sum of integers in the new list as the output.
+
+Boundary Condition(s):
+3 <= N <= 100
+1 <= Each integer value <= 10^8
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+
+Output Format:
+The first line contains the sum of integers in the list.
+
+Example Input/Output 1:
+Input:
+6
+12 45798 60 90 598 1567
+
+Output:
+2314
+
+Explanation:
+280 -> 1st integer is formed using the unit digits of 12, 45798 and 60.
+Now the given integers become 1 4579 6 90 598 1567
+87 -> 2nd integer is formed using the unit digits of 90, 598 and 1567.
+Now the given integers become 1 4579 6 9 59 156
+196 -> 3rd integer is formed using the unit digits of 1, 4579 and 6.
+Now the given integers become 457 9 59 156
+996 -> 4th integer is formed using the unit digits of 9, 59 and 156.
+Now the given integers become 457 5 15
+755 -> 5th integer is formed using the unit digits of 457, 5 and 15.
+Now the given integers become 45 1
+The number of integers in the given list is reduced to 2, which is less than 3.
+The sum of the obtained integers is 2314 (280 + 87 + 196 + 996 + 755).
+So 2314 is printed as the output.
+
+Example Input/Output 2:
+Input:
+3
+123 456 789
+
+Output:
+774
+
+Explanation:
+369 -> 1st integer is formed using the unit digits of 123, 456 and 789.
+Now the given integers become 12 45 78
+258 -> 2nd integer is formed using the unit digits of 12, 45 and 78.
+Now the given integers become 1 4 7
+147 -> 3rd integer is formed using the unit digits of 1, 4 and 7.
+The sum of the obtained integers is 774 (369 + 258 + 147).
+So 774 is printed as the output.
+
+Example Input/Output 3:
+Input:
+4
+3254 50847 828 7125
+
+Output:
+2442
+
+Max Execution Time Limit: 50 millisecs

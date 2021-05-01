@@ -1,0 +1,150 @@
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=self
+class CLinkedList:
+    def __init__(self):
+        self.head=None
+    def addbeginning(self,data):
+        if self.head==None:
+            self.head=Node(data)
+            return
+        newnode=Node(data)
+        newnode.next=self.head
+        last=self.head
+        while last.next!=self.head:
+            last=last.next
+        last.next=newnode
+        self.head=newnode
+    def addmiddle(self,middlenode,data):
+        if middlenode==None:
+            return
+        newnode=Node(data)
+        newnode.next=middlenode.next
+        middlenode.next=newnode
+    def addend(self,data):
+        if self.head==None:
+            self.head=Node(data)
+            return
+        last=self.head
+        while last.next!=self.head:
+            last=last.next
+        last.next=Node(data)
+        last=last.next
+        last.next=self.head
+    def addposition(self,position,data):
+        if position<1:
+            return
+        if position==1:
+            self.addbeginning(data)
+            return
+        last=self.head
+        while position:
+            if position==2:
+                self.addmiddle(last,data)
+                return
+            position-=1
+            last=last.next
+            if last==self.head:
+                return
+    def deletebeginning(self):
+        if self.head==None:
+            return
+        if self.head.next==self.head:
+            self.head=None
+            return
+        last=self.head
+        while last.next!=self.head:
+            last=last.next
+        last.next=self.head.next
+        self.head=self.head.next
+    def deleteend(self):
+        if self.head==None:
+            return
+        if self.head.next==self.head:
+            self.head=None
+            return
+        last=self.head
+        while last.next.next!=self.head:
+            last=last.next
+        last.next=last.next.next
+    def deletemiddle(self,middlenode):
+        if middlenode==None:
+            return
+        if middlenode==self.head:
+            self.deletebeginning()
+            return
+        if middlenode.next==self.head:
+            self.deleteend()
+            return
+        last=self.head
+        while last.next!=middlenode:
+            last=last.next
+        last.next=middlenode.next
+    def deleteposition(self,position):
+        if position<1 or self.head==None:
+            return
+        last=self.head
+        while position:
+            if position==1:
+                self.deletemiddle(last)
+                return
+            if last.next==self.head:
+                return
+            last=last.next
+            position-=1
+    def printdata(self):
+        if self.head==None:
+            print(-1)
+            return
+        last=self.head
+        while 1:
+            print(last.data,end=' ')
+            last=last.next
+            if last==self.head:
+                break
+        print()
+print('''To create a new list press 1
+To add a element at the beginning of the list press 2 and then the element
+To add a element at the end of the list press 3 and then the element
+To add a element at the specified position of the list press 4 the position to insert and then the element
+To delete a element at the beginning press 5
+To delete a element at the end press 6
+To delete a element at the specified position press 7 and the position to delete
+To print the list press 8
+To exit the program print 9''')
+l=CLinkedList()
+while 1:
+    x=list(map(int,input().strip().split()))
+    if x[0]==1:
+        l=CLinkedList()
+    elif x[0]==2:
+        if len(x)==1:
+            print("Invalid Data to add at the beginning")
+        else:
+            l.addbeginning(x[1])
+    elif x[0]==3:
+        if len(x)==1:
+            print("Invalid Data to add at the end")
+        else:
+            l.addend(x[1])
+    elif x[0]==4:
+        if len(x)<3:
+            print("Invalid data to add at specified position")
+        else:
+            l.addposition(x[1],x[2])
+    elif x[0]==5:
+        l.deletebeginning()
+    elif x[0]==6:
+        l.deleteend()
+    elif x[0]==7:
+        if len(x)<2:
+            print("Invalid data to delete a element at the specified position")
+        else:
+            l.deleteposition(x[1])
+    elif x[0]==8:
+        l.printdata()
+    elif x[0]==9:
+        break
+    else:
+        print("Invalid data to do the operations")

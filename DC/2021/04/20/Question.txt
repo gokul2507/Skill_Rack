@@ -1,0 +1,49 @@
+Daily Challenge
+ 
+ProgramID- 12678
+
+function getIntegersStartingWithD
+The function/method getIntegersStartingWithD accepts three arguments - SIZE, arr and D, an integer representing the size of the array arr, the integer array arr and an integer 
+representing a digit D.
+
+The function/method getIntegersStartingWithD must return an array of integers containing the integers starting with the digit D in the given array. If there is no such integer 
+in the given array, then the function must return an array of size 1 with the value -1.
+
+Your task is to implement the function getIntegersStartingWithD so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+8
+135 651 12 156 917 1 111 284
+1
+
+Output:
+Old Array: 135 651 12 156 917 1 111 284
+New Array: 135 12 156 1 111
+
+Explanation:
+Here N = 8 and D = 1.
+The integers starting with the digit 1 are 135, 12, 156, 1 and 111.
+So the returned array contains the following 5 integers.
+135 12 156 1 111
+
+Example Input/Output 2:
+Input:
+4
+156 9851 156 327
+6
+
+Output:
+Old Array: 156 9851 156 327
+New Array: -1
+
+Max Execution Time Limit: 50 millisecs

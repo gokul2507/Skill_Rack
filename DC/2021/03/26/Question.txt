@@ -1,0 +1,38 @@
+Daily Challenge   Program ID-12948
+
+Two Strings Interchange Vowels 
+The program must accept two string values S1, S2 (both having equal number of vowels) and interchange the vowels in the string values in their order of occurrence. 
+
+Boundary Condition(s): 
+1 <= Length of S1, S2 <= 1000 
+
+Input Format: 
+The first line contains S1. The second line contains S2. 
+
+Output Format: 
+The first line contains S1 with the vowels interchanged. The second line contains S2 with the vowels interchanged. 
+
+Example Input/Output 1: 
+
+Input: 
+apple 
+rain 
+
+Output: 
+appli 
+raen 
+
+Explanation: 
+Here S1 = apple and S2 = rain. After interchanging the vowels in the string values in their order of occurrence, the string values become S1 = appli and S2 = raen. 
+
+Example Input/Output 2: 
+
+Input: 
+PANCAKE 
+Umbrella 
+
+Output: 
+PUNCeKa 
+AmbrAllE 
+
+Max Execution Time Limit: 50 millisecs

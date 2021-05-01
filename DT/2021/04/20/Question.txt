@@ -1,0 +1,69 @@
+Daily Test
+ 
+ProgramID- 12013
+
+Sorted Pairs - N Integers
+The program must accept N integers as the input. A pair of integers (X, Y) can be formed only if their unit digits are the same. The program must sort the pairs based on 
+the following conditions.
+- The program must sort the integers in each pair in ascending order.
+- The pairs must be sorted based on the unit digit.
+- If two or more pairs have the same unit digit, then those pairs must be sorted based on the first integer.
+- If two or more pairs have the same unit digit and the same first integer, then those pairs must be sorted based on the second integer.
+Finally, the program must print the sorted pairs as the output.
+Note: At least one such pair is always present in the given N integers.
+
+Boundary Condition(s):
+2 <= N <= 100
+1 <= Each integer value <= 1000
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+
+Output Format:
+The lines, each contains a pair of integers separated by a space.
+
+Example Input/Output 1:
+Input:
+10
+200 10 10 15 35 404 25 44 20 69
+
+Output:
+10 10
+10 20
+10 20
+10 200
+10 200
+20 200
+44 404
+15 25
+15 35
+25 35
+
+Explanation:
+The given 10 integers are 200, 10, 10, 15, 35, 404, 25, 44, 20 and 69.
+The pairs of integers with the same unit digit are (200, 10), (200, 10), (200, 20), (10, 10), (10, 20), (10, 20), (15, 35), (15, 25), (35, 25) and (404, 44).
+After sorting the pairs based on given conditions, the pairs become
+10 10
+10 20
+10 20
+10 200
+10 200
+20 200
+44 404
+15 25
+15 35
+25 35
+
+Example Input/Output 2:
+Input:
+7
+48 3 16 8 53 85 13
+
+Output:
+3 13
+3 53
+13 53
+8 48
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,49 @@
+Daily Challenge
+ 
+ProgramID- 12679
+
+function getInterlacedString
+The function/method getInterlacedString accepts four arguments - X, Y, ch1 and ch2. X and Y represent two integer values. ch1 and ch2 represent two characters.
+
+The function/method getInterlacedString must form a string of length X+Y based on the following conditions.
+- The character ch1 must occur X times in the string.
+- The character ch2 must occur Y times in the string.
+- The characters ch1 and ch2 must be interlaced alternatively in the string.
+Finally, the function must return the string value.
+
+Your task is to implement the function getInterlacedString so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5 5
+a b
+
+Output:
+Length: 10
+String: ababababab
+
+Explanation:
+Here X = 5 and Y = 5.
+So the character a occurs 5 times and the character b occurs 5 times alternatively in the string.
+
+Example Input/Output 2:
+Input:
+14 11
+# *
+
+Output:
+Length: 25
+String: #*#*#*#*#*#*#*#*#*#*#*###
+
+Example Input/Output 3:
+Input:
+6 12
+S K
+
+Output:
+Length: 18
+String: SKSKSKSKSKSKKKKKKK
+
+Max Execution Time Limit: 50 millisecs

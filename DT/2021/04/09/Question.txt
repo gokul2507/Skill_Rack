@@ -1,0 +1,56 @@
+Daily Test
+ 
+ProgramID- 12957
+
+Quadruplets - Equal Sum
+
+The program must accept 4 array elements with the size of the arrays as A, B, C and D. The program must find the count N of the quadruplets P, Q, R and S where P 
+belongs to A, Q belongs to B, R belongs to C and S belongs to D, and the sum of any two values is equal to the sum of other two values.
+
+Boundary Condition(s):
+1 <= A, B, C, D <= 50
+1 <= Each integer value <= 10^5
+
+Input Format:
+The first line contains A, B, C and D separated by a space.
+The second line contains A integer values separated by a space.
+The third line contains B integer values separated by a space.
+The fourth line contains C integer values separated by a space.
+The fifth line contains D integer values separated by a space.
+
+Output Format:
+The first line contains N.
+
+Example Input/Output 1:
+Input:
+2 4 1 2
+3 8
+1 3 8 4
+5
+3 6
+
+Output:
+4
+
+Explanation:
+The possible combinations of the quadruplets are given below.
+(3, 1, 5, 3) (3, 1, 5, 6) (3, 3, 5, 3) (3, 3, 5, 6) (3, 8, 5, 3) (3, 8, 5, 6) (3, 4, 5, 3) (3, 4, 5, 6)
+(8, 1, 5, 3) (8, 1, 5, 6) (8, 3, 5, 3) (8, 3, 5, 6) (8, 8, 5, 3) (8, 8, 5, 6) (8, 4, 5, 3) (8, 4, 5, 6)
+There are 4 quadruplets where the sum of any values is equal to the other two value.
+(3, 1, 5, 3) -> 3+3 = 1+5 = 6
+(3, 8, 5, 6) -> 3+8 = 5+6 = 11
+(3, 4, 5, 6) -> 3+6 = 5+4 = 9
+(8, 3, 5, 6) -> 8+3 = 5+6 = 11
+
+Example Input/Output 2:
+Input:
+3 3 3 3
+1 8 2
+4 2 8
+6 4 7
+3 5 6
+
+Output:
+18
+
+Max Execution Time Limit: 50 millisecs

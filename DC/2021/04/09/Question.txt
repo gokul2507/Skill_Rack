@@ -1,0 +1,65 @@
+Daily Challenge
+ 
+ProgramID- 12603
+
+Matrix Different Dimension HCF
+The program must accept two integer matrices of size MxN and RxC as the input. The program must print the HCF of the integer values present in the intersecting area of 
+the given two matrices.
+
+Boundary Condition(s):
+2 <= M, N, R, C <= 50
+1 <= Matrix element value <= 1000
+
+Input Format:
+The first line contains M and N separated by a space.
+The next M lines, each contains N integers separated by a space.
+The (M+2)th line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+
+Output Format:
+The lines, each contains the integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+2 6
+4 4 3 2 2 4
+8 8 6 3 8 5
+3 3
+4 2 6
+7 2 6
+5 1 8
+
+Output:
+4 2 3
+1 2 6
+
+Explanation:
+The integers present in the intersecting area of the first matrix are highlighted below.
+4 4 3 2 2 4
+8 8 6 3 8 5
+The integers present in the intersecting area of the second matrix are highlighted below.
+4 2 6
+7 2 6
+5 1 8
+The HCF of the integer values present in t he intersecting area are given below
+4 2 3
+1 2 6
+
+Example Input/Output 2:
+Input:
+3 4
+4 8 5 1
+1 8 4 8
+4 6 5 9
+4 5
+1 1 15 5 14
+7 6 16 10 15
+3 9 18 16 1
+7 10 18 12 14
+
+Output:
+1 1 5 1
+1 2 4 2
+1 3 1 1
+
+Max Execution Time Limit: 50 millisecs

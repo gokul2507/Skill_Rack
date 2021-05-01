@@ -1,0 +1,67 @@
+Daily Challenge
+ 
+ProgramID- 12943
+ 
+Spiral Submatrix - String
+The program must accept a character matrix of size R*C and a string S as the input. The length of the string S is always 9. The program must print YES if the string S is 
+present in the spiral format from the center of a 3*3 submatrix in clockwise direction. Else the program must print NO as the output.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains S.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+5 6
+e n f l h t
+p a c k d z
+d r s k p h
+n l l i f t
+b q j a b o
+skillrack
+
+Output:
+YES
+
+Explanation:
+Here S = skillrack.
+The 3*3 submatrix with the given string is highlighted below.
+e n f l h t
+p a c k d z
+d r s k p h
+n l l i f t
+b q j a b o
+
+Example Input/Output 2:
+Input:
+5 6
+e n f l h t
+p r c w d z
+d e r L R A
+n o n L S C
+b q j I K K
+SKILLRACK
+
+Output:
+YES
+
+Example Input/Output 3:
+Input:
+4 3
+r e s
+t p i
+n e d
+s e r
+president
+
+Output:
+NO
+
+Max Execution Time Limit: 50 millisecs

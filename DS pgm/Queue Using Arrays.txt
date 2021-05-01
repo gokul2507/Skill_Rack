@@ -1,0 +1,59 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#define n 5
+void main()
+{
+    int queue[n],front=0,rear=0,i,x=n,choice;
+    printf("Queue Operations using Arrays");
+
+    while(1)
+    {    printf("\n1.Insertion \n2.Deletion \n3.Display \n4.Exit");
+        printf("\nEnter the Choice:");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+        case 1:
+        printf("Performing Queue Insertion");
+            if(rear==x)
+                printf("\n Queue is Full");
+            else
+            {
+                printf("\n Enter no :");
+                scanf("%d",&queue[rear++]);
+                printf("Insertion Successfull!");
+            }
+            break;
+        case 2:
+        printf("Performing Deletion Operation");
+            if(front==rear)
+            {
+                printf("\n Queue is empty");
+            }
+            else
+            {
+                printf("\n Deleted Element is %d",queue[front++]);
+                x++;
+            }
+            break;
+        case 3:
+        printf("Displaying Queue Elements");
+            printf("\n Queue Elements are\n ");
+            if(front==rear)
+                printf("\n Queue is Empty");
+            else
+            {
+                for(i=front; i<rear; i++)
+                {
+                    printf("%d",queue[i]);
+                    printf("\n");
+                }
+                break;
+            case 4:
+                exit(0);
+            default:
+                printf("Wrong Choice: please see the options");
+            }
+        }
+    }
+}

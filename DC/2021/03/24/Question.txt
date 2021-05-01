@@ -1,0 +1,33 @@
+Daily Challenge  Program Id-12700
+
+Interface Implementation - Pair 
+
+You must define the class Node which implements the interface Pair so that program runs successfully. The class Hello accepts two integers as the input. 
+It prints the HCF of the given two integers as shown in the Example Input/Output section. Then it prints the string value "YES" if the given two integers are co-prime. 
+Else it prints the string value "NO". 
+
+Example Input/Output 1: 
+
+Input: 
+
+21 22 
+
+Output: 
+
+HCF: 1 
+YES 
+
+Explanation: The HCF of the given two integers is 1. So the given integers are co-prime. Hence the output is HCF: 1 YES 
+
+Example Input/Output 2: 
+
+Input: 
+
+21 27 
+
+Output: 
+
+HCF: 3 
+NO 
+
+Max Execution Time Limit: 50 millisecs

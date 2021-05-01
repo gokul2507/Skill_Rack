@@ -1,0 +1,73 @@
+Daily Test 	Program id-12720
+
+Messenger Group - Persons Online 
+
+In a messenger, there are N persons in a group. For each person in the group, the name, the time in which the person comes online and the time in which the person left online are passed as the input to the program. 
+The program must print the names of the persons who are online at the given time T as the output. The names must be printed chronologically based on the time they came online. 
+If two or more persons are online at the same time, then the program must print their names in sorted order. If no one is online at the given time T, the program must print -1 as the output. 
+
+Note: The time is always in 24-hr format. 
+
+Boundary Condition(s): 
+
+2 <= N <= 50 1 <= Length of each person's name <= 20 
+
+Input Format: 
+
+The first line contains N. The next N lines, each contains the name, the time in which the person comes online and the time in which the person left online separated by a space. 
+The (N+2)nd line contains T. 
+
+Output Format: 
+
+The lines contain the names of the persons who are online at the given time T or the first line contains -1. 
+
+Example Input/Output 1: 
+
+Input: 
+
+5 
+Arun 09:05 09:15 
+John 09:02 09:30 
+Babloo 09:20 10:00 
+Deepa 09:10 09:25 
+Gavin 08:45 09:10 09:10 
+
+Output: 
+
+John Arun Deepa 
+
+Explanation: 
+
+Here the given time T is 09:10. The persons who are online at 09:10 are given below. Arun John Deepa So their names are printed based on the given conditions. 
+Hence the output is John Arun Deepa 
+
+Example Input/Output 2: 
+
+Input: 
+
+6 
+Henry 12:02 12:36 
+Oliver 12:20 12:37 
+Rajesh 12:35 12:40 
+Pravin 12:20 12:35 
+Gavin 12:20 12:45 
+Deepa 12:35 12:38 12:35 
+
+Ouput: 
+
+Henry Gavin Oliver Deepa Rajesh 
+
+Example Input/Output 3: 
+
+Input: 
+
+4 
+Rajesh 13:10 13:30 
+Oliver 14:00 14:15 
+Pravin 13:10 13:15 
+Suresh 13:50 14:30 13:45 
+
+Output:
+ -1 
+
+Max Execution Time Limit: 50 millisecs

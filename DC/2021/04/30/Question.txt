@@ -1,0 +1,86 @@
+Daily Challenge
+ 
+ProgramID- 13100
+
+Cricket Tournament Schedule
+
+There are N teams playing in a cricket tournament. The team name and home ground name of each team are passed as the input. Each team plays two matches against other 
+teams (one in the home ground and the other in the opponent's home ground). The program must create the schedule for the matches in the tournament. The details of each 
+match must be printed in the format as given below.
+Host Team Name vs Visiting Team Name (Host's Home Ground Name)
+
+Boundary Condition(s):
+2 <= N <= 15
+3 <= Length of each team name <= 50
+3 <= Length of each home ground name <= 50
+
+Input Format:
+The first line contains N.
+The next N lines, each contains the team name and the home ground name separated by hyphen.
+
+Output Format:
+The first N*(N-1) lines, each contains the host team name, the visiting team name and the host's home ground name.
+
+Example Input/Output 1:
+Input:
+4
+Chennai Super Kings - M. A. Chidambaram Stadium
+Kolkata Knight Riders - Eden Gardens
+Mumbai Indians - Wankhede Stadium
+Royal Challengers Bangalore - M. Chinnaswamy Stadium
+
+Output:
+Chennai Super Kings vs Kolkata Knight Riders (M. A. Chidambaram Stadium)
+Kolkata Knight Riders vs Chennai Super Kings (Eden Gardens)
+Chennai Super Kings vs Mumbai Indians (M. A. Chidambaram Stadium)
+Mumbai Indians vs Chennai Super Kings (Wankhede Stadium)
+Chennai Super Kings vs Royal Challengers Bangalore (M. A. Chidambaram Stadium)
+Royal Challengers Bangalore vs Chennai Super Kings (M. Chinnaswamy Stadium)
+Kolkata Knight Riders vs Mumbai Indians (Eden Gardens)
+Mumbai Indians vs Kolkata Knight Riders (Wankhede Stadium)
+Kolkata Knight Riders vs Royal Challengers Bangalore (Eden Gardens)
+Royal Challengers Bangalore vs Kolkata Knight Riders (M. Chinnaswamy Stadium)
+Mumbai Indians vs Royal Challengers Bangalore (Wankhede Stadium)
+Royal Challengers Bangalore vs Mumbai Indians (M. Chinnaswamy Stadium)
+
+Explanation:
+Here N = 4, so the number of matches in the cricket tournament is 12 (4 * (4-1)).
+The team name and home ground name of the 4 teams are given below
+Chennai Super Kings - M. A. Chidambaram Stadium
+Kolkata Knight Riders - Eden Gardens
+Mumbai Indians - Wankhede Stadium
+Royal Challengers Bangalore - M. Chinnaswamy Stadium
+So the schedule for the 12 matches is printed in the given format.
+
+Example Input/Output 2:
+Input:
+5
+Mumbai Indians - Wankhede Stadium
+Chennai Super Kings - M. A. Chidambaram Stadium
+Delhi Capitals - Arun Jaitley Stadium
+Royal Challengers Bangalore - M. Chinnaswamy Stadium
+Kolkata Knight Riders - Eden Gardens
+
+Output:
+Mumbai Indians vs Chennai Super Kings (Wankhede Stadium)
+Chennai Super Kings vs Mumbai Indians (M. A. Chidambaram Stadium)
+Mumbai Indians vs Delhi Capitals (Wankhede Stadium)
+Delhi Capitals vs Mumbai Indians (Arun Jaitley Stadium)
+Mumbai Indians vs Royal Challengers Bangalore (Wankhede Stadium)
+Royal Challengers Bangalore vs Mumbai Indians (M. Chinnaswamy Stadium)
+Mumbai Indians vs Kolkata Knight Riders (Wankhede Stadium)
+Kolkata Knight Riders vs Mumbai Indians (Eden Gardens)
+Chennai Super Kings vs Delhi Capitals (M. A. Chidambaram Stadium)
+Delhi Capitals vs Chennai Super Kings (Arun Jaitley Stadium)
+Chennai Super Kings vs Royal Challengers Bangalore (M. A. Chidambaram Stadium)
+Royal Challengers Bangalore vs Chennai Super Kings (M. Chinnaswamy Stadium)
+Chennai Super Kings vs Kolkata Knight Riders (M. A. Chidambaram Stadium)
+Kolkata Knight Riders vs Chennai Super Kings (Eden Gardens)
+Delhi Capitals vs Royal Challengers Bangalore (Arun Jaitley Stadium)
+Royal Challengers Bangalore vs Delhi Capitals (M. Chinnaswamy Stadium)
+Delhi Capitals vs Kolkata Knight Riders (Arun Jaitley Stadium)
+Kolkata Knight Riders vs Delhi Capitals (Eden Gardens)
+Royal Challengers Bangalore vs Kolkata Knight Riders (M. Chinnaswamy Stadium)
+Kolkata Knight Riders vs Royal Challengers Bangalore (Eden Gardens)
+
+Max Execution Time Limit: 50 millisecs

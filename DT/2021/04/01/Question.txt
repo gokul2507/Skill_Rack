@@ -1,0 +1,77 @@
+Daily Test
+ 
+ProgramID- 12947
+ 
+Submatrix - Rotate Border Elements
+The program must accept a character matrix of size R*C and a string S as the input. For each character CH in the string S, the program must rotate the border elements by 1 position in clockwise direction of the first occurring 3*3 submatrix having the middle element as CH. If CH is not present in the given matrix, then the program must not modify the matrix for that character. Finally, the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Length of S <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains S.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+6 5
+B Y H T F
+E P U B Z
+Z X X R Q
+T J R I G
+D F P T W
+B S X Z E
+PET
+
+Output:
+E B Y T F
+Z P H B Z
+X X U R Q
+T J P R I
+D F X T G
+B S Z E W
+
+Explanation:
+1st character is P. After rotating the border elements of the first occurring 3*3 submatrix having the middle element as P, the matrix becomes
+E B Y T F
+Z P H B Z
+X X U R Q
+T J R I G
+D F P T W
+B S X Z E
+2nd character is E. There is no 3*3 submatrix having the middle element as E. So the matrix remains the same.
+3rd character is T. After rotating the border elements of the first occurring 3*3 submatrix having the middle element as T, the matrix becomes
+E B Y T F
+Z P H B Z
+X X U R Q
+T J P R I
+D F X T G
+B S Z E W
+
+Example Input/Output 2:
+Input:
+7 8
+z T b k Y e L v
+a c C g o m l r
+u n A Z F y L g
+j b a Y p M C v
+L l c P Z V z F
+m d K T Y I t p
+N L S s h B e a
+Continent
+
+Output:
+A u a k o b Y v
+Z n z g y e L r
+C T c F m L l g
+j b a Y p M C v
+L l c P Z B I V
+m d K T Y e t z
+N L S s h a p F
+
+Max Execution Time Limit: 50 millisecs

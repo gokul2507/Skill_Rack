@@ -1,0 +1,120 @@
+Daily Test ProgramID- 12785
+
+Find Time from Matrix
+The program must accept a matrix of size 5*17 representing a grid of LEDs as the input. The matrix consists of 0s and 1s, where 1 indicates that the LED is ON and 0 indicates that the LED is OFF. The matrix represents a time T in HH:MM format (in 24-hr).
+- The columns 1, 2 and 3 represent the first H.
+- The 4th column represents the space between the two H's.
+- The columns 5, 6 and 7 represent the second H.
+- The 8th column represents the space between the second H and the colon (:).
+- The 9th column represents the colon (:).
+- The 10th column represents the space between the colon (:) and the first M.
+- The columns 11, 12 and 13 represent the first M.
+- The 14th column represents the space between the two M's.
+- The columns 15, 16 and 17 represent the second M.
+Finally, the program must print the time T as the output.
+Note: The given matrix always represents a valid time.
+
+The below 5 lines represent the digit 0.
+111
+101
+101
+101
+111
+The below 5 lines represent the digit 1.
+001
+001
+001
+001
+001
+The below 5 lines represent the digit 2.
+111
+001
+111
+100
+111
+The below 5 lines represent the digit 3.
+111
+001
+111
+001
+111
+The below 5 lines represent the digit 4.
+101
+101
+111
+001
+001
+The below 5 lines represent the digit 5.
+111
+100
+111
+001
+111
+The below 5 lines represent the digit 6.
+111
+100
+111
+101
+111
+The below 5 lines represent the digit 7.
+111
+001
+001
+001
+001
+The below 5 lines represent the digit 8.
+111
+101
+111
+101
+111
+The below 5 lines represent the digit 9.
+111
+101
+111
+001
+111
+
+Input Format:
+The first 5 lines containing a matrix representing the grid of 5*17 LEDs.
+
+Output Format:
+The first line contains the time T.
+
+Example Input/Output 1:
+Input:
+11101110001110111
+10100010100010100
+10101110001110111
+10101000100010001
+11101110001110111
+
+Output:
+02:35
+
+Explanation:
+In the given matrix, the values of HH and MM are 02 and 35 respectively.
+So 02:35 is printed as the output.
+
+Example Input/Output 2:
+Input:
+00101110001010111
+00101000101010101
+00101110001110111
+00101010100010001
+00101110000010111
+
+Output:
+16:49
+
+Example Input/Output 3:
+Input:
+11101110001110111
+10100010101010101
+10100010001010111
+10100010101010101
+11100010001110111
+
+Output:
+07:08
+Max Execution Time Limit: 50 millisecs

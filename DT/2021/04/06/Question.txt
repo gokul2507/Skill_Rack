@@ -1,0 +1,57 @@
+Daily Test
+ 
+ProgramID- 12926
+
+Alphabets & Integers Matrix - Sum
+The program must accept a matrix of size 7*7 and a string S containing only lower case alphabets as the input. The border elements in the given matrix represent the integer values and the remaining 25 elements represent the 25 unique lower case alphabets. For each alphabet in the string S, the program must find the sum of integers present in the row and column of the alphabet. Finally, the program must print the total sum T as the output. If an alphabet is not present in the matrix, the program must add -1 to the sum.
+
+Boundary Condition(s):
+1 <= Each integer in the matrix <= 1000
+1 <= Length of S <= 100
+
+Input Format:
+The first 7 lines, each contains 7 values(integers and alphabets) separated by a space.
+The 8th line contains S.
+
+Output Format:
+The first line contains T.
+
+Example Input/Output 1:
+Input:
+1 2 3 4 5 6 7
+3 a b c d e 2
+4 j i h g f 4
+8 k n q t w 8
+9 l o r u x 1
+5 m p s v y 4
+1 2 3 6 9 8 7
+boating
+
+Output:
+124
+
+Explanation:
+1st alphabet: b -> (3+2+3+3) = 11.
+2nd alphabet: o -> (3+1+3+9) = 16.
+3rd alphabet: a -> (2+2+2+3) = 9.
+4th alphabet: t -> (5+8+9+8) = 30.
+5th alphabet: i -> (3+4+3+4) = 14.
+6th alphabet: n -> (3+8+3+8) = 22.
+7th alphabet: g -> (5+4+9+4) = 22.
+The total sum is 124, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+51 49 97 27 61 25 14
+26 u c p v d 50
+63 l j f b z 51
+12 m k q g o 15
+45 a w h i x 96
+45 r s t n e 30
+20 41 50 53 48 14 74
+recyclebin
+
+Output:
+1699
+
+Max Execution Time Limit: 50 millisecs

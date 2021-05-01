@@ -1,0 +1,56 @@
+ ProgramID- 12612
+ 
+Rotate Values with Unit Digit
+
+The program must accept the integer values in a matrix of size R*C. Then the program must rotate only the values in the border of the matrix having the same unit digit as the value in the bottom right corner element of the matrix by one position in clockwise direction.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^5
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+
+Output Format:
+The first R lines, each contains C integers separated by a space.
+
+Example Input/Output 1:
+Input:
+4 5
+602 224 711 489 578
+127 987 808 343 479
+37 226 563 982 21
+426 587 917 547 31
+
+Output:
+602 224 31 489 578
+127 987 808 343 479
+37 226 563 982 711
+426 587 917 547 21
+
+Explanation:
+The bottom right corner element value is 31. The unit digit is 1.
+The values having unit digit as 1 along the matrix border are 711 21 31. These values alone must be rotated among them in clockwise direction.
+Hence the matrix becomes 
+602 224 31 489 578
+127 987 808 343 479
+37 226 563 982 711
+426 587 917 547 21
+ 
+Example Input/Output 2:
+Input:
+5 3
+23 6 95
+66 1 76
+43 13 20
+26 16 30
+73 4 56
+
+Output:
+23 66 95
+26 1 6
+43 13 20
+56 16 30
+73 4 76
+Max Execution Time Limit: 50 millisecs

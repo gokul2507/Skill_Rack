@@ -1,0 +1,71 @@
+Daily Test
+ 
+ProgramID- 12963
+
+Matrices - Minimum in Rows and Columns
+The program must accept two integer matrices M1 and M2 as the input. The size of both M1 and M2 is R*C. The program must form a new matrix of size R*C where each element 
+is formed using the minimum value among the values that occur in its row in M1 and its column in M2. Then the program must print the new matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 1000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values representing the matrix M1.
+The next R lines from the (R+2)th line, each contains C integer values representing the matrix M2.
+
+Output Format:
+The first R lines, each contains C integer values representing the new matrix.
+
+Example Input/Output 1:
+Input:
+4 4
+85 73 17 77
+21 46 96 15
+50 86 23 35
+70 94 11 16
+45 23 50 10
+51 59 83 30
+28 66 13 21
+22 24 21 28
+
+Output:
+17 17 13 10
+15 15 13 10
+22 23 13 10
+11 11 11 10
+
+Explanation:
+The minimum value in each row of the matrix M1 is highlighted below.
+85 73 17 77
+21 46 96 15
+50 86 23 35
+70 94 11 16
+The minimum value in each column of the matrix M2 is highlighted below.
+45 23 50 10
+51 59 83 30
+28 66 13 21
+22 24 21 28
+The new matrix is given below.
+17 17 13 10
+15 15 13 10
+22 23 13 10
+11 11 11 10
+
+Example Input/Output 2:
+Input:
+3 5
+42 46 75 56 67
+79 46 59 32 40
+54 51 74 84 12
+18 51 81 74 55
+34 34 32 13 30
+84 19 96 62 87
+
+Output:
+18 19 32 13 30
+18 19 32 13 30
+12 12 12 12 12
+
+Max Execution Time Limit: 50 millisecs

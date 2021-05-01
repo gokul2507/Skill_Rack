@@ -1,0 +1,56 @@
+Daily Challenge
+ 
+ProgramID- 12955
+ 
+Matrix - Find Missing Element
+The program must accept an integer matrix of size R*C and an integer S as the input. Exactly one element in the given matrix is missing, which is denoted by the character M. 
+The integer S represents the sum of all the integers in the column of the missing element. The program must find the value of M and replace it in the given matrix. Finally, 
+the program must print the integer matrix with all the R*C integers as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 1000
+1 <= S <= 10^5
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines contain the matrix.
+The (R+2)nd line contains S.
+
+Output Format:
+The first R lines, each contains C integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+3 3
+2 5 8
+1 5 M
+9 7 6
+17
+
+Output:
+2 5 8
+1 5 3
+9 7 6
+
+Explanation:
+The missing element is present in the 3rd column.
+The sum of integers in the 3rd column is 17.
+So the value of the missing element M is 3 (17 - (8 + 6)).
+
+Example Input/Output 2:
+Input:
+4 5
+62 25 69 62 80
+15 10 17 34 75
+99 M 76 79 23
+48 15 73 22 68
+100
+
+Output:
+62 25 69 62 80
+15 10 17 34 75
+99 50 76 79 23
+48 15 73 22 68
+
+Max Execution Time Limit: 50 millisecs

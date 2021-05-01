@@ -1,0 +1,45 @@
+Daily Challenge ProgramID- 12681
+
+Linked List - deleteThirdNode
+
+The function/method deleteThirdNode accepts an argument - head, it represents the head of a singly linked list.
+
+The function/method deleteThirdNode must delete the 3rd node in the given singly linked list and then return the revised head of the singly linked list.
+
+Your task is to implement the function deleteThirdNode so that it passes all the test cases.
+
+Note: The number of nodes in the given linked list is always greater than or equal to 3.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again in your code).
+
+
+struct Node
+{
+    int val;
+    struct Node *next;
+};
+
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5
+8 4 1 2 7
+
+Output:
+After deleting the third node: 8 4 2 7
+
+Explanation:
+After deleting the 3rd node in the given singly linked list, the list becomes 8 -> 4 -> 2 -> 7.
+Hence the output is
+8 4 2 7
+
+Example Input/Output 2:
+Input:
+3
+50 40 20
+
+Output:
+After deleting the third node: 50 40
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,66 @@
+Daily Test ProgramID- 13075 
+
+
+Replace Submatrix with Average
+The program must accept an integer matrix of size R*C and an integer K as the input. The program must find the first occurring submatrix of size K*K where the sum is 
+divisible by K*K. Then the program must replace each integer in the submatrix with its average. Finally, the program must print the modified matrix as the output. If 
+there is no such submatrix, then the program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^5
+2 <= K <= Minimum value between R and C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+The (R+2)nd line contains K.
+
+Output Format:
+The first R lines, each contains C integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+4 5
+6 8 7 9 3
+7 1 5 1 4
+2 5 6 3 6
+3 9 9 1 7
+3
+
+Output:
+6 5 5 5 3
+7 5 5 5 4
+2 5 5 5 6
+3 9 9 1 7
+
+Explanation:
+Here K = 3.
+The first occurring submatrix of size 3*3 where the sum is divisible by 9 is highlighted below.
+6 8 7 9 3
+7 1 5 1 4
+2 5 6 3 6
+3 9 9 1 7
+The sum of integers in the submatrix is 45 (8+7+9+1+5+1+5+6+3) which is divisible by 9 (3*3). So the submatrix is replaced with its average 5 (45/9).
+After modifying the submatrix, the matrix becomes
+6 5 5 5 3
+7 5 5 5 4
+2 5 5 5 6
+3 9 9 1 7
+
+Example Input/Output 2:
+Input:
+7 6
+2 2 7 4 8 2
+2 5 4 3 2 8
+8 1 2 5 7 4
+2 1 4 9 6 6
+1 2 4 4 9 8
+9 2 6 9 6 4
+3 5 1 1 8 4
+4
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs

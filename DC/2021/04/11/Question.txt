@@ -1,0 +1,62 @@
+Daily Challenge
+ 
+ProgramID- 12949
+
+Submatrix - Unit Digit Corner
+The program must accept an integer matrix of size R*C and a digit D as the input. The program must print the 3*3 submatrix having the maximum sum and the unit digit of 
+the bottom-right corner element as D. If two or more such submatrices have the same maximum sum, then the program must print the first occurring submatrix as the output. 
+If there is no such submatrix, the program must print -1 as the output.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Matrix element value <= 1000
+0 <= D <= 9
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+The (R+2)th line contains D.
+
+Output Format:
+The first line contains -1 or the lines contain the first occurring submatrix.
+
+Example Input/Output 1:
+Input:
+4 5
+35 24 42 17 37
+24 13 35 18 39
+16 10 26 25 23
+35 29 13 11 18
+3
+
+Output:
+42 17 37
+35 18 39
+26 25 23
+
+Explanation:
+Here R = 4, C = 5 and D = 3.
+There are two 3*3 submatrices having 3 as the unit digit of the bottom-right corner element.
+The sum of the below 3*3 submatrix is 262.
+42 17 37
+35 18 39
+26 25 23
+The sum of the below 3*3 submatrix is 201.
+24 13 35
+16 10 26
+35 29 13
+The submatrix with the maximum sum is printed as the output.
+
+Example Input/Output 2:
+Input:
+4 4
+43 32 23 29
+11 11 21 20
+28 50 18 15
+47 14 14 42
+1
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs

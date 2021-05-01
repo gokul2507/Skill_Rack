@@ -1,0 +1,23 @@
+Double Array Values (Id-2987)
+
+Given N integers, the program must double the values and print them.
+
+Input Format:
+First line contains N
+Second line contains N integers separated by a space.
+
+Output Format:
+First line contains N integer values which are twice the input array values separated by a space.
+
+Boundary Conditions:
+2 <= N < = 99999
+
+Example Input/Output 1:
+Input:
+5
+100 200 300 44 500
+
+Output:
+200 400 600 88 1000
+
+Max Execution Time Limit: 5000 millisecs

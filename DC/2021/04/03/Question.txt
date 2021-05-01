@@ -1,0 +1,52 @@
+Daily Challenge
+ 
+ProgramID- 12606
+ 
+Keyboard Switch Count
+There are three rows in a keyboard containing the alphabets. The alphabets in each row are given as the input. 
+The string S containing the alphabets to be typed is passed as the input. The program must print the number of times, the switch must happen to type the alphabets. 
+Assume initially the position is in the middle row.
+
+Note: Assume S contains only lower case alphabets and no special characters will be present in S.
+
+Boundary Condition(s):
+1 <= Length of S <= 100
+
+Input Format:
+The first three lines contain the alphabets in the three rows of a keyboard.
+The fourth line contains S.
+
+Outupt Format:
+The first line contains an integer representing the switch count.
+
+Example Input/Output 1:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+coding
+
+Output:
+8
+
+Explanation:
+The string to be typed is coding.
+c - bottom row. Hence switch count is 1.
+o - top row. So switch count = 1+2 = 3.
+d - middle row. So switch count = 3+1 = 4.
+i - top row. So switch count = 4+1 = 5.
+n - bottom row. So switch count = 5+2 = 7.
+g - middle row. So switch count = 7+1 = 8.
+So 8 is printed as the output.
+
+Example Input/Output 2:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+gasstation
+
+Output:
+5
+
+Max Execution Time Limit: 50 millisecs
