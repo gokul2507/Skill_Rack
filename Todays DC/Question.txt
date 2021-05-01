@@ -1,0 +1,56 @@
+Daily Challenge
+ 
+ProgramID- 13159
+
+Chess Board Pattern
+The program must accept two integers M and N as the input. The program must form a matrix of size (M*N)x(M*N). Then the program must fill the submatrices of size M*M with 0s and 1s alternatively in vertical and horizontal directions as shown in the Example Input/Output section. Finally, the program must print the matrix as the output.
+
+Boundary Condition(s):
+2 <= M <= 10
+2 <= N <= 25
+
+Input Format:
+The first line contains M and N separated by a space.
+
+Output Format:
+The first M*N lines containing the matrix.
+
+Example Input/Output 1:
+Input:
+3 4
+
+Output:
+0 0 0 1 1 1 0 0 0 1 1 1
+0 0 0 1 1 1 0 0 0 1 1 1
+0 0 0 1 1 1 0 0 0 1 1 1
+1 1 1 0 0 0 1 1 1 0 0 0
+1 1 1 0 0 0 1 1 1 0 0 0
+1 1 1 0 0 0 1 1 1 0 0 0
+0 0 0 1 1 1 0 0 0 1 1 1
+0 0 0 1 1 1 0 0 0 1 1 1
+0 0 0 1 1 1 0 0 0 1 1 1
+1 1 1 0 0 0 1 1 1 0 0 0
+1 1 1 0 0 0 1 1 1 0 0 0
+1 1 1 0 0 0 1 1 1 0 0 0
+
+Explanation:
+Here M=3 and N=4, so the size of matrix is 12*12 ((3*4)*(3*4)).
+In the 12*12 matrix, the submatrices of size 3*3 are filled with 0s and 1s alternatively in vertical and horizontal directions.
+
+Example Input/Output 2:
+Input:
+2 5
+
+Output:
+0 0 1 1 0 0 1 1 0 0
+0 0 1 1 0 0 1 1 0 0
+1 1 0 0 1 1 0 0 1 1
+1 1 0 0 1 1 0 0 1 1
+0 0 1 1 0 0 1 1 0 0
+0 0 1 1 0 0 1 1 0 0
+1 1 0 0 1 1 0 0 1 1
+1 1 0 0 1 1 0 0 1 1
+0 0 1 1 0 0 1 1 0 0
+0 0 1 1 0 0 1 1 0 0
+
+Max Execution Time Limit: 50 millisecs
