@@ -1,5 +1,4 @@
-s=input().strip()
-for i in range(len(s)):
-    for j in range(i+1):
-        print(s[i],end='')
-    print()
+c=1
+for i in input().strip():
+    print(i*c)
+    c+=1

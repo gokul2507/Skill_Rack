@@ -1,0 +1,79 @@
+Daily Challenge
+ 
+ProgramID- 13123
+
+Search String - Matrix Edges
+The program must accept a character matrix of size R*C and a string S as the input. The program must search the string S in 
+the four edges (Top, Right, Bottom and Left) of the matrix. Then the program must print a string value representing the edge 
+which contains the string S in any order (forward or reverse). If the string S is present in two or more edges, then the program 
+must print the first occurring edge in the above mentioned order. If the string S is not present in all four edges, then the program 
+must print -1 as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Length of S <= Minimum value between R and C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains S.
+
+Output Format:
+The first line contains a string value or -1 based on the given conditions.
+
+Example Input/Output 1:
+Input:
+6 7
+q u b f y a a
+j j l a v i c
+p z r a p i t
+h a u g v x i
+c l v t o c v
+k o z l o u e
+active
+
+Output:
+Right
+
+Explanation:
+Here S = "active".
+The string S is present in the Right edge of the given matrix (from top to bottom).
+So Right is printed as the output.
+
+Example Input/Output 2:
+Input:
+10 8
+l l a B v r l v
+o o j a y i z j
+L z r w o q q b
+L d c z f d z y
+A j c y q r v j
+B u y g y l m b
+j j f p y i j a
+w l n j l n o l
+a h g r u s q l
+B a l l w r x q
+Ball
+
+Output:
+Top
+
+Explanation:
+Here S = "Ball".
+The string S is present in the Top edge (from right to left) and in the Bottom edge (from left to right) of the given matrix.
+So the first occurring edge Top is printed as the output.
+
+Example Input/Output 3:
+Input:
+5 5
+y V w L a
+Y T R q b
+k C Y v S
+S p y B j
+g j a a Y
+SKY
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs

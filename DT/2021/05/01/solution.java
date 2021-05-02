@@ -1,10 +1,10 @@
 import java.util.*;
-public class Hello {
+public class solution {
     public static void print(String x){
         System.out.print(x);
     }
     public static void main(String[] args) {
-		Scanner q=new Scanner(System.in);
+		Scanner q =new Scanner(System.in);
 		String z[]=q.nextLine().split(" ");
 		int n=q.nextInt();
 		for(int i=0;i<n;i++){
