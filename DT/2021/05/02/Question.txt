@@ -1,0 +1,87 @@
+Daily Test
+ 
+ProgramID- 13097
+
+Matrix - Insert Integer
+The program must accept an integer matrix of size R*C and three integers x, y, z as the input. x and y represent the position of a 
+cell in the matrix. z represents an integer that needs to be inserted into the matrix. The program must insert the integer z at the 
+given position (x, y) based on the following conditions.
+- The program must consider the given matrix in vertical zig-zag fashion when inserting the integer z (i.e., all the values that occur 
+from the given position must be shifted by one position in the vertical zig-zag direction before inserting the integer z).
+- A new column is added to the matrix when an integer is inserted.
+- The empty cells in the newly added column must be filled with -1.
+Finally, the program must print the R*(C+1) matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value, z <= 10^4
+1 <= x <= R
+1 <= y <= C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+The (R+2)th line contains x, y and z separated by a space.
+
+Output Format:
+The first R lines, each contains C+1 integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+5 4
+26 45 16 17
+55 68 14 32
+66 80 34 86
+24 43 49 25
+65 30 48 71
+3 3 99
+
+Output:
+26 45 16 32 17
+55 68 14 86 -1
+66 80 99 25 -1
+24 43 34 71 -1
+65 30 49 48 -1
+
+Explanation:
+Here x = 3, y = 3 and z = 99, so the integer 99 is inserted at the position (3, 3) in the matrix.
+After inserting the integer 99 into the matrix based on the given conditions, the matrix becomes
+26 45 16 32 17
+55 68 14 86 -1
+66 80 99 25 -1
+24 43 34 71 -1
+65 30 49 48 -1
+
+Example Input/Output 2:
+Input:
+5 5
+49 32 62 86 37
+87 56 68 59 45
+89 46 88 77 44
+15 35 19 90 42
+60 55 85 70 20
+1 1 50
+
+Output:
+50 56 32 59 86 -1
+49 46 62 77 37 -1
+87 35 68 90 45 -1
+89 55 88 70 44 -1
+15 60 19 85 42 20
+
+Example Input/Output 3:
+Input:
+4 4
+10 15 20 25
+30 35 40 45
+50 55 60 65
+70 75 80 85
+3 2 90
+
+Output:
+10 35 15 45 25
+30 55 20 65 -1
+50 90 40 85 -1
+70 75 60 80 -1
+
+Max Execution Time Limit: 50 millisecs
