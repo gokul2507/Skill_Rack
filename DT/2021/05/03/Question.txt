@@ -1,0 +1,85 @@
+Daily Test
+ 
+ProgramID- 13133
+
+X Layers V Pattern - String
+The program must accept a string S and an integer X as the input. The program must print the X Layers V Pattern based on the following conditions.
+- The string S must be printed diagonally from the top-left to the bottom-middle X times(one below the other).
+- Similarly, the string S must be printed diagonally from the top-right to the bottom-middle X times(one below the other).
+- The empty spaces must be printed as asterisks.
+
+Boundary Condition(s):
+3 <= Length of S <= 100
+1 <= X <= Length of S
+
+Input Format:
+The first line contains S.
+The second line contains X.
+
+Output Format:
+The lines contain the X Layers V Pattern as shown in the Example Input/Output section.
+
+Example Input/Output 1:
+Input:
+packing
+3
+
+Output:
+p***********p
+pa*********ap
+pac*******cap
+*ack*****kca*
+**cki***ikc**
+***kin*nik***
+****ingni****
+*****ngn*****
+******g******
+
+Explanation:
+Here the given string is packing and the value of X is 3.
+The string packing is printed diagonally (from the top-left to the bottom-middle and from the top-right to the bottom-middle) 3 times one below the other.
+Hence the output is
+p***********p
+pa*********ap
+pac*******cap
+*ack*****kca*
+**cki***ikc**
+***kin*nik***
+****ingni****
+*****ngn*****
+******g******
+
+Example Input/Output 2:
+Input:
+RACE
+4
+
+Output:
+R*****R
+RA***AR
+RAC*CAR
+RACECAR
+*ACECA*
+**CEC**
+***E***
+
+Example Input/Output 3:
+Input:
+computer
+5
+
+Output:
+c*************c
+co***********oc
+com*********moc
+comp*******pmoc
+compu*****upmoc
+*omput***tupmo*
+**mpute*etupm**
+***puteretup***
+****uteretu****
+*****teret*****
+******ere******
+*******r*******
+Max Execution Time Limit: 50 millisecs
+
