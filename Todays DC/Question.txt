@@ -1,72 +1,96 @@
 Daily Challenge
  
-ProgramID- 13194
+ProgramID- 13092
 
-Sort Digits in Submatrices
-The program must accept an integer matrix of size R*C as the input. The matrix contains only digits from 1 to 9. The values of R and C 
-are always divisible by 3. The program must find the 3*3 submatrices having all the digits from 1 to 9. Then the program must sort the 
-digits within those submatrices in ascending order. Finally, the program must print the modified matrix as the output.
+Minimum Length - String Values
+The program must accept N string values as the input. The program must print the output based on the following conditions.
+- The program must find the length L of the shortest string in the list of string values.
+- The program must print the first L characters of each string. Then the program must remove the first L characters in each string. If 
+all the characters in a string are removed, then the program must remove that string from the list.
+- The program must repeat the above processes till all the characters in the given N string values are printed.
 
 Boundary Condition(s):
-3 <= R, C <= 48
+2 <= N <= 50
+1 <= Length of each string <= 100
 
 Input Format:
-The first line contains R and C separated by a space.
-The next R lines, each contains C integer values separated by a space.
+The first line contains N.
+The next N lines, each contains a string value.
 
 Output Format:
-The first R lines, each contains C integer values separated by a space.
+The lines, each contains a string value.
 
 Example Input/Output 1:
 Input:
-6 6
-8 8 4 1 8 5
-4 9 7 9 7 2
-5 3 3 6 3 4
-1 7 2 6 2 3
-8 6 3 7 6 4
-5 9 4 3 5 1
+4
+lion
+kingdom
+monday
+car
 
 Output:
-8 8 4 1 2 3
-4 9 7 4 5 6
-5 3 3 7 8 9
-1 2 3 6 2 3
-4 5 6 7 6 4
-7 8 9 3 5 1
+lio
+kin
+mon
+car
+n
+g
+d
+do
+ay
+m
 
 Explanation:
-In the given matrix, the 3*3 submatrices having all the digits from 1 to 9 are highlighted below
-8 8 4 1 8 5
-4 9 7 9 7 2
-5 3 3 6 3 4
-1 7 2 6 2 3
-8 6 3 7 6 4
-5 9 4 3 5 1
-After sorting the digits within the submatrices in ascending order, the matrix becomes
-8 8 4 1 2 3
-4 9 7 4 5 6
-5 3 3 7 8 9
-1 2 3 6 2 3
-4 5 6 7 6 4
-7 8 9 3 5 1
+Here N = 4.
+The length of the shortest string is 3. So the first 3 characters of each string are printed.
+lio
+kin
+mon
+car
+
+After removing the first 3 characters, only 3 string values are in the list.
+n
+gdom
+day
+
+The length of the shortest string is 1. So the first character of each string is printed.
+n
+g
+d
+
+After removing the first character, only 2 string values are in the list.
+dom
+ay
+
+The length of the shortest string is 2. So the first 2 characters of each string are printed.
+do
+ay
+
+After removing the first 2 characters, only 1 string value is in the list and it is printed as the output.
+m
 
 Example Input/Output 2:
 Input:
-6 9
-4 8 6 3 3 3 4 1 5
-9 2 3 9 6 7 8 7 3
-1 5 7 4 6 1 9 6 2
-2 1 7 4 8 2 7 1 6
-5 3 9 9 7 5 7 8 5
-6 4 8 3 6 1 8 5 8
+5
+notebook
+pen
+eraser
+card
+bottle
 
 Output:
-1 2 3 3 3 3 1 2 3
-4 5 6 9 6 7 4 5 6
-7 8 9 4 6 1 7 8 9
-1 2 3 1 2 3 7 1 6
-4 5 6 4 5 6 7 8 5
-7 8 9 7 8 9 8 5 8
+not
+pen
+era
+car
+bot
+e
+s
+d
+t
+bo
+er
+le
+ok
 
 Max Execution Time Limit: 50 millisecs
