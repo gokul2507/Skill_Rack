@@ -1,0 +1,96 @@
+Daily Challenge
+ 
+ProgramID- 13092
+
+Minimum Length - String Values
+The program must accept N string values as the input. The program must print the output based on the following conditions.
+- The program must find the length L of the shortest string in the list of string values.
+- The program must print the first L characters of each string. Then the program must remove the first L characters in each string. If 
+all the characters in a string are removed, then the program must remove that string from the list.
+- The program must repeat the above processes till all the characters in the given N string values are printed.
+
+Boundary Condition(s):
+2 <= N <= 50
+1 <= Length of each string <= 100
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+
+Output Format:
+The lines, each contains a string value.
+
+Example Input/Output 1:
+Input:
+4
+lion
+kingdom
+monday
+car
+
+Output:
+lio
+kin
+mon
+car
+n
+g
+d
+do
+ay
+m
+
+Explanation:
+Here N = 4.
+The length of the shortest string is 3. So the first 3 characters of each string are printed.
+lio
+kin
+mon
+car
+
+After removing the first 3 characters, only 3 string values are in the list.
+n
+gdom
+day
+
+The length of the shortest string is 1. So the first character of each string is printed.
+n
+g
+d
+
+After removing the first character, only 2 string values are in the list.
+dom
+ay
+
+The length of the shortest string is 2. So the first 2 characters of each string are printed.
+do
+ay
+
+After removing the first 2 characters, only 1 string value is in the list and it is printed as the output.
+m
+
+Example Input/Output 2:
+Input:
+5
+notebook
+pen
+eraser
+card
+bottle
+
+Output:
+not
+pen
+era
+car
+bot
+e
+s
+d
+t
+bo
+er
+le
+ok
+
+Max Execution Time Limit: 50 millisecs

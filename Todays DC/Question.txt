@@ -1,96 +1,81 @@
 Daily Challenge
  
-ProgramID- 13092
+ProgramID- 13095
 
-Minimum Length - String Values
-The program must accept N string values as the input. The program must print the output based on the following conditions.
-- The program must find the length L of the shortest string in the list of string values.
-- The program must print the first L characters of each string. Then the program must remove the first L characters in each string. If 
-all the characters in a string are removed, then the program must remove that string from the list.
-- The program must repeat the above processes till all the characters in the given N string values are printed.
+Submatrix - Four Same Corners
+The program must accept a character matrix of size R*C and an integer K as the input. The program must find the first occurring K*K 
+submatrix where the four corner elements are the same. Then the program must replace the top-left to bottom-right diagonal and the
+top-right to bottom-left diagonal elements of the submatrix with the asterisks. Finally, the program must print the modified character
+matrix as the output.
+Note: In the given matrix, at least one K*K submatrix always has the same element in all four corners.
 
 Boundary Condition(s):
-2 <= N <= 50
-1 <= Length of each string <= 100
+3 <= R, C <= 50
+2 <= K <= Minimum value between R and C
 
 Input Format:
-The first line contains N.
-The next N lines, each contains a string value.
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains K.
 
 Output Format:
-The lines, each contains a string value.
+The first R lines, each contains C characters separated by a space.
 
 Example Input/Output 1:
 Input:
+7 6
+a d z d o t
+t g y e g b
+y d c d i c
+s y x v a l
+b g s f g f
+u a c r p c
+k v z n i h
 4
-lion
-kingdom
-monday
-car
 
 Output:
-lio
-kin
-mon
-car
-n
-g
-d
-do
-ay
-m
+a d z d o t
+t * y e * b
+y d * * i c
+s y * * a l
+b * s f * f
+u a c r p c
+k v z n i h
 
 Explanation:
-Here N = 4.
-The length of the shortest string is 3. So the first 3 characters of each string are printed.
-lio
-kin
-mon
-car
-
-After removing the first 3 characters, only 3 string values are in the list.
-n
-gdom
-day
-
-The length of the shortest string is 1. So the first character of each string is printed.
-n
-g
-d
-
-After removing the first character, only 2 string values are in the list.
-dom
-ay
-
-The length of the shortest string is 2. So the first 2 characters of each string are printed.
-do
-ay
-
-After removing the first 2 characters, only 1 string value is in the list and it is printed as the output.
-m
+Here K = 4.
+The 4*4 submatrix with the same element in all four corners is highlighted below.
+a d z d o t
+t g y e g b
+y d c d i c
+s y x v a l
+b g s f g f
+u a c r p c
+k v z n i h
+After replacing the elements in the top-left to bottom-right and the top-right to bottom-left diagonals with the asterisks, the matrix becomes
+a d z d o t
+t * y e * b
+y d * * i c
+s y * * a l
+b * s f * f
+u a c r p c
+k v z n i h
 
 Example Input/Output 2:
 Input:
+5 7
+z n z X z G z
+x X a M t M E
+O n T f W V e
+S K G X c b F
+z U z r R O z
 5
-notebook
-pen
-eraser
-card
-bottle
 
 Output:
-not
-pen
-era
-car
-bot
-e
-s
-d
-t
-bo
-er
-le
-ok
+z n * X z G *
+x X a * t * E
+O n T f * V e
+S K G * c * F
+z U * r R O *
 
 Max Execution Time Limit: 50 millisecs
