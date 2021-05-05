@@ -1,3 +1,12 @@
+import java.util.Scanner;
+
+public class Hello{
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        printPattern(sc.nextInt());
+    }
+
 public static void printPattern(int N) {
     int a=1;
     int b=(N*N)+1;
@@ -19,4 +28,5 @@ public static void printPattern(int N) {
         s+=2;
         b=(b-1)-((l-1)*2);
     }
+}
 }
