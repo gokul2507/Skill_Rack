@@ -1,81 +1,50 @@
 Daily Challenge
  
-ProgramID- 13095
+ProgramID- 13193
 
-Submatrix - Four Same Corners
-The program must accept a character matrix of size R*C and an integer K as the input. The program must find the first occurring K*K 
-submatrix where the four corner elements are the same. Then the program must replace the top-left to bottom-right diagonal and the
-top-right to bottom-left diagonal elements of the submatrix with the asterisks. Finally, the program must print the modified character
-matrix as the output.
-Note: In the given matrix, at least one K*K submatrix always has the same element in all four corners.
+function mergeEven
+The function/method mergeEven accepts four arguments M, arr1, N and arr2. M represents the size of the integer array arr1. N represents 
+the size of the integer array arr2. The array arr2 contains only even integers and the size of arr2 is equal to the number of even 
+integers in arr1.
 
-Boundary Condition(s):
-3 <= R, C <= 50
-2 <= K <= Minimum value between R and C
+The function/method mergeEven must form a new array by merging the given two arrays so that each integer in the array arr2 occurs after 
+the occurrence of the corresponding even integer in the array arr1. Then the function must return the new array.
 
-Input Format:
-The first line contains R and C separated by a space.
-The next R lines, each contains C characters separated by a space.
-The (R+2)th line contains K.
+Your task is to implement the function mergeEven so that it passes all the test cases.
 
-Output Format:
-The first R lines, each contains C characters separated by a space.
+IMPORTANT: Do not write the main() function as it is already defined.
 
 Example Input/Output 1:
 Input:
-7 6
-a d z d o t
-t g y e g b
-y d c d i c
-s y x v a l
-b g s f g f
-u a c r p c
-k v z n i h
-4
+6 4
+12 45 78 56 23 10
+100 200 300 400
 
 Output:
-a d z d o t
-t * y e * b
-y d * * i c
-s y * * a l
-b * s f * f
-u a c r p c
-k v z n i h
+Array 1: 12 45 78 56 23 10
+Array 2: 100 200 300 400
+Merged Array: 12 100 45 78 200 56 300 23 10 400
 
 Explanation:
-Here K = 4.
-The 4*4 submatrix with the same element in all four corners is highlighted below.
-a d z d o t
-t g y e g b
-y d c d i c
-s y x v a l
-b g s f g f
-u a c r p c
-k v z n i h
-After replacing the elements in the top-left to bottom-right and the top-right to bottom-left diagonals with the asterisks, the matrix becomes
-a d z d o t
-t * y e * b
-y d * * i c
-s y * * a l
-b * s f * f
-u a c r p c
-k v z n i h
+Here M = 6 and N = 4.
+The integers in the 1st array are 12, 45, 78, 56, 23 and 10.
+The integers in the 2nd array are 100, 200, 300 and 400.
+After merging the two arrays based on the given conditions, the merged array contains
+12 100 45 78 200 56 300 23 10 400
+100 occurs after the 1st even integer in the first array.
+200 occurs after the 2nd even integer in the first array.
+300 occurs after the 3rd even integer in the first array.
+400 occurs after the 4th even integer in the first array.
 
 Example Input/Output 2:
 Input:
-5 7
-z n z X z G z
-x X a M t M E
-O n T f W V e
-S K G X c b F
-z U z r R O z
-5
+7 2
+50 63 87 66 3 83 35
+48 32
 
 Output:
-z n * X z G *
-x X a * t * E
-O n T f * V e
-S K G * c * F
-z U * r R O *
+Array 1: 50 63 87 66 3 83 35
+Array 2: 48 32
+Merged Array: 50 48 63 87 66 32 3 83 35
 
 Max Execution Time Limit: 50 millisecs

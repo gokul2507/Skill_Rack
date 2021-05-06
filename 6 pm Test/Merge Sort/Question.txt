@@ -1,0 +1,23 @@
+Merge Sort (Id-3114)
+
+Given an array of N integers, complete the method mergesort to sort the arrays using Merge Sort algorithm.
+
+Input Format:
+The first line contains N.
+The second line contains the value of the N integers separated by one or more spaces.
+
+Output Format:
+The N numbers sorted separated by a space.
+
+Boundary Conditions:
+2 <= N <= 1000
+
+Example Input/Output 1:
+Input:
+9
+1 8 7 2 5 4 6 9 3
+
+Output:
+1 2 3 4 5 6 7 8 9
+
+Max Execution Time Limit: 5000 millisecs
