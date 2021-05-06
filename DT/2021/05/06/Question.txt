@@ -1,0 +1,66 @@
+Daily Test
+ 
+ProgramID- 13195
+
+N String Values in Columns
+The program must accept N string values as the input. The program must print the characters in the given N string values column wise in 
+R rows based on the following conditions.
+- R represents the length of the first string.
+- Each string must start from the first row of a column when printing the characters column wise in R rows (i.e., if all the characters 
+in a string are printed column wise, then the characters in the next string start from the first row of the next column).
+- The empty spaces must be printed as asterisks (*).
+
+Boundary Condition(s):
+2 <= N, Length of each string <= 50
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+
+Output Format:
+The first R lines containing the characters in the N string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+3
+photos
+youtube
+facebook
+
+Output:
+p y e f o
+h o * a k
+o u * c *
+t t * e *
+o u * b *
+s b * o *
+
+Explanation:
+The length of the first string photos is 6, so the number of rows is R = 6.
+In the 1st column, all the characters in the string photos are printed.
+In the 2nd column, the first 6 characters in the string youtube are printed.
+In the 3rd column, the only remaining character in the string youtube is printed. The empty spaces in 3rd column are printed as asterisks.
+In the 4th column, the first 6 characters in the string facebook are printed.
+In the 5th column, the remaining 2 characters in the string facebook are printed. The empty spaces in 5th column are printed as asterisks.
+Hence the output is
+p y e f o
+h o * a k
+o u * c *
+t t * e *
+o u * b *
+s b * o *
+
+Example Input/Output 2:
+Input:
+4
+one
+eleven
+seventeen
+four
+
+Output:
+o e v s e e f r
+n l e e n e o *
+e e n v t n u *
+
+Max Execution Time Limit: 50 millisecs
