@@ -1,45 +1,50 @@
 Daily Challenge
  
-ProgramID- 12591
+ProgramID- 13201
 
-Students Rank
-There are N students who have taken a test. The students who have scored same marks are allocated the same rank. The program must accept 
-the marks of the N students and print the rank of the Xth student.
+Longest Common Middle Substring
+The program must accept two string values S1 and S2 as the input. The program must print the longest common middle substring in the given 
+two string values as the output. If there is no such substring, then the program must print -1 as the output.
+Note: The lengths of S1 and S2 are always odd.
 
 Boundary Condition(s):
-1 <= X <= N <= 1000
-1 <= Marks of a student <= 100
+3 <= Length of S1, S2 <= 99
 
 Input Format:
-The first line contains N.
-The second line contains the marks of the N students.
-The third line contains X.
+The first line contains S1.
+The second line contains S2.
 
 Output Format:
-The first line contains rank of the Xth student.
+The first line contains the longest common middle substring or -1.
 
 Example Input/Output 1:
 Input:
-5
-55 60 55 50 60
-4
+doglionlizard
+absolutionlizagging
 
 Output:
-3
+ionli
 
 Explanation:
-Students 2 and 5 have scored 60 and are ranked 1.
-Students 1 and 3 have scored 55 and are ranked 2.
-Student 4 has scored 50 and is ranked 3.
-Hence the rank of the 4th student is 3 and is printed as the output.
+The longest common middle substring is highlighted below
+S1 = doglionlizard
+S2 = absolutionlizagging
+So ionli is printed as the output.
 
 Example Input/Output 2:
 Input:
-5
-50 50 50 55 50
-4
+CELEBRATE
+millets
 
 Output:
-1
+-1
+
+Example Input/Output 3:
+Input:
+numbersgame
+meterSONG
+
+Output:
+r
 
 Max Execution Time Limit: 50 millisecs
