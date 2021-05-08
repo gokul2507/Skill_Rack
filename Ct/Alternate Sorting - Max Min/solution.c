@@ -2,24 +2,19 @@
 void alternateSort(int arr[], int LENGTH)
 {
     for(int i=0;i<LENGTH;i++){
+        int x=i;
         for(int j=i+1;j<LENGTH;j++){
-            if(arr[i]>arr[j]){
-                int t=arr[i];
-                arr[i]=arr[j];
-                arr[j]=t;
-            }
+            int s=arr[x]-arr[j];
+            if(i%2==0)
+            s=arr[j]-arr[x];
+            if(s>0) x=j;
+        }
+        if(i!=x){
+            arr[i]+=arr[x];
+            arr[x]=arr[i]-arr[x];
+            arr[i]-=arr[x];
         }
     }
-    int a[LENGTH];
-    for(int i=0;i<LENGTH;i++) a[i]=arr[i];
-    int i=0,j=LENGTH-1,ctr=0;
-    while(i<j){
-        arr[ctr++]=a[j];
-        arr[ctr++]=a[i];
-        i++;
-        j--;
-    }
-    if(LENGTH%2) arr[ctr]=a[i];
 }
 int main()
 {
