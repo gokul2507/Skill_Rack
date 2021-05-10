@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int start = sc.nextInt();
+        int N = sc.nextInt();
+        printPattern(start, N);
+        
+    }
+}
