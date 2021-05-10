@@ -1,0 +1,38 @@
+Daily Challenge
+ 
+ProgramID- 11999
+
+function getCommaSeparatedValues
+
+The function/method getCommaSeparatedValues accepts two arguments SIZE and arr. SIZE represents the size of the integer array arr.
+
+The function/method getCommaSeparatedValues must return a string representing the comma separated integer values in the given array.
+
+Your task is to complete the code in the function getCommaSeparatedValues so that it passes all the test cases.
+
+Note: The size of the given array is always valid so that the length of the comma separated values do not exceed 100.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5
+12 854 7 6654 22
+
+Output:
+CSV: 12,854,7,6654,22
+
+Explanation:
+There are 5 integer values in the given array.
+The comma separated values for the array is given below.
+12,854,7,6654,22
+
+Example Input/Output 2:
+Input:
+2
+12 4987
+
+Output:
+CSV: 12,4987
+
+Max Execution Time Limit: 50 millisecs

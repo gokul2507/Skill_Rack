@@ -1,38 +1,56 @@
 Daily Challenge
  
-ProgramID- 11999
+ProgramID- 13203
 
-function getCommaSeparatedValues
+Find Time - Analog Clock
 
-The function/method getCommaSeparatedValues accepts two arguments SIZE and arr. SIZE represents the size of the integer array arr.
+The program must accept a matrix of size 5*5 representing a 12-hour analog clock where the 12 numbers are misplaced. The program also 
+accepts two integers N1 and N2, where N1 represents the number pointed by the hour handle in the given clock and N2 represents the number 
+pointed by the minute handle in the given clock. The program must find the original time for the given values N1, N2 and print the 
+original time in the format HH:MM as the output.
+The 5*5 matrix representation of the original clock is given below. The asterisks in the clock represent the empty spaces.
+* 11 12 1 *
+10 * * * 2
+9 * * * 3
+8 * * * 4
+* 7 6 5 *
 
-The function/method getCommaSeparatedValues must return a string representing the comma separated integer values in the given array.
+Input Format:
+The first 5 lines containing the matrix.
+The 6th line contains N1 and N2 separated by a space.
 
-Your task is to complete the code in the function getCommaSeparatedValues so that it passes all the test cases.
-
-Note: The size of the given array is always valid so that the length of the comma separated values do not exceed 100.
-
-IMPORTANT: Do not write the main() function as it is already defined.
+Output Format:
+The first line contains the original time in the format HH:MM.
 
 Example Input/Output 1:
 Input:
-5
-12 854 7 6654 22
+* 8 9 11 *
+3 * * * 5
+6 * * * 7
+4 * * * 1
+* 2 12 10 *
+8 10
 
 Output:
-CSV: 12,854,7,6654,22
+11:25
 
 Explanation:
-There are 5 integer values in the given array.
-The comma separated values for the array is given below.
-12,854,7,6654,22
+The number pointed by the hour handle is 8 and the number pointed by the minute handle is 10.
+In the original clock, the values of HH and MM are given below.
+HH = 11
+MM = 25
+So 11:25 is printed as the output.
 
 Example Input/Output 2:
 Input:
-2
-12 4987
+* 4 9 1 *
+12 * * * 6
+7 * * * 5
+8 * * * 10
+* 3 2 11 *
+6 7
 
 Output:
-CSV: 12,4987
+02:45
 
 Max Execution Time Limit: 50 millisecs
