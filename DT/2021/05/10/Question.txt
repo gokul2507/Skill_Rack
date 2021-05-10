@@ -1,0 +1,86 @@
+Daily Test
+ 
+ProgramID- 13202
+
+Largest Common Middle Submatrix
+The program must accept two integer matrices of equal size N*N as the input. The program must print the sum of integers in the largest 
+common middle square submatrix in the given two matrices as the output. If there is no such common middle square submatrix, then the 
+program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= N <= 50
+0 <= Matrix element value <= 10^5
+
+Input Format:
+The first line contains N.
+The next N lines, each contains N integer values representing the first matrix.
+The next N lines from the (N+2)th line, each contains N integer values representing the second matrix.
+
+Output Format:
+The first line contains the sum of integers in the largest common middle square submatrix or -1.
+
+Example Input/Output 1:
+Input:
+4
+5 8 8 4
+7 7 9 9
+3 4 6 8
+5 1 1 4
+6 9 8 3
+8 7 9 2
+4 4 6 3
+6 7 5 1
+
+Output:
+26
+
+Explanation:
+The largest common middle submatrix is given below.
+7 9
+4 6
+The sum of integers in the above submatrix is 26 (7 + 9 + 4 + 6).
+So 26 is printed as the output.
+
+Example Input/Output 2:
+Input:
+7
+26 91 37 86 41 35 10
+70 57 92 70 86 79 18
+13 24 10 71 23 32 71
+27 41 16 32 16 95 52
+39 56 16 13 54 30 51
+29 96 14 52 97 50 45
+90 65 49 49 10 51 22
+70 90 15 73 51 64 32
+91 69 15 56 55 72 50
+60 31 10 71 23 91 67
+80 82 16 32 16 57 73
+97 91 16 13 54 77 60
+21 94 95 71 67 91 25
+79 23 53 20 45 34 27
+
+Output:
+251
+
+Explanation:
+The largest common middle submatrix is given below.
+10 71 23
+16 32 16
+16 13 54
+The sum of integers in the above submatrix is 251 (10 + 71 + 23 + 16 + 32 + 16 + 16 + 13 + 54).
+So 251 is printed as the output.
+
+Example Input/Output 3:
+Input:
+3
+1 2 3
+4 5 6
+7 8 9
+1 2 3
+4 0 6
+7 8 9
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
