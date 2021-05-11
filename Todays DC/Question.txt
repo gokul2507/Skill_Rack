@@ -1,0 +1,64 @@
+Daily Challenge
+ 
+ProgramID- 10328
+
+Rotate Corners - Anticlockwise Direction
+
+The program must accept a character matrix of size N*N as the input. For each layer in the matrix, the program must rotate the characters 
+in the four corners by 1 position in anticlockwise direction. Finally, the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+3 <= N <= 50
+
+Input Format:
+The first line contains N.
+The next N lines, each contains N characters separated by a space.
+
+Output Format:
+The first N lines, each contains N characters separated by a space.
+
+Example Input/Output 1:
+Input:
+4
+i k m e
+b h t o
+u r d k
+w d i v
+
+Output:
+e k m v
+b t d o
+u h r k
+i d i w
+
+Explanation:
+There are 2 layers in the given matrix.
+After rotating the values in the four corners of the 1st layer, the matrix becomes
+e k m v
+b h t o
+u r d k
+i d i w
+After rotating the values in the four corners of the 2nd layer, the matrix becomes
+e k m v
+b t d o
+u h r k
+i d i w
+So the above matrix is printed as the output.
+
+Example Input/Output 2:
+Input:
+5
+x R p Y v
+A h W t r
+z W l v e
+g v R I p
+p q C l Z
+
+Output:
+v R p Y Z
+A t W I r
+z W l v e
+g h R v p
+x q C l p
+
+Max Execution Time Limit: 50 millisecs
