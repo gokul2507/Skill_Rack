@@ -1,0 +1,66 @@
+Daily Test
+ 
+ProgramID- 13204
+ 
+Print N Matrices Horizontally
+The program must accept N nonzero digits as the input. For each digit D among the given digits, the program must form a matrix of size 
+D*D containing only D. Then the program must print the N matrices horizontally in the order of their occurrence as the output. The empty 
+spaces must be printed as asterisks.
+
+Boundary Condition(s):
+1 <= N <= 20
+
+Input Format:
+The first line contains N.
+The second line contains N digits separated by a space.
+
+Output Format:
+The first X lines containing the N matrices horizontally in the order of their occurrence (where X represents the maximum value among 
+the given N digits).
+
+Example Input/Output 1:
+Input:
+5
+2 3 1 4 2
+
+Output:
+2 2 3 3 3 1 4 4 4 4 2 2
+2 2 3 3 3 * 4 4 4 4 2 2
+* * 3 3 3 * 4 4 4 4 * *
+* * * * * * 4 4 4 4 * *
+
+Explanation:
+Here N = 5 and the given 5 digits are 2 3 1 4 2.
+So the 5 matrices are printed horizontally based on the given conditions.
+2 2 3 3 3 1 4 4 4 4 2 2
+2 2 3 3 3 * 4 4 4 4 2 2
+* * 3 3 3 * 4 4 4 4 * *
+* * * * * * 4 4 4 4 * *
+
+Example Input/Output 2:
+Input:
+4
+5 8 4 1
+
+Output:
+5 5 5 5 5 8 8 8 8 8 8 8 8 4 4 4 4 1
+5 5 5 5 5 8 8 8 8 8 8 8 8 4 4 4 4 *
+5 5 5 5 5 8 8 8 8 8 8 8 8 4 4 4 4 *
+5 5 5 5 5 8 8 8 8 8 8 8 8 4 4 4 4 *
+5 5 5 5 5 8 8 8 8 8 8 8 8 * * * * *
+* * * * * 8 8 8 8 8 8 8 8 * * * * *
+* * * * * 8 8 8 8 8 8 8 8 * * * * *
+* * * * * 8 8 8 8 8 8 8 8 * * * * *
+
+Example Input/Output 3:
+Input:
+2
+4 2
+
+Output:
+4 4 4 4 2 2
+4 4 4 4 2 2
+4 4 4 4 * *
+4 4 4 4 * *
+
+Max Execution Time Limit: 50 millisecs
