@@ -1,0 +1,55 @@
+Pattern Printing for N Comma Separated Values (Id-1857) 
+
+The below program must print the given array of numbers in the given format for a given size N. 
+The values of N can be 3, 6, 10, 15, 21 and so on. 
+
+Input Format: 
+
+The first line will contain N comma separated integer values. 
+
+Output Format: 
+
+The desired pattern as given below. 
+
+Constraints: 
+
+N = 3, 6, 10, 15, 21, 28, 36, .... but less than 10000. 
+3 <= Length of input string <= 10000000 
+
+Example Input/Output 1: 
+
+Input: 
+
+11,12,13,14,15,16 
+
+Output: 
+
+11 
+12 14 
+13 15 16 
+
+Example Input/Output 2: 
+
+Input: 
+
+11,12,13,14,15,16,17,18,19,20 
+
+Output: 
+
+11 
+12 15 
+13 16 18 
+14 17 19 20 
+
+Example Input/Output 3: 
+
+Input: 
+
+100,201,555 
+
+Output: 
+
+100 
+201 555 
+
+Max Execution Time Limit: 5000 millisecs

@@ -1,0 +1,21 @@
+String - Remove Vowels (Id-3118)
+
+Given a string S, the method removeVowels must remove all the vowels present in the string S.
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The string value with the vowels removed.
+
+Boundary Conditions:
+2 <= LENGTH(S) <= 100
+
+Example Input/Output 1:
+Input:
+AppLe
+
+Output:
+ppL
+
+Max Execution Time Limit: 5000 millisecs

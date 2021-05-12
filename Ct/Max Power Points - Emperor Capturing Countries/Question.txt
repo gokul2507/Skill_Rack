@@ -1,0 +1,46 @@
+Max Power Points - Emperor Capturing Countries (Id-2984)
+
+An emperor wages war against other countries and always emerges victorious. When he wins he acquires some power points which depends on the country which has lost and 
+also on the countries adjacent to the losing country. Assume the countries are in a straight line adjacent to each other and the emperor starts with zero power points to 
+begin with. Each country is assigned a certain number which represents the power point of the country.
+When the emperor defeats Country  N, the power points acquired is equal to the product of PowerPoints of Country(N-1) * PowerPoints of Country(N) * PowerPoints of Country(N+1).
+If Countries N-1 or N+1 does not exist, then consider their power points to be 1.
+The emperor can conquer the countries in any order but can conquer any given country only once. The program must print the maximum power points MAXPP that can be collected 
+by the emperor in defeating these N countries.
+
+Input Format:
+The first line contains N.
+The second line contains the power points PP(i) of N countries separated by a space.
+
+Output Format:
+The first line contains MAXPP
+
+Boundary Conditions:
+2 <= N <= 200
+1 <= PP <= 10
+1 <= MAXPP <= 9999999
+
+Example Input/Output 1:
+Input:
+4
+2 1 4 9
+
+Output:
+107
+Explanation:
+The emperor defeats the countries in the following sequence based on the power points - 1, 4, 2, 9
+So when he defeats the country with power point 1, he gets 2*1*4 = 8 PPs. Now the remaining countries power points are 2 4 9.
+So when he defeats the country with power point 4, he gets 2*4*9 = 72 PPs. Now the remaining countries power points are 2 9.
+Now when he defeats the country with power point 2, he gets 1*2*9 = 18 PPs. (As there is no country to the left, we multiply it by 1). Now only the country with power 
+point 9 is left.
+So when he defeats the last country with PP 9, he gets 1*9*1 = 9 PPs. (As there are no countries on the left or right we multiply by 1).
+So total PPs = 8+72+18+9 = 107).
+You can verify no other sequence gives power points more than 107.
+Example Input/Output 2:
+Input:
+2
+5 9
+Output:
+54
+
+Max Execution Time Limit: 5000 millisecs

@@ -1,0 +1,41 @@
+Merge Two Arrays [AZ-R1] (Id-2946)
+
+Two Arrays A and B contain M and N elements sorted in non-decreasing order. The program must merge the two Arrays into a single non-decreasing Array of size M+N and 
+print the merged Array elements as the output.
+
+Input Format:
+The first line contains M
+Next M lines contain the values for elements in Array A
+Next (M+2)th line contains N
+Next N lines contain the values for elements in Array B
+
+Output Format:
+M+N lines containing the elements in the merged Array in non decreasing order.
+
+Boundary Conditions:
+1 <= M,N <= 20
+
+Example Input/Output 1:
+Input:
+4
+1
+5
+7
+7
+4
+0
+1
+2
+3
+
+Output:
+0
+1
+1
+2
+3
+5
+7
+7
+ 
+Max Execution Time Limit: 5000 millisecs

@@ -1,0 +1,34 @@
+Sum of N Integers - Even Reversed (Id-2931)
+
+The program must accept N integers and print the sum S of all POSITIVE integers with the even positive integers reversed.
+
+Input Format:
+The first line will contain N.
+The second line will contain N integers separated by a space.
+
+Output Format:
+The first line will contain S.
+
+Boundary Conditions:
+1 <= N <= 100000
+
+Example Input/Output 1:
+Input:
+4
+39 -8 57 24
+
+Output:
+138
+
+Explanation:
+The sum = 39+57+42 = 138 (The even number 24 is reversed)
+
+Example Input/Output 2:
+Input:
+3
+-23 -11 -445
+
+Output:
+0
+
+Max Execution Time Limit: 5000 millisecs

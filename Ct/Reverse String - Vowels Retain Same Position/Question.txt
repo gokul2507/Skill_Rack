@@ -1,0 +1,21 @@
+Reverse String - Vowels Retain Same Position (Id-2939)
+
+Given a string S1 as the input, the program must reverse the string, keeping the vowels in the same position.
+
+Input Format:
+The first line contains S1
+
+Output Format:
+The first line contains S1 reversed with vowels retaining the same position.
+
+Boundary Conditions:
+1 <= Length of S1 <= 1000
+
+Example Input/Output 1:
+Input:
+abhcezjqu
+
+Output:
+aqjzechbu
+
+Max Execution Time Limit: 5000 millisecs
