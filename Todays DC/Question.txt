@@ -1,0 +1,48 @@
+Daily Challenge
+ 
+ProgramID- 12677
+
+function getThreeOrFourDigits
+The function/method getThreeOrFourDigits accepts two arguments - SIZE and arr. SIZE represents the size of the integer array arr.
+
+The function/method getThreeOrFourDigits must return an array of integers containing the three-digit or four-digit integers in the given 
+array arr. If there is no such integer in the given array arr, then the function must return an array of size 1 with the value -1.
+
+Your task is to implement the function getThreeOrFourDigits so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+6
+34 124 4 3400 2020 505
+
+Output:
+Old Array: 34 124 4 3400 2020 505
+New Array: 124 3400 2020 505
+
+Explanation:
+Here N = 6.
+The three-digit or four-digit integers in the given array are 124, 3400, 2020 and 505.
+So the returned array contains the following 4 integers
+124 3400 2020 505
+
+Example Input/Output 2:
+Input:
+5
+12 57 1 58 19087
+
+Output:
+Old Array: 12 57 1 58 19087
+New Array: -1
+
+Max Execution Time Limit: 50 millisecs
