@@ -1,0 +1,44 @@
+Daily Challenge ProgramID- 13207
+String Decryption - Character Position
+The program must accept a string S (encrypted string) as the input. The encryption algorithm used to form the string S is given below.
+- Each character in the original string is combined with its position on the left or right side.
+- After combining all the characters with their positions in the original string, they are shuffled and separated by a hyphen.
+The program must find the original string by decrypting the given string S. Then the program must print the original string as the output.
+
+Boundary Condition(s):
+5 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the original string.
+
+Example Input/Output 1:
+Input:
+4l-9k-R6-7a-k2-3i-S1-l5-8c
+
+Output:
+SkillRack
+
+Explanation:
+The encrypted string is 4l-9k-R6-7a-k2-3i-S1-l5-8c.
+The position of l is 4.
+The position of k is 9.
+The position of R is 6.
+The position of a is 7.
+The position of k is 2.
+The position of i is 3.
+The position of S is 1.
+The position of l is 5.
+The position of c is 8.
+After decrypting the given string, the original string is formed as SkillRack.
+So SkillRack is printed as the output.
+
+Example Input/Output 2:
+Input:
+6n-4t-1C-o2-d10-11y-t3-8a-o5-7C-n9
+
+Output:
+CottonCandy
+Max Execution Time Limit: 50 millisecs
