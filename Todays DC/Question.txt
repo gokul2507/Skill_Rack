@@ -1,0 +1,79 @@
+Daily Challenge
+ 
+ProgramID- 13209
+
+function addTwoMatrices
+
+The function/method addTwoMatrices accepts four arguments - R, C, matrix1 and matrix2. The matrix1 represents a pointer to a two-
+dimensional array and the matrix2 represents a pointer to another two-dimensional array. Both matrices have the same size R*C.
+
+The function/method addTwoMatrices must return a double pointer representing an integer matrix of size R*C which contains the sum of the 
+given two matrices.
+
+Your task is to implement the function addTwoMatrices so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+2 3
+9 7 4
+2 8 6
+8 5 4
+2 7 1
+
+Output:
+Matrix 1:
+9 7 4
+2 8 6
+Matrix 2:
+8 5 4
+2 7 1
+Matrix Sum:
+17 12 8
+4 15 7
+
+Explanation:
+Here R = 2 and C = 3.
+The sum of the given two matrices is obtained by adding the integers values at the same position.
+9+8 7+5 4+4
+2+2 8+7 6+1
+Hence the output is
+17 12 8
+4 15 7
+
+Example Input/Output 2:
+Input:
+5 4
+19 3 18 4
+21 13 2 10
+7 14 24 25
+19 8 20 5
+13 19 3 7
+4 6 2 6
+2 5 9 2
+1 4 4 9
+7 6 1 1
+2 5 8 5
+
+Output:
+Matrix 1:
+19 3 18 4
+21 13 2 10
+7 14 24 25
+19 8 20 5
+13 19 3 7
+Matrix 2:
+4 6 2 6
+2 5 9 2
+1 4 4 9
+7 6 1 1
+2 5 8 5
+Matrix Sum:
+23 9 20 10
+23 18 11 12
+8 18 28 34
+26 14 21 6
+15 24 11 12
+
+Max Execution Time Limit: 50 millisecs
