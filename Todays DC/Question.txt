@@ -1,79 +1,45 @@
 Daily Challenge
  
-ProgramID- 13209
+ProgramID- 13210
 
-function addTwoMatrices
+Define class Person
 
-The function/method addTwoMatrices accepts four arguments - R, C, matrix1 and matrix2. The matrix1 represents a pointer to a two-
-dimensional array and the matrix2 represents a pointer to another two-dimensional array. Both matrices have the same size R*C.
+The below Java program accepts the name, the weight(in kilograms) and the height(in meters) of a person. Then the program calculates 
+the Body Mass Index (BMI) of the person and prints the output as given in the Example Input/Output section. Please define the class 
+Person so that the program runs successfully.
+Note: The height of the person must be printed with the precision up to 2 decimal places. The BMI of the person must be printed with 
+the precision up to 1 decimal place.
 
-The function/method addTwoMatrices must return a double pointer representing an integer matrix of size R*C which contains the sum of the 
-given two matrices.
-
-Your task is to implement the function addTwoMatrices so that it passes all the test cases.
-
-IMPORTANT: Do not write the main() function as it is already defined.
+Formula: BMI = Weight/(Height*Height)
 
 Example Input/Output 1:
 Input:
-2 3
-9 7 4
-2 8 6
-8 5 4
-2 7 1
+Hector
+80 1.65
 
 Output:
-Matrix 1:
-9 7 4
-2 8 6
-Matrix 2:
-8 5 4
-2 7 1
-Matrix Sum:
-17 12 8
-4 15 7
+Name: Hector
+Weight: 80 kg
+Height: 1.65 m
+BMI: 29.4
 
 Explanation:
-Here R = 2 and C = 3.
-The sum of the given two matrices is obtained by adding the integers values at the same position.
-9+8 7+5 4+4
-2+2 8+7 6+1
+The Body Mass Index (BMI) of the person is 29.4 (80 / (1.65*1.65)).
 Hence the output is
-17 12 8
-4 15 7
+Name: Hector
+Weight: 80 kg
+Height: 1.65 m
+BMI: 29.4
 
 Example Input/Output 2:
 Input:
-5 4
-19 3 18 4
-21 13 2 10
-7 14 24 25
-19 8 20 5
-13 19 3 7
-4 6 2 6
-2 5 9 2
-1 4 4 9
-7 6 1 1
-2 5 8 5
+Jhanvi
+45 1.5
 
 Output:
-Matrix 1:
-19 3 18 4
-21 13 2 10
-7 14 24 25
-19 8 20 5
-13 19 3 7
-Matrix 2:
-4 6 2 6
-2 5 9 2
-1 4 4 9
-7 6 1 1
-2 5 8 5
-Matrix Sum:
-23 9 20 10
-23 18 11 12
-8 18 28 34
-26 14 21 6
-15 24 11 12
+Name: Jhanvi
+Weight: 45 kg
+Height: 1.50 m
+BMI: 20.0
 
 Max Execution Time Limit: 50 millisecs
