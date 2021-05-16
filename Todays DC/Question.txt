@@ -1,0 +1,63 @@
+Daily Challenge
+ 
+ProgramID- 11448
+
+Zig-Zag Product Row
+The program must accept an integer matrix of size R*C and two integers X, Y as the input. The program must print the product of the 
+integers in the Xth row (left to right) and Yth row (right to left) as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 100
+1 <= Matrix element value <= 100
+1 <= X, Y <= R
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)th line contains X and Y separated by a space.
+
+Output Format:
+The first line contains C integers based on the given conditions.
+
+Example Input/Output 1:
+Input:
+4 6
+1 1 5 3 3 2
+7 4 3 7 6 8
+9 9 5 2 3 9
+8 1 6 9 3 7
+2 4
+
+Output:
+49 12 27 42 6 64
+
+Explanation:
+Here X = 2 and Y = 4.
+The second row of the matrix contains 7 4 3 7 6 8.
+The fourth row of the matrix contains 8 1 6 9 3 7.
+The product of the integers in the 2nd row (left to right) and 4th row (right to left) is given below.
+(7*7) (4*3) (3*9) (7*6) (6*1) (8*8) = 49 12 27 42 6 64
+
+Example Input/Output 2:
+Input:
+7 4
+10 20 30 40
+83 85 46 94
+14 78 84 14
+56 99 25 35
+12 85 27 25
+50 60 70 80
+54 36 55 51
+6 1
+
+Output:
+2000 1800 1400 800
+
+Explanation:
+Here X = 6 and Y = 1.
+The sixth row of the matrix contains 50 60 70 80.
+The first row of the matrix contains 10 20 30 40.
+The product of the integers in the 6th row (left to right) and 1st row (right to left) is given below.
+(50*40) (60*30) (70*20) (80*10) = 2000 1800 1400 800
+
+Max Execution Time Limit: 50 millisecs
