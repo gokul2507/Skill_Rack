@@ -1,0 +1,76 @@
+Daily Test
+ 
+ProgramID- 10269
+
+Alternate Alphanumeric Rows
+The program must accept an integer N as the input. The program must form an integer matrix M1 of size N*N using the sequence of N*N 
+integers from 1 to N*N. Then the program must form a character matrix M2 of size N*N using the sequence of N*N lower case alphabets 
+from a to z circularly (i.e., after the alphabet z, the sequence again starts from the alphabet a). The program must print the output 
+based on the following conditions.
+- If N is odd, then the program must print the 1st row of M1, 2nd row of M2, 3rd row of M1, 4th row of M2, and so on.
+- If N is even, then the program must print the 1st row of M2, 2nd row of M1, 3rd row of M2, 4th row of M1, and so on.
+
+Boundary Condition(s):
+1 <= N <= 100
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first N lines, each contains N values (integers or alphabets) separated by a space.
+
+Example Input/Output 1:
+Input:
+3
+
+Output:
+1 2 3
+d e f
+7 8 9
+
+Explanation:
+Here N = 3 which is an odd integer.
+The 3*3 integer matrix is given below.
+1 2 3
+4 5 6
+7 8 9
+The 3*3 character matrix is given below.
+a b c
+d e f
+g h i
+In the 1st line, the integers 1 2 3 are printed.
+In the 2nd line, the alphabets d e f are printed.
+In the 3rd line, the integers 7 8 9 are printed.
+
+Example Input/Output 2:
+Input:
+8
+
+Output:
+a b c d e f g h
+9 10 11 12 13 14 15 16
+q r s t u v w x
+25 26 27 28 29 30 31 32
+g h i j k l m n
+41 42 43 44 45 46 47 48
+w x y z a b c d
+57 58 59 60 61 62 63 64
+
+Example Input/Output 3:
+Input:
+11
+
+Output:
+1 2 3 4 5 6 7 8 9 10 11
+l m n o p q r s t u v
+23 24 25 26 27 28 29 30 31 32 33
+h i j k l m n o p q r
+45 46 47 48 49 50 51 52 53 54 55
+d e f g h i j k l m n
+67 68 69 70 71 72 73 74 75 76 77
+z a b c d e f g h i j
+89 90 91 92 93 94 95 96 97 98 99
+v w x y z a b c d e f
+111 112 113 114 115 116 117 118 119 120 121
+
+Max Execution Time Limit: 50 millisecs
