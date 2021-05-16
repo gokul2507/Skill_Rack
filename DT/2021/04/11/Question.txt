@@ -1,0 +1,63 @@
+Daily Test ProgramID- 12701 
+Combine Two Matrices - Horizontally 
+The program must accept two integer matrices M1 and M2 are of equal size R*C as the input. 
+If the first row or the last row of M2 occurs in M1, then the program must combine the given two matrices horizontally based on that row. 
+Finally, the program must print the combined matrix as the output. The sum of integers must be printed in the common part of the combined matrix. 
+Note: There is always only one way to combine the given two matrices (i.e., Either the first row or the last row of M2 is always present in M1). 
+
+Boundary Condition(s): 2 <= R, C <= 50 
+
+Input Format: 
+The first line contains R and C separated by a space. 
+The next R lines, each contains C integers representing M1. 
+The next R lines from the (R+2)th line, each contains C integers representing M2. 
+
+Output Format: 
+The lines, each contains C integers representing the combined matrix. 
+
+Example Input/Output 1: 
+Input: 5 6 
+47 23 22 62 71 97
+36 39 73 31 41 59
+95 47 98 44 28 13
+42 26 35 71 77 94
+99 95 29 36 69 56
+95 47 98 44 28 13
+39 94 18 47 47 97
+21 51 57 78 96 11
+27 42 62 95 32 31
+33 28 72 84 47 15
+
+Output:
+47 23 22 62 71 97
+36 39 73 31 41 59
+190 94 196 88 56 26
+81 120 53 118 124 191
+120 146 86 114 165 67
+27 42 62 95 32 31
+33 28 72 84 47 15
+Explanation: 
+The 1st row of M2 occurs in the 3rd row of M1.
+So the given matrices are combined horizontally based on the 3rd row of M1.
+
+Example Input/Output 2:
+Input:
+4 4
+8 5 3 1
+3 5 5 7
+5 3 7 2
+6 9 2 1
+6 1 2 5
+9 9 2 8
+5 7 8 1
+8 5 3 1
+Output:
+6 1 2 5
+9 9 2 8
+5 7 8 1
+16 10 6 2
+3 5 5 7
+5 3 7 2
+6 9 2 1
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,63 @@
+Daily Test ProgramID- 12680 
+
+Reconstruction of Buildings - Increase Height
+The program must accept an integer matrix of size R*C representing the heights of R*C buildings as the input. If the height is 0, then it indicates that there is no building. The building owners want to reconstruct the buildings by increasing the height as much as possible, but they are not allowed to increase the height above the tallest building in its row and column. If a building is the tallest building in its row or column, it is not allowed for reconstruction. The program must print the heights of the R*C buildings after the reconstruction as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+0 <= Height of each building <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+
+Output Format:
+The first R lines, each contains C integers separated by a space.
+
+Example Input/Output 1:
+Input:
+4 4
+4 0 9 5
+3 5 6 8
+10 3 7 4
+0 4 2 0
+
+Output:
+9 0 9 8
+8 5 8 8
+10 5 9 8
+0 4 4 0
+
+Explanation:
+The tallest building in each row is highlighted below.
+4 0 9 5
+3 5 6 8
+10 3 7 4
+0 4 2 0
+The tallest building in each column is highlighted below.
+4 0 9 5
+3 5 6 8
+10 3 7 4
+0 4 2 0
+After constructing the buildings based on the given conditions, the heights of the buildings become
+9 0 9 8
+8 5 8 8
+10 5 9 8
+0 4 4 0
+
+Example Input/Output 2:
+Input:
+5 6
+5 3 8 0 7 6
+9 3 6 4 7 9
+3 4 6 4 6 5
+8 6 7 2 4 5
+4 2 1 3 9 8
+
+Output:
+8 6 8 0 8 8
+9 6 8 4 9 9
+6 6 6 4 6 6
+8 6 8 4 8 8
+9 6 8 4 9 9
+Max Execution Time Limit: 50 millisecs

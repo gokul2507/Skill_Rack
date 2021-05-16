@@ -1,0 +1,91 @@
+Daily Challenge   Program Id-12940
+
+String Matrix to Character Matrix 
+
+The program must accept a matrix of size RxC containing only words as the input. All words in the matrix have the same length as 9. 
+The program must form a character matrix of size (R*3)x(C*3) by expanding the each word to a 3*3 character matrix based on the following conditions. 
+- The 1st row of the 3*3 matrix must be formed using the first 3 characters of the word. 
+- The 2nd row of the 3*3 matrix must be formed using the middle 3 characters of the word. 
+- The 3rd row of the 3*3 matrix must be formed using the last 3 characters of the word. 
+Finally, the program must print the character matrix as the output. 
+
+Boundary Condition(s): 
+1 <= R, C <= 50 
+
+Input Format: 
+
+The first line contains R and C separated by a space. The next R lines, each contains C words separated by a space. 
+
+Output Format: 
+
+The first R*3 lines, each contains C*3 characters separated by a space. 
+
+Example Input/Output 1: 
+
+Input: 
+
+3 3 
+skillrack chocolate IMPORTANT 
+Knowledge Seventeen vegetable 
+Crocodile nutrition Fireboard 
+
+Output: 
+
+s k i c h o I M P 
+l l r c o l O R T 
+a c k a t e A N T 
+K n o S e v v e g 
+w l e e n t e t a 
+d g e e e n b l e 
+C r o n u t F i r 
+c o d r i t e b o 
+i l e i o n a r d 
+
+Explanation: 
+
+Here R = 3 and C = 3. 
+The word skillrack is expanded to a 3x3 character matrix as given below. 
+s k i 
+l l r 
+a c k 
+The word chocolate is expanded to a 3x3 character 
+matrix as given below. 
+c h o 
+c o l 
+a t e 
+
+Similarly the remaining words are expanded to 3x3 character matrices. 
+Hence the output is 
+
+s k i c h o I M P 
+l l r c o l O R T 
+a c k a t e A N T 
+K n o S e v v e g 
+w l e e n t e t a 
+d g e e e n b l e 
+C r o n u t F i r 
+c o d r i t e b o 
+i l e i o n a r d 
+
+Example Input/Output 2: 
+
+Input: 
+
+3 4 
+Challenge irregular PINEAPPLE  halloween 
+affection NUTRITION Crocodile beginning 
+CONFUSION celebrity Delicious LIGHTNING 
+
+Output: 
+
+C h a i r r P I N h a l 
+l l e e g u E A P l o w 
+n g e l a r P L E e e n 
+a f f N U T C r o b e g 
+e c t R I T c o d i n n 
+i o n I O N i l e i n g 
+C O N c e l D e l L I G 
+F U S e b r i c i H T N 
+I O N i t y o u s I N G 
+
+Max Execution Time Limit: 50 millisecs

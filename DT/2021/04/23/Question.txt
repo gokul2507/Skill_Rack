@@ -1,0 +1,47 @@
+Daily Test
+ 
+ProgramID- 12578
+
+Unique Ranges
+The program must accept N unique integers which are sorted (in either ascending or descending order) and print the ranges present.
+
+Boundary Condition(s):
+1 <= N <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+
+Output Format:
+The first line contains the ranges separated by a space.
+
+Example Input/Output 1:
+Input:
+8
+0 1 2 3 4 6 7 9
+
+Output:
+0-4 6-7 9-9
+
+Explanation:
+The integers in the range 0-4 are 0, 1, 2, 3 and 4.
+The integers in the range 6-7 are 6 and 7.
+The only integer in the range 9-9 is 9.
+
+Example Input/Output 2:
+Input:
+6
+6 5 4 3 2 1
+
+Output:
+1-6
+
+Example Input/Output 3:
+Input:
+8
+9 7 6 4 3 2 1 0
+
+Output:
+9-9 6-7 0-4
+
+Max Execution Time Limit: 50 millisecs

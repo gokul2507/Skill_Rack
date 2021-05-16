@@ -1,0 +1,31 @@
+Array Values - Square of Unit Digit (Id-5667)
+
+Given a set of N positive integers, the program must print the square of the unit digit of the N integers as the output.
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by space.
+
+Output Format:
+The first line contains  the square of the unit digit of the N integers separated by a space.
+
+Boundary Conditions:
+1 <= N <= 1000
+
+Example Input/Output 1:
+Input:
+5
+112 324 87 100 21
+
+Output:
+4 16 49 0 1
+
+Example Input/Output 2:
+Input:
+3
+145 83 906
+
+Output:
+25 9 36
+
+Max Execution Time Limit: 5000 millisecs

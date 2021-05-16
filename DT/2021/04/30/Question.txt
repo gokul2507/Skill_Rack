@@ -1,0 +1,59 @@
+Daily Test
+ 
+ProgramID- 13155
+
+Sort Columns - Embedded Alphabets
+The program must accept a matrix of size R*C as the input. Each element in the matrix represents an integer and it contains a lower case alphabet. The program must sort 
+the integer values in the columns based on the alphabets. If two or more elements in a column have the same alphabet, then the program must sort those integers in ascending 
+order. Finally, the program must print the sum of integers in each row as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 1000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines containing the matrix.
+
+Output Format:
+The first R lines, each contains an integer.
+
+Example Input/Output 1:
+Input:
+4 3
+9c7 5s2 p661
+690d 7k9 q41
+a38 3i75 67p
+8b0 90m 5p74
+
+Output:
+480
+733
+848
+783
+
+Explanation:
+After sorting the integer values in the columns based on the given conditions, the matrix becomes
+38 375 67
+80 79 574
+97 90 661
+690 52 41
+So the sum of integers in each row of the above matrix is printed as the output.
+
+Example Input/Output 2:
+Input:
+5 4
+1h1 r95 h40 35z
+i84 c33 56h 2r4
+4d2 87p 7h9 s88
+10u 59c 23h 71v
+82n 9c5 h38 n82
+
+Output:
+180
+132
+307
+296
+219
+
+Max Execution Time Limit: 50 millisecs

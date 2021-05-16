@@ -1,0 +1,84 @@
+Daily Test
+ 
+ProgramID- 12956
+ 
+Submatrices - Reverse Columns
+The program must accept a character matrix of size R*C and an integer K as the input. The values of R and C are always divisible by K. The program must divide the 
+given R*C matrix into non-overlapping submatrices of equal size K*K. Then the program must reverse the columns in the submatrices having a vowel in the bottom-right corner. 
+Finally, the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+4 <= R, C <= 50
+2 <= K <= 25
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains K.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+9 12
+k b q O v e v j i d j F
+U e q b q y h u W O D Z
+U y N g B A l n R s N h
+x J G z P J e w l d s M
+J v h w Z b C z s Q s Q
+F l q q F E l J u g p j
+d i L V r h L t Q h K e
+k G e Y X I D A J K F I
+I L o f E B s i I c Y h
+3
+
+Output:
+k b q g B A v j i d j F
+U e q b q y h u W O D Z
+U y N O v e l n R s N h
+x J G q F E l J u d s M
+J v h w Z b C z s Q s Q
+F l q z P J e w l g p j
+I L o V r h s i I h K e
+k G e Y X I D A J K F I
+d i L f E B L t Q c Y h
+
+Explanation:
+Here K = 3, all the 3*3 submatrices having a vowel in the bottom-right corner are highlighted below.
+k b q O v e v j i d j F
+U e q b q y h u W O D Z
+U y N g B A l n R s N h
+x J G z P J e w l d s M
+J v h w Z b C z s Q s Q
+F l q q F E l J u g p j
+d i L V r h L t Q h K e
+k G e Y X I D A J K F I
+I L o f E B s i I c Y h
+After reversing the columns in the submatrices, the matrix becomes
+k b q g B A v j i d j F
+U e q b q y h u W O D Z
+U y N O v e l n R s N h
+x J G q F E l J u d s M
+J v h w Z b C z s Q s Q
+F l q z P J e w l g p j
+I L o V r h s i I h K e
+k G e Y X I D A J K F I
+d i L f E B L t Q c Y h
+
+Example Input/Output 2:
+Input:
+4 6
+B a t w U f
+k o O p Y Z
+J V I D g N
+t r K E S a
+2
+
+Output:
+k o t w U f
+B a O p Y Z
+J V K E S a
+t r I D g N
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,70 @@
+Daily Test
+ 
+ProgramID- 12669
+ 
+Abacus - 8 Wires & 5 Beads
+In a certain type of abacus, there are two decks (upper deck and lower deck). The upper deck has only one bead denoting 5 units. The lower deck has 4 beads where each bead 
+denoting 1 unit. There are 8 wires in that abacus, where each wire represents a place value (8th wire - unit position, 7th wire - tenth position, 6th wire - hundredth 
+position, and so on).
+The program must accept a character matrix of size 8*8 as the input. The alphabet O represents a bead, the pipe symbol | represents the wire and the hypen - represents the 
+dividing line in that abacus. To read the number N from the abacus, the program must find the values for the upper deck and the lower deck using the number of beads that have 
+been moved towards the dividing line. Then the sum of the values in the upper deck and the lower deck gives the number N. Finally, the program must print the value of N as 
+the output.
+
+Input Format:
+The first 8 lines, each contains 8 characters.
+
+Output Format:
+The first line contains N representing the sum of the values in the upper deck and the lower deck.
+
+Example Input/Output 1:
+Input:
+OOO|O||O
+|||O|OO|
+--------
+|||OO||O
+OOOO|OOO
+OOOOOOO|
+OOO|OOOO
+OOOOOOOO
+
+Output:
+81552
+
+Explanation:
+OOO|O||O
+|||O|OO| -> The upper deck value is 50550.
+--------
+|||OO||O -> The lower deck value is 31002.
+OOOO|OOO
+OOOOOOO|
+OOO|OOOO
+OOOOOOOO
+The sum of 50550 and 31002 is 81552, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+OOOOOOO|
+|||||||O
+--------
+||OOOO|O
+OOOOO|OO
+OOOO|OO|
+OOO|OOOO
+OO|OOOOO
+
+Output:
+432107
+
+Explanation:
+OOOOOOO|
+|||||||O -> The upper deck value is 5.
+--------
+||OOOO|O -> The lower deck value is 432102.
+OOOOO|OO
+OOOO|OO|
+OOO|OOOO
+OO|OOOOO
+The sum of 5 and 432102 is 432107, which is printed as the output.
+
+Max Execution Time Limit: 50 millisecs

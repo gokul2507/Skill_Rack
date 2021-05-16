@@ -1,0 +1,66 @@
+Boy Wall Climbing 
+The program must accept an integer matrix of size R*C containing only 0s and 1s as the input. 
+Each column in the matrix represents a wall, where 0 represents empty space and 1 represents brick. A boy is standing on the 1st wall. 
+He can climb UP or DOWN one brick at a time or he can WALK on the same level. To stand on a wall, the boy needs at least one empty space above the wall. 
+The program must print YES if he can reach the last wall. Else the program must print NO as the output. 
+
+Boundary Condition(s): 
+2 <= R, C <= 50 
+
+Input Format: 
+The first line contains R and C separated by a space. The next R lines, each contains C integers separated by a space. 
+
+Output Format: 
+The first line contains YES or NO. 
+
+Example Input/Output 1: 
+Input: 
+6 10 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 1 1 1 0 
+0 0 1 0 0 1 1 1 1 1 
+0 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+
+Output: 
+YES 
+
+Explanation: 
+Here R = 6 and C = 10 The bricks are highlighted in the matrix given below. 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 1 1 1 0 
+0 0 1 0 0 1 1 1 1 1 
+0 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Initially the boy is standing on the 1st wall. The boy can reach the last wall based on the given conditions. 
+UP -> UP -> DOWN -> WALK -> UP -> UP -> UP -> DOWN -> DOWN So YES is printed as the output. 
+
+Example Input/Output 2: 
+Input: 
+5 8 
+0 0 0 0 1 0 0 0 
+1 0 0 0 1 1 0 0 
+1 1 1 1 1 1 1 0 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+
+Output: 
+NO 
+
+Example Input/Output 3: 
+Input: 
+7 7 
+0 0 1 0 0 0 0 
+1 1 1 1 0 0 0 
+1 1 1 1 1 0 0 
+1 1 1 1 1 1 0 
+1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 
+
+Output: 
+NO 
+
+Max Execution Time Limit: 50 millisecs

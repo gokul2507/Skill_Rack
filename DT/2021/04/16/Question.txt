@@ -1,0 +1,139 @@
+Daily Test
+ 
+ProgramID- 12967
+
+String Values - Alphabetical Order
+The program must accept N string values as the input. The program must print the output based on the following conditions.
+- The program must print all the characters from the first occurrence of "a" in the 1st string.
+- The program must print all the characters from the first occurrence of "b" in the 2nd string.
+- The program must print all the characters from the first occurrence of "c" in the 3rd string.
+- The program must print all the characters from the first occurrence of "d" in the 4th string.
+- Similarly, the program must print the characters in the remaining string values.
+- If "z" has reached while printing the string values then "a" must be considered as the next alphabet in circular fashion.
+Note:
+- In each string, at least one occurrence of each English alphabet is always present.
+- Ignore the case of alphabets while finding the first occurrence of an alphabet in a string.
+
+Boundary Condition(s):
+1 <= N <= 1000
+26 <= Length of each string <= 1000
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+
+Output Format:
+The first N lines, each contains a string value.
+
+Example Input/Output 1:
+Input:
+5
+zxcvbnmasdfghjklqwertyuioplkjhavcbu
+MNBVCXZASDFGHJKLQWERTPOIUY
+qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTBYHN
+ddddDDDabcdefghijklmnopqrstuvwxyz
+ABCDFGHIJKLMNOPQRSTUVWXYZE
+
+Output:
+asdfghjklqwertyuioplkjhavcbu
+BVCXZASDFGHJKLQWERTPOIUY
+crfvtgbyhnujmikolpQAZWSXEDCRFVTBYHN
+ddddDDDabcdefghijklmnopqrstuvwxyz
+E
+
+Explanation:
+In the 1st string, the characters from the first occurrence of "a" are asdfghjklqwertyuioplkjhavcbu.
+In the 2nd string, the characters from the first occurrence of "b" are BVCXZASDFGHJKLQWERTPOIUY.
+In the 3rd string, the characters from the first occurrence of "c" are crfvtgbyhnujmikolpQAZWSXEDCRFVTBYHN.
+In the 4th string, the characters from the first occurrence of "d" are ddddDDDabcdefghijklmnopqrstuvwxyz.
+In the 5th string, the character from the first occurrence of "e" is E.
+
+Example Input/Output 2:
+Input:
+8
+TYSAPMQVIFJCXHxEZWNGVKROUCDLB
+ZXNQHEMLFGILHOCJRVBTPSbAYDKAUECWMe
+JDIXQHZONEGsAYUUWPajCBSFKVJRTMuL
+ROkSNIETLBXPKqUMCDxJXTWnDVYrHTBGQZAF
+WsXEBDMYHPTQKSNGYAOFZVIUJRCWLV
+FBSNLRIAFMRPhDCHtVXOEBQGYJUTKWZ
+urmcpdiofbyqvothswKaxzlegIkjn
+LMEWBZKPDoSJJTRFGUvNmOIAHYQVCbKX
+
+Output:
+APMQVIFJCXHxEZWNGVKROUCDLB
+BTPSbAYDKAUECWMe
+CBSFKVJRTMuL
+DxJXTWnDVYrHTBGQZAF
+EBDMYHPTQKSNGYAOFZVIUJRCWLV
+FBSNLRIAFMRPhDCHtVXOEBQGYJUTKWZ
+gIkjn
+HYQVCbKX
+
+Example Input/Output 3:
+Input:
+30
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+Output:
+abcdefghijklmnopqrstuvwxyz
+BCDEFGHIJKLMNOPQRSTUVWXYZ
+cdefghijklmnopqrstuvwxyz
+DEFGHIJKLMNOPQRSTUVWXYZ
+efghijklmnopqrstuvwxyz
+FGHIJKLMNOPQRSTUVWXYZ
+ghijklmnopqrstuvwxyz
+HIJKLMNOPQRSTUVWXYZ
+ijklmnopqrstuvwxyz
+JKLMNOPQRSTUVWXYZ
+klmnopqrstuvwxyz
+LMNOPQRSTUVWXYZ
+mnopqrstuvwxyz
+NOPQRSTUVWXYZ
+opqrstuvwxyz
+PQRSTUVWXYZ
+qrstuvwxyz
+RSTUVWXYZ
+stuvwxyz
+TUVWXYZ
+uvwxyz
+VWXYZ
+wxyz
+XYZ
+yz
+Z
+abcdefghijklmnopqrstuvwxyz
+BCDEFGHIJKLMNOPQRSTUVWXYZ
+cdefghijklmnopqrstuvwxyz
+DEFGHIJKLMNOPQRSTUVWXYZ
+
+Max Execution Time Limit: 50 millisecs

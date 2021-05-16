@@ -1,0 +1,50 @@
+Daily Challenge
+ 
+ProgramID- 13201
+
+Longest Common Middle Substring
+The program must accept two string values S1 and S2 as the input. The program must print the longest common middle substring in the given 
+two string values as the output. If there is no such substring, then the program must print -1 as the output.
+Note: The lengths of S1 and S2 are always odd.
+
+Boundary Condition(s):
+3 <= Length of S1, S2 <= 99
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The first line contains the longest common middle substring or -1.
+
+Example Input/Output 1:
+Input:
+doglionlizard
+absolutionlizagging
+
+Output:
+ionli
+
+Explanation:
+The longest common middle substring is highlighted below
+S1 = doglionlizard
+S2 = absolutionlizagging
+So ionli is printed as the output.
+
+Example Input/Output 2:
+Input:
+CELEBRATE
+millets
+
+Output:
+-1
+
+Example Input/Output 3:
+Input:
+numbersgame
+meterSONG
+
+Output:
+r
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,72 @@
+Daily Test
+ 
+ProgramID- 13002
+
+String Values with Matrix Element
+The program must accept an integer matrix of size R*C containing unique integers and R*C string values as the input. Each string contains the matrix element at the 
+beginning or end. The program must print the string values in the matrix format based on the following conditions.
+- If a string has the matrix element at its beginning, then the string must be printed in the position of the matrix element.
+- If a string has the matrix element at its end, then the reverse of the string must be printed in the position of the matrix element.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^4
+2 <= Length of each string <= 25
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+The next R*C lines from the (R+2)nd line, each contains a string value.
+
+Output Format:
+The first R lines, each contains C string values separated by a space.
+
+Example Input/Output 1:
+Input:
+2 3
+73 37 84
+72 19 88
+72jackfruit
+73apple
+egnaro88
+37mango
+separg19
+84pineapple
+
+Output:
+apple mango pineapple
+jackfruit grapes orange
+
+Explanation:
+The string 72jackfruit contains 72 at its beginning, so jackfruit is printed in the position of 72.
+The string 73apple contains 73 at its beginning, so apple is printed in the position of 73.
+The string egnaro88 contains 88 at its end, so orange is printed in the position of 88.
+The string 37mango contains 37 at its beginning, so mango is printed in the position of 37.
+The string separg19 contains 19 at its end, so grapes is printed in the position of 19.
+The string 84pineapple contains 84 at its beginning, so pineapple is printed in the position of 84.
+Hence the output is
+apple mango pineapple
+jackfruit grapes orange
+
+Example Input/Output 2:
+Input:
+3 3
+13 25 76
+61 32 10
+36 57 44
+10book
+25NOTE
+licneP44
+repap13
+36Eraser
+57marker
+NEP61
+ssapmoc76
+32scale
+
+Output:
+paper NOTE compass
+PEN scale book
+Eraser marker Pencil
+
+Max Execution Time Limit: 50 millisecs

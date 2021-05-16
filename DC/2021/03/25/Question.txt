@@ -1,0 +1,74 @@
+Daily Challenge  Program Id-12922
+
+Mixed Matrix - Integers & Characters 
+
+The program must accept a matrix of size R*C containing integers and characters as the input. The program must print the sum of all the integers in the given matrix. 
+Then the program must print a string representing the characters in the given matrix. The string must be formed by traversing the columns of the matrix from left to right, 
+where each column must be traversed from top to bottom. Note: At least one character is always present in the given matrix. 
+
+Boundary Condition(s): 
+
+2 <= R, C <= 50 
+1 <= Value of each integer in the matrix <= 1000 
+
+Input Format: 
+
+The first line contains R and C separated by a space. The next R lines, each contains C values (integers and characters) separated by a space. 
+
+Output Format: 
+
+The first line contains an integer representing the sum of all the integers in the matrix. 
+The second line contains a string representing all the characters in the matrix based on the given conditions. 
+
+Example Input/Output 1: 
+
+Input: 
+
+4 5 
+50 i 2 41 7 
+s 47 l 30 a 
+k 41 3 42 c 
+75 l r 79 k 
+
+Output: 
+
+417 
+skillrack 
+
+Explanation: 
+
+The sum of integers in the given matrix is 417 (50 + 2 + 41 + 7 + 47 + 30 + 41 + 3 + 42 + 75 + 79). The string formed using the characters in the given matrix is skillrack. 
+
+Example Input/Output 2: 
+
+Input: 
+
+7 6 
+31 59 76 66 88 37 
+1 31 28 83 e 12 
+27 m u 84 72 8 
+56 86 63 t 76 55 
+C 62 25 40 83 r 
+45 p 1 26 10 70 
+o 50 31 1 45 88 
+
+Output: 
+
+1616 
+Computer 
+
+Example Input/Output 3: 
+
+Input: 
+
+3 3 
+a b c 
+d e f 
+# G H 
+
+Output: 
+
+0 
+ad#beGcfH 
+
+Max Execution Time Limit: 50 millisecs

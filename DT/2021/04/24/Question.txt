@@ -1,0 +1,80 @@
+Daily Test
+
+Program ID-13011
+
+Matrix - Replace Adjacent Cells
+
+The program must accept a character matrix of size R*C and a character CH as the input. For each occurrence of CH in the given matrix, the program must modify the matrix 
+by replacing the characters in the 8 adjacent cells with CH if they are all not equal to CH. Else the program must not modify the matrix for that occurrence of CH. Finally, 
+the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains CH.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+6 5
+f a b r s
+a h t u a
+e d j y p
+v c n i u
+q j d a f
+q e y f y
+a
+
+Output:
+f a b a a
+a h t a a
+e d j a a
+v c a a a
+q j a a a
+q e a a a
+
+Explanation:
+Here CH = 'a'.
+All the occurrences of 'a' in the given matrix are highlighted below.
+f a b r s
+a h t u a
+e d j y p
+v c n i u
+q j d a f
+q e y f y
+There are only two occurrences of 'a' where the adjacent cells are not equal to 'a'.
+After modifying the matrix based on the given conditions, the matrix becomes
+f a b a a
+a h t a a
+e d j a a
+v c a a a
+q j a a a
+q e a a a
+
+Example Input/Output 2:
+Input:
+7 7
+a b M l d k z
+i n a f h g f
+y o B w o E h
+f y X D V Y W
+R B I c F j P
+v h i G b h O
+K H e i R t H
+h
+
+Output:
+a b M h h h z
+i n a h h h h
+y o B h h h h
+f y X D V h h
+h h h c h h h
+h h h G h h h
+h h h i h h h
+
+Max Execution Time Limit: 50 millisecs

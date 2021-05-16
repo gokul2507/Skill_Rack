@@ -1,0 +1,82 @@
+Daily Test
+ 
+ProgramID- 12664
+
+Largest Submatrix - 1s Diagonal
+The program must accept an integer matrix of size R*C containing only 0s and 1s as the input. The program must print the largest square submatrix where all the elements in 
+the top-left to bottom-right diagonal are equal to 1. If two or more such largest square matrices occur, then the program must print the first occurring largest square 
+submatrix as the output. If there is no such square submatrix, then the program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+
+Output Format:
+The lines containing the largest square submatrix where all the elements in the top-left to bottom-right diagonal are equal to 1
+
+Example Input/Output 1:
+Input:
+10 10
+1 0 0 0 0 0 0 1 0 0
+0 1 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 1
+0 1 0 1 0 0 0 0 0 0
+1 0 0 0 1 0 0 0 0 0
+0 1 0 1 0 1 0 0 0 0
+0 0 1 0 0 0 1 0 0 0
+0 0 0 1 0 0 0 1 0 0
+0 0 0 0 1 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0
+
+Output:
+1 0 0 0 0 0
+0 1 0 0 0 0
+1 0 1 0 0 0
+0 0 0 1 0 0
+1 0 0 0 1 0
+0 1 0 0 0 1
+
+Explanation:
+The largest square submatrix having only 1s in the top-left to bottom-right diagonal is highlighted below.
+1 0 0 0 0 0 0 1 0 0
+0 1 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 1
+0 1 0 1 0 0 0 0 0 0
+1 0 0 0 1 0 0 0 0 0
+0 1 0 1 0 1 0 0 0 0
+0 0 1 0 0 0 1 0 0 0
+0 0 0 1 0 0 0 1 0 0
+0 0 0 0 1 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0
+
+Example Input/Output 2:
+Input:
+8 4
+0 0 1 1
+0 0 0 1
+0 1 1 0
+0 1 1 0
+0 0 0 0
+0 0 0 0
+1 0 0 1
+1 1 1 0
+
+Output:
+1 1
+0 1
+
+Example Input/Output 3:
+Input:
+4 4
+0 0 1 1
+1 1 0 0
+0 0 0 1
+0 1 1 0
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs

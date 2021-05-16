@@ -1,0 +1,56 @@
+Daily Challenge
+ 
+ProgramID- 13203
+
+Find Time - Analog Clock
+
+The program must accept a matrix of size 5*5 representing a 12-hour analog clock where the 12 numbers are misplaced. The program also 
+accepts two integers N1 and N2, where N1 represents the number pointed by the hour handle in the given clock and N2 represents the number 
+pointed by the minute handle in the given clock. The program must find the original time for the given values N1, N2 and print the 
+original time in the format HH:MM as the output.
+The 5*5 matrix representation of the original clock is given below. The asterisks in the clock represent the empty spaces.
+* 11 12 1 *
+10 * * * 2
+9 * * * 3
+8 * * * 4
+* 7 6 5 *
+
+Input Format:
+The first 5 lines containing the matrix.
+The 6th line contains N1 and N2 separated by a space.
+
+Output Format:
+The first line contains the original time in the format HH:MM.
+
+Example Input/Output 1:
+Input:
+* 8 9 11 *
+3 * * * 5
+6 * * * 7
+4 * * * 1
+* 2 12 10 *
+8 10
+
+Output:
+11:25
+
+Explanation:
+The number pointed by the hour handle is 8 and the number pointed by the minute handle is 10.
+In the original clock, the values of HH and MM are given below.
+HH = 11
+MM = 25
+So 11:25 is printed as the output.
+
+Example Input/Output 2:
+Input:
+* 4 9 1 *
+12 * * * 6
+7 * * * 5
+8 * * * 10
+* 3 2 11 *
+6 7
+
+Output:
+02:45
+
+Max Execution Time Limit: 50 millisecs

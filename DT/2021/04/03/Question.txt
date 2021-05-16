@@ -1,0 +1,51 @@
+Daily Test
+ 
+ProgramID- 12598
+ 
+HCF Triplets
+The program must accept 3 array elements with the size of the arrays as A, B and C. The program must find the count N of the triplets P, Q and R where P belongs to A, Q 
+belongs to B and R belongs to C and one of them is the HCF of the other two values.
+
+Boundary Condition(s):
+1 <= A, B, C <= 100
+1 <= Each integer value <= 10^5
+
+Input Format:
+The first line contains A, B and C separated by a space.
+The second line contains A integer values separated by a space.
+The third line contains B integer values separated by a space.
+The fourth line contains C integer values separated by a space.
+
+Output Format:
+The first line contains N.
+
+Example Input/Output 1:
+Input:
+3 2 2
+10 5 2
+4 3
+5 2
+
+Output:
+2
+
+Explanation:
+The possible combinations of the triplets are
+(10,4,5) (10,4,2) (10,3,5) (10,3,2)
+(5,4,5) (5,4,2) (5,3,5) (5,3,2)
+(2,4,5) (2,4,2) (2,3,5) (2,3,2)
+In triplet (10,4,2), 2 is the HCF of 10 and 4.
+In triplet (2,4,2), 2 is the HCF of 4 and 2.
+As there are 2 such triplets, 2 is printed as the output.
+
+Example Input/Output 2:
+Input:
+2 7 3
+8 12
+4 8 9 1 12 16 11
+12 8 10
+
+Output:
+5
+
+Max Execution Time Limit: 50 millisecs

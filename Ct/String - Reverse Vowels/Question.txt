@@ -1,0 +1,28 @@
+String - Reverse Vowels (Id-2986)
+
+Given a string S, reverse only the vowels in the string S and print the resultant string R as the output. The consonants must maintain their original locations in S.
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains R.
+
+Boundary Conditions:
+Length of S is from 2 to 500.
+
+Example Input/Output 1:
+Input:
+idea
+
+Output:
+adei
+
+Example Input/Output 2:
+Input:
+hello
+
+Output:
+holle
+
+Max Execution Time Limit: 5000 millisecs

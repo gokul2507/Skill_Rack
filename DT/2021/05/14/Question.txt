@@ -1,0 +1,58 @@
+Daily Test
+ 
+ProgramID- 13206
+ 
+Separate Alphabets & Integers - Matrix
+The program must accept a matrix of size R*C containing alphabets and integers as the input. For each column in the given matrix, the 
+program must separate the alphabets and the integers so that the column contains all the alphabets followed by all the integers in the 
+order of their occurrence. Finally, the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines containing the matrix.
+
+Output Format:
+The first R lines containing the modified matrix.
+
+Example Input/Output 1:
+Input:
+4 6
+12 45 b 78 15 32
+34 n 54 d y p
+k 45 60 t 80 90
+a 50 g r 15 w
+
+Output:
+k n b d y p
+a 45 g t 15 w
+12 45 54 r 80 32
+34 50 60 78 15 90
+
+Explanation:
+Here R = 4 and C = 6.
+After separating the alphabets and the integers in the columns based on the given conditions, the matrix becomes
+k n b d y p
+a 45 g t 15 w
+12 45 54 r 80 32
+34 50 60 78 15 90
+
+Example Input/Output 2:
+Input:
+5 4
+84 a 43 p
+26 b 41 q
+84 r d r
+87 t e 24
+20 c f 91
+
+Output:
+84 a d p
+26 b e q
+84 r f r
+87 t 43 24
+20 c 41 91
+
+Max Execution Time Limit: 50 millisecs

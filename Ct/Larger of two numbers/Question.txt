@@ -1,0 +1,38 @@
+Larger of two numbers (Id-3020)
+
+Given two numbers X and Y, the program must print the larger number. If both are equal print any one of them.
+
+Boundary Condition(s):
+1 <= X, Y <= 99999
+
+Input Format:
+The first line contains X.
+The second line contains Y.
+
+Output Format:
+The first line contains the larger number.
+
+Example Input/Output 1:
+Input:
+100
+50
+
+Output:
+100
+
+Example Input/Output 2:
+Input:
+25
+25
+
+Output:
+25
+
+Example Input/Output 3:
+Input:
+455
+999
+Output:
+999
+
+Max Execution Time Limit: 5000 millisecs

@@ -1,0 +1,34 @@
+Decode Ways - Secret Message [ZH] (Id-2944)
+
+A top secret message string S containing letters from A-Z (only upper case letters) is encoded to numbers using the following mapping:
+'A' -> 1, 'B' -> 2 and so on till Z -> '26'
+The program has to print the total number of ways in which the received message can be decoded.
+
+Input Format:
+The first line contains the string S containing numbers.
+
+Output Format:
+The first line contains the number of ways in which S can be decoded.
+
+Boundary Conditions:
+1 <= Length of S <= 100
+
+Example Input/Output 1:
+Input:
+123
+
+Output:
+3
+
+Explanation:
+1-A 2-B 3-C 12-L 23-W.
+Hence 123 can be decoded as ABC or AW or LC, that is in 3 ways.
+
+Example Input/Output 2:
+Input:
+1290
+
+Output:
+0
+
+Max Execution Time Limit: 5000 millisecs

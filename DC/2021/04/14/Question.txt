@@ -1,0 +1,44 @@
+Daily Challenge
+ 
+ProgramID- 12958
+
+Largest Odd Number
+The program must accept a string S and print the largest odd number L present in S. If there is no odd number in S, the program must print 0 as the output.
+
+Boundary Condition(s):
+1 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains L or 0 as per the given condition.
+
+Example Input/Output 1:
+Input:
+123456
+
+Output:
+12345
+
+Explanation:
+Here S = 123456, the odd integers present in the string 123456 are given below
+1
+123
+12345
+23
+3
+2345
+345
+45
+5
+The largest odd integer in the string is 12345. So 12345 is printed as the output.
+
+Example Input/Output 2:
+Input:
+4466
+
+Output:
+0
+
+Max Execution Time Limit: 50 millisecs

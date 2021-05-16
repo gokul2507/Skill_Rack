@@ -1,0 +1,68 @@
+Daily Test
+ 
+ProgramID- 13134
+
+Search Sorted Submatrix
+The program must accept a character matrix of size R*C containing only lower case alphabets and an integer K as the input. The program
+ must print YES if the matrix contains at least one submatrix of size K*K where all the alphabets in the submatrix are in sorted order.
+  Else the program must print NO as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+2 <= K <= Minimum value between R and C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains K.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+4 5
+u l y j m
+j m d e f
+u o i k n
+w t p x y
+3
+
+Output:
+YES
+
+Explanation:
+Here K = 3, the 3*3 submatrix having the alphabets in sorted order is highlighted below
+u l y j m
+j m d e f
+u o i k n
+w t p x y
+Hence the output is YES.
+
+Example Input/Output 2:
+Input:
+6 5
+r q u h g
+x k w i p
+s g n c s
+j z b u r
+m z v s w
+v s y l s
+2
+
+Output:
+NO
+
+Example Input/Output 3:
+Input:
+4 5
+u n m v z
+m a a a b
+q b b e e
+a e e k t
+3
+
+Output:
+YES
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,45 @@
+Daily Challenge
+ 
+ProgramID- 12959
+
+Max among K-Set
+The program must accept N integers and an integer K as the input. The program must print the maximum among each set of integers of size K. If the last set does not contain 
+K integers, then ignore the set.
+
+Boundary Condition(s):
+1 <= K <= N <= 100
+1 <= Each integer value <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+The third line contains K.
+
+Output Format:
+The first line contains the integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+10
+2 55 88 14 678 455 9899 12 545 222
+4
+
+Output:
+88 9899
+
+Explanation:
+Here N = 10 and K = 4.
+The maximum integer among the first 4 integers is 88 (2, 55, 88, 14). So 88 is printed.
+The maximum integer among the next 4 integers is 9899 (678, 455, 9899, 12). So 9899 is printed.
+The last set contains only two integers, so the last set is ignored.
+
+Example Input/Output 2:
+Input:
+10
+2 55 88 14 678 455 9899 12 545 222
+5
+
+Output:
+678 9899
+
+Max Execution Time Limit: 50 millisecs

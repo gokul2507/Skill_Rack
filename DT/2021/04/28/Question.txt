@@ -1,0 +1,62 @@
+Daily Test
+ 
+ProgramID- 13127
+
+Double X Pattern - String
+The program must accept a string S as the input. The length of the string S is always odd. The program must print the double X pattern based on the following conditions.
+- The string S must be printed diagonally from the top-left to the bottom-right two times(one below the other).
+- Similarly, the string S must be printed diagonally from the top-right to the bottom-left two times(one below the other).
+- The empty spaces must be printed as asterisks.
+
+Boundary Condition(s):
+5 <= Length of S <= 99
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first (L+1) lines contain the double X pattern as shown in the Example Input/Output section (L represents the length of the string S).
+
+Example Input/Output 1:
+Input:
+skillrack
+
+Output:
+s*******s
+sk*****ks
+*ki***ik*
+**il*li**
+***lll***
+***rlr***
+**ar*ra**
+*ca***ac*
+kc*****ck
+k*******k
+
+Explanation:
+The given string S = skillrack, which is printed based on the given conditions.
+Hence the output is
+s*******s
+sk*****ks
+*ki***ik*
+**il*li**
+***lll***
+***rlr***
+**ar*ra**
+*ca***ac*
+kc*****ck
+k*******k
+
+Example Input/Output 2:
+Input:
+WATER
+
+Output:
+W***W
+WA*AW
+*ATA*
+*ETE*
+RE*ER
+R***R
+
+Max Execution Time Limit: 50 millisecs

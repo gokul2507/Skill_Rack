@@ -1,0 +1,24 @@
+Array Split Sorting (Id-3115)
+
+Given an array of N integers, arrange first K values in ascending order and arrange the remaining  N-K values in descending order.
+
+Input Format:
+The first line contains N and K separated by a space.
+The second line contains the value of the N integers separated by one or more spaces.
+
+Output Format:
+The N numbers sorted as per the given conditions.
+
+Boundary Conditions:
+4 <= N <= 100
+2 <= K < N
+
+Example Input/Output 1:
+Input:
+9 3
+1 8 7 2 5 4 6 9 3
+
+Output:
+1 7 8 9 6 5 4 3 2
+
+Max Execution Time Limit: 5000 millisecs

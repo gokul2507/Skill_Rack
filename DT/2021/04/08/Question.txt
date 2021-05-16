@@ -1,0 +1,62 @@
+Daily Test
+ 
+ProgramID- 12611
+
+Meeting Hall - Seating Arrangement
+In a meeting hall, there are R*C chairs arranged as a matrix. The unoccupied chairs are denoted by the hash symbols (#). The occupied chairs are denoted by the alphabets. 
+The first row of the matrix is the last row of the meeting hall and the last row of the matrix is the front row of the meeting hall. The meeting organizer wants to rearrange 
+the persons in the hall so that all the chairs in the front rows are occupied. The persons from left to right starting from the last row must be seated in the unoccupied 
+chairs in the order from left to right starting from the first row.
+The program must accept a character matrix of size R*C representing the status of the R*C chairs as the input. The program must print the status of the R*C chairs after 
+the rearrangement as the output.
+Note: The number of persons in the hall is always a multiple of C.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+
+Output Format:
+The first R lines, each contain C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+4 5
+a # # # #
+b # i f j
+c d # g #
+# e # # h
+
+Output:
+# # # # #
+# # # # #
+c d f g j
+a e b i h
+
+Explanation:
+The persons a, b, i, f and j are moved to the front rows based on the given conditions.
+After the rearrangement, the status of 4*5 chairs become
+# # # # #
+# # # # #
+c d f g j
+a e b i h
+
+Example Input/Output 2:
+Input:
+5 8
+c a e i m j b f
+k n n g e j d b
+j i # i i d m i
+c b e # # # j e
+# d # # # h k n
+
+Output:
+# # # # # # # #
+k n n g e j d b
+j i f i i d m i
+c b e m j b j e
+c d a e i h k n
+
+Max Execution Time Limit: 50 millisecs

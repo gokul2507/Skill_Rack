@@ -1,0 +1,83 @@
+Daily Test
+ 
+ProgramID- 11689
+
+Matrix - Horizontal Replacement
+
+The program must accept a character matrix of size R*C and a string S as the input. The program must find the first occurring cell X 
+which contains the first character of S in the matrix. Then the program must replace the characters from the cell X with the characters 
+of the string S horizontally. If it reaches the last row of the matrix when replacing, then it will start replacing the characters from 
+the first row of the matrix. Finally, the program must print the modified matrix as the output.
+Note: The first character of S always occurs in the given matrix.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Length of S <= R*C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains S.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+6 5
+y m w h y
+i m v a i
+p l g x v
+h p o v o
+o c e s g
+l s d b p
+vegetable
+
+Output:
+y m w h y
+i m v e g
+e t a b l
+e p o v o
+o c e s g
+l s d b p
+
+Explanation:
+The first character of the given string vegetable is v.
+The first occurrence of the character v in the matrix is (2, 3).
+After replacing the characters from the cell (2, 3) with the characters of the string S, the matrix becomes
+y m w h y
+i m v e g
+e t a b l
+e p o v o
+o c e s g
+l s d b p
+
+Example Input/Output 2:
+Input:
+3 3
+e s z
+z S f
+i w c
+SkillRack
+
+Output:
+R a c
+k S k
+i l l
+
+Example Input/Output 3:
+Input:
+4 5
+a S r p k
+Y I D k F
+h O m x w
+j i Q h p
+window
+
+Output:
+a S r p k
+Y I D k F
+h O m x w
+i n d o w
+
+Max Execution Time Limit: 50 millisecs

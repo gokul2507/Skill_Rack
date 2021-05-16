@@ -1,0 +1,37 @@
+Milk Man and His Bottles (Id-1748) 
+
+A milkman serves milk in packaged bottles of varied sizes. The possible size of the bottles are {1, 5, 7 and 10} litres. He wants to supply desired quantity using as less bottles as possible irrespective of the size. Your objective is to help him find the minimum number of bottles required to supply the given demand of milk.
+
+Input Format:
+The first line contains the number of test cases N.
+Next N lines, each contain a positive integer L which corresponds to the demand of milk.
+
+Output Format:
+N lines containing the minimum number of required bottles for each L.
+
+Boundary Conditions:
+1 <= N <= 100
+0 < L <= 9999
+
+
+Example Input/Output 1:
+Input:
+3
+17
+65
+12
+
+
+Output:
+2
+7
+2
+
+Explanation:
+The first line in the input contains 3 which indicates the number of test cases.
+For 17, the answer is 2 as it can be supplied using 10+7 litres bottles.
+For 65 it is 6*10 litre bottles + one 5 litre bottle.
+For 12, it is one 7 litre + one 5 litre bottle.
+
+
+Max Execution Time Limit: 5000 millisecs

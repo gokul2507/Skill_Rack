@@ -1,0 +1,76 @@
+Daily Test ProgramID- 12798 
+
+Positions - Queen & Knight
+The program must accept the position of a queen and the position of a knight in a chess board of size 8*8 as the input. The program must generate a matrix of size 8*8 representing the chess board and fill the matrix based on the following conditions.
+- The position of the queen must be filled with the character Q.
+- The position of the knight must be filled with the character K.
+- All positions where the queen can move must be filled with the character q.
+- All positions where the knight can move must be filled with the character k.
+- If both queen and knight meet in a position(other than the positions of the queen and the knight), then it must be filled with the character x.
+- All remaining positions must be filled with 0.
+Finally, the program must print the matrix as the output.
+
+Note:
+In Chess, queen can move any direction diagonally. The queen can also move left or right along the row it is present. The queen can also move up or down along the column it is present. The movement can happen till the end of the board is reached.
+In Chess, knight can move two squares vertically and one square horizontally, or two squares horizontally and one square vertically (with both forming the shape of an L).
+
+Input Format:
+The first line contains two integer values representing the position of a queen in a chess board.
+The second line contains two integer values representing the position of a knight in a chess board.
+
+Output Format:
+The lines contain a matrix representing the chess board.
+
+Example Input/Output 1:
+Input:
+2 2
+4 8
+
+Output:
+q q q 0 0 0 0 0
+q Q q q q q x q
+q q q 0 0 k 0 0
+0 q 0 q 0 0 0 K
+0 q 0 0 q k 0 0
+0 q 0 0 0 q k 0
+0 q 0 0 0 0 q 0
+0 q 0 0 0 0 0 q
+
+Explanation:
+The position of the queen is (2, 2), which is filled with the character Q.
+The position of the knight is (4, 8), which is filled with the character K.
+All positions where the queen can move are filled with the character q.
+All positions where the knight can move are filled with the character k.
+The only position where both the queen and the knight meet is (2, 7), which is filled with the character x.
+All remaining positions are filled with 0.
+
+Example Input/Output 2:
+Input:
+3 1
+5 5
+
+Output:
+q 0 q 0 0 0 0 0
+q q 0 0 0 0 0 0
+Q q q x q x q q
+q q k 0 0 0 k 0
+q 0 q 0 K 0 0 0
+q 0 k q 0 0 k 0
+q 0 0 k q k 0 0
+q 0 0 0 0 q 0 0
+
+Example Input/Output 3:
+Input:
+3 3
+4 5
+
+Output:
+q 0 q 0 q 0 0 0
+0 q q x 0 k 0 0
+q q Q q q q x q
+0 q q q K 0 0 0
+q 0 x 0 q 0 k 0
+0 0 q k 0 x 0 0
+0 0 q 0 0 0 q 0
+0 0 q 0 0 0 0 q
+Max Execution Time Limit: 50 millisecs

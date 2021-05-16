@@ -1,0 +1,54 @@
+Daily Challenge
+ 
+ProgramID- 12749
+ 
+Shortest Path Length - Ascending Order
+The program must accept an integer matrix of size R*C as the input. The matrix contains at least two consecutive non-zero digits starting from 1. The remaining elements in the 
+matrix are 0s. The program must print the length of the shortest path that starts at 1 and goes over all the other non-zero digits in ascending order. Only horizontal and 
+vertical movements are allowed.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+
+Output Format:
+The first line contains the length of the shortest path.
+
+Example Input/Output 1:
+Input:
+6 6
+0 0 4 0 0 0
+0 0 0 0 1 0
+0 0 0 2 0 0
+0 0 0 0 0 3
+0 0 0 0 0 0
+0 0 0 0 0 0
+
+Output:
+11
+
+Explanation:
+The minimum distance between 1 and 2 is 2.
+The minimum distance between 2 and 3 is 3.
+The minimum distance between 3 and 4 is 6.
+The length of the shortest path from 1 to 4 is 11 (2 + 3 + 6).
+
+Example Input/Output 2:
+Input:
+8 5
+0 0 0 0 0
+0 0 0 6 0
+0 1 0 0 0
+0 2 0 7 0
+3 0 0 0 0
+0 0 0 4 0
+0 0 0 0 5
+0 0 0 0 0
+
+Output:
+17
+
+Max Execution Time Limit: 50 millisecs

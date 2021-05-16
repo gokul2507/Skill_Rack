@@ -1,0 +1,32 @@
+Array Elements Print - 001 (Id-3116)
+
+An array of N integers is passed as the input to the function printValues. Based on the Example Input/Output, complete the method 
+printValues to produce the desired output.
+
+Input Format:
+The first line denotes the value of N
+N integers separated by a space.
+
+Output Format:
+The output based on the Example Input/Output section.
+
+Boundary Conditions:
+1 < N <= 100
+
+Example Input/Output 1:
+Input:
+5
+4 2 3 5 7
+
+Output:
+2 4 7
+
+Example Input/Output 2:
+Input:
+7
+9 22 11 4 15 45 36
+
+Output:
+4 11 22 45
+
+Max Execution Time Limit: 5000 millisecs

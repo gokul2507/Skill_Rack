@@ -1,0 +1,55 @@
+Daily Challenge
+ 
+ProgramID- 11502
+
+Shift Down A
+A matrix of dimension R*C with alphabets A or B is passed as the input. The program must remove all occurrences of B and shift the occurrences of A down. The empty cells 
+must be replaced with hyphens. Then the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each containing C alphabets separated by a space.
+
+Output Format:
+The first R lines, each containing C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+3 4
+A A B A
+B B A A
+A B A A
+
+Output:
+- - - A
+A - A A
+A A A A
+
+Explanation:
+After removing all the occurrences of B and replacing the empty cells with hyphens, the matrix becomes
+A A - A
+- - A A
+A - A A
+After shifting the occurrences of A down, the matrix becomes
+- - - A
+A - A A
+A A A A
+
+Example Input/Output 2:
+Input:
+4 5
+B A A B B
+A A A B A
+B A B B A
+A A B B B
+
+Output:
+- A - - -
+- A - - -
+A A A - A
+A A A - A
+
+Max Execution Time Limit: 50 millisecs

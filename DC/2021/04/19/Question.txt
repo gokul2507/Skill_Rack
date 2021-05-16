@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 12516
+
+Adjust Time - Hours, Minutes, Seconds
+The program must accept a time T in 24-hr format (HH:MM:SS) and three integers X, Y, Z as the input. The integer X represents the number of hours to be added to the time T. 
+The integer Y represents the number of minutes to be added to the time T. The integer Z represents the number of seconds to be added to the time T. After each adjustment of 
+the time (add X hours, add Y minutes and add Z seconds), the program must print the revised time as the output.
+
+Boundary Condition(s):
+1 <= X, Y, Z <= 10^6
+
+Input Format:
+The first line contains the time T in 24-hr format (HH:MM:SS).
+The second line contains X, Y and Z separated by a space.
+
+Output Format:
+The first three lines, each contains the revised time after each adjustment of the given time.
+
+Example Input/Output 1:
+Input:
+10:05:45
+4 65 100
+
+Output:
+14:05:45
+15:10:45
+15:12:25
+
+Explanation:
+Here T = 10:05:45, X = 4, Y = 65 and Z = 100.
+After adding 4 hours, the time becomes 14:05:45.
+After adding 65 minutes, the time becomes 15:10:45.
+After adding 100 seconds, the time becomes 15:12:25.
+
+Example Input/Output 2:
+Input:
+23:50:00
+3 15 45
+
+Output:
+02:50:00
+03:05:00
+03:05:45
+
+Max Execution Time Limit: 50 millisecs

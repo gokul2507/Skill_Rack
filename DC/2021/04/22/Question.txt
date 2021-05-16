@@ -1,0 +1,47 @@
+Daily Challenge
+ 
+ProgramID- 10774
+
+Corona Spread Days
+
+There are N chairs in a line. The program must accept N integer values denoting the seating details in these N chairs. 
+- 1 represents a healthy person sitting in a chair.
+- 0 represents the chair being empty.
+- 2 represents the chair being occupied by a Corona virus infected person.
+Each Corona virus infected person will affect the healthy persons sitting adjacent to him/her so that the next day those affected will inturn start infecting their 
+healthy adjacent persons. The program must print the number of days D required for the virus to stop spreading and the number of persons H who remain not infected by the 
+virus in the end.
+
+Boundary Condition(s):
+2 <= N <= 20
+
+Input Format:
+The first line contains N.
+The second line contains the N integer values separated by a space.
+
+Output Format:
+The first line contains D and H separated by a space.
+
+Example Input/Output 1:
+Input:
+7
+1 1 2 1 0 1 0
+
+Output:
+3 1
+
+Explanation:
+At the end of the 1st day, the status will be 1 2 2 2 0 1 0.
+At the end of the 2nd day, the status will be 2 2 2 2 0 1 0.
+On the 3rd day, no infection happens. 
+So it takes 3 days for the virus to stop spreading and 1 person remains healthy in the end.
+
+Example Input/Output 2:
+Input:
+7
+1 2 1 1 1 1 1
+
+Output:
+6 0
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,23 @@
+GCD (HCF) of N Integers (Id-3103)
+
+N integers are passed as input to the program. The program must print the GCD (HCF) of these N integers.
+
+Input Format:
+The first line contains N.
+The second line contains N integers each separated by a space.
+
+Output Format:
+The first line contains the HCF of these N numbers.
+
+Boundary Conditions:
+2 <= N <= 100
+
+Example Input/Output 1:
+Input:
+4
+15 20 30 50
+
+Output:
+5
+
+Max Execution Time Limit: 5000 millisecs

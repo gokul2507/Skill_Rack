@@ -1,0 +1,88 @@
+Daily Test
+ 
+ProgramID- 12705
+
+Shifting Houses - Horizontal Zig-Zag
+The program must accept an integer matrix of size R*C representing the door numbers of R*C houses. A person lives in the house at (1, 1) in the year Y. On the first day of every leap year, he will shift to the Xth house in the horizontal zig-zag direction. If he reaches the last house in the last row when he shifting his house, then he starts from the house (1, 1). The program must print the door number of his house after T years as the output. The values of X, Y and T are also passed as the input to the program.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X < R*C
+1000 <= Y <= 3000
+1 <= T <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)th line contains X.
+The (R+3)th line contains Y and T separated by a space.
+
+Output Format:
+The first line contains an integer representing the door number of the person's house after T years.
+
+Example Input/Output 1:
+Input:
+6 6
+33 30 84 91 53 37
+56 63 77 36 57 67
+80 20 74 94 46 44
+27 89 78 24 49 64
+40 25 58 39 79 69
+19 23 93 81 66 62
+4
+1990 20
+
+Output:
+24
+
+Explanation:
+Here X = 4, Y = 1990 and T = 20.
+The leap years from 1990 to 2010 are given below.
+1992, 1996, 2000, 2004 and 2008.
+In 1990, the person lives in the house 33 which is present at (1, 1).
+1990 to 1991 -> House 33 (1, 1)
+1992 to 1995 -> House 53 (1, 5)
+1996 to 1999 -> House 36 (2, 4)
+2000 to 2003 -> House 80 (3, 1)
+2004 to 2007 -> House 46 (3, 5)
+2008 to 2011 -> House 24 (4, 4)
+In 2010, he lives in the house 24 which is present at (4, 4).
+So 24 is printed as the output.
+
+Example Input/Output 2:
+Input:
+5 7
+76 44 85 45 15 17 51
+37 23 78 84 22 49 73
+65 46 83 67 26 90 60
+97 69 95 43 12 94 80
+64 32 86 71 34 79 74
+10
+1880 50
+
+Output:
+17
+
+Example Input/Output 3:
+Input:
+3 3
+1 2 3
+6 5 4
+7 8 9
+2
+1996 4
+
+Output:
+3
+
+Explanation:
+Here X = 2, Y = 1996 and T = 4.
+The leap years from 1996 to 2000 are given below.
+1996 and 2000.
+In 1996, the person lives in the house 1 which is present at (1, 1).
+1996 to 1999 -> House 1 (1, 1)
+2000 to 2003 -> House 3 (1, 3)
+In 2000, he lives in the house 3 which is present at (1, 3).
+So 3 is printed as the output.
+
+Max Execution Time Limit: 50 millisecs

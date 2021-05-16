@@ -1,0 +1,62 @@
+Daily Challenge
+ 
+ProgramID- 12604
+
+Bomb Blast - No Water
+A matrix of size R*C containing positive integer values is passed as the input. An integer value which is a multiple of 5 is a bomb and will destroy all four adjacent cells (in the following order - left, right, top and bottom). But if the adjacent cell is water (the integer value will be a multiple of 3), then the bomb will stop destroying the adjacent cells. If a cell is destroyed then the value of that cell becomes 0. After the bomb is blasted then the cell value becomes 0. If the cell value is both a multiple of 5 and 3, then consider that as water. Finally, the program must print the values in the matrix as the output.
+
+Note: The bombs are triggered from right to left starting from the last row.
+
+Boundary Condition(s):
+1 <= R, C <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines contain C integer values each.
+
+Output Format:
+The first R lines contain C integer values each.
+
+Example Input/Output 1:
+Input:
+3 3
+5 5 5
+61 20 1
+15 6 10
+
+Output:
+0 0 0
+0 0 0
+15 6 0
+
+Explanation:
+After the 1st bomb 10 in the last row is triggered, the left value is 6 and is water. So the explosion stops.
+Hence the matrix state is 
+5 5 5
+61 20 1
+15 6 0
+Now 15 is both a multiple of 5 and 3. Hence it is considered as water.
+
+In the 2nd row from the bottom, 20 is a bomb and it destroys the left cell with 61, right cell with 1, the top cell with 5. The bottom cell is water and hence remains unchanged. Hence the matrix state is 
+5 0 5
+0 0 0
+15 6 0
+
+In the 3rd row from the bottom, two bombs(with the values 5) explode and hence the final state is 
+0 0 0
+0 0 0
+15 6 0
+
+Example Input/Output 2:
+Input:
+3 3
+5 56 51
+63 22 1
+15 6 10
+
+Output:
+0 0 51
+63 22 1
+15 6 0
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,51 @@
+Sliding Window Largest Number (Id-1859) 
+
+Given a sliding window of size K from a array of size N (N >= K), the program must print the maximum of the K numbers present for all possible sliding windows. 
+
+Input Format: 
+
+The first line will contain the value of K The second line will contain the value of N The third line will contain N values separated by a space. 
+
+Output Format: 
+
+The maximum of the numbers in each sliding window. 
+
+Constraints: 
+
+1 <= N <= 1000 
+1 <= K <= 1000 
+K <= N 
+
+Example Input/Output 1: 
+
+Input: 
+
+3 
+9 
+3 2 7 6 5 1 2 3 4 
+
+Output: 
+
+7 7 7 6 5 3 4 
+
+Explanation: 
+
+The sliding windows (as K=3) are 3 2 7, 2 7 6, 7 6 5, 6 5 1, 5 1 2, 1 2 3, 2 3 4 The maximum values in these windows are 7 7 7 6 5 3 4 
+
+Example Input/Output 2: 
+
+Input: 
+
+2 
+3 
+100 200 300 
+
+Output:
+
+200 300 
+
+Explanation: 
+
+The sliding windows are 100 200, 200 300 The maximum values in these windows are 200 300 
+
+Max Execution Time Limit: 5000 millisecs

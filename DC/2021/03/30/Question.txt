@@ -1,0 +1,83 @@
+Daily Challenge ProgramID-12608
+
+Four Substrings to Matrix 
+The program must accept N string values of equal length L as the input. The program must divide each string into four substrings of equal length. 
+Then the program must form a character matrix of size R*C, where R = (N*3) and C = (L/4)*3. Then the program must fill the character matrix based on the following conditions. 
+- The top-left, top-right, bottom-left, bottom-right and middle submatrices of size (R/3)*(C/3) must be filled with the asterisks. 
+- The top-middle submatrix of size (R/3)*(C/3) must be filled with the 1st substrings of the N string values. 
+- The middle-right submatrix of size (R/3)*(C/3) must be filled with the 2nd substrings of the N string values. 
+- The bottom-middle submatrix of size (R/3)*(C/3) must be filled with the 3rd substrings of the N string values. 
+- The middle-left submatrix of size (R/3)*(C/3) must be filled with the 4th substrings of the N string values. 
+Finally, the program must print the R*C character matrix as the output. Note: The value of L is always divisible by 4. 
+
+Boundary Condition(s): 
+1 <= N <= 50 
+4 <= L <= 100 
+
+Input Format: 
+The first line contains N. The next N lines, each contains a string. 
+
+Output Format: 
+The first R lines, each contains C characters representing the R*C character matrix. 
+
+Example Input/Output 1: 
+Input: 
+4 
+abcdefghijklmnop 
+ABCDEFGHIJKLMNOP 
+1234567891011121 
+zyxwvutsrqponmlk 
+
+Output: 
+****abcd**** 
+****ABCD**** 
+****1234**** 
+****zyxw**** 
+mnop****efgh 
+MNOP****EFGH 
+1121****5678 
+nmlk****vuts 
+****ijkl**** 
+****IJKL**** 
+****9101**** 
+****rqpo**** 
+
+Explanation: 
+Here N = 4 and L = 16. The size of the character matrix to be formed is 12*12 (where R = 4*3 and C = (16/4)*3). 
+Then the matrix is filled with the characters based on the given conditions. 
+
+Example Input/Output 2: 
+Input: 
+7 
+interest 
+absolute 
+complete 
+accurate 
+delivery 
+achieved 
+dominant 
+
+Output: 
+**in** 
+**ab** 
+**co** 
+**ac** 
+**de** 
+**ac** 
+**do** 
+st**te 
+te**so 
+te**mp 
+te**cu 
+ry**li 
+ed**hi 
+nt**mi 
+**re** 
+**lu** 
+**le** 
+**ra** 
+**ve** 
+**ev** 
+**na** 
+
+Max Execution Time Limit: 50 milliseconds

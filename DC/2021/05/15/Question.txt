@@ -1,0 +1,39 @@
+Daily Challenge ProgramID- 13210
+
+Define class Person
+The below Java program accepts the name, the weight(in kilograms) and the height(in meters) of a person. Then the program calculates the Body Mass Index (BMI) of the person and prints the output as given in the Example Input/Output section. Please define the class Person so that the program runs successfully.
+Note: The height of the person must be printed with the precision up to 2 decimal places. The BMI of the person must be printed with the precision up to 1 decimal place.
+
+Formula: BMI = Weight/(Height*Height)
+
+Example Input/Output 1:
+Input:
+Hector
+80 1.65
+
+Output:
+Name: Hector
+Weight: 80 kg
+Height: 1.65 m
+BMI: 29.4
+
+Explanation:
+The Body Mass Index (BMI) of the person is 29.4 (80 / (1.65*1.65)).
+Hence the output is
+Name: Hector
+Weight: 80 kg
+Height: 1.65 m
+BMI: 29.4
+
+Example Input/Output 2:
+Input:
+Jhanvi
+45 1.5
+
+Output:
+Name: Jhanvi
+Weight: 45 kg
+Height: 1.50 m
+BMI: 20.0
+
+Max Execution Time Limit: 50 millisecs

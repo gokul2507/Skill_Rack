@@ -1,0 +1,45 @@
+Daily Challenge ProgramID- 12762 
+Binary - Case Sensitive Decryption
+The program must accept a string S representing an encrypted message as the input. The program must decrypt the string S and print the message based on the following conditions.
+- The program must split the string S into substrings of equal length 5.
+- For each substring, the program must form a binary representation by replacing the lower case alphabets with 0 and the upper case alphabets with 1. Then the program must find the decimal equivalent of each binary representation and replace them with the characters as given below.
+From 0 to 25 -> a to z.
+26 -> . (dot)
+27 -> , (comma)
+28 -> a SPACE character
+29 -> ? (question mark symbol)
+30 -> ' (single quote)
+31 -> " (double quote)
+
+Note: The string S contains only alphabets and its length is always a multiple of 5.
+
+Boundary Condition(s):
+1 <= Length of S <= 1000
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the decrypted string based on the given conditions.
+
+Example Input/Output 1:
+Input:
+abcDEtSAYtmaRKs
+
+Output:
+dog
+
+Explanation:
+The given string is abcDEtSAYtmaRKs.
+The 1st substring is abcDE. The binary representation is 00011. 3 -> d.
+The 2nd substring is tSAYt. The binary representation is 01110. 14 -> o.
+The 3rd substring is maRKs. The binary representation is 00110. 6 -> g.
+So the decrypted string is dog, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+EytWGeqNKYcbNpqLSXcoAHCUIbgrarZzcpRPvoYGYOQIUQAsHh
+
+Output:
+the "art".
+Max Execution Time Limit: 50 millisecs

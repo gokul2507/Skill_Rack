@@ -1,0 +1,71 @@
+Daily Test  Program Id-12925
+
+Theater Seating Slots 
+
+The booking status of R*C seats in a theatre is passed as the input. 1 indicates that the seat is booked and 0 indicates that the seat is not booked yet. The R*C seats are divided into three blocks column wise. 
+The number of seats in a row of each block (X, Y and Z) is passed as the input (i.e., C = X + Y + Z). A family with K members wants to book continuous seats in the same row. 
+The program must print the number of ways the family can book the seats as the output. 
+
+Boundary Condition(s): 
+
+1 <= R <= 50 
+3 <= C <= 50 
+X + Y + Z = C (X, Y and Z are always greater than 0) 
+1 <= K <= Maximum value among X, Y and Z. 
+
+Input Format:
+
+The first line contains R, C and K separated by a space. 
+The next R lines, each contains C integer values separated by a space. The (R+2)th line contains X, Y and Z separated by a space. 
+
+Output Format: 
+
+The first line contains an integer representing the number of ways the family can book the seats. 
+
+Example Input/Output 1: 
+
+Input: 
+
+5 12 3 
+1 1 1 0 0 1 1 0 0 0 1 1 
+0 1 1 0 0 0 0 0 0 1 1 1 
+0 0 0 0 1 1 1 1 1 1 0 0 
+1 1 1 1 0 0 0 1 0 0 0 1 
+1 0 1 1 1 1 1 1 1 0 1 1 
+3 6 3 
+
+Output: 
+
+6 
+
+Explanation: 
+
+Here K = 3, X = 3, Y = 6 and Z = 3. 
+The 5*12 seats can be divided into 3 blocks as given below. 
+
+1 1 1 0 0 1 1 0 0 0 1 1 
+0 1 1 0 0 0 0 0 0 1 1 1 
+0 0 0 0 1 1 1 1 1 1 0 0 
+1 1 1 1 0 0 0 1 0 0 0 1 
+1 0 1 1 1 1 1 1 1 0 1 1 
+
+In the block 1, there is only 1 possible way to book 3 seats in a row. 
+In the block 2, there are 5 possible ways to book 3 seats in a row. In the block 3, there is no way to book 3 seats in a row.
+So the total number of ways is 6, which is printed as the output. 
+
+Example Input/Output 2: 
+
+Input: 
+
+4 6 2 
+1 0 0 0 1 1 
+1 0 0 1 0 0 
+1 0 1 0 1 0 
+0 0 0 1 1 1 
+2 3 1 
+
+Output: 
+
+2 
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,78 @@
+Daily Test
+ 
+ProgramID- 12971
+
+Parallel String Values - Matrix
+The program must accept a character matrix of size N*N and two string values S1, S2 as the input. The program must print YES if both 
+S1 and S2 occur parallel in the horizontal or vertical direction (i.e., S1 and S2 occur in two different rows or two different columns 
+in any order). Else the program must print NO as the output.
+Note: The length of S1 and the length of S2 are always equal.
+
+Boundary Condition(s):
+2 <= N <= 25
+2 <= Length of S1, S2 <= N
+
+Input Format:
+The first line contains N.
+The next N lines, each contains N characters separated by a space.
+The (N+2)th line contains S1.
+The (N+3)th line contains S2.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+5
+e a d m t
+t p i a q
+m p z n o
+h l d g n
+t e v o k
+apple
+mango
+
+Output:
+YES
+
+Explanation:
+The string S1 is present in the 2nd column (top to bottom).
+The string S2 is present in the 4th column (top to bottom).
+So YES is printed as the output.
+
+Example Input/Output 2:
+Input:
+8
+w b j c d w b u
+e m d m g l o u
+j l a i c e p s
+y o w v f i f s
+b c g j l g v i
+p x y l o s v k
+s n k k b h z o
+c r i c k e t b
+cricket
+special
+
+Output:
+YES
+
+Explanation:
+The string S1 is present in the 8th row (left to right).
+The string S2 is present in the 3rd row (right to left).
+So YES is printed as the output.
+
+Example Input/Output 3:
+Input:
+4
+s t m c
+f o u r
+t u o r
+z r e w
+four
+tour
+
+Output:
+NO
+
+Max Execution Time Limit: 50 millisecs

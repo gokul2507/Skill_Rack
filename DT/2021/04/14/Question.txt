@@ -1,0 +1,122 @@
+Daily Test
+ 
+ProgramID- 12960
+
+Swap K Outer Layers
+The program must accept two character matrices M1, M2 and an integer K as the input. The size of both M1 and M2 is N*N. The program must swap K outer layers in the matrices 
+M1 and M2. Then the program must print the modified matrices M1 and M2 as the output.
+
+Boundary Condition(s):
+3 <= N <= 50
+1 <= K <= N/2
+
+Input Format:
+The first line contains N.
+The next N lines, each contains N characters representing the matrix M1.
+The next N lines from the (N+2)nd line, each contains N characters representing the matrix M2.
+
+Output Format:
+The first N lines, each contains N characters representing the matrix M1.
+The next N lines, each contains N characters representing the matrix M2.
+
+Example Input/Output 1:
+Input:
+7
+u o q d v e H
+A r T K G T Y
+D a I y L d g
+K F P S F P K
+I f O V f r j
+q z j V X i h
+A p w p T w R
+w N N t J p K
+E B a f M K G
+i S f j u n u
+u e J L N N Z
+P k Z t A X y
+N i g Z f Y K
+i E X F s A W
+2
+
+Output:
+w N N t J p K
+E B a f M K G
+i S I y L n u
+u e P S F N Z
+P k O V f X y
+N i g Z f Y K
+i E X F s A W
+u o q d v e H
+A r T K G T Y
+D a f j u d g
+K F J L N P K
+I f Z t A r j
+q z j V X i h
+A p w p T w R
+
+Explanation:
+Here K = 2.
+The 2 outer layers in the matrix M1 are highlighted below.
+u o q d v e H
+A r T K G T Y
+D a I y L d g
+K F P S F P K
+I f O V f r j
+q z j V X i h
+A p w p T w R
+The 2 outer layers in the matrix M2 are highlighted below.
+w N N t J p K
+E B a f M K G
+i S f j u n u
+u e J L N N Z
+P k Z t A X y
+N i g Z f Y K
+i E X F s A W
+After swapping the 2 outer layers in the matrices M1 and M2, the matrices become
+w N N t J p K
+E B a f M K G
+i S I y L n u
+u e P S F N Z
+P k O V f X y
+N i g Z f Y K
+i E X F s A W
+u o q d v e H
+A r T K G T Y
+D a f j u d g
+K F J L N P K
+I f Z t A r j
+q z j V X i h
+A p w p T w R
+
+Example Input/Output 2:
+Input:
+6
+Z T W l A w
+O E m c X h
+B g K O P L
+x h i Q n I
+u R t T Y w
+V K I i W E
+A K r b V c
+U a J h T o
+u b C m H x
+M p G q w U
+n N F K f G
+H T s f b T
+1
+
+Output:
+A K r b V c
+U E m c X o
+u g K O P x
+M h i Q n U
+n R t T Y G
+H T s f b T
+Z T W l A w
+O a J h T h
+B b C m H L
+x p G q w I
+u N F K f w
+V K I i W E
+
+Max Execution Time Limit: 50 millisecs

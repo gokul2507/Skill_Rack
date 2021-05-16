@@ -1,0 +1,36 @@
+Calculator Implementation (Id-2988)
+
+The interface Calculator defines the following methods.
+public interface Calculator {
+    int add(int x, int y);
+    int subtract(int x, int y);
+    int multiply(int x, int y);
+    int divide(int x, int y);
+}
+Define the class NormalCalculator so that it implements the interface Calculator.
+
+Input Format:
+The first line contains x.
+The second line contains y.
+
+Output Format:
+The first line contains the sum of x,y
+....
+...
+The fourth line contains the value of x/y
+
+Boundary Condition(s):
+1 <= x,y < = 99999
+
+Example Input/Output 1:
+Input:
+10
+5
+
+Output:
+15
+5
+50
+2
+ 
+Max Execution Time Limit: 500 millisecs

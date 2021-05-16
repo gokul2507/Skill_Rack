@@ -1,0 +1,61 @@
+Daily Test
+ 
+ProgramID- 12600
+
+Irrigation - Gardening
+There are N trees planted circularly in a garden. The gardener wants to supply at least 1 litre of water for each tree. The tall trees get more water than the tree on the 
+left. The program must accept N integers representing the heights of N trees as the input. The program must print the minimum amount of water (in litres) the gardener needs 
+as the output.
+
+Note: The two adjacent trees are not the same height.
+
+Boundary Condition(s):
+1 <= N <= 10^5
+1 <= Height of each tree <= 100
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the minimum amount of water (in litres) the gardener needs.
+
+Example Input/Output 1:
+Input:
+8
+10 20 30 40 30 20 40 60
+
+Output:
+17
+
+Explanation:
+Here N = 8.
+1st tree - 1 litre
+2nd tree - 2 litres (20 > 10)
+3rd tree - 3 litres (30 > 20)
+4th tree - 4 litres (40 > 30)
+5th tree - 1 litre
+6th tree - 1 litre
+7th tree - 2 litres (40 > 20)
+8th tree - 3 litres (60 > 40)
+The minimum amount of water (in litres) the gardener needs is 17 litres.
+
+Example Input/Output 2:
+Input:
+6
+6 8 6 7 8 4
+
+Output:
+12
+
+Explanation:
+Here N = 6.
+1st tree - 2 litres (6 > 4)
+2nd tree - 3 litres (8 > 6)
+3rd tree - 1 litre
+4th tree - 2 litres (7 > 6)
+5th tree - 3 litres (8 > 7)
+6th tree - 1 litre
+The minimum amount of water (in litres) the gardener needs is 12 litres.
+
+Max Execution Time Limit: 50 millisecs

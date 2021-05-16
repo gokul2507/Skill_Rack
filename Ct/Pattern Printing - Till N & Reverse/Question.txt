@@ -1,0 +1,45 @@
+Pattern Printing - Till N & Reverse (Id-3059)
+
+The program must accept an integer N and print 2N lines as shown in the Example Input/Output.
+
+Input Format:
+The first line contains N.
+
+Output Format:
+2N lines as shown in the Example Input/Output.
+
+Boundary Conditions:
+2 <=  N <= 100
+
+Example Input/Output 1:
+4
+Output:
+1
+22
+333
+4444
+4444
+333
+22
+1
+
+Example Input/Output 2:
+7
+
+Output:
+1
+22
+333
+4444
+55555
+666666
+7777777
+7777777
+666666
+55555
+4444
+333
+22
+1
+
+Max Execution Time Limit: 5000 millisecs

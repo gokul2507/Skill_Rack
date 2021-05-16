@@ -1,0 +1,74 @@
+Daily Challenge
+ 
+ProgramID- 13090
+
+Primary Colors Addition
+
+The program must accept a character matrix of size R*C representing the primary colors (R, G, B) as the input. The value of C is always even. The program must fold the 
+given color matrix vertically and print the resulting colours based on the following conditions.
+1) Red + Red = Red
+2) Green + Green = Green
+3) Blue + Blue = Blue
+4) Green + Blue = Cyan
+5) Red + Blue = Magenta
+6) Red + Green = Yellow
+
+Note:
+Cyan must be represented as C.
+Magenta must be represented as M.
+Yellow must be represented as Y.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+5 6
+R G B B G B
+B R B G R G
+R G R R B R
+R R G R G R
+G R B R R G
+
+Output:
+M G B
+C R C
+R C R
+R Y Y
+G R M
+
+Explanation:
+1st row -> R+B=M, G+G=G, B+B=B.
+2nd row -> B+G=C, R+R=R, B+G=C.
+3rd row -> R+R=R, G+B=C, R+R=R.
+4th row -> R+R=R, R+G=Y, G+R=Y.
+5th row -> G+G=G, R+R=R, B+R=M.
+Hence the output is
+M G B
+C R C
+R C R
+R Y Y
+G R M
+
+Example Input/Output 2:
+Input:
+4 8
+R R B G G B R B
+R R B R B G B B
+R R G B G G B G
+R B G G G R R B
+
+Output:
+M R B G
+M M C M
+Y M G C
+M M Y G
+
+Max Execution Time Limit: 50 millisecs

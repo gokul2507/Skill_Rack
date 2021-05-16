@@ -1,0 +1,37 @@
+Daily Challenge ProgramID- 12752 
+String - Find the Sentence
+The program must accept a string S and an integer P as the input. The string S represents a paragraph, where each dot (.) represents the end of a sentence in that paragraph. The integer P represents the position of a word in the string S. If the value of P is negative, then it indicates the position of a word in the string in reverse order. The program must print the sentence which contains the Pth word as the output.
+Note: The value of P is always valid.
+
+Boundary Condition(s):
+1 <= Length of S <= 1000
+
+Input Format:
+The first line contains S.
+The second line contains P.
+
+Output Format:
+The first line contains the sentence which contains the Pth word.
+
+Example Input/output 1:
+Input:
+I am a doctor. I know how to cure the disease. Take this medicine 3 times a day.
+8
+
+Output:
+I know how to cure the disease.
+
+Explanation:
+Here P = 8.
+There are 3 sentences in the given string.
+The 8th word in the string is to, which is present in the 2nd sentence.
+So the 2nd sentence is printed as the output.
+
+Example Input/output 2:
+Input:
+You can do it. But think 100 times before you do.
+-5
+
+Output:
+But think 100 times before you do.
+Max Execution Time Limit: 50 millisecs

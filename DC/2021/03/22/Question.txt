@@ -1,0 +1,63 @@
+Daily Challenge ProgramID- 12932
+Shift Characters Upwards
+The program must accept N string values of equal length L and an integer K as the input. The program must perform the following operation K times.
+- Shift the middle L-2 characters towards the top by one position among the given N string values.
+Finally, the program must print the N modified string values as the output.
+
+Boundary Condition(s):
+2 <= N <= 100
+3 <= Length of each string <= 100
+1 <= K <= 10^8
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+The (N+2)nd line contains K.
+
+Output Format:
+The first N lines containing the N modified string values.
+
+Example Input/Output 1:
+Input:
+5
+coding
+across
+expert
+office
+travel
+1
+
+Output:
+ccrosg
+axpers
+effict
+oravee
+todinl
+
+Explanation:
+Here N = 5 and K = 1.
+The length of each string is 6.
+K = 1: After shifting the middle 4(6-2) characters towards the top by one position, the string values become
+ccrosg
+axpers
+effict
+oravee
+todinl
+
+Example Input/Output 2:
+Input:
+5
+coding
+across
+expert
+office
+travel
+2
+
+Output:
+cxperg
+affics
+eravet
+oodine
+tcrosl
+Max Execution Time Limit: 50 millisecs

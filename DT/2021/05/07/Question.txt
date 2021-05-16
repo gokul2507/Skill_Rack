@@ -1,0 +1,64 @@
+Daily Test
+ 
+ProgramID- 13200
+
+Replace Asterisks within Matrix
+
+The program must accept a character matrix of size R*C as the input. The matrix contains alphabets and asterisks. The program must 
+replace the asterisks starting from the first row (left to right in each row) with the alphabets in the original matrix starting from 
+the last row (left to right in each row). The number of asterisks in the matrix is always less than or equal to the number of alphabets 
+in the given matrix. Finally, the program must print the modified matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+5 4
+a * r J
+g * * b
+F V t Y
+a V R Q
+* * x L
+
+Output:
+a x r J
+g L a b
+F V t Y
+a V R Q
+V R x L
+
+Explanation:
+After replacing the asterisks (from the first row to the last row) with the alphabets (from the last row to the first row), the matrix becomes
+a x r J
+g L a b
+F V t Y
+a V R Q
+V R x L
+
+Example Input/Output 2:
+Input:
+6 5
+a b * c d
+e f * g h
+* * * * *
+i j k l m
+m * n * o
+p * * * q
+
+Output:
+a b p c d
+e f q g h
+m n o i j
+i j k l m
+m k n l o
+p m e f q
+
+Max Execution Time Limit: 50 millisecs

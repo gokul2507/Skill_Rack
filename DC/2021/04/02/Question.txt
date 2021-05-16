@@ -1,0 +1,55 @@
+Daily Challenge
+ 
+ProgramID- 12605
+ 
+Find Co-ordinates - Other Side
+The co-ordinates of two corners of a rectangle representing the bottom or the left are given as the input. The area A of the rectangle is also passed as the input. 
+The program must print the co-ordinates of the other two corners. (Assume the edges of the rectangle are always parallel to x-axis or y-axis).
+
+Boundary Condition(s):
+-1000 <= x,y co-ordinates <= 1000
+1 <= A <= 1000000
+
+Input Format:
+The first line contains the co-ordinates of the first corner.
+The second line contains the co-ordinates of the second corner.
+The third line contains A.
+
+Output Format:
+The first line contains the co-ordinates of the third corner.
+The second line contains the co-ordinates of the fourth corner.
+
+Example Input/Output 1:
+Input:
+0 0
+0 5
+30
+
+Output:
+6 0
+6 5
+
+Explanation:
+Length is 5. The area is 30. Hence breadth is 30/5 = 6. Based on that the other two co-ordinates are calculated.
+
+Example Input/Output 2:
+Input:
+2 5
+10 5
+24
+
+Output:
+2 8
+10 8
+
+Example Input/Output 3:
+Input:
+3 -5
+-2 -5
+25
+
+Output:
+3 0
+-2 0
+
+Max Execution Time Limit: 50 millisecs

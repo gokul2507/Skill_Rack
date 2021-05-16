@@ -1,0 +1,52 @@
+Daily Test
+ 
+ProgramID- 13208
+
+Column Binary Representation
+The program must accept an integer matrix of size R*C containing only 0s and 1s as the input. Each column of the matrix represents the binary representation of an integer. The program must find the maximum possible decimal equivalent for each column in the matrix (i.e., the maximum value between the decimal equivalent of the column from top to bottom and the decimal equivalent of the column from bottom to top). Finally, the program must print the sum of all the C integers obtained as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+
+Output Format:
+The first line contains an integer representing the sum of all the C integers obtained from the matrix.
+
+Example Input/Output 1:
+Input:
+5 6
+0 0 1 1 0 1
+0 1 1 1 1 1
+0 0 1 0 1 1
+0 1 1 0 0 0
+1 1 1 1 0 0
+
+Output:
+138
+
+Explanation:
+1st column -> 16 (bottom to top).
+2nd column -> 26 (bottom to top).
+3rd column -> 31 (top to bottom or bottom to top).
+4th column -> 25 (top to bottom).
+5th column -> 12 (top to bottom).
+6th column -> 28 (top to bottom).
+The sum is 16 + 26 + 31 + 25 + 12 + 28 = 138.
+
+Example Input/Output 2:
+Input:
+6 4
+1 0 0 1
+1 1 0 0
+0 0 1 1
+1 0 1 0
+0 1 0 1
+1 1 0 0
+
+Output:
+157
+
+Max Execution Time Limit: 50 millisecs

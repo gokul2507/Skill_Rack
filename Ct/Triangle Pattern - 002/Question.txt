@@ -1,0 +1,34 @@
+Triangle Pattern - 002 (Id-3036)
+
+Given an odd integer N, print a triangle with * as mentioned in the below examples.
+
+Input Format:
+The first line contains N.
+
+Output Format:
+N/2 + 1 lines containing the triangle pattern as shown in the example input/output.
+
+Boundary Conditions:
+1 <= N <= 999
+
+Example Input/Output 1:
+Input:
+5
+
+Output:
+!!*!!
+!***!
+*****
+
+Example Input/Output 2:
+Input:
+9
+
+Output:
+!!!!*!!!!
+!!!***!!!
+!!*****!!
+!*******!
+*********
+
+Max Execution Time Limit: 5000 millisecs
