@@ -1,0 +1,14 @@
+Daily Challenge
+ 
+ProgramID- 13212
+
+Python - C - 013
+
+Please convert the following Python code to C so that the C program executes successfully passing the test cases.
+
+N = int(input())
+for ctr in range(N):
+    currRow = list(map(int, input().strip().split()))
+    print(len(currRow), sum(currRow))
+
+Max Execution Time Limit: 50 millisec
