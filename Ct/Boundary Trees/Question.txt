@@ -1,6 +1,6 @@
 Boundary Trees (Id-2978)
 
-Certain trees are planted in R rows and C columns in a rectangular field. The current height of the trees are passed as the input. In a month, each tree normally grows by 
+Certain trees are ed in R rows and C columns in a rectangular field. The current height of the trees are passed as the input. In a month, each tree normally grows by 
 N inches. But the trees on the edge of the rectangular field can grow double the normal rate as they get more sunlight when compared to other trees.
 
 The program must print the height of the trees after M months.
