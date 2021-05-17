@@ -1,0 +1,95 @@
+Daily Test
+ 
+ProgramID- 13214
+ 
+Merge Rows Fold Downwards
+
+An integer matrix with R rows and C columns is passed as the input. The programs must fold the matrix downwards starting from Nth row 
+and merge(add the cell values) the overlapping row values. Then the program must print the resulting matrix.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^5
+1 <= N <= R
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+The (R+2)th line contains N.
+
+Output Format:
+The lines containing the resulting matrix.
+
+Example Input/Output 1:
+Input:
+5 3
+1 2 30
+5 6 12
+9 4 90
+6 2 30
+7 8 55
+4
+
+Output:
+13 10 85
+9 4 90
+5 6 12
+1 2 30
+
+Explanation:
+The matrix must be folded from the fourth row downwards. So the 4th row will merge with the 5th row.
+After folding the matrix downwards starting from 4th row, the matrix becomes
+13 10 85
+9 4 90
+5 6 12
+1 2 30
+
+Example Input/Output 2:
+Input:
+5 3
+1 2 30
+5 6 12
+9 4 90
+6 2 30
+7 8 55
+2
+
+Output:
+14 10 102
+7 4 60
+7 8 55
+
+Example Input/Output 3:
+Input:
+5 3
+1 2 30
+5 6 12
+9 4 90
+6 2 30
+7 8 55
+1
+
+Output:
+6 8 42
+9 4 90
+6 2 30
+7 8 55
+
+Example Input/Output 4:
+Input:
+5 3
+1 2 30
+5 6 12
+9 4 90
+6 2 30
+7 8 55
+5
+
+Output:
+7 8 55
+6 2 30
+9 4 90
+5 6 12
+1 2 30
+
+Max Execution Time Limit: 50 millisecs
