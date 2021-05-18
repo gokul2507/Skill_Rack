@@ -1,0 +1,42 @@
+Daily Challenge
+ 
+ProgramID- 13221
+
+function integerToArray
+
+The function/method integerToArray accepts an argument N representing an integer value.
+
+The function/method integerToArray must return an array of integers containing the digits of N in the order of their occurrence 
+(i.e., the integers in the array represent the digits of N).
+
+Your task is to implement the function integerToArray so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+12345
+
+Output:
+Array: 1 2 3 4 5
+
+Explanation:
+There are 5 digits in the given integer 12345, which are given below.
+1 2 3 4 5
+
+Example Input/Output 2:
+Input:
+-704990
+
+Output:
+Array: 7 0 4 9 9 0
+
+Max Execution Time Limit: 50 millisecs
