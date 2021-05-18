@@ -1,0 +1,90 @@
+Daily Test
+ 
+ProgramID- 13163
+ 
+Search String Submatrix
+The program must accept a character matrix of size R*C and a string S as the input. All the characters in the string S always occur 
+exactly once as a submatrix in the given matrix. The characters in the submatrix are arranged in the order of their occurrence in S. 
+The program must find the submatrix and print it as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+2 <= Length of S <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains S.
+
+Output Format:
+The lines contain the submatrix with all the characters of the string S.
+
+Example Input/Output 1:
+Input:
+8 10
+v g e r p k k f n s
+v o f l k p h u f k
+h b x s d u o b k i
+x t f g s k i c t l
+b j k r l l r j j l
+c y y i a c k m b r
+u i y j z w f f e a
+s k i l l r a q k c
+skillrack
+
+Output:
+s k i
+l l r
+a c k
+
+Explanation:
+Here the given string is skillrack.
+The submatrix which contains the string skillrack is highlighted below.
+v g e r p k k f n s
+v o f l k p h u f k
+h b x s d u o b k i
+x t f g s k i c t l
+b j k r l l r j j l
+c y y i a c k m b r
+u i y j z w f f e a
+s k i l l r a q k c
+Hence the output is
+s k i
+l l r
+a c k
+
+Example Input/Output 2:
+Input:
+9 9
+x x x w n v a c c
+i w z l g i n a t
+d b y f q i o n w
+g j n q u h j g o
+w y e u m v w u w
+q r f m y h i r d
+j m t v a c c i n
+c y b a t i o n s
+q g v k t o j b t
+vaccinations
+
+Output:
+v a c c i n
+a t i o n s
+
+Example Input/Output 3:
+Input:
+8 5
+A O Q E H
+l T E s m
+y M P e o
+B S e v e
+b J H e y
+X D F n J
+v l a n S
+S e v e n
+Seven
+
+Output:
+S e v e n
+
+Max Execution Time Limit: 50 millisecs
