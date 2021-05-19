@@ -1,0 +1,36 @@
+Daily Challenge ProgramID- 13220 
+
+Define class Test
+
+The below Python program accepts the name and the duration(in minutes) of two tests as the input. The program prints the names of the two tests and the total duration(in minutes) as shown in the Example Input/Output section. Please define the class Test so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+English I
+90
+English II
+90
+
+Output:
+English I + English II
+180
+
+Explanation:
+The duration of the test English I is 90.
+The duration of the test English II is 90.
+The total duration is 180.
+Hence the output is
+English I + English II
+180
+
+Example Input/Output 2:
+Input:
+Maths
+120
+Science
+90
+
+Output:
+Maths + Science
+210
+Max Execution Time Limit: 50 millisecs
