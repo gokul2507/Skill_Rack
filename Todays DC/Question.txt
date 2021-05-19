@@ -1,42 +1,40 @@
 Daily Challenge
  
-ProgramID- 13221
-
-function integerToArray
-
-The function/method integerToArray accepts an argument N representing an integer value.
-
-The function/method integerToArray must return an array of integers containing the digits of N in the order of their occurrence 
-(i.e., the integers in the array represent the digits of N).
-
-Your task is to implement the function integerToArray so that it passes all the test cases.
-
-The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
-again in your code).
-typedef struct BoundedArray
-{
-    int SIZE;
-    int *arr;
-} boundedArray;
-
-IMPORTANT: Do not write the main() function as it is already defined.
+ProgramID- 13220
+ 
+Define class Test
+The below Python program accepts the name and the duration(in minutes) of two tests as the input. The program prints the names of the 
+two tests and the total duration(in minutes) as shown in the Example Input/Output section. Please define the class Test so that the 
+program runs successfully.
 
 Example Input/Output 1:
 Input:
-12345
+English I
+90
+English II
+90
 
 Output:
-Array: 1 2 3 4 5
+English I + English II
+180
 
 Explanation:
-There are 5 digits in the given integer 12345, which are given below.
-1 2 3 4 5
+The duration of the test English I is 90.
+The duration of the test English II is 90.
+The total duration is 180.
+Hence the output is
+English I + English II
+180
 
 Example Input/Output 2:
 Input:
--704990
+Maths
+120
+Science
+90
 
 Output:
-Array: 7 0 4 9 9 0
+Maths + Science
+210
 
 Max Execution Time Limit: 50 millisecs
