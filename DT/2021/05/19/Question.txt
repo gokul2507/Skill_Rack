@@ -1,0 +1,42 @@
+Daily Test
+ 
+ProgramID- 13264
+ 
+Days Remaining - Year & Month
+The program must accept a date D in any of the following two formats.
+DD-MMM-YYYY
+MMM-DD-YYYY
+The program must print the number of days remaining in the year YYYY after the given date. Then the program must print the number of 
+days in the month MMM after the given date.
+
+Note: The value of MMM will be from Jan, Feb, Mar, Apr,... till Dec.
+
+Input Format:
+The first line contains a date D.
+
+Output Format:
+The first line contains the number of days remaining in the year after the given date.
+The second line contains the number of days in the month after the given date.
+
+Example Input/Output 1:
+Input:
+09-Nov-2021
+
+Output:
+52
+21
+
+Explanation:
+The given date is 9th November 2021.
+Number of days remaining in the year 2021: 52 days
+Number of days remaining in the month Nov-2021: 21 days
+
+Example Input/Output 2:
+Input:
+Dec-29-2021
+
+Output:
+2
+2
+
+Max Execution Time Limit: 50 millisecs
