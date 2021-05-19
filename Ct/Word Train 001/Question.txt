@@ -1,0 +1,31 @@
+Word Train 001 (Id-3173)
+
+N words are passed as input to the program. For N-1 words there will be another word which starts with it's last letter. The remaining 
+one word (which does not have any other word starting with it's last letter must appear as the last word in the list). The program must 
+print the words in the order so that a specific word is followed by the other word which starts with it's last letter.
+
+Input Format:
+The first line contains N.
+Next N lines contain N words.
+
+Output Format:
+N lines containing N words in the desired order.
+
+Boundary Conditions:
+2 <= N <= 100
+
+Example Input/Output 1:
+Input:
+4
+niche
+manager
+lemon
+emblem
+
+Output:
+lemon
+niche
+emblem
+manager
+
+Max Execution Time Limit: 5000 millisecs
