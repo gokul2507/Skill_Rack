@@ -7,8 +7,10 @@ def check(n,x,y):
 r,c=map(int,input().split())
 m=[list(map(int,input().split())) for i in range(r)]
 count=0 
+if c==1:
+    print(0)
+    exit()
 for i in range(r):
     for j in range(c):
         count+=check(m[i][j]%10,i,j)
 print(count)
-#1 hidden case
