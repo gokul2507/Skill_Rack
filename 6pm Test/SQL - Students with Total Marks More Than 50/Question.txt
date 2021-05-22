@@ -1,0 +1,12 @@
+SQL - Students with Total Marks More Than 50 (Id-3211)
+
+student is a database table containing student details whose create DDL is given below.
+CREATE TABLE student(id int, name VARCHAR(100), branch  VARCHAR(50));
+marks is a database table containing the total marks scored by the students in a particular examination. The create DDL of the marks 
+table is given below. (studentid is a foreign key reference to id in the table student)
+CREATE TABLE marks(id int, studentid int, totalmarks int);
+Write the SQL to list the name of the students who have scored more than 49 as total marks along with their branch and the total marks.
+(The name must be the first column in the resultset. The branch must be the second column in the resultset. The totalmarks must be the 
+third column in the resultset). The result set must be ordered by the total marks in descending order.
+
+Max Execution Time Limit: 5000 millisecs
