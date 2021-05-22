@@ -1,0 +1,44 @@
+Pattern - X to Y Forward & Reverse [EASY] (Id-3180)
+
+For a given value of X and Y, print the pattern as explained in the Example Input/Output section.
+
+Input Format:
+The first line contains X, Y separated by a space.
+
+Output Format:
+The pattern as explained in the Example Input/Output section.
+
+Boundary Conditions:
+1 <= X, Y <= 100
+
+Example Input/Output 1:
+Input:
+1 5
+
+Output:
+12345
+11345
+11145
+11115
+12355
+12555
+15555
+
+Example Input/Output 2:
+Input:
+3 9
+
+Output:
+3456789
+3356789
+3336789
+3333789
+3333389
+3333339
+3456799
+3456999
+3459999
+3499999
+3999999
+
+Max Execution Time Limit: 5000 millisecs

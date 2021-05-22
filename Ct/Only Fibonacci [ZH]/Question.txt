@@ -1,0 +1,33 @@
+Only One String Alphabets (Id-3176)
+
+N string values are passed as input to the program. Each string will contain only the alphabets a-z in lower case. A given alphabet may 
+be repeated any number of times. The program must print the count C of the alphabets that are present only in one string value.
+
+Input Format:
+The first line contains N.
+Next N lines contain the N string values.
+
+Output Format:
+The first line contains C.
+
+Boundary Conditions:
+2 <= N <= 500
+1 <= Length of the string value <= 1000
+
+Example Input/Output 1:
+Input:
+3
+mnppqqr
+ajkmnnm
+poormanagement
+
+Output:
+7
+
+Explanation:
+qtegjko are the 7 characters that are present only in one string value.
+q is present only in 1st string
+j & k are present only in 2nd string
+t e g o are present only in 3rd string
+
+Max Execution Time Limit: 5000 millisecs

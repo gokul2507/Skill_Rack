@@ -1,0 +1,60 @@
+Daily Challenge
+ 
+ProgramID- 13228
+ 
+Solved By 293 Users
+   SkillRack
+function getArrayFromMatrix
+The function/method getArrayFromMatrix accepts three arguments - R, C and matrix. The integer R represents the number of rows in the 
+matrix, the integer C represents the number of columns in the matrix and a two dimensional array of integers matrix.
+
+The function/method getArrayFromMatrix must return an array of integers containing all the integers in the given matrix in the reverse 
+order of their occurrence (i.e., the traversal starting from the last row of the matrix and moving from right to left in each row).
+
+Your task is to implement the function getArrayFromMatrix so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+3 5
+10 20 30 40 50
+55 65 75 85 95
+66 77 88 99 11
+
+Output:
+Matrix:
+10 20 30 40 50
+55 65 75 85 95
+66 77 88 99 11
+Array: 11 99 88 77 66 95 85 75 65 55 50 40 30 20 10
+
+Explanation:
+The integers in the 3rd row (right to left) are 11 99 88 77 66.
+The integers in the 2nd row (right to left) are 95 85 75 65 55.
+The integers in the 1st row (right to left) are 50 40 30 20 10.
+So the array contains the following 15 (3*5) integers.
+11 99 88 77 66 95 85 75 65 55 50 40 30 20 10
+
+Example Input/Output 2:
+Input:
+3 2
+10 45
+50 60
+78 68
+
+Output:
+Matrix:
+10 45
+50 60
+78 68
+Array: 68 78 60 50 45 10
+
+Max Execution Time Limit: 50 millisecs

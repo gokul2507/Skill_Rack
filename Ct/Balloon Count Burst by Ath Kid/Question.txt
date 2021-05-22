@@ -1,0 +1,35 @@
+Balloon Count Burst by Ath Kid (Id-3178)
+
+There are N filled balloons each painted with a random number B(i) where i is from 1 to N and the balloons are tied up to a rope in a 
+straight line. M kids who play football arrive and they decide to burst the balloons with the numbers divisible by their jersey numbers 
+J(a) where a is from 1 to M. The program must print the count C of the balloons burst by the Ath kid (1 <= A <= M).
+
+Input Format:
+The first line contains N, M, A each separated by a space.
+The second line contains N positive integers which denote the numbers on the balloons separated by a space.
+The third line contains M positive integers which denote the numbers on the jerseys separated by a space.
+
+Output Format:
+The first line contains C
+
+Boundary Conditions:
+1 <= N <= 9999
+1 <= M <= 20
+1 <= A <= M
+
+Example Input/Output 1:
+Input:
+12 3 2
+38 40 11 46 44 48 35 14 39 44 23 45
+2 3 11
+
+Output:
+2
+
+Explanation:
+Here A = 2. So we need to print the balloons burst by the 2nd kid.
+The 1st kid bursts balloons with numbers which are divisible by 2. So the balloons remaining are 11 35 39 23 45
+The 2nd kid bursts balloons with numbers which are divisible by 3. So the balloons he/she bursts are with numbers 39 and 45 and hence 
+answer is 2.
+
+Max Execution Time Limit: 5000 millisecs
