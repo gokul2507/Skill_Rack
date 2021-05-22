@@ -1,0 +1,82 @@
+Daily Test
+ 
+ProgramID- 13242
+ 
+Swap Values - Two Matrices
+The program must accept two matrices M1 and M2 of the same size R*C as the input. M1 represents an integer matrix and M2 represents a 
+character matrix. For each occurrence of a vowel in M2, the program must swap the values between the two matrices in the same position. 
+Finally, the program must print the modified two matrices as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Each integer value <= 1000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines contain the integer matrix M1.
+The next R lines from the (R+2)th line contain the character matrix M2.
+
+Output Format:
+The first R lines contain the modified matrix M1.
+The next R lines contain the modified matrix M2.
+
+Example Input/Output 1:
+Input:
+3 4
+10 20 30 40
+50 60 70 80
+90 91 92 93
+a b c d
+e f P Q
+R S T U
+
+Output:
+a 20 30 40
+e 60 70 80
+90 91 92 U
+10 b c d
+50 f P Q
+R S T 93
+
+Explanation:
+The vowels in the matrix M2 are highlighted below.
+a b c d
+e f P Q
+R S T U
+After swapping the values between the two matrices based on the given conditions, the matrices become
+Matrix M1:
+a 20 30 40
+e 60 70 80
+90 91 92 U
+Matrix M2:
+10 b c d
+50 f P Q
+R S T 93
+
+Example Input/Output 2:
+Input:
+5 5
+41 50 37 28 48
+30 56 13 28 90
+87 37 90 31 18
+35 32 69 83 70
+44 14 49 55 59
+d a Y y Q
+t T B x E
+U r F l L
+P w i J y
+X R O n u
+
+Output:
+41 a 37 28 48
+30 56 13 28 E
+U 37 90 31 18
+35 32 i 83 70
+44 14 O 55 u
+d 50 Y y Q
+t T B x 90
+87 r F l L
+P w 69 J y
+X R 49 n 59
+
+Max Execution Time Limit: 50 millisecs
