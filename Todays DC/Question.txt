@@ -1,0 +1,35 @@
+Daily Challenge
+ 
+ProgramID- 13218
+
+function getUniqueUnitDigits
+The function/method getUniqueUnitDigits accepts two arguments SIZE and arr. SIZE represents the size of the integer array arr.
+
+The function/method getUniqueUnitDigits must return a string containing the unique unit digits in the given array of integers in 
+descending order.
+
+Your task is to implement the function getUniqueUnitDigits so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+8
+14 398 840 77 38 132 599 639
+
+Output:
+Unique Unit Digits: 987420
+
+Explanation:
+The unit digits of the given 8 integers are 4, 8, 0, 7, 8, 2, 9 and 9.
+The unique unit digits in descending order are 9, 8, 7, 4, 2 and 0.
+
+Example Input/Output 2:
+Input:
+5
+123 5873 93 543 3331
+
+Output:
+Unique Unit Digits: 31
+
+Max Execution Time Limit: 50 millisecs
