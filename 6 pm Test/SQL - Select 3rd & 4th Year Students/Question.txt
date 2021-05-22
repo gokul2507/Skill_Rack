@@ -1,0 +1,9 @@
+SQL - Select 3rd & 4th Year Students (Id-3208)
+
+student is a database table containing student details whose create DDL is given below.
+CREATE TABLE student(id int, name VARCHAR(100), department VARCHAR(3), year int);
+Write the SQL to list students belonging to third and fourth year (values in database are 3 and 4) and sort by the column name.
+(The name must be the first column in the resultset. The year must be the second column in the resultset. The department must be the 
+third column in the resultset.)
+
+Max Execution Time Limit: 5000 millisecs

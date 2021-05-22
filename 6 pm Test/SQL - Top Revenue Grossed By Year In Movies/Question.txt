@@ -1,0 +1,9 @@
+SQL - Top Revenue Grossed By Year In Movies (Id-3209)
+
+movie is a database table containing movie details whose create DDL is given below.
+CREATE TABLE movie(id int, name VARCHAR(100), revenue int, releaseyear int);
+The revenue of the movie is in millions. Write the SQL to list the top revenue grossed in every year present in the table data. 
+(Assume no two movies will have the same maximum revenue earned in a given releaseyear). Sort by release year in descending order.
+(The releaseyear must be the first column in the resultset. The revenue must be the second column in the resultset.)
+
+Max Execution Time Limit: 5000 millisecs

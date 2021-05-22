@@ -1,0 +1,12 @@
+SQL - Employee Name Search (Id-3210)
+ 
+Author: SKILLRACK
+
+
+employee is a database table containing employee details whose create DDL is given below.
+CREATE TABLE employee(id int, name VARCHAR(100), designation  VARCHAR(50));
+Write the SQL to list the name and designation of the employees where the name starts with S (upper case) or ends with n (smaller case).
+(The name must be the first column in the resultset. The designation must be the second column in the resultset). The result set must 
+be ordered by designation in ascending order.
+
+Max Execution Time Limit: 5000 millisecs
