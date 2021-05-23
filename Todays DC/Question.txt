@@ -1,0 +1,33 @@
+Daily Challenge
+ 
+ProgramID- 13229
+
+Define class Stick
+
+The below Python program accepts two integers representing the lengths of two sticks as the input. The program prints the length after 
+joining the given two sticks as shown in the Example Input/Output section. Please define the class Stick so that the program runs 
+successfully.
+
+Example Input/Output 1:
+Input:
+10
+20
+
+Output:
+Length: 30
+
+Explanation:
+The length of the given two sticks are 10 and 20.
+After joining the given two sticks, the length becomes 30 (10+20).
+Hence the output is
+Length: 30
+
+Example Input/Output 2:
+Input:
+15
+7
+
+Output:
+Length: 22
+
+Max Execution Time Limit: 50 millisecs
