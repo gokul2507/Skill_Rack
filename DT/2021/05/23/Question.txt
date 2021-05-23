@@ -1,0 +1,61 @@
+Daily Test
+ 
+ProgramID- 13308
+ 
+Define class BankAccount
+The program must accept an integer B representing the balance in a bank account and N integers representing N transactions in the bank 
+account as the input. A positive integer indicates that the amount is added to the account(credit). A negative integer indicates that 
+the amount is withdrawn from the account(debit). For each transaction, the program must print the output based on the following 
+conditions.
+
+Debit: If the amount to be debited is less than or equal to the account balance, then it must be deducted from the balance. Else the 
+program must print "Insufficient Balance".
+
+Credit: The program must add the given amount to the balance.
+
+After each transaction, the program must print the balance.
+
+You must define the class BankAccount so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+1000
+4
+-500
+-1000
+2000
+-1000
+
+Output:
+500
+Insufficient Balance
+500
+2500
+1500
+
+Explanation:
+The balance in the bank account is 1000.
+1st transaction: 500 debited. Now the balance becomes 500.
+2nd transaction: The amount to be debited is 1000, which is greater than the balance. So "Insufficient Balance" is printed. The balance remains the same 500.
+3rd transaction: 2000 credited. Now the balance becomes 2500.
+4th transaction: 1000 debited. Now the balance becomes 1500.
+
+Example Input/Output 2:
+Input:
+750
+5
++1000
+-200
+-550
++500
+-2000
+
+Output:
+1750
+1550
+1000
+1500
+Insufficient Balance
+1500
+
+Max Execution Time Limit: 50 millisecs
