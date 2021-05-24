@@ -6,5 +6,5 @@ git remote add origin https://github.com/gokul2507/Skill_Rack.git
 git push -u origin main
 
 git add .
-git commit -m "-"
+git commit -m "Past DT"
 git push -u origin main
