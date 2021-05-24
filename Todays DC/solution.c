@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 int customCompare(char s1[],char s2[]){
     char a[101],b[101];
     int c1=0,c2=0;

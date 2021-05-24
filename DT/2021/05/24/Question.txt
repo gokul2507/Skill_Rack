@@ -1,0 +1,50 @@
+Daily Test
+ 
+ProgramID- 13233
+
+function getIntegersWithUniqueDigits
+The function/method getIntegersWithUniqueDigits accepts two arguments - SIZE and arr. The integer SIZE represents the size of the 
+integer array arr.
+
+The function/method getIntegersWithUniqueDigits must return an array of integers containing the integers with unique digits in the 
+given array. If there is no such integer in the given array, then the function must return an array of size 1 with the value -1.
+
+Your task is to implement the function getIntegersWithUniqueDigits so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+6
+434 37 431 228 25 88
+
+Output:
+Old Array: 434 37 431 228 25 88
+New Array: 37 431 25
+
+Explanation:
+Here N = 6 and the given 6 integers are 434, 37, 431, 228, 25 and 88.
+The integers with unique digits are 37, 431 and 25.
+Hence the output is
+Old Array: 434 37 431 228 25 88
+New Array: 37 431 25
+
+Example Input/Output 2:
+Input:
+5
+115 4148 22 755 1000
+
+Output:
+Old Array: 115 4148 22 755 1000
+New Array: -1
+
+Max Execution Time Limit: 50 millisecs
