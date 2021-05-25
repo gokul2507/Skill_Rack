@@ -1,0 +1,40 @@
+Daily Test
+ 
+ProgramID- 11493
+
+String Count - Sequence of Alphabets
+The program must accept a string S containing only lower case alphabets as the input. The program must print the minimum number of 
+string values (of length more than 1) that can be formed using the alphabets where the alphabets are in sequence. If it is not 
+possible to form such string values, the program must print -1 as the output. 
+
+Note: The alphabets in S are always distinct.
+
+Boundary Condition(s):
+2 <= Length of S <= 26
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains an integer value based on the given conditions.
+
+Example Input/Output 1:
+Input:
+yamobxcnpzr
+
+Output:
+3
+
+Explanation:
+There are three string values that can be formed using the alphabets where the alphabets are in sequence.
+abc, mnop and xyz.
+So the count 3 is printed as the output.
+
+Example Input/Output 2:
+Input:
+acfhkmo
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs

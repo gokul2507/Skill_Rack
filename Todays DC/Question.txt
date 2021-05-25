@@ -1,0 +1,50 @@
+Daily Challenge ProgramID- 11709 
+
+Binary Prefix Count - Divisible by X
+The program must accept two integers N and X as the input. The program must find the binary representation B of the integer N. Then the 
+program print the number of prefixes in B whose decimal equivalents are divisible by X as the output.
+
+Boundary Condition(s):
+1 <= N <= 10^5
+1 <= X <= 100
+
+Input Format:
+The first line contains N and X separated by a space.
+
+Output Format:
+The first line contains an integer representing the number of prefixes in B whose decimal equivalents are divisible by X.
+
+Example Input/Output 1:
+Input:
+52 2
+
+Output:
+3
+
+Explanation:
+The binary representation of 52 is B = 110100.
+All prefixes in B and the corresponding decimal equivalents are given below.
+110100 -> 52
+11010 -> 26
+1101 -> 13
+110 -> 6
+11 -> 3
+1 -> 1
+Here 52, 26 and 6 are divisible by 2. So the count 3 is printed as the output.
+
+Example Input/Output 2:
+Input:
+147 3
+
+Output:
+4
+
+Example Input/Output 3:
+Input:
+98 6
+
+Output:
+3
+
+
+Max Execution Time Limit: 50 millisecs
