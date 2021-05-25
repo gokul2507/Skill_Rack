@@ -1,0 +1,27 @@
+File - N Words Concatenate (Id-3219)
+
+N words are passed as the input to the program. The program must concatenate the N words into a single string and write it into a 
+file called output.txt (whose location is same as the program execution location). Fill in the missing lines of code so that the
+program executes successfully.
+
+Input Format:
+The first line contains N.
+N lines contain the N words.
+
+Output Format:
+output.txt file is created into which these N words are concatenated and written into
+
+Boundary Conditions:
+1 <= N <= 100
+
+Example Input/Output 1:
+Input:
+3
+good
+morning
+friend
+
+Output File Content:
+goodmorningfriend
+
+Max Execution Time Limit: 3000 millisecs
