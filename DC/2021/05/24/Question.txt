@@ -1,0 +1,45 @@
+Daily Challenge
+ 
+ProgramID- 13240
+
+function customCompare
+The function/method customCompare accepts two arguments - str1 and str2 representing two string values.
+
+The function/method customCompare must return 1 if the upper case alphabets in str1 match the upper case alphabets in str2 in the 
+same order of their occurrence. Else the function must return 0.
+
+Your task is to implement the function customCompare so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+AbcdEFghi
+jklAmnEopF
+
+Output:
+1
+
+Explanation:
+The upper case alphabets in the string AbcdEFghi are A, E and F.
+The upper case alphabets in the string jklAmnEopF are A, E and F.
+Here the upper case alphabets in both string values are the same.
+Hence the output is 1.
+
+Example Input/Output 2:
+Input:
+eLEphanT
+gETpLane
+
+Output:
+0
+
+Example Input/Output 3:
+Input:
+prime-N-U-M-B-E-R-S
+NUMBERS12345
+
+Output:
+1
+
+Max Execution Time Limit: 50 millisecs
