@@ -1,0 +1,37 @@
+Java Exception - Catch Block (Id-3220)
+
+A string value S is passed as the input to the program. If S represents an integer, then the integer value must be printed as such. 
+But if S does not represent an integer, then the message NOTANINTEGER must be printed as the output. Fill in the missing lines of code 
+to define the catch block so that the program runs successfully.
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains S or NOTANINTEGER
+
+Boundary Conditions:
+1 <= Length of S <= 20
+
+Example Input/Output 1:
+Input:
+3
+
+Output:
+3
+
+Example Input/Output 2:
+Input:
+3am
+
+Output:
+NOTANINTEGER
+
+Example Input/Output 3:
+Input:
+coolair
+
+Output:
+NOTANINTEGER
+
+Max Execution Time Limit: 5000 millisecs
