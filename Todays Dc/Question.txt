@@ -1,0 +1,54 @@
+Daily Challenge
+ 
+ProgramID- 13230
+
+function getColumn
+The function/method getColumn accepts four arguments - R, C, matrix and K. The integer R represents the number of rows in the matrix, 
+the integer C represents the number of columns in the matrix, a two dimensional array of integers matrix and the integer K represents 
+the position of a column in the matrix.
+
+The function/method getColumn must return an array of integers containing all the integers in the Kth column of the given matrix.
+
+Your task is to implement the function getColumn so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5 4
+98 62 65 28
+37 47 14 89
+19 66 48 43
+84 16 75 35
+62 88 77 94
+3
+
+Output:
+Column 3: 65 14 48 75 77
+
+Explanation:
+Here K = 3, the integers in the 3rd column are 65, 14, 48, 75 and 77.
+Hence the output is
+Column 3: 65 14 48 75 77
+
+Example Input/Output 2:
+Input:
+4 7
+87 51 76 54 16 32 63
+51 86 57 48 91 32 93
+44 32 69 22 38 49 94
+63 40 23 70 88 13 87
+2
+
+Output:
+Column 2: 51 86 32 40
+
+Max Execution Time Limit: 50 millisecs
