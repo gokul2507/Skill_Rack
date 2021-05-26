@@ -1,0 +1,46 @@
+Java Exception - Custom Exception Class (Id-3222)
+
+SkillRackException is a custom Exception. Fill in the lines of code to define the class SkillRackException so that the below main 
+program runs successfully.
+
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        try {
+            throw new SkillRackException(input);
+        } catch (SkillRackException sre) {
+            System.out.println(sre.getMessage());
+        }
+
+    }//end of main method
+
+}//end of class Hello
+
+Input Format:
+The first line contains the input string S.
+
+Output Format:
+The first line contains S.
+
+Boundary Conditions:
+1 <= Length of S <= 50
+
+Example Input/Output 1:
+Input:
+abcd
+
+Output:
+abcd
+
+Example Input/Output 2:
+Input:
+checkingcustomexception
+
+Output:
+checkingcustomexception
+
+Max Execution Time Limit: 5000 millisecs

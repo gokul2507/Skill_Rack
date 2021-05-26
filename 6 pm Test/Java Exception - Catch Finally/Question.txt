@@ -1,0 +1,32 @@
+Java Exception - Catch Finally (Id-3221)
+
+A string value S is passed as the input to the program. If the length of the input string S is less than or equal to 5, then S must be 
+printed as the output. Else the first line of the output must be TooLong and the second line of the output must be S. Fill in the 
+missing lines of code to accomplish the same.
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains S or TooLong.
+The second line (when length of S > 5) contains S.
+
+Boundary Conditions:
+1 <= Length of S <= 20
+
+Example Input/Output 1:
+Input:
+cake
+
+Output:
+cake
+
+Example Input/Output 2:
+Input:
+evening
+
+Output:
+TooLong
+evening
+
+Max Execution Time Limit: 5000 millisecs
