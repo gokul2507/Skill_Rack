@@ -1,0 +1,68 @@
+Daily Test
+ 
+ProgramID- 12731
+
+Boats & Ships - South or East
+The program must accept a character matrix of size R*C representing a port as the input. The character asterisk (*) represents water. 
+The character hash symbol (#) represents a boat. Two consecutive hash symbols (vertically or horizontally) represent a ship. The 
+vertical ships can move only towards the south. The horizontal ships can move only towards the east. The boats can move towards 
+south or east. The boats and ships leave the port based on the following conditions.
+- Every odd minute, the last occurring boat or the horizontal ship in each row leave the port (towards east).
+- Every even minute, the last occurring boat or the vertical ship in each column leave the port (towards south).
+- A boat or ship cannot move if there is another boat or ship on its way.
+The program must print the number of minutes it takes to empty port as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 25
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+
+Output Format:
+The first line contains the number of minutes it takes to empty port.
+
+Example Input/Output 1:
+Input:
+4 8
+* # * # * # * *
+# * * # * * * #
+* # # * # # * #
+# * * * * * # *
+
+Output:
+5
+
+Explanation:
+After 1 minute (2 boats left the port), the port becomes
+* # * # * * * *
+# * * # * * * #
+* # # * # # * #
+# * * * * * * *
+After 2 minutes (2 vertical ships and 1 boat left the port), the port becomes
+* # * * * * * *
+# * * * * * * *
+* # # * # # * *
+* * * * * * * *
+After 3 minutes (1 horizontal ship and 2 boats left the port), the port becomes
+* * * * * * * *
+* * * * * * * *
+* # # * * * * *
+* * * * * * * *
+After 4 minutes the port remains the same (no more boats or ships to leave the port).
+After 5 minutes (1 horizontal ship left the port), the port becomes empty.
+It takes 5 minutes to empty the port. So 5 is printed as the output.
+
+Example Input/Output 2:
+Input:
+5 5
+# * * * #
+* # # * #
+* * * * *
+# * * # #
+# * # * *
+
+Output:
+3
+
+Max Execution Time Limit: 50 millisecs
