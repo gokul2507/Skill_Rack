@@ -1,0 +1,54 @@
+Java Class & Objects - Interface Implementation (Id-3224)
+
+The interface KeyBoard.java is as given below.
+public interface KeyBoard {
+    public void setCapsLock(boolean ON);
+    public void type(String input);
+    public String getText();
+}
+The code for the main program Hello.java is given below.
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = Integer.parseInt(sc.nextLine());
+        
+        KeyBoard kb = new BellKeyBoard();
+               
+        for(int ctr=0; ctr < N; ctr++){
+            kb.setCapsLock(ctr%2 == 1);
+            kb.type(sc.nextLine());
+        }
+        
+        System.out.println(kb.getText());
+    }//end of main method
+
+}//end of class Hello
+
+Fill in the missing lines of code to define the class BellKeyBoard.java so that when true is passed as an argument to the method 
+setCapsLock, the input to the type method must be converted to upper case.
+
+Input Format:
+The first line contains N - the number of input lines to be read and passed as input to type method.
+
+Output Format:
+The first line contains the typed text.
+
+Boundary Conditions:
+1 <= N <= 100
+Length of the input string values is from 1 to 100.
+
+Example Input/Output 1:
+Input:
+4
+apple
+baNaNa
+CUsTaRd
+Denver
+
+Output:
+appleBANANACUsTaRdDENVER
+
+Max Execution Time Limit: 5000 millisecs
