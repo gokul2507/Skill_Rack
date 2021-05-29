@@ -1,85 +1,64 @@
 Daily Challenge
  
-ProgramID- 12733
+ProgramID- 13243
 
-Matrix - Remove Apples & Oranges
-The program must accept a character matrix of size R*C containing only A's and O's as the input. The character A represents an apple. 
-The character O represents an orange. The program must remove the fruits in the matrix based on the following conditions.
-- Only the fruits in the last row of the matrix are allowed to be removed.
-- If the number of apples is greater than or equal to the number of oranges in the last row, then the program must remove the apples 
-from the last row. Else the program must remove the oranges from the last row.
-- Once a fruit is removed, the fruits above the empty space will move down by one position.
-The program must print the matrix after removing the fruits T times as the output. The value of T is also passed as the input to the 
-program. The empty spaces must be printed as asterisks.
+function printAlarmTimings
+The function/method printAlarmTimings accepts three arguments - startTime, endTime and X. The startTime and endTime are two string 
+values that represent the start time and end time of a factory. For every X minutes from the start time to the end time, the factory 
+alarm sounds indicating the time slot for the workers.
 
-Boundary Condition(s):
-2 <= R, C <= 50
-1 <= T <= R
+The function/method printAlarmTimings must print the alarm timings at the factory.
 
-Input Format:
-The first line contains R and C separated by a space.
-The next R lines, each contains C characters separated by a space.
-The (R+2)nd line contains T.
+Note: The start time, the end time and the alarm timings are always in 24-hr format HH:MM.
 
-Output Format:
-The first R lines, each contains C characters separated by a space.
+Your task is to implement the function printAlarmTimings so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
 
 Example Input/Output 1:
 Input:
-5 6
-A O O A O O
-O A O A A A
-A A O A A O
-O A O O A O
-O A A A O A
-3
+09:15
+17:30
+60
 
 Output:
-* * * * * *
-A * * * * *
-O O O * O O
-A A O A A A
-O A O A A O
+10:15
+11:15
+12:15
+13:15
+14:15
+15:15
+16:15
+17:15
 
 Explanation:
-T = 1 (4 apples and 2 oranges in the last row). After removing the apples, the matrix becomes
-A * * * O *
-O O O A A O
-A A O A A A
-O A O A A O
-O A O O O O
-T = 2 (1 apple and 5 oranges in the last row). After removing the oranges, the matrix becomes
-* * * * * *
-A O * * O *
-O A O A A O
-A A O A A A
-O A O A A O
-T = 3 (3 apples and 3 oranges in the last row). After removing the apples, the matrix becomes
-* * * * * *
-A * * * * *
-O O O * O O
-A A O A A A
-O A O A A O
+Here X=60, so the alarm sounds every 60 minutes from 09:15 to 17:30.
+10:15
+11:15
+12:15
+13:15
+14:15
+15:15
+16:15
+17:15
 
 Example Input/Output 2:
 Input:
-7 5
-A O A A O
-A A A A O
-A O O O O
-O O A O A
-A A A A A
-A A O O A
-A A O O A
-7
+04:00
+12:15
+45
 
 Output:
-* * * * *
-* * * * *
-* * * * *
-* * A * *
-* * A A *
-A * O A O
-A * A O O
+04:45
+05:30
+06:15
+07:00
+07:45
+08:30
+09:15
+10:00
+10:45
+11:30
+12:15
 
 Max Execution Time Limit: 50 millisecs

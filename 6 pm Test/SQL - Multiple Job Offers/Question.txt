@@ -1,0 +1,20 @@
+SQL - Multiple Job Offers (Id-3555)
+
+student is a database table containing student details whose create DDL is given below.
+
+CREATE TABLE student(id int, name VARCHAR(100), branch  VARCHAR(30));
+
+interviewround is a database table containing the campus placement performance of the candidates whose DDL is given below. A value of 1 
+for placed indicates that the student has been placed.
+
+CREATE TABLE interviewround(companyid int, studentid int, maxround int, placed int);
+
+company is a database table containing the details of the companies which visited the campus whose DDL is given below.
+
+CREATE TABLE company(id int, name VARCHAR(100), employeecount int);
+
+Write the SQL to list the name, branch of the students who got placed in two or more companies. The names must be sorted in ascending 
+order.
+(The name must be the first column in the resultset. The branch must be the second column in the resultset.
+
+Max Execution Time Limit: 5000 millisecs

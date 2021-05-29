@@ -1,0 +1,85 @@
+Daily Challenge
+ 
+ProgramID- 12733
+
+Matrix - Remove Apples & Oranges
+The program must accept a character matrix of size R*C containing only A's and O's as the input. The character A represents an apple. 
+The character O represents an orange. The program must remove the fruits in the matrix based on the following conditions.
+- Only the fruits in the last row of the matrix are allowed to be removed.
+- If the number of apples is greater than or equal to the number of oranges in the last row, then the program must remove the apples 
+from the last row. Else the program must remove the oranges from the last row.
+- Once a fruit is removed, the fruits above the empty space will move down by one position.
+The program must print the matrix after removing the fruits T times as the output. The value of T is also passed as the input to the 
+program. The empty spaces must be printed as asterisks.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= T <= R
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)nd line contains T.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+5 6
+A O O A O O
+O A O A A A
+A A O A A O
+O A O O A O
+O A A A O A
+3
+
+Output:
+* * * * * *
+A * * * * *
+O O O * O O
+A A O A A A
+O A O A A O
+
+Explanation:
+T = 1 (4 apples and 2 oranges in the last row). After removing the apples, the matrix becomes
+A * * * O *
+O O O A A O
+A A O A A A
+O A O A A O
+O A O O O O
+T = 2 (1 apple and 5 oranges in the last row). After removing the oranges, the matrix becomes
+* * * * * *
+A O * * O *
+O A O A A O
+A A O A A A
+O A O A A O
+T = 3 (3 apples and 3 oranges in the last row). After removing the apples, the matrix becomes
+* * * * * *
+A * * * * *
+O O O * O O
+A A O A A A
+O A O A A O
+
+Example Input/Output 2:
+Input:
+7 5
+A O A A O
+A A A A O
+A O O O O
+O O A O A
+A A A A A
+A A O O A
+A A O O A
+7
+
+Output:
+* * * * *
+* * * * *
+* * * * *
+* * A * *
+* * A A *
+A * O A O
+A * A O O
+
+Max Execution Time Limit: 50 millisecs
