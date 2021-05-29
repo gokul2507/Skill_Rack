@@ -1,0 +1,44 @@
+Daily Test
+ 
+ProgramID- 13279
+ 
+Define Class Shape
+The below Java program accepts the radius of a circle R and two integers X and Y as the input. The program prints the perimeter of the 
+circle which has the radius R as the output. Then the program prints the perimeter of the square which has the side X. Then the program 
+prints the perimeter of the rectangle which has the length X and the breadth Y.
+
+Your task is to define the class Shape so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+2.5
+5 15
+
+Output:
+15.71
+20
+40
+
+Explanation:
+Here R = 2.5, X = 5 and Y = 15.
+Perimeter of the circle = 2 * (22/7) * radius
+= 2 * (22/7) * 2.5
+= 15.71 (perimeter of the circle is printed with the precision up to 2 decimal places)
+Perimeter of the square = 4 * side
+= 4 * 5
+= 20
+Perimeter of the rectangle = 2 * (length + breadth)
+= 2 * (5 + 15)
+= 40
+
+Example Input/Output 2:
+Input:
+3.25
+7 12
+
+Output:
+20.43
+28
+38
+
+Max Execution Time Limit: 50 millisecs
