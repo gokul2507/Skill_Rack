@@ -1,0 +1,21 @@
+Move M Words - End Reverse (Id-3623)
+
+The program must accept a string S which contains N words and move the first M words to the last in the reverse 
+order.
+
+Input format:
+The first line contains S.
+
+Boundary Conditions:
+M <= N < 50
+10 <= Length of S <= 200
+
+Example Input/Output 1:
+Input:
+one two three four five
+3
+
+Output:
+four five three two one
+
+Max Execution Time Limit: 5000 millisecs

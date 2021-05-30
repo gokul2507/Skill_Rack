@@ -1,0 +1,64 @@
+Daily Challenge
+ 
+ProgramID- 13243
+
+function printAlarmTimings
+The function/method printAlarmTimings accepts three arguments - startTime, endTime and X. The startTime and endTime are two string 
+values that represent the start time and end time of a factory. For every X minutes from the start time to the end time, the factory 
+alarm sounds indicating the time slot for the workers.
+
+The function/method printAlarmTimings must print the alarm timings at the factory.
+
+Note: The start time, the end time and the alarm timings are always in 24-hr format HH:MM.
+
+Your task is to implement the function printAlarmTimings so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+09:15
+17:30
+60
+
+Output:
+10:15
+11:15
+12:15
+13:15
+14:15
+15:15
+16:15
+17:15
+
+Explanation:
+Here X=60, so the alarm sounds every 60 minutes from 09:15 to 17:30.
+10:15
+11:15
+12:15
+13:15
+14:15
+15:15
+16:15
+17:15
+
+Example Input/Output 2:
+Input:
+04:00
+12:15
+45
+
+Output:
+04:45
+05:30
+06:15
+07:00
+07:45
+08:30
+09:15
+10:00
+10:45
+11:30
+12:15
+
+Max Execution Time Limit: 50 millisecs

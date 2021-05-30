@@ -1,64 +1,61 @@
 Daily Challenge
  
-ProgramID- 13243
+ProgramID- 13282
 
-function printAlarmTimings
-The function/method printAlarmTimings accepts three arguments - startTime, endTime and X. The startTime and endTime are two string 
-values that represent the start time and end time of a factory. For every X minutes from the start time to the end time, the factory 
-alarm sounds indicating the time slot for the workers.
+Sort Rows - Alphabets & Integers Matrix
+The program must accept a matrix of size R*C as the input. Each row contains a lower case alphabet and C-1 integers. The program must 
+sort the rows of the matrix based on the lower case alphabet. If two or more rows have the same lower case alphabet, then the program 
+must sort those rows in the reverse order of their occurrence. Finally, the program must print the modified matrix as the output.
 
-The function/method printAlarmTimings must print the alarm timings at the factory.
+Boundary Condition(s):
+2 <= R, C <= 50
 
-Note: The start time, the end time and the alarm timings are always in 24-hr format HH:MM.
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines contains the matrix.
 
-Your task is to implement the function printAlarmTimings so that it passes all the test cases.
-
-IMPORTANT: Do not write the main() function as it is already defined.
+Output Format:
+The first R lines contain the modified matrix.
 
 Example Input/Output 1:
 Input:
-09:15
-17:30
-60
+5 6
+27 24 84 19 72 d
+70 b 89 14 46 95
+c 12 31 92 53 27
+39 96 40 a 63 15
+52 68 58 27 39 b
 
 Output:
-10:15
-11:15
-12:15
-13:15
-14:15
-15:15
-16:15
-17:15
+39 96 40 a 63 15
+52 68 58 27 39 b
+70 b 89 14 46 95
+c 12 31 92 53 27
+27 24 84 19 72 d
 
 Explanation:
-Here X=60, so the alarm sounds every 60 minutes from 09:15 to 17:30.
-10:15
-11:15
-12:15
-13:15
-14:15
-15:15
-16:15
-17:15
+Here R = 5 and C = 6.
+After sorting the rows of the matrix based on the lower case alphabet, the matrix becomes
+39 96 40 a 63 15
+52 68 58 27 39 b
+70 b 89 14 46 95
+c 12 31 92 53 27
+27 24 84 19 72 d
 
 Example Input/Output 2:
 Input:
-04:00
-12:15
-45
+5 4
+64 70 x 16
+11 z 85 79
+23 40 5 x
+y 54 96 36
+20 x 10 44
 
 Output:
-04:45
-05:30
-06:15
-07:00
-07:45
-08:30
-09:15
-10:00
-10:45
-11:30
-12:15
+20 x 10 44
+23 40 5 x
+64 70 x 16
+y 54 96 36
+11 z 85 79
 
 Max Execution Time Limit: 50 millisecs
