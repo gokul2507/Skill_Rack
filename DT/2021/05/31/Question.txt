@@ -1,0 +1,58 @@
+Daily Test
+ 
+ProgramID- 13238
+ 
+Solved By 0 Users
+   SkillRack
+
+Time Left: 00:05:51
+function findSurroundingSum
+The function/method findSurroundingSum accepts five arguments - R, C, matrix, xRow, xCol. R and C represent the size of the integer matrix. xRow and xCol represent the position of a cell in the matrix.
+
+The function/method findSurroundingSum must return the sum of the surrounding values of the given cell in the matrix.
+
+Your task is to implement the function findSurroundingSum so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+4 4
+6 4 2 7
+7 5 7 1
+1 4 8 3
+9 2 5 6
+5
+
+Output:
+39 23
+
+Explanation:
+Here X = 5, which occurs twice in the given matrix.
+(2, 2) and (4, 3)
+The surrounding integers of the first occurrence of 5 are highlighted below.
+6 4 2 7
+7 5 7 1
+1 4 8 3
+9 2 5 6
+The sum of the surrounding integers of the first occurrence of 5 is 39 (6+4+2+7+7+1+1+4+8).
+The surrounding integers of the second occurrence of 5 are highlighted below.
+6 4 2 7
+7 5 7 1
+1 4 8 3
+9 2 5 6
+The sum of the surrounding integers of the second occurrence of 5 is 23 (4+8+3+2+6).
+Hence the output is
+39 23
+
+Example Input/Output 2:
+Input:
+3 5
+60 40 40 60 50
+10 10 10 10 10
+30 20 50 90 20
+10
+
+Output:
+160 260 320 330 230
+Max Execution Time Limit: 50 millisecs
