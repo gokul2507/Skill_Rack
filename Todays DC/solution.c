@@ -1,3 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+void invertSubmatrix(int r, int c, int m[r][c], int sr, int sc, int k)
+{
+    sr--;
+    sc--;
+    for(int i=sr;i<sr+k;i++){
+        for(int j=sc;j<sc+k;j++){
+            if(m[i][j]==0) m[i][j]=1;
+            else m[i][j]=0;
+        }
+    }
+}
 int main()
 {
     int R, C, K, sRow, sCol;
