@@ -1,46 +1,68 @@
 Daily Challenge
  
-ProgramID- 13400
+ProgramID- 13268
 
-Define Class Student
-The program must accept the name and the marks of N students as the input. Each student gets extra marks (0 to 10) based on his or her 
-attendance percentage. The additional marks awarded to the N students are also passed as the input to the program. For each student, 
-the program must add the additional marks to his or her marks so that the total marks do not exceed 100. Finally, the program must 
-print the name and the revised marks of the N students as shown in the Example Input/Output section.
+function invertSubmatrix
+The function/method invertSubmatrix accepts six arguments - R, C, matrix, sRow, sCol, K. R and C represent the size of the integer 
+matrix with only 1s and 0s. sRow and sCol represent the position of the top-left cell of a submatrix of size K*K.
 
-Your task is to define the class Student so that the program runs successfully.
+The function/method invertSubmatrix must invert the values(0 -> 1 or 1 -> 0) in the specified submatrix of the given matrix.
+
+Your task is to implement the function invertSubmatrix so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
 
 Example Input/Output 1:
 Input:
+5 6
+0 1 0 1 0 0
+0 1 1 0 0 0
+1 1 0 0 1 0
+1 1 0 1 0 0
+0 1 1 1 0 0
+2 3
 3
-Hector 95
-Arjun 97
-Rachel 82
-5 5 10
 
 Output:
-Hector:100
-Arjun:100
-Rachel:92
+0 1 0 1 0 0
+0 1 0 1 1 0
+1 1 1 1 0 0
+1 1 1 0 1 0
+0 1 1 1 0 0
 
 Explanation:
-1st student: Hector 95 marks + 5 additional marks = 100 marks.
-2nd student: Arjun 97 marks + 5 additional marks(a maximum of 3 marks can be added) = 100 marks.
-3rd student: Rachel 92 marks + 10 additional marks = 92 marks.
+Here K=3, so the size of the submatrix is 3x3. The position of the top-left cell is (2, 3).
+The submatrix is highlighted below.
+0 1 0 1 0 0
+0 1 1 0 0 0
+1 1 0 0 1 0
+1 1 0 1 0 0
+0 1 1 1 0 0
+After inverting the values in the submatrix, the matrix becomes
+0 1 0 1 0 0
+0 1 0 1 1 0
+1 1 1 1 0 0
+1 1 1 0 1 0
+0 1 1 1 0 0
 
 Example Input/Output 2:
 Input:
+6 4
+0 0 1 0
+0 1 0 0
+1 1 0 1
+1 1 1 1
+0 0 0 1
+1 1 0 0
+3 1
 4
-Oliver 100
-Catherine 30
-Deepa 95
-Mambo 25
-10 5 2 8
 
 Output:
-Oliver:100
-Catherine:35
-Deepa:97
-Mambo:33
+0 0 1 0
+0 1 0 0
+0 0 1 0
+0 0 0 0
+1 1 1 0
+0 0 1 1
 
 Max Execution Time Limit: 50 millisecs

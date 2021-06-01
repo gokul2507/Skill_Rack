@@ -1,0 +1,46 @@
+Infected Crops (Id-3732)
+
+A farm is represented as a R*C 2D matrix. Due to the soil condition, some crops are very weak. These crops are vulnerable to insects. 
+The weak crops are represented by W and good crops are representedby G. When a crop is infected, the weak crops adjacent to it (in all 
+directions north, south, east and west) are also infected and destroyed. The crops which are already infected are represented as 
+I in the input.
+
+Boundary Condition:
+1<= R,C <= 50
+
+Input Format:
+First line contains R and C separated by space.
+Next R lines contain the matrix representation of the farm.
+
+Output Format:
+The first R lines contain the farm status with the destroyed crops represented by D, weak crops by W and good crops by G.
+
+Sample Input/Output 1:
+Input:
+3 3
+W G W
+W G G
+W I G
+
+Output:
+D G W
+D G G
+D D G
+
+Sample Input/Output 2:
+Input:
+5 5
+W W G W W
+I W G G G
+G W G G G
+I G I W W
+G G W G W
+
+Output:
+D D G W W 
+D D G G G 
+G D G G G 
+D G D D D 
+G G D G D 
+
+Max Execution Time Limit: 5000 millisecs

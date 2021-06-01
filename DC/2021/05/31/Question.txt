@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 13400
+
+Define Class Student
+The program must accept the name and the marks of N students as the input. Each student gets extra marks (0 to 10) based on his or her 
+attendance percentage. The additional marks awarded to the N students are also passed as the input to the program. For each student, 
+the program must add the additional marks to his or her marks so that the total marks do not exceed 100. Finally, the program must 
+print the name and the revised marks of the N students as shown in the Example Input/Output section.
+
+Your task is to define the class Student so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+3
+Hector 95
+Arjun 97
+Rachel 82
+5 5 10
+
+Output:
+Hector:100
+Arjun:100
+Rachel:92
+
+Explanation:
+1st student: Hector 95 marks + 5 additional marks = 100 marks.
+2nd student: Arjun 97 marks + 5 additional marks(a maximum of 3 marks can be added) = 100 marks.
+3rd student: Rachel 92 marks + 10 additional marks = 92 marks.
+
+Example Input/Output 2:
+Input:
+4
+Oliver 100
+Catherine 30
+Deepa 95
+Mambo 25
+10 5 2 8
+
+Output:
+Oliver:100
+Catherine:35
+Deepa:97
+Mambo:33
+
+Max Execution Time Limit: 50 millisecs
