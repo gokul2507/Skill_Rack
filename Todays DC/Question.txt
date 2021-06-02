@@ -1,68 +1,43 @@
 Daily Challenge
  
-ProgramID- 13268
+ProgramID- 11900
 
-function invertSubmatrix
-The function/method invertSubmatrix accepts six arguments - R, C, matrix, sRow, sCol, K. R and C represent the size of the integer 
-matrix with only 1s and 0s. sRow and sCol represent the position of the top-left cell of a submatrix of size K*K.
+function calculateDistance
+The function/method calculateDistance accepts two arguments - point1 and point2 representing two points.
 
-The function/method invertSubmatrix must invert the values(0 -> 1 or 1 -> 0) in the specified submatrix of the given matrix.
+The function/method calculateDistance must return a floating point value representing the distance between the given two points.
 
-Your task is to implement the function invertSubmatrix so that it passes all the test cases.
+Your task is to implement the function calculateDistance so that it passes all the test cases.
+
+The following structure is used to represent Point and is already defined in the default code (Do not write these definition again in 
+your code).
+typedef struct point
+{
+    int X;
+    int Y;
+} Point;
 
 IMPORTANT: Do not write the main() function as it is already defined.
 
 Example Input/Output 1:
 Input:
-5 6
-0 1 0 1 0 0
-0 1 1 0 0 0
-1 1 0 0 1 0
-1 1 0 1 0 0
-0 1 1 1 0 0
-2 3
-3
+4 5
+7 6
 
 Output:
-0 1 0 1 0 0
-0 1 0 1 1 0
-1 1 1 1 0 0
-1 1 1 0 1 0
-0 1 1 1 0 0
+3.16
 
 Explanation:
-Here K=3, so the size of the submatrix is 3x3. The position of the top-left cell is (2, 3).
-The submatrix is highlighted below.
-0 1 0 1 0 0
-0 1 1 0 0 0
-1 1 0 0 1 0
-1 1 0 1 0 0
-0 1 1 1 0 0
-After inverting the values in the submatrix, the matrix becomes
-0 1 0 1 0 0
-0 1 0 1 1 0
-1 1 1 1 0 0
-1 1 1 0 1 0
-0 1 1 1 0 0
+The first point is (4, 5).
+The second point is (7, 6).
+The distance between the given two points is 3.16 (The distance is printed with the precision up to 2 decimal places).
 
 Example Input/Output 2:
 Input:
-6 4
-0 0 1 0
-0 1 0 0
-1 1 0 1
-1 1 1 1
-0 0 0 1
-1 1 0 0
-3 1
-4
+9 -2
+0 0
 
 Output:
-0 0 1 0
-0 1 0 0
-0 0 1 0
-0 0 0 0
-1 1 1 0
-0 0 1 1
+9.22
 
 Max Execution Time Limit: 50 millisecs

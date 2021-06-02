@@ -1,0 +1,48 @@
+Daily Test
+ 
+ProgramID- 13272
+
+Matrix with Unique Alphabets
+The program must accept two lower case alphabets CH1 and CH2 as the input. The program must form a matrix of size 5*5 containing all the 
+lower case alphabets except CH1. The 25 lower case alphabets must be filled in the matrix starting from the first row (left to right in 
+each row). Then the program must convert the surrounding alphabets of CH2 in the matrix to upper case. Finally, the program must print 
+the revised 5*5 matrix as the output.
+
+Input Format:
+The first line contains CH1 and CH2 separated by a space.
+
+Output Format:
+The first 5 lines contain the revised 5*5 matrix.
+
+Example Input/Output 1:
+Input:
+g n
+
+Output:
+a b c d e
+f H I J k
+l M n O p
+q R S T u
+v w x y z
+
+Explanation:
+Here CH1 = 'g' and CH2 = 'n'.
+After toggling the surrounding alphabets of n to upper case, the matrix becomes
+a b c d e
+f H I J k
+l M n O p
+q R S T u
+v w x y z
+
+Example Input/Output 2:
+Input:
+t b
+
+Output:
+A b C d e
+F G H i j
+k l m n o
+p q r s u
+v w x y z
+
+Max Execution Time Limit: 50 millisecs

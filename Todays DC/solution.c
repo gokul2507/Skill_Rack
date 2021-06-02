@@ -1,37 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-void invertSubmatrix(int r, int c, int m[r][c], int sr, int sc, int k)
+#include <math.h>
+
+typedef struct point
 {
-    sr--;
-    sc--;
-    for(int i=sr;i<sr+k;i++){
-        for(int j=sc;j<sc+k;j++){
-            if(m[i][j]==0) m[i][j]=1;
-            else m[i][j]=0;
-        }
-    }
+    int X;
+    int Y;
+} Point;
+double calculateDistance(Point *p1, Point *p2)
+{
+    double xd,yd;
+    xd=pow((p1->X-p2->X),2);
+    yd=pow((p1->Y-p2->Y),2);
+    return sqrt(xd+yd);
 }
 int main()
 {
-    int R, C, K, sRow, sCol;
-    scanf("%d %d", &R, &C);
-    int matrix[R][C];
-    for(int row = 0; row < R; row++)
-    {
-        for(int col = 0; col < C; col++)
-        {
-            scanf("%d", &matrix[row][col]);
-        }
-    }
-    scanf("%d %d\n%d", &sRow, &sCol, &K);
-    invertSubmatrix(R, C, matrix, sRow, sCol, K);
-    for(int row = 0; row < R; row++)
-    {
-        for(int col = 0; col < C; col++)
-        {
-            printf("%d ", matrix[row][col]);
-        }
-        printf("\n");
-    }
+    Point P1, P2, P3;
+    scanf("%d %d\n", &P1.X, &P1.Y);
+    scanf("%d %d", &P2.X, &P2.Y);
+    printf("%.2lf", calculateDistance(&P1, &P2));
     return 0;
 }
