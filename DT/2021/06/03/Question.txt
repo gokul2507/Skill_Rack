@@ -1,0 +1,42 @@
+Daily Test
+ 
+ProgramID- 13417
+ 
+Define class Player
+The program must accept the name and the weight of two players as the input. The program must print the name and the weight of the 
+player who has more weight between the given two players. If both the players have the same weight, then the program must print the 
+name and the weight of both the players as the output.
+
+Your task is to define the class Player so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+Rachel 58
+Gavin 70
+
+Output:
+Gavin 70
+
+Explanation:
+Here Gavin is heavier than Rachel.
+Hence the output is
+Gavin 70
+
+Example Input/Output 2:
+Input:
+Catherine 60
+Jhanvi 55
+
+Output:
+Catherine 60
+
+Example Input/Output 3:
+Input:
+Arun 75
+Hector 75
+
+Output:
+Arun 75
+Hector 75
+
+Max Execution Time Limit: 50 millisecs
