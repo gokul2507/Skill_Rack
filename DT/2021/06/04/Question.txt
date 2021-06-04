@@ -1,0 +1,46 @@
+Daily Test
+ 
+ProgramID- 11914
+ 
+function getAverages
+The function/method getAverages accepts two arguments SIZE and arr. The integer SIZE represents the size of the integer array arr.
+
+The function/method getAverages must return an array of floating point values containing the average of every three integers in the 
+given array arr.
+
+Your task is to implement the function getAverages so that it passes all the test cases.
+
+Note: The size of the given array is always a multiple of 3.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    double *arr;
+} boundedArray;
+
+Example Input/Output 1:
+Input:
+6
+9 8 6 3 4 2
+
+Output:
+7.67 3.00
+
+Explanation:
+The given 6 integers are 9, 8, 6, 3, 4 and 2.
+The average of first three integers 9, 8 and 6 is 7.67.
+The average of next three integers 3, 4 and 2 is 3.00.
+The average values are printed with the precision up to 2 decimal places.
+
+Example Input/Output 2:
+Input:
+9
+10 33 22 15 46 30 11 42 19
+
+Output:
+21.67 30.33 24.00
+
+Max Execution Time Limit: 50 millisecs
