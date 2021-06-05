@@ -1,57 +1,58 @@
 Daily Challenge
  
-ProgramID- 13428
- 
-Solved By 294 Users
-   SkillRack
-Define class Event
-The program must accept the title, the registration fee and the duration(in minutes) of N events as the input. The program must sort the events based on the following conditions.
-- The program must sort the events in ascending order based on the registration fee.
-- If two or more events have the same registration fee, then the program must sort those events in ascending order based on the duration.
-- If two or more events have the same registration fee and duration, then the program must sort those events based on the name.
+ProgramID- 7855
 
-Your task is to define the class Event so that the program runs successfully.
+String - First and Last Pattern
+The program must accept a string S as the input. The program must print the characters of the string S in L lines (where L is the length 
+of the string S) based on the following conditions.
+- In the 1st line, the first and the last characters of the string S must be printed.
+- In the 2nd line, the first two and the last two characters of the string S must be printed in reverse order.
+- In the 3rd line, the first three and the last three characters of the string S must be printed in reverse order.
+- Similarly, the program must print the remaining lines as the output.
+
+Boundary Condition(s):
+2 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first L lines, each contains the characters of the string S based on the given conditions.
 
 Example Input/Output 1:
 Input:
-5
-TreasureHunt 200 60
-ProjectExpo 500 180
-RapidFireQuiz 200 20
-PaperPresentation 400 120
-Hackathon 500 180
+orange
 
 Output:
-RapidFireQuiz 200 20
-TreasureHunt 200 60
-PaperPresentation 400 120
-Hackathon 500 180
-ProjectExpo 500 180
+oe
+roeg
+aroegn
+naroegna
+gnaroegnar
+egnaroegnaro
 
-Exaplanation:
-Here N = 5.
-After sorting the events based on the given conditions, the events become
-RapidFireQuiz 200 20
-TreasureHunt 200 60
-PaperPresentation 400 120
-Hackathon 500 180
-ProjectExpo 500 180
+Explanation:
+Here the length of the string orange is 6. So the pattern contains 6 lines.
+o e (1st and 6th characters)
+ro eg (first 2 and last 2 characters in reverse order)
+aro egn (first 3 and last 3 characters in reverse order)
+naro egna (first 4 and last 4 characters in reverse order)
+gnaro egnar (first 5 and last 5 characters in reverse order)
+egnaro egnaro (first 6 and last 6 characters in reverse order)
 
 Example Input/Output 2:
 Input:
-6
-ProjectExpo 800 180
-TreasureHunt 100 90
-Hackathon 800 240
-TechQuiz 100 30
-HexCoding 800 180
-PaperPresentation 800 180
+SKILLRACK
 
 Output:
-TechQuiz 100 30
-TreasureHunt 100 90
-HexCoding 800 180
-PaperPresentation 800 180
-ProjectExpo 800 180
-Hackathon 800 240
+SK
+KSKC
+IKSKCA
+LIKSKCAR
+LLIKSKCARL
+RLLIKSKCARLL
+ARLLIKSKCARLLI
+CARLLIKSKCARLLIK
+KCARLLIKSKCARLLIKS
+
 Max Execution Time Limit: 50 millisecs
