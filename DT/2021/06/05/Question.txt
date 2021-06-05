@@ -1,0 +1,27 @@
+Daily Test
+ 
+ProgramID- 13429
+
+Java - Python - 015
+Please convert the following Java code to Python so that the Java program executes successfully passing the test cases.
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String numbers[] = sc.nextLine().trim().split("\\s+");
+        Map<Integer, Integer> numCountMap = new TreeMap<>(Collections.reverseOrder());
+        int num, freq;
+        for (int index = 0; index < numbers.length; index++) {
+            num = Integer.parseInt(numbers[index]);
+            freq = numCountMap.getOrDefault(num, 0) + 1;
+            numCountMap.put(num, freq);
+        }
+        for (int key : numCountMap.keySet()) {
+            System.out.println(key + " " + numCountMap.get(key));
+        }
+    }
+}
+
+Max Execution Time Limit: 50 millisecs
