@@ -1,0 +1,55 @@
+Daily Challenge
+ 
+ProgramID- 13445
+
+Define class Rectangle
+The program must accept the length, the breadth of N rectangles and an integer X as the input. The program must print the number of 
+rectangles and the total area of the N rectangles. Then the program must remove the Xth rectangle from the N rectangles. Then the 
+program must print the length, the breadth and the area of N-1 rectangles as shown in the Example Input/Output section. Finally, 
+the program must print the number of rectangles remaining and the total area of the remaining rectangles as the output.
+
+Your task is to define the class Rectangle so that the program runs successfully.
+
+Boundary Condition(s):
+2 <= N <= 50
+1 <= X <= N
+
+Example Input/Output 1:
+Input:
+5
+2 5
+4 6
+3 8
+6 3
+5 4
+2
+
+Output:
+5
+96
+Length=2, Breadth=5, Area=10
+Length=3, Breadth=8, Area=24
+Length=6, Breadth=3, Area=18
+Length=5, Breadth=4, Area=20
+4
+72
+
+Example Input/Output 2:
+Input:
+4
+10 20
+30 30
+15 15
+40 10
+4
+
+Output:
+4
+1725
+Length=10, Breadth=20, Area=200
+Length=30, Breadth=30, Area=900
+Length=15, Breadth=15, Area=225
+3
+1325
+
+Max Execution Time Limit: 50 millisecs
