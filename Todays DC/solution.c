@@ -1,6 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int ** getMatrixFromArrays(int m, int a1[], int n,int a2[])
+{
+    int s=sqrt(m+n);
+    int **matrix=malloc(sizeof(int*)*s);
+    for(int i=0;i<s;i++){
+        matrix[i]=malloc(sizeof(int)*s);
+    }
+    int x=0,y=0;
+    for(int i=0;i<m;i++){
+        matrix[x][y]=a1[i];
+        y++;
+        if(y==s){
+            x++;
+            y=0;
+        }
+    }
+    for(int i=0;i<n;i++){
+        matrix[x][y]=a2[i];
+        y++;
+        if(y==s){
+            x++;
+            y=0;
+        }
+    }
+    return matrix;
+}
+
 int main()
 {
     int M, N;
