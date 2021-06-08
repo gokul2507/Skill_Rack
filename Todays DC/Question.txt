@@ -1,54 +1,41 @@
 Daily Challenge
  
-ProgramID- 13241
+ProgramID- 10034
 
-function getMatrixFromArrays
-The function/method getMatrixFromArrays accepts four arguments M, arr1, N and arr2. M represents the size of the integer array arr1. N 
-represents the size of the integer array arr2.
+Swap Every Two Vowels
+The program must accept a string S as the input. The program must swap every two vowels in the string S. Then the program must print 
+the revised string S as the output. If the number of vowels is odd, then the last vowel will remain the same as there is no pair 
+to swap.
 
-The function/method getMatrixFromArrays must return a double pointer representing an integer matrix based on the following conditions.
-- The matrix to be formed is always a square matrix because the sum of M and N is always a perfect square.
-- The square matrix must be filled with all the integers from the array arr1 followed by the array arr2 in the order of their 
-occurrence (starting from the 1st row, where left to right in each row).
+Note: The string S always contains at least two vowels.
 
-Your task is to implement the function getMatrixFromArrays so that it passes all the test cases.
+Boundary Condition(s):
+2 <= Length of S <= 1000
 
-IMPORTANT: Do not write the main() function as it is already defined.
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the revised string S.
 
 Example Input/Output 1:
 Input:
-5
-10 20 30 40 50
-4
-99 88 77 66
+environment
 
 Output:
-Matrix:
-10 20 30
-40 50 99
-88 77 66
+inverenmont
 
 Explanation:
-Here M = 5 and N = 4.
-The sum 5 and 4 is 9, which is a perfect square.
-So the size of the square matrix is 3x3.
-After filling the square matrix with the integers from the given two arrays, the matrix becomes
-10 20 30
-40 50 99
-88 77 66
+There are four vowels in the given string "environment".
+After swapping the vowels e and i, the string environment becomes inveronment.
+After swapping the vowels o and e, the string inveronment becomes inverenmont.
+Hence the output is inverenmont.
 
 Example Input/Output 2:
 Input:
-7
-1 2 3 4 5 6 7
-9
-10 20 30 40 50 60 70 80 90
+TOUCHPAD
 
 Output:
-Matrix:
-1 2 3 4
-5 6 7 10
-20 30 40 50
-60 70 80 90
+TUOCHPAD
 
 Max Execution Time Limit: 50 millisecs
