@@ -1,0 +1,41 @@
+Daily Challenge
+ 
+ProgramID- 10034
+
+Swap Every Two Vowels
+The program must accept a string S as the input. The program must swap every two vowels in the string S. Then the program must print 
+the revised string S as the output. If the number of vowels is odd, then the last vowel will remain the same as there is no pair 
+to swap.
+
+Note: The string S always contains at least two vowels.
+
+Boundary Condition(s):
+2 <= Length of S <= 1000
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the revised string S.
+
+Example Input/Output 1:
+Input:
+environment
+
+Output:
+inverenmont
+
+Explanation:
+There are four vowels in the given string "environment".
+After swapping the vowels e and i, the string environment becomes inveronment.
+After swapping the vowels o and e, the string inveronment becomes inverenmont.
+Hence the output is inverenmont.
+
+Example Input/Output 2:
+Input:
+TOUCHPAD
+
+Output:
+TUOCHPAD
+
+Max Execution Time Limit: 50 millisecs

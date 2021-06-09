@@ -1,0 +1,69 @@
+Daily Test
+ 
+ProgramID- 12965
+
+Rotated Border or Not
+The program must accept two integer matrices M1 and M2 as the input. Both M1 and M2 are of size R*C and only differ in the border 
+elements. The program must print YES if the border elements of M2 are obtained by rotating the border elements of M1. Else the program 
+must print NO as the output.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Matrix element value <= 10000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values representing the matrix M1.
+The next R lines from the (R+2)th line, each contains C integer values representing the matrix M2.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+5 5
+46 59 74 38 55
+41 65 67 51 90
+18 57 48 11 10
+12 28 33 23 35
+66 27 62 69 47
+18 41 46 59 74
+12 65 67 51 38
+66 57 48 11 55
+27 28 33 23 90
+62 69 47 35 10
+
+Output:
+YES
+
+Explanation:
+The border elements of M2 is formed by rotating the border elements of M1 by 2 positions in clockwise direction.
+So YES is printed as the output.
+
+Example Input/Output 2:
+Input:
+3 4
+41 61 24 58
+33 84 40 60
+57 26 46 78
+61 24 58 60
+41 84 40 78
+33 57 26 46
+
+Output:
+YES
+
+Example Input/Output 3:
+Input:
+3 3
+10 20 30
+40 50 60
+70 80 90
+20 30 40
+10 50 60
+80 90 70
+
+Output:
+NO
+
+Max Execution Time Limit: 50 millisecs
