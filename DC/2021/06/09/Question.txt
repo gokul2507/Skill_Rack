@@ -1,0 +1,37 @@
+Daily Challenge
+ 
+ProgramID- 13458
+
+function add - Two or more Integers
+The program must accept five integers a, b, c, d and e as the input. The program must print the values of 
+a+b, a+b+c, a+b+c+d and a+b+c+d+e as the output.
+
+Your task is to define the function add so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+10 20 50 30 40
+
+Output:
+30
+80
+110
+150
+
+Explanation:
+10 + 20 = 30.
+10 + 20 + 50 = 80.
+10 + 20 + 50 + 30 = 110.
+10 + 20 + 50 + 30 + 40 = 150.
+
+Example Input/Output 2:
+Input:
+2 4 8 6 5
+
+Output:
+6
+14
+20
+25
+
+Max Execution Time Limit: 50 millisecs
