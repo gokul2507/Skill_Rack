@@ -1,0 +1,21 @@
+Daily Test
+ 
+ProgramID- 13467
+
+Time Left: 00:08:38
+Python - Java - 016
+Please convert the following Python code to Java so that the Java program executes successfully passing the test cases.
+
+filename = input().strip()
+try:
+    fin = open(filename, 'r')
+    lines = fin.readlines()
+    total = 0
+    for line in lines:
+        total += int(line.strip())
+    print(total)
+    fin.close()
+except Exception as e:
+    print("FileNotFound")
+ 
+Max Execution Time Limit: 50 millisecs
