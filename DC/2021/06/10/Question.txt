@@ -1,0 +1,41 @@
+Daily Challenge
+ 
+ProgramID- 13466
+
+Define class Person
+The program must accept the details of a person(name & age) based on the query Q as the input. The program must print the output based 
+on the following conditions.
+- The default name of the person is "person" and the age is 0.
+- If the query is 1, then the program must print the default values of the name and age separated by a colon.
+- If the query is 2, then the program must print the given name and the default value of the age separated by a colon.
+- If the query is 3, then the program must print the given name and age separated by a colon.
+
+Your task is to define the class Person so that the program runs successfully.
+
+Note: The query value can be 1 or 2 or 3.
+
+Example Input/Output 1:
+Input:
+1
+
+Output:
+person:0
+
+Example Input/Output 2:
+Input:
+2
+Rachel
+
+Output:
+Rachel:0
+
+Example Input/Output 3:
+Input:
+3
+Mambo
+45
+
+Output:
+Mambo:45
+
+Max Execution Time Limit: 50 millisecs

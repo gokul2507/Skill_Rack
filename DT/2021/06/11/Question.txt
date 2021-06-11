@@ -1,0 +1,59 @@
+Daily Test
+ 
+ProgramID- 13468
+
+Define class Train
+The program must accept the name, arrival time and departure time of N trains at a station. The program must sort the trains based 
+on the following conditions.
+- The trains must be sorted in ascending order based on the arrival time.
+- If two or more trains arrive at the same time, then those trains must be sorted in ascending order based on the departure time.
+- If two or more trains arrive and depart at the same time, then those trains must be sorted in the order of their occurrence.
+Finally, the program must print the name, arrival time and departure time of the N sorted trains as the output.
+
+Your task is to define the class Train so that the program runs successfully.
+
+Note: The arrival time and departure time of each train are always in the 24-hour format HH:MM.
+
+Example Input/Output 1:
+Input:
+5
+ChennaiExpress 08:00 08:15
+MumbaiExpress 07:30 07:45
+GangaKaveriExpress 08:00 08:10
+DelhiExpress 13:00 13:10
+AmrithaExpress 08:00 08:10
+
+Output:
+MumbaiExpress 07:30 07:45
+GangaKaveriExpress 08:00 08:10
+AmrithaExpress 08:00 08:10
+ChennaiExpress 08:00 08:15
+DelhiExpress 13:00 13:10
+
+Explanation:
+Here N = 5.
+After sorting the trains based on the given conditions, the trains become
+MumbaiExpress 07:30 07:45
+GangaKaveriExpress 08:00 08:10
+AmrithaExpress 08:00 08:10
+ChennaiExpress 08:00 08:15
+DelhiExpress 13:00 13:10
+
+Example Input/Output 2:
+Input:
+6
+ChennaiExpress 21:30 21:40
+TirukkuralExpress 20:35 20:55
+KanyakumariExpress 20:35 21:00
+PothigaiExpress 20:35 20:55
+VaigaiExpress 20:35 20:50
+PandianExpress 20:45 21:00
+
+Output:
+VaigaiExpress 20:35 20:50
+TirukkuralExpress 20:35 20:55
+PothigaiExpress 20:35 20:55
+KanyakumariExpress 20:35 21:00
+PandianExpress 20:45 21:00
+ChennaiExpress 21:30 21:40
+Max Execution Time Limit: 50 millisecs
