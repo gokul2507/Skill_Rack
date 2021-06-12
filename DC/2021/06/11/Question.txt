@@ -1,0 +1,71 @@
+Daily Challenge
+ 
+ProgramID- 12564
+
+Matrix Border - Previous & Next
+The program must accept an integer matrix of size RxC and an integer K as the input. If the integer K is present in the border of the 
+matrix, the program must print the integers in the border based on the following conditions.
+- The program must print the integer K.
+- Then the program must print the previous integer of K (moving in clockwise direction) along the border.
+- Then the program must print the next integer of K (moving in counter clockwise direction) along the border.
+- Similarly, the program must print the remaining integers in the border alternatively by considering the border elements in 
+clockwise and counter clockwise direction.
+If the integer K is not present in the border of the matrix, then the program must print -1 as the output. If the integer K occurs 
+more than once, then the program must consider the first occurring K in the matrix from the top left of the matrix.
+
+Boundary Condition(s):
+3 <= R, C <= 50
+1 <= Matrix element value, K <= 10^4
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)nd line contains K.
+
+Output Format:
+The first line contains the integer values separated by a space or -1 based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5 5
+74 21 77 95 58
+97 21 35 98 73
+94 23 39 38 14
+64 47 17 58 54
+38 61 22 72 25
+54
+
+Output:
+54 14 25 73 72 58 22 95 61 77 38 21 64 74 94 97
+
+Explanation:
+Here K = 54, which is present in the border of the matrix.
+The integers in the border of the given matrix are given below.
+74 21 77 95 58 73 14 54 25 72 22 61 38 64 94 97
+So the integers starting from 54 in the border are printed (previous and next alternatively).
+Hence the output is
+54 14 25 73 72 58 22 95 61 77 38 21 64 74 94 97
+
+Example Input/Output 2:
+Input:
+3 6
+17 55 24 26 34 58
+76 99 73 69 94 75
+20 50 51 21 34 76
+76
+
+Output:
+76 20 17 50 55 51 24 21 26 34 34 76 58 75
+
+Example Input/Output 3:
+Input:
+4 3
+79 67 96
+50 57 36
+36 19 46
+59 52 20
+19
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
