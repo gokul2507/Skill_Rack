@@ -1,0 +1,60 @@
+Daily Challenge
+ 
+ProgramID- 13470
+
+Compare Two Students
+The program must accept the name, age and registration number of two students as the input. The program must print the string value 
+"EQUAL" if the details of the two students are equal. Else the program must print "NOT EQUAL" as the output. Ignore the case of alphabets 
+while comparing the name and the registration number of two students.
+
+Your task is to define the class Student so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+Hector
+21
+20uec147
+HECTOR
+21
+20UEC147
+
+Output:
+EQUAL
+
+Example Input/Output 2:
+Input:
+GAVIN
+22
+20uec147
+Gavin
+22
+21UME147
+
+Output:
+NOT EQUAL
+
+Example Input/Output 3:
+Input:
+Bhuvana
+15
+80014
+Buvanaa
+15
+80014
+
+Output:
+NOT EQUAL
+
+Example Input/Output 4:
+Input:
+Pavithra
+21
+XY4001
+Babloo
+21
+xy4001
+
+Output:
+NOT EQUAL
+
+Max Execution Time Limit: 50 millisecs
