@@ -6,7 +6,9 @@ typedef struct point
     int X;
     int Y;
 } Point;
-
+int getRectangleArea(Point * p1,Point * p2){
+    return abs(p1->X - p2->X) * abs(p1->Y - p2->Y);
+}
 int main()
 {
     Point P1, P2, P3;
