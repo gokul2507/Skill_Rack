@@ -1,0 +1,22 @@
+Daily Challenge
+ 
+ProgramID- 13478
+
+C - Python - 017
+Please convert the following C code to Python so that the Python program executes successfully passing the test cases.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N, X;
+    scanf("%d%d", &N, &X);
+    for(int ctr = 1; ctr <= X; ctr++)
+    {
+        N += printf("%d", N);
+        printf(" ");
+    }
+    return 0;
+}
+
+Max Execution Time Limit: 50 millisecs
