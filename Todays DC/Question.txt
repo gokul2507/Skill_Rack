@@ -1,53 +1,70 @@
 Daily Challenge
- 
-ProgramID- 13494
- 
-function getRectangleArea
-The function/method getRectangleArea accepts two arguments - point1 and point2 representing two opposite vertices of a rectangle. Any 
-two sides of the rectangle are always parallel to X-axis.
 
-The function/method getRectangleArea must return an integer representing the area of the given rectangle.
+Merge Columns Fold to the Right
+An integer matrix with R rows and C columns is passed as the input. The programs must fold the matrix towards the right starting from 
+Nth column and merge(add the cell values) the overlapping column values. Then the program must print the resulting matrix.
 
-Your task is to implement the function getRectangleArea so that it passes all the test cases.
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^4
+1 <= N <= C
 
-The following structure is used to represent Point and is already defined in the default code (Do not write these definition again in 
-your code).
-typedef struct point
-{
-    int X;
-    int Y;
-} Point;
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)th line contains N.
 
-IMPORTANT: Do not write the main() function as it is already defined.
+Output Format:
+The first R lines containing the folded matrix based on the given conditions.
 
 Example Input/Output 1:
 Input:
-1 1
-4 3
+3 5
+1 2 3 4 5
+2 4 6 8 2
+10 20 30 40 50
+4
 
 Output:
-6
+9 3 2 1
+10 6 4 2
+90 30 20 10
 
 Explanation:
-The point (1, 1) indicates the bottom-left corner of the rectangle.
-The point (4, 3) indicates the top-right corner of the rectangle.
-The length of the rectangle is 3.
-The breadth of the rectangle is 2.
-So the area of the rectangle is 6 (3*2).
+The matrix must be folded from the fourth column towards the right. So the 4th column will merge with the 5th column.
+So the 1st column values are 4+5=9, 8+2=10 and 40+50=90.
+The 2nd column values are 3, 6 and 30.
+The 3rd column values are 2, 4 and 20.
+The 4th column values are 1, 2 and 10.
+Hence the output is
+9 3 2 1
+10 6 4 2
+90 30 20 10
 
 Example Input/Output 2:
 Input:
-2 -3
--5 1
+3 5
+1 2 3 4 5
+4 8 6 7 9
+10 20 30 45 55
+2
 
 Output:
-28
+5 5 5
+14 11 9
+50 55 55
 
-Explanation:
-The point (2, -3) indicates the bottom-right corner of the rectangle.
-The point (-5, 1) indicates the top-left corner of the rectangle.
-The length of the rectangle is 7.
-The breadth of the rectangle is 4.
-So the area of the rectangle is 28 (7*4).
+Example Input/Output 3:
+Input:
+3 5
+1 2 3 4 5
+2 4 6 8 2
+10 20 30 40 50
+5
+
+Output:
+5 4 3 2 1
+2 8 6 4 2
+50 40 30 20 10
 
 Max Execution Time Limit: 50 millisecs

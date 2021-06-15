@@ -1,0 +1,53 @@
+Daily Challenge
+ 
+ProgramID- 13494
+ 
+function getRectangleArea
+The function/method getRectangleArea accepts two arguments - point1 and point2 representing two opposite vertices of a rectangle. Any 
+two sides of the rectangle are always parallel to X-axis.
+
+The function/method getRectangleArea must return an integer representing the area of the given rectangle.
+
+Your task is to implement the function getRectangleArea so that it passes all the test cases.
+
+The following structure is used to represent Point and is already defined in the default code (Do not write these definition again in 
+your code).
+typedef struct point
+{
+    int X;
+    int Y;
+} Point;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+1 1
+4 3
+
+Output:
+6
+
+Explanation:
+The point (1, 1) indicates the bottom-left corner of the rectangle.
+The point (4, 3) indicates the top-right corner of the rectangle.
+The length of the rectangle is 3.
+The breadth of the rectangle is 2.
+So the area of the rectangle is 6 (3*2).
+
+Example Input/Output 2:
+Input:
+2 -3
+-5 1
+
+Output:
+28
+
+Explanation:
+The point (2, -3) indicates the bottom-right corner of the rectangle.
+The point (-5, 1) indicates the top-left corner of the rectangle.
+The length of the rectangle is 7.
+The breadth of the rectangle is 4.
+So the area of the rectangle is 28 (7*4).
+
+Max Execution Time Limit: 50 millisecs

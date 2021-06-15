@@ -1,0 +1,50 @@
+Daily Test
+ 
+ProgramID- 13492
+
+function removeMultiplesOfTen
+The function/method removeMultiplesOfTen accepts two arguments - SIZE and arr. The integer SIZE represents the size of the integer 
+array arr.
+
+The function/method removeMultiplesOfTen must return an array of integers containing the integers which are not the multiples of 10 in 
+the given array. If all the integers in the given array are multiples of 10, then the function must return an array of size 1 with the 
+value -1.
+
+Your task is to implement the function removeMultiplesOfTen so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5
+12 40 810 625 120
+
+Output:
+Old Array: 12 40 810 625 120
+New Array: 12 625
+
+Explanation:
+Here N = 5 and the given 5 integers are 12 40 810 625 120.
+The integers which are not the multiples of 10 are 12 and 625.
+Hence the output is
+Old Array: 12 40 810 625 120
+New Array: 12 625
+
+Example Input/Output 2:
+Input:
+4
+510 950 90 200
+
+Output:
+Old Array: 510 950 90 200
+New Array: -1
+
+Max Execution Time Limit: 50 millisecs
