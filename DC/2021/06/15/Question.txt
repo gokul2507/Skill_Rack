@@ -1,0 +1,70 @@
+Daily Challenge
+
+Merge Columns Fold to the Right
+An integer matrix with R rows and C columns is passed as the input. The programs must fold the matrix towards the right starting from 
+Nth column and merge(add the cell values) the overlapping column values. Then the program must print the resulting matrix.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^4
+1 <= N <= C
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)th line contains N.
+
+Output Format:
+The first R lines containing the folded matrix based on the given conditions.
+
+Example Input/Output 1:
+Input:
+3 5
+1 2 3 4 5
+2 4 6 8 2
+10 20 30 40 50
+4
+
+Output:
+9 3 2 1
+10 6 4 2
+90 30 20 10
+
+Explanation:
+The matrix must be folded from the fourth column towards the right. So the 4th column will merge with the 5th column.
+So the 1st column values are 4+5=9, 8+2=10 and 40+50=90.
+The 2nd column values are 3, 6 and 30.
+The 3rd column values are 2, 4 and 20.
+The 4th column values are 1, 2 and 10.
+Hence the output is
+9 3 2 1
+10 6 4 2
+90 30 20 10
+
+Example Input/Output 2:
+Input:
+3 5
+1 2 3 4 5
+4 8 6 7 9
+10 20 30 45 55
+2
+
+Output:
+5 5 5
+14 11 9
+50 55 55
+
+Example Input/Output 3:
+Input:
+3 5
+1 2 3 4 5
+2 4 6 8 2
+10 20 30 40 50
+5
+
+Output:
+5 4 3 2 1
+2 8 6 4 2
+50 40 30 20 10
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,94 @@
+Daily Test
+ 
+ProgramID- 13265
+
+Find Time from Matrix
+The program must accept a character matrix of size 12*12 as the input. The 12 rows in the matrix represent the 12 hours (1 to 12) and 
+the 12 columns in the matrix represent the minute slots (0, 5, 10, 15, ... till 55). The given character matrix contains only asterisks,
+ A's and P's. For each occurrence of A and P, the program must find the corresponding time using the row and column position. Finally, 
+ the program must print the times in chronological order. The format of the time must be HH:MM AM/PM.
+
+The 24-Hour system and the 12-Hour system are given below.
+00:00 -> 12:00 AM
+00:01 -> 12:01 AM
+01:00 -> 01:00 AM
+02:00 -> 02:00 AM
+....
+11:00 -> 11:00 AM
+12:00 -> 12:00 PM
+13:00 -> 01:00 PM
+....
+21:00 -> 09:00 PM
+22:00 -> 10:00 PM
+23:00 -> 11:00 PM
+23:59 -> 11:59 PM
+
+Input Format:
+The first 12 lines, each contains 12 characters separated by a space.
+
+Output Format:
+The lines containing the times in chronological order in the format HH:MM AM/PM.
+
+Example Input/Output 1:
+Input:
+* * * * * * * * * * * P
+* A * * * * * * * * * *
+* * * * * * * * * * * *
+* * * * * * * * * * * *
+* * * * * * * * * * * *
+* * * * * * * P * * * *
+A * * * * * * * * * * *
+* * * * * * * * * * * *
+* * * * * * * P * * * *
+* * * * * * * * * * * *
+* * * * * * * * * * * *
+* * * * * A * * * * * *
+
+Output:
+12:25 AM
+02:05 AM
+07:00 AM
+01:55 PM
+06:35 PM
+09:35 PM
+
+Explanation:
+1st row and 12th column contains P -> 01:55 PM
+2nd row and 2nd column contains A -> 02:05 AM
+6th row and 8th column contains P -> 06:35 PM
+7th row and 1st column contains A -> 07:00 AM
+9th row and 8th column contains P -> 09:35 PM
+12th row and 6th column contains A -> 12:25 AM
+So the above 6 times are printed in chronological order.
+
+Example Input/Output 2:
+Input:
+* * * * * * * * * * * *
+* * * * * * * * A * * *
+A * * * * * * * * * * *
+* * * A * * * * * P * *
+* * * * * * * * * * * *
+* * * * * * * * * * * A
+* * * * P * * * * * * *
+* * * * * * * A * * * *
+* * * * * * * * * * * *
+* P * * * * * * * * * *
+* * * * * * * * * * P *
+P A * * * * P * * * * A
+
+Output:
+12:05 AM
+12:55 AM
+02:40 AM
+03:00 AM
+04:15 AM
+06:55 AM
+08:35 AM
+12:00 PM
+12:30 PM
+04:45 PM
+07:20 PM
+10:05 PM
+11:50 PM
+
+Max Execution Time Limit: 50 millisecs

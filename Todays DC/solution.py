@@ -1,9 +1,19 @@
-r,c=map(int,input().split())
-m=[list(map(int,input().split())) for i in range(r)]
-n=int(input())
-for i in m:
-    k=i[:n][::-1] 
-    l=i[n:] 
-    while k and l:
-        print(k.pop(0) + l.pop(0),end=' ')
-    print(*k,*l)
+class City:
+    __totalPopulation = 0
+    
+    def __init__(self, name, population):
+        self.name = name
+        self.population = population
+        City.__totalPopulation+=population
+    
+    def __str__(self):
+        return  "%s:%d"%(self.name,self.population)
+
+N = int(input())
+cities = []
+for ctr in range(N):
+    name, population = input().split()
+    cities.append(City(name, int(population)))
+print(City._City__totalPopulation)
+for city in cities:
+    print(city)
