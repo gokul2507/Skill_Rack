@@ -1,50 +1,64 @@
 Daily Challenge
  
-ProgramID- 13487
+ProgramID- 13525
 
-Cities & Population
-The program must accept the name and population of N cities as the input. The program print the total population in the given N cities 
-as the output. Then the program must print the name and population of each city separated by a colon as the output. Please fill in the 
-blanks with code so that the program runs successfully.
+Define class BasicCalculator
+The class Hello.java accepts two integers X and Y as the input. The class Hello.java must perform the six basic arithmetic operations 
+(Addition, Subtraction, Multiplication, Integer Division, Float Division and Modulo) on the given two integers and print their results 
+as the output.
+
+The class Hello.java is given below.
+
+import java.util.Scanner;
+import com.skillrack.BasicCalculator;
+
+public class Hello {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
+        System.out.println(BasicCalculator.addition(X, Y));
+        System.out.println(BasicCalculator.subtraction(X, Y));
+        System.out.println(BasicCalculator.multiplication(X, Y));
+        System.out.println(BasicCalculator.integerDivision(X, Y));
+        System.out.printf("%.3f\n", BasicCalculator.floatDivision(X, Y));
+        System.out.println(BasicCalculator.modulo(X, Y));
+    }
+}
+
+Your task is to define the class BasicCalculator in the package com.skillrack so that the program runs successfully.
 
 Example Input/Output 1:
 Input:
-3
-KKTCity 19000
-URCity 81000
-MCCity 21000
+20 8
 
 Output:
-121000
-KKTCity:19000
-URCity:81000
-MCCity:21000
+28
+12
+160
+2
+2.500
+4
 
 Explanation:
-Here N = 3 and the total population in the given 3 cities is 121000.
-Hence the output is
-121000
-KKTCity:19000
-URCity:81000
-MCCity:21000
+20 + 8 = 28
+20 - 8 = 12
+20 * 8 = 160
+20 / 8 = 2 (Integer division)
+20 / 8 = 2.5 (Float division)
+20 % 8 = 4
 
 Example Input/Output 2:
 Input:
-6
-MNOCity 25000
-BBCity 64250
-KPKCity 49999
-ABCCity 33750
-RRCity 9200
-AKKCity 13600
+7 9
 
 Output:
-195799
-MNOCity:25000
-BBCity:64250
-KPKCity:49999
-ABCCity:33750
-RRCity:9200
-AKKCity:13600
+16
+-2
+63
+0
+0.778
+7
 
 Max Execution Time Limit: 50 millisecs

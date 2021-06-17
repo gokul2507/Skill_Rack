@@ -1,0 +1,30 @@
+Daily Test
+ 
+ProgramID- 13527
+
+C - Python - 018
+Please convert the following C code to Python so that the Python program executes successfully passing the test cases.
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N;
+    scanf("%d", &N);
+    char numStr[10];
+    int len = sprintf(numStr, "%d", N);
+    int sum = 0, currVal;
+    for(int index = len-1; index >= 0; index--)
+    {
+        if(numStr[index] != '0')
+        {
+            sscanf(numStr+index, "%d", &currVal);
+            sum += currVal;
+        }
+    }
+    printf("%d", sum);
+    return 0;
+}
+ 
+Max Execution Time Limit: 50 millisecs

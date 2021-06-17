@@ -1,0 +1,50 @@
+Daily Challenge
+ 
+ProgramID- 13487
+
+Cities & Population
+The program must accept the name and population of N cities as the input. The program print the total population in the given N cities 
+as the output. Then the program must print the name and population of each city separated by a colon as the output. Please fill in the 
+blanks with code so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+3
+KKTCity 19000
+URCity 81000
+MCCity 21000
+
+Output:
+121000
+KKTCity:19000
+URCity:81000
+MCCity:21000
+
+Explanation:
+Here N = 3 and the total population in the given 3 cities is 121000.
+Hence the output is
+121000
+KKTCity:19000
+URCity:81000
+MCCity:21000
+
+Example Input/Output 2:
+Input:
+6
+MNOCity 25000
+BBCity 64250
+KPKCity 49999
+ABCCity 33750
+RRCity 9200
+AKKCity 13600
+
+Output:
+195799
+MNOCity:25000
+BBCity:64250
+KPKCity:49999
+ABCCity:33750
+RRCity:9200
+AKKCity:13600
+
+Max Execution Time Limit: 50 millisecs
