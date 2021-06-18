@@ -1,0 +1,64 @@
+Daily Challenge
+ 
+ProgramID- 13525
+
+Define class BasicCalculator
+The class Hello.java accepts two integers X and Y as the input. The class Hello.java must perform the six basic arithmetic operations 
+(Addition, Subtraction, Multiplication, Integer Division, Float Division and Modulo) on the given two integers and print their results 
+as the output.
+
+The class Hello.java is given below.
+
+import java.util.Scanner;
+import com.skillrack.BasicCalculator;
+
+public class Hello {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
+        System.out.println(BasicCalculator.addition(X, Y));
+        System.out.println(BasicCalculator.subtraction(X, Y));
+        System.out.println(BasicCalculator.multiplication(X, Y));
+        System.out.println(BasicCalculator.integerDivision(X, Y));
+        System.out.printf("%.3f\n", BasicCalculator.floatDivision(X, Y));
+        System.out.println(BasicCalculator.modulo(X, Y));
+    }
+}
+
+Your task is to define the class BasicCalculator in the package com.skillrack so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+20 8
+
+Output:
+28
+12
+160
+2
+2.500
+4
+
+Explanation:
+20 + 8 = 28
+20 - 8 = 12
+20 * 8 = 160
+20 / 8 = 2 (Integer division)
+20 / 8 = 2.5 (Float division)
+20 % 8 = 4
+
+Example Input/Output 2:
+Input:
+7 9
+
+Output:
+16
+-2
+63
+0
+0.778
+7
+
+Max Execution Time Limit: 50 millisecs
