@@ -1,46 +1,37 @@
 Daily Challenge
  
-ProgramID- 13529
+ProgramID- 13526
 
-Palindrome Pairs
-The program must accept a list of unique words as the input. The program must print all possible pairs of words that form a palindrome. 
-If there is no such pair, the program must print -1 as the output.
+Multiple Exceptions - Name and Age
+The program must accept the name and age of a person as the input. If the length of the name is greater than 20, then the program must 
+raise the exception MaximumLengthExceededException with the message "name cannot contain more than 20 characters". If the value of the 
+age is 0 or negative, then the program must raise the exception NegativeValueException with the message "age cannot be negative or zero".
+Otherwise, the program must print the name and age of the person as the output.
 
-Boundary Condition(s):
-1 <= Length of each word in the list <= 50
-
-Input Format:
-The first line contains a list of unique words separated by a space.
-
-Output Format:
-The lines contain all possible pairs of words that form a palindrome or the first line contains -1.
+Please fill in the missing lines of code so that the program runs successfully.
 
 Example Input/Output 1:
 Input:
-tiger register regit egit all a la
+Hector
+30
 
 Output:
-tigerregit
-tigeregit
-regittiger
-alla
-allla
-ala
-
-Explanation:
-There are 6 possible pairs of words that form a palindrome, which are given below.
-(tiger, regit) -> tigerregit
-(tiger, egit) -> tigeregit
-(regit, tiger) -> regittiger
-(all, a) -> alla
-(all, la) -> allla
-(a, la) -> ala
+Hector 30
 
 Example Input/Output 2:
 Input:
-lion or not
+Catherine
+-25
 
 Output:
--1
+age cannot be negative or zero
+
+Example Input/Output 3:
+Input:
+Abcdef Ghijklmnopqrst
+-10
+
+Output:
+name cannot contain more than 20 characters
 
 Max Execution Time Limit: 50 millisecs

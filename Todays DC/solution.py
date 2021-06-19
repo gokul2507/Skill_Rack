@@ -1,10 +1,10 @@
-l=input().split()
-f=1 
-for i in range(len(l)):
-    for j in range(len(l)):
-        s=l[i]+l[j] 
-        if s==s[::-1] and i!=j:
-            print(s) 
-            f=0 
-if f:
-    print(-1)
+name = input().strip()
+age = int(input().strip())
+try:
+    if len(name) > 20:
+        raise MaximumLengthExceededException("name cannot contain more than 20 characters")
+    if age <= 0:
+        raise NegativeValueException("age cannot be negative or zero")
+    print(name, age)
+except (MaximumLengthExceededException, NegativeValueException) as e:
+    print(e)

@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 13529
+
+Palindrome Pairs
+The program must accept a list of unique words as the input. The program must print all possible pairs of words that form a palindrome. 
+If there is no such pair, the program must print -1 as the output.
+
+Boundary Condition(s):
+1 <= Length of each word in the list <= 50
+
+Input Format:
+The first line contains a list of unique words separated by a space.
+
+Output Format:
+The lines contain all possible pairs of words that form a palindrome or the first line contains -1.
+
+Example Input/Output 1:
+Input:
+tiger register regit egit all a la
+
+Output:
+tigerregit
+tigeregit
+regittiger
+alla
+allla
+ala
+
+Explanation:
+There are 6 possible pairs of words that form a palindrome, which are given below.
+(tiger, regit) -> tigerregit
+(tiger, egit) -> tigeregit
+(regit, tiger) -> regittiger
+(all, a) -> alla
+(all, la) -> allla
+(a, la) -> ala
+
+Example Input/Output 2:
+Input:
+lion or not
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
