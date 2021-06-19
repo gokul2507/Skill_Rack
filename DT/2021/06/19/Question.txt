@@ -1,0 +1,71 @@
+Daily Test
+ 
+ProgramID- 13530
+
+Max Rectangular Area
+The program must accept the length L and breadth B of a land as the input. The L*B land is divided into smaller areas using the H 
+horizontal cuts and V vertical cuts. The program accepts H integers representing the distances at which the horizontal cuts present on 
+the land from the top. Similarly, the program accepts V integers representing the distances at which the vertical cuts present on the 
+land from the left. The program must print the area of the largest rectanglular land after dividing the L*B land based on the given 
+horizontal cuts and vertical cuts.
+
+Boundary Condition(s):
+2 <= L, B <= 1000
+1 <= H, V <= 50
+
+Input Format:
+The first line contains L and B separated by a space.
+The second line contains H.
+The third line contains H integer values separated by a space.
+The fourth line contains V.
+The fifth line contains V integer values separated by a space.
+
+Output Format:
+The first line contains an integer representing the area of the largest rectanglular land after dividing the given L*B land.
+
+Example Input/Output 1:
+Input:
+10 15
+3
+3 7 9
+2
+5 11
+
+Output:
+24
+
+Explanation:
+Here L = 10, B = 15, H = 3 and V = 2.
+After dividing the 10*15 land based on the 3 horizontal cuts and 2 vertical cuts, the land becomes
+
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+---------+-----------+-------
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+---------+-----------+-------
+# # # # #|# # # # # #|# # # #
+# # # # #|# # # # # #|# # # #
+---------+-----------+-------
+# # # # #|# # # # # #|# # # #
+
+The hash symbol (#) represents the land.
+The pipe symbol (|) represents the vertical cut.
+The hyphen symbol (-) represents the horizontal cut.
+The plus symbol (+) represents the intersection of the vertical cut and horizontal cut.
+
+Example Input/Output 2:
+Input:
+9 12
+2
+6 2
+4
+2 8 10 6
+
+Output:
+16
+
+Max Execution Time Limit: 50 millisecs
