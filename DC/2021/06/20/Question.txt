@@ -1,0 +1,55 @@
+Daily Challenge
+ 
+ProgramID- 13535
+
+Toggle Format - List of Words
+The program must accept a list of words as the input. The program must print the output based on the following conditions.
+- If the given list of words present horizontally, then the program must print the list of words vertically in reverse order.
+- If the given list of words present vertically, then the program must print the list of words horizontally in reverse order.
+Finally, the program must print the total number of words as the output.
+
+Boundary Condition(s):
+1 <= Number of words in the list <= 1000
+
+Input Format:
+The first line contains a list of words separated by a space. (or) The lines, each contains a word.
+
+Output Format:
+The first line contains a list of words separated by a space. (or) The lines, each contains a word.
+The last line contains an integer representing the number of words in the list.
+
+Example Input/Output 1:
+Input:
+one two three four
+
+Output:
+four
+three
+two
+one
+4
+
+Explanation:
+Here the words are present horizontally as one two three four.
+So the list of words are printed vertically in reverse order.
+Finally, the number of words in the list is printed.
+Hence the output is
+four
+three
+two
+one
+4
+
+Example Input/Output 2:
+Input:
+lion
+tiger
+deer
+fox
+crocodile
+
+Output:
+crocodile fox deer tiger lion
+5
+
+Max Execution Time Limit: 50 millisecs
