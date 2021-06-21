@@ -1,0 +1,86 @@
+Daily Test
+ 
+ProgramID- 13537
+
+Dates - Total Revenue greater than X
+The program must accept the date and revenue of N days as the input. The program must print dates in which the revenue is greater than 
+or equal to X as the output. The value of X is also passed as the input. The dates must be printed in chronological order. If there is 
+no such date, then the program must print -1 as the output.
+
+Note: The format of the date will be DD-MMM-YYYY, where MMM will be like Jan, Feb, Mar,.... till Dec.
+
+Boundary Condition(s):
+1 <= N <= 50
+0 <= Total revenue in each day, X <= 10^5
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a date and the revenue on that date.
+The (N+2)th line contains X.
+
+Output Format:
+The lines contain the dates based on the given conditions or the first line contains -1.
+
+Example Input/Output 1:
+Input:
+8
+15-Jun-2020 750
+17-Jun-2020 450
+12-Jun-2020 150
+18-Jun-2020 900
+16-Jun-2020 250
+14-Jun-2020 500
+19-Jun-2020 640
+13-Jun-2020 350
+500
+
+Output:
+14-Jun-2020
+15-Jun-2020
+18-Jun-2020
+19-Jun-2020
+
+Explanation:
+Here N = 8 and X = 500.
+The dates in which the revenue is greater than or equal to 500 are given below.
+15-Jun-2020 750
+18-Jun-2020 900
+14-Jun-2020 500
+19-Jun-2020 640
+So the above four dates are sorted and printed as the output.
+
+Example Input/Output 2:
+Input:
+8
+22-Apr-0097 150
+06-Jun-0096 200
+19-Apr-0097 240
+07-Jul-0095 100
+23-Apr-0097 90
+06-Aug-0096 190
+21-Apr-0097 120
+06-Jul-0096 540
+50
+
+Output:
+07-Jul-0095
+06-Jun-0096
+06-Jul-0096
+06-Aug-0096
+19-Apr-0097
+21-Apr-0097
+22-Apr-0097
+23-Apr-0097
+
+Example Input/Output 3:
+Input:
+3
+20-Aug-2020 1540
+17-Aug-2019 2130
+18-Aug-2019 5000
+6000
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
