@@ -1,0 +1,23 @@
+Daily Test
+ 
+ProgramID- 13556
+
+Java - C - 020
+Please convert the following Java code to C so that the C program executes successfully passing the test cases.
+
+import java.util.Scanner;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextLine()) {
+            String currRow[] = sc.nextLine().trim().split("\\s+");
+            System.out.println(currRow[currRow.length - 1]);
+        }
+    }
+}
+
+Note: The number of characters in each line of the input is greater than 0 and less than or equal to 1000.
+
+Max Execution Time Limit: 50 millisecs
