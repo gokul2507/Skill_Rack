@@ -1,0 +1,54 @@
+Daily Challenge
+ 
+ProgramID- 13532
+
+Bank Transactions - Exception Handling
+The program must accept N transactions of a bank account as the input. Each transaction has a character (+ for credit or - for debit) 
+followed by the amount. The initial balance of the bank account is Rs. 1000. For each transaction, the program must validate the 
+transaction and perform the transaction based on the following conditions.
+- If the amount to be credited is greater than 10000, then the program must print "Max credit limit exceeded". Else the given amount 
+must be credited to the bank account and the updated balance must be printed.
+- If the amount to be debited is greater than the account balance, then the program must print "Insufficient balance". Else the given 
+amount must be debited from the bank account and the updated balance must be printed.
+
+Your task is to fill in the missing lines of code so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+5
++ 500
+- 2000
++ 2000
++ 14000
+- 1000
+
+Output:
+1500
+Insufficient balance
+3500
+Max credit limit exceeded
+2500
+
+Explanation:
+The initial account balance is 1000.
+1st transaction: credit 500. The updated balance is 1500.
+2nd transaction: debit 2000. 2000 > 1500, so "Insufficient balance" is printed.
+3rd transaction: credit 2000. The updated balance is 3500.
+4th transaction: credit 14000. 14000 > 10000, so "Max credit limit exceeded" is printed.
+5th transaction: debit 1000. The updated balance is 2500.
+
+Example Input/Output 2:
+Input:
+4
+- 1000
++ 10000
+- 10001
++ 10001
+
+Output:
+0
+10000
+Insufficient balance
+Max credit limit exceeded
+
+Max Execution Time Limit: 50 millisecs
