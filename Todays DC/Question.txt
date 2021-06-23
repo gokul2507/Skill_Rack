@@ -1,74 +1,62 @@
 Daily Challenge
  
-ProgramID- 13541
+ProgramID- 13557
 
-Brackets Pattern
-The program must accept an integer N within a pair of brackets as the input. The pair of brackets can be any one of the following four 
-types.
-1) Parentheses()
-2) Square brackets[]
-3) Curly brackets{}
-2) Angle brackets<>
-The program must print the given brackets in N lines based on the following conditions.
-- In the 1st line, only one pair of brackets must be printed.
-- In the 2nd line, 2nd level nested brackets and one pair of brackets must be printed.
-- In the 3rd line, 3rd level, 2nd level nested brackets and one pair of brackets must be printed.
-- In the 4th line, 4th level, 3rd level, 2nd level nested brackets and one pair of brackets must be printed.
-- Similarly, the remaining lines must be printed as the output.
+function addSeconds
+The function/method addSeconds accepts two arguments - time and X. The integer X represents the number of seconds to be added to the 
+given time.
 
-Boundary Condition(s):
-1 <= N <= 25
+The function/method addSeconds must return a new time by adding X seconds to the given time.
 
-Input Format:
-The first line contains N within a pair of brackets.
+Your task is to implement the function addSeconds so that it passes all the test cases.
 
-Output Format:
-The first N lines contain the brackets pattern based on the given conditions.
+The following structure is used to represent the Time and is already defined in the default code (Do not write this definition again in 
+your code).
+
+typedef struct time
+{
+    int hh, mm, ss;
+} Time;
+
+Note: The given time will be in 24-hr format HH:MM:SS.
+
+IMPORTANT: Do not write the main() function as it is already defined.
 
 Example Input/Output 1:
 Input:
-(4)
+02:58:45
+15
 
 Output:
-()
-(())()
-((()))(())()
-(((())))((()))(())()
+Old Time:
+02:58:45
+New Time:
+02:59:00
 
 Explanation:
-Here N = 4 and the type of the brackets is Parentheses().
-So the parentheses are printed in 4 lines based on the given conditions.
+Here the given time is 02:58:45 and the value of X is 15.
+After adding 15 seconds to the given time, the time becomes 02:59:00.
 
 Example Input/Output 2:
 Input:
-[5]
+09:45:00
+900
 
 Output:
-[]
-[[]][]
-[[[]]][[]][]
-[[[[]]]][[[]]][[]][]
-[[[[[]]]]][[[[]]]][[[]]][[]][]
+Old Time:
+09:45:00
+New Time:
+10:00:00
 
 Example Input/Output 3:
 Input:
-{6}
+23:59:20
+124
 
 Output:
-{}
-{{}}{}
-{{{}}}{{}}{}
-{{{{}}}}{{{}}}{{}}{}
-{{{{{}}}}}{{{{}}}}{{{}}}{{}}{}
-{{{{{{}}}}}}{{{{{}}}}}{{{{}}}}{{{}}}{{}}{}
-
-Example Input/Output 4:
-Input:
-<3>
-
-Output:
-<>
-<<>><>
-<<<>>><<>><>
+Old Time:
+23:59:20
+New Time:
+00:01:24
 
 Max Execution Time Limit: 50 millisecs

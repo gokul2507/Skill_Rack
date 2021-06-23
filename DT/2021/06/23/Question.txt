@@ -1,0 +1,70 @@
+Daily Test
+ 
+ProgramID- 13559
+
+Sorting Rectangles
+
+The program must accept the length L and breadth B of N rectangles as the input. The program must find the area of each rectangle. Then 
+the program must sort the N rectangles in descending order based on the area. If two or more rectangles have the same area, then the 
+program must sort N rectangles in descending order based on the breadth. Finally, the program must print the length, breadth and area 
+of the N sorted rectangles as the output.
+
+Your task to define the class Rectangle so that the program runs successfully.
+
+Input Format:
+The first line contains N.
+The next N lines, each contains the length and the breadth of a rectangle.
+
+Output Format:
+The first N lines contain the length, breadth and area of the N rectangles after sorting.
+
+Example Input/Output 1:
+Input:
+5
+3 6
+4 3
+6 8
+3 4
+5 7
+
+Output:
+6 8 48
+5 7 35
+3 6 18
+3 4 12
+4 3 12
+
+Explanation:
+The area of the 1st rectangle is 18 (3*6).
+The area of the 2nd rectangle is 12 (4*3).
+The area of the 3rd rectangle is 48 (6*8).
+The area of the 4th rectangle is 12 (3*4).
+The area of the 5th rectangle is 35 (5*7).
+After sorting the rectangles based on the given conditions, the rectangles become
+6 8 48
+5 7 35
+3 6 18
+3 4 12
+4 3 12
+
+Example Input/Output 2:
+Input:
+7
+15 15
+40 10
+20 20
+30 8
+6 40
+22 4
+10 10
+
+Output:
+20 20 400
+40 10 400
+6 40 240
+30 8 240
+15 15 225
+10 10 100
+22 4 88
+
+Max Execution Time Limit: 50 millisecs
