@@ -1,0 +1,62 @@
+Daily Challenge
+ 
+ProgramID- 13557
+
+function addSeconds
+The function/method addSeconds accepts two arguments - time and X. The integer X represents the number of seconds to be added to the 
+given time.
+
+The function/method addSeconds must return a new time by adding X seconds to the given time.
+
+Your task is to implement the function addSeconds so that it passes all the test cases.
+
+The following structure is used to represent the Time and is already defined in the default code (Do not write this definition again in 
+your code).
+
+typedef struct time
+{
+    int hh, mm, ss;
+} Time;
+
+Note: The given time will be in 24-hr format HH:MM:SS.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+02:58:45
+15
+
+Output:
+Old Time:
+02:58:45
+New Time:
+02:59:00
+
+Explanation:
+Here the given time is 02:58:45 and the value of X is 15.
+After adding 15 seconds to the given time, the time becomes 02:59:00.
+
+Example Input/Output 2:
+Input:
+09:45:00
+900
+
+Output:
+Old Time:
+09:45:00
+New Time:
+10:00:00
+
+Example Input/Output 3:
+Input:
+23:59:20
+124
+
+Output:
+Old Time:
+23:59:20
+New Time:
+00:01:24
+
+Max Execution Time Limit: 50 millisecs
