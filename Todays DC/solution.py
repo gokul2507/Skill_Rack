@@ -1,4 +1,7 @@
-N=int(input());numList = input().split();s=0
-for num in numList:   
-    s+=int(str(len(num))+num)
-print(s)
+s=int(input());a={}
+for i in range(1,s+1):
+    t=input().strip();a[t]=a.get(t,0)+1
+    print(t,end="")
+    if a[t]>1:
+        print(a[t],end=" ")
+    print()

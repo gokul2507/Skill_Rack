@@ -1,0 +1,28 @@
+Daily Challenge
+ 
+ProgramID- 13562
+
+C - Python - 021
+Please convert the following C code to Python so that the Python program executes successfully passing the test cases.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N, currNum;
+    scanf("%d", &N);
+    unsigned long long int val, sum = 0;
+    char numStr[15];
+    for(int ctr = 1; ctr <= N; ctr++)
+    {
+        scanf("%d", &currNum);
+        sprintf(numStr, "%d%d", sprintf(numStr, "%d", currNum), currNum);
+        sscanf(numStr, "%llu", &val);
+        sum += val;
+    }
+    printf("%llu", sum);
+    return 0;
+}
+
+Max Execution Time Limit: 50 millisecs
