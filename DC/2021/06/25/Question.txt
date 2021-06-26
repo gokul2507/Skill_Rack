@@ -1,0 +1,82 @@
+Daily Challenge
+ 
+ProgramID- 13539
+
+Multiple Persons - Same Name
+The program must accept the names of N persons as the input. If two or more persons have the same name, then each name from the second 
+occurrence must be modified by concatenating the name and an integer representing its occurrence count. Finally, the program must print 
+the revised names of N persons as the output.
+
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Length of each person's name <= 30
+
+Input Format:
+The first line contains N.
+The next N lines, each contains the name of a person.
+
+Output Format:
+The first N lines contain the revised names of the N persons.
+
+Example Input/Output 1:
+Input:
+10
+Hector
+Babloo
+Nancy
+Bhuvana
+Gavin
+Babloo
+Nancy
+Babloo
+Anitha
+Babloo
+
+Output:
+Hector
+Babloo
+Nancy
+Bhuvana
+Gavin
+Babloo2
+Nancy2
+Babloo3
+Anitha
+Babloo4
+
+Explanation:
+4 persons have the same name called "Babloo".
+2 persons have the same name called "Nancy".
+After modifying the names based on the given conditions, the names become
+Hector
+Babloo
+Nancy
+Bhuvana
+Gavin
+Babloo2
+Nancy2
+Babloo3
+Anitha
+Babloo4
+
+Example Input/Output 2:
+Input:
+7
+John
+Oliver
+Oliver
+Oliver
+Oliver
+Oliver
+John
+
+Output:
+John
+Oliver
+Oliver2
+Oliver3
+Oliver4
+Oliver5
+John2
+
+Max Execution Time Limit: 50 millisecs
