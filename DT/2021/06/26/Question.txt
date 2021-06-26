@@ -1,0 +1,75 @@
+Daily Test
+ 
+ProgramID- 13569
+
+Sort Colleges by Number of Departments
+There are C colleges in a city. Each college has certain number of departments. The name of each college and the department names in the 
+college are passed as the input. The program must sort the colleges based on the following conditions.
+- The colleges must be sorted in descending order based on the number of departments.
+- If two or more colleges have the number of departments, then the colleges must be sorted based on the name.
+Finally, the program must print the names of the colleges along with the names of the departments as the output.
+
+Your task is to define the class College so that the program runs successfully.
+
+Note: The names of the departments in each college must be printed in the order of their occurrence.
+
+Example Input/Output 1:
+Input:
+4
+NTT Engineering College
+EEE ECE EIE MECT
+IGI Institute of Technology
+CSE IT MECH CIVIL EEE ECE EIE
+KKPP College of Engineering
+IT CSE ECE EEE
+JB College of Engineering and Technology
+CSE IT CSBS ECE EEE CIVIL
+
+Output:
+IGI Institute of Technology
+CSE IT MECH CIVIL EEE ECE EIE
+JB College of Engineering and Technology
+CSE IT CSBS ECE EEE CIVIL
+KKPP College of Engineering
+IT CSE ECE EEE
+NTT Engineering College
+EEE ECE EIE MECT
+
+Explanation:
+NTT Engineering College has 4 departments.
+IGI Institute of Technology has 7 departments.
+KKPP College of Engineering has 4 departments.
+JB College of Engineering and Technology has 6 departments.
+After sorting the 4 colleges based on the given conditions, the colleges become
+IGI Institute of Technology
+JB College of Engineering and Technology
+KKPP College of Engineering
+NTT Engineering College
+
+Example Input/Output 2:
+Input:
+5
+EFGH College of Engineering
+CSE IT ECE EIE
+STUV College of Engineering and Technology
+MECH CSE EIE IT CIVIL ECE
+JKLM College of Technology
+ECE EEE EIE CSE
+XYZ Institute of Technology
+CIVIL MECH EEE ECE CSE
+ABC Engineering College
+CSE IT EEE ECE
+
+Output:
+STUV College of Engineering and Technology
+MECH CSE EIE IT CIVIL ECE
+XYZ Institute of Technology
+CIVIL MECH EEE ECE CSE
+ABC Engineering College
+CSE IT EEE ECE
+EFGH College of Engineering
+CSE IT ECE EIE
+JKLM College of Technology
+ECE EEE EIE CSE
+
+Max Execution Time Limit: 50 millisecs
