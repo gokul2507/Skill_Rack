@@ -1,0 +1,65 @@
+Daily Test
+ 
+ProgramID- 13544
+
+function getLargestSquareMatrix
+The function/method getLargestSquareMatrix accepts five arguments - R, C, matrix, sRow, sCol. R and C represent the size of the 2-D 
+integer array matrix. The integers sRow and sCol represent the position of the top-left cell of the largest square submatrix to be 
+returned.
+
+The function/method getLargestSquareMatrix must return the largest possible square submatrix whose top-left cell's position is (sRow, 
+sCol).
+
+Your task is to implement the function getLargestSquareMatrix so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    int **matrix;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5 4
+49 54 78 56
+82 74 80 35
+18 68 14 25
+27 42 58 89
+88 97 63 97
+2 2
+
+Output:
+Square Matrix:
+74 80 35
+68 14 25
+42 58 89
+
+Explanation:
+The position of the top-left cell of the largest square submatrix is (2, 2).
+The largest square submatrix is highlighted below.
+49 54 78 56
+82 74 80 35
+18 68 14 25
+27 42 58 89
+88 97 63 97
+
+Example Input/Output 2:
+Input:
+4 6
+82 44 30 85 18 22
+72 12 60 44 86 76
+17 77 90 19 85 67
+34 83 81 71 57 69
+3 4
+
+Output:
+Square Matrix:
+19 85
+71 57
+
+Max Execution Time Limit: 50 millisecs
