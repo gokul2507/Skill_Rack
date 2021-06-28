@@ -1,0 +1,70 @@
+Daily Challenge
+ 
+ProgramID- 13536
+
+Maximum Number of Balls - Triangle
+In a game, there are (N*(N+1))/2 boxes arranged as a triangle based on the following conditions.
+- N boxes in the Nth row.
+- N-1 boxes in the (N-1)th row.
+- N-2 boxes in the (N-2)th row.
+- N-3 boxes in the (N-3)th row.
+- Similarly, the remaining boxes are arranged as a triangle.
+Each box contains a certain number of balls. The number of balls in each box is passed as the input. The program must print the maximum 
+number of balls that can be collected from the boxes based on the following condition.
+- The only box in the 1st row must be picked. For the remaining rows, one of the two adjacent boxes in the next row to the previously 
+selected box must be picked.
+
+Boundary Condition(s):
+3 <= N <= 100
+1 <= Number of balls in each box <= 10^5
+
+Input Format:
+The first line contains N.
+The next N lines containing the triangle, where the asterisks in each row represent the empty spaces.
+
+Output Format:
+The first line contains an integer representing the maximum number of balls that can be collected from the boxes.
+
+Example Input/Output 1:
+Input:
+4
+***3
+**4 2
+*7 6 9
+5 2 9 4
+
+Output:
+23
+
+Explanation:
+The maximum number of balls that be collected from the boxes is 23 (3 + 2 + 9 + 9).
+1st row: 3
+2nd row: 2
+3rd row: 9
+4th row: 9
+
+Example Input/Output 2:
+Input:
+7
+******22
+*****7 2
+****19 18 7
+***6 22 34 35
+**13 24 18 1 25
+*2 6 2 39 42 19
+24 9 3 21 16 13 21
+
+Output:
+159
+
+Explanation:
+The maximum number of balls that be collected from the boxes is 159 (22 + 7 + 18 + 34 + 18 + 39 + 21).
+1st row: 22
+2nd row: 7
+3rd row: 18
+4th row: 34
+5th row: 18
+6th row: 39
+7th row: 21
+
+Max Execution Time Limit: 50 millisecs
