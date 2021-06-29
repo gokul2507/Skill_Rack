@@ -1,0 +1,23 @@
+Daily Challenge
+ 
+ProgramID- 13538
+
+Please convert the following C code to Java so that the Java program executes successfully passing the test cases.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N, index = 0;
+    scanf("%d", &N);
+    char str[1001];
+    for(int ctr = 1; ctr <= N; ctr++)
+    {
+        index += scanf("\n%s", &str[index]);
+        printf("%s\n", str);
+    }
+    return 0;
+}
+ 
+Max Execution Time Limit: 50 millisecs
