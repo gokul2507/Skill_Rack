@@ -1,46 +1,53 @@
 Daily Challenge
  
-ProgramID- 13579
+ProgramID- 13590
 
-function customSeparator
-The function/method customSeparator accepts three arguments - N, words and sep. The integer N represents the number of words in the 
-2-D array words and sep represents a character.
+Define class Distance
+The program must accept two distances(in feet and inches) as the input. The program must print the sum of the two distances(in feet 
+and inches) as the output. Then the program must add X inches to the sum and print the revised distance. The value of X is also passed 
+as the input.
 
-The function/method customSeparator must return a new string containing all the given words separated by the character sep.
+Yout task is to define the class Distance that the program runs successfully.
 
-Your task is to implement the function customSeparator so that it passes all the test cases.
+The calling code Hello.py is as given below.
+from distance import Distance
 
-Note: The length of each word is always greater than 0 and less than or equal to 100.
+feet, inches = map(int, input().split())
+dist1 = Distance(feet, inches)
+feet, inches = map(int, input().split())
+dist2 = Distance(feet, inches)
+X = int(input())
+dist3 = dist1 + dist2
+print(dist3)
+dist3.addInches(X)
+print(dist3)
 
-IMPORTANT: Do not write the main() function as it is already defined.
+Formula: 1 Foot = 12 Inches
 
 Example Input/Output 1:
 Input:
-4
-day
-month
-year
-weekday
--
+4 11
+2 10
+5
 
 Output:
-String: day-month-year-weekday
+7 9
+8 2
 
 Explanation:
-The given 4 words are day, month, year and weekday.
-So the 4 words are separated by the given character hyphen (-).
+Distance 1 = 4 feet and 11 inches.
+Distance 2 = 2 feet and 10 inches.
+The sum of the two distances is 7 feet and 9 inches.
+After adding 5 inches to the sum, the distance becomes 8 feet and 2 inches.
 
 Example Input/Output 2:
 Input:
-5
-Ten
-Hundred
-Thousand
-Lakh
-Crore
-,
+3 6
+3 6
+30
 
 Output:
-String: Ten,Hundred,Thousand,Lakh,Crore
+7 0
+9 6
 
 Max Execution Time Limit: 50 millisecs

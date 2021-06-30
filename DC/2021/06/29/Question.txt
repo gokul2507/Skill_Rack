@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 13579
+
+function customSeparator
+The function/method customSeparator accepts three arguments - N, words and sep. The integer N represents the number of words in the 
+2-D array words and sep represents a character.
+
+The function/method customSeparator must return a new string containing all the given words separated by the character sep.
+
+Your task is to implement the function customSeparator so that it passes all the test cases.
+
+Note: The length of each word is always greater than 0 and less than or equal to 100.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+4
+day
+month
+year
+weekday
+-
+
+Output:
+String: day-month-year-weekday
+
+Explanation:
+The given 4 words are day, month, year and weekday.
+So the 4 words are separated by the given character hyphen (-).
+
+Example Input/Output 2:
+Input:
+5
+Ten
+Hundred
+Thousand
+Lakh
+Crore
+,
+
+Output:
+String: Ten,Hundred,Thousand,Lakh,Crore
+
+Max Execution Time Limit: 50 millisecs
