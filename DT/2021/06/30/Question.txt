@@ -1,0 +1,63 @@
+Daily Test
+ 
+ProgramID- 13596
+
+Find Time - N Integers
+A boy wants to go to a city as late as possible. He is given N integers and he can choose any two numbers(hour and minute) from the 
+given N integers. The N integer values are passed as the input. The program must print the time he needs to start the journey so that 
+he will reach the city as late as possible. The time must be printed in 24-hr format HH:MM. If it is not possible to find a time from 
+the given N integers, then the program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= N <= 100
+0 <= Each integer value <= 59
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the time in 24-hr format HH:MM or -1 based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5
+30 2 45 13 4
+
+Output:
+13:45
+
+Explanation:
+Here N = 5 and the 5 integers are 30, 2, 45, 13 and 4.
+All the possible times that can be formed using the given 5 integers are given below
+02:30
+02:45
+02:13
+02:04
+13:30
+13:02
+13:45
+13:04
+04:30
+04:02
+04:45
+04:13
+The boy starts the journey at 13:45, so he can reach the city as late as possible.
+
+Example Input/Output 2:
+Input:
+4
+32 24 59 40
+
+Output:
+-1
+
+Example Input/Output 3:
+Input:
+4
+52 0 45 30
+
+Output:
+00:52
+
+Max Execution Time Limit: 50 millisecs
