@@ -1,0 +1,49 @@
+Daily Test
+ 
+ProgramID- 13546
+
+function getWordsStartingWithVowel
+The function/method getWordsStartingWithVowel accepts an argument str representing a string value which contains multiple words.
+
+The function/method getWordsStartingWithVowel must return an array of string values representing the words starting with a vowel in the 
+given string str. If there is no such word, then the function must return an array of size 1 with the string value "-1".
+
+Your task is to implement the function getWordsStartingWithVowel so that it passes all the test cases.
+
+Note: The length of each word in the given string is always greater than 0 and less than or equal to 100.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    char **words;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+mobile computer earth mars iceberg umbrella rain
+
+Output:
+earth
+iceberg
+umbrella
+
+Explanation:
+Here the given string is mobile computer earth mars iceberg umbrella rain.
+The words starting with a vowel in the given string are earth, iceberg and umbrella.
+Hence the output is
+earth
+iceberg
+umbrella
+
+Example Input/Output 2:
+Input:
+Hockey game Bus driver
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
