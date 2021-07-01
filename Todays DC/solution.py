@@ -1,13 +1,17 @@
-class Distance:
-    def __init__(self,a,b):
-        self.f=a 
-        self.i=b 
-    def __add__(self,x):
-        f1=self.f+x.f 
-        i1=self.i+x.i 
-        return Distance(f1+i1//12,i1%12) 
-    def __str__(self):
-        return str(self.f)+" "+str(self.i) 
-    def addInches(self,x): 
-        self.f=self.f+(self.i+x)//12 
-        self.i=(self.i+x)%12
+cal=[input().split() for r in range(6)]
+if len(cal[0])==6:
+    cal.append(input().split())
+    cal=[list(r) for r in zip(*cal)]
+d=1
+ds=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+h=False
+for r in range(0,6):
+    for c in range(0,7):
+        if cal[r][c].isdigit():
+            d+=1
+        elif cal[r][c]=='#':
+            print(d,ds[c])
+            d+=1
+            h=True
+if h==False:
+    print(-1)

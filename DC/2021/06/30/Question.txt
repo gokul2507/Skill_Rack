@@ -1,0 +1,53 @@
+Daily Challenge
+ 
+ProgramID- 13590
+
+Define class Distance
+The program must accept two distances(in feet and inches) as the input. The program must print the sum of the two distances(in feet 
+and inches) as the output. Then the program must add X inches to the sum and print the revised distance. The value of X is also passed 
+as the input.
+
+Yout task is to define the class Distance that the program runs successfully.
+
+The calling code Hello.py is as given below.
+from distance import Distance
+
+feet, inches = map(int, input().split())
+dist1 = Distance(feet, inches)
+feet, inches = map(int, input().split())
+dist2 = Distance(feet, inches)
+X = int(input())
+dist3 = dist1 + dist2
+print(dist3)
+dist3.addInches(X)
+print(dist3)
+
+Formula: 1 Foot = 12 Inches
+
+Example Input/Output 1:
+Input:
+4 11
+2 10
+5
+
+Output:
+7 9
+8 2
+
+Explanation:
+Distance 1 = 4 feet and 11 inches.
+Distance 2 = 2 feet and 10 inches.
+The sum of the two distances is 7 feet and 9 inches.
+After adding 5 inches to the sum, the distance becomes 8 feet and 2 inches.
+
+Example Input/Output 2:
+Input:
+3 6
+3 6
+30
+
+Output:
+7 0
+9 6
+
+Max Execution Time Limit: 50 millisecs
