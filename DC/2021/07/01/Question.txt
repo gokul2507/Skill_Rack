@@ -1,0 +1,73 @@
+Daily Challenge
+ 
+ProgramID- 13550
+
+Print Holidays - Monthly Calendar
+The program must accept a matrix representing the month of a calender year. The size of the matrix can be 6*7 or 7*6. In 6*7 matrix, 
+the 7 columns represent the 7 weekdays. In 7*6 matrix, the 7 rows represent the 7 weekdays. The matrix contains integers, asterisks 
+and hash symbols. The asterisks represent the empty spaces in the month. The hash symbols represent the holidays in the month. The 
+program must print the holidays along with the weekday in chronological order in the given month as the output. If there is no holiday 
+in the given month, then the program must print -1 as the output.
+
+Note: The order of the 7 weekdays are Sun, Mon, Tue, Wed, Thu, Fri and Sat.
+
+Input Format:
+The lines containing a matrix representing the month of a calender year.
+
+Output Format:
+The lines containing the holidays along with the weekday in chronological order.
+
+Example Input/Output 1:
+Input:
+* * 1 2 3 4 5
+6 7 8 9 10 11 12
+13 14 # 16 17 18 19
+20 21 22 23 24 25 #
+# # 29 30 * * *
+* * * * * * *
+
+Output:
+15 Tue
+26 Sat
+27 Sun
+28 Mon
+
+Explanation:
+In the given month, the holidays are 15, 26, 27 and 28.
+So the holidays are printed along with the weekday in chronological order as below.
+15 Tue
+26 Sat
+27 Sun
+28 Mon
+
+Example Input/Output 2:
+Input:
+* 3 10 17 24 31
+* 4 11 18 25 *
+* 5 12 19 # *
+* 6 13 20 27 *
+* 7 # 21 28 *
+# 8 # 22 29 *
+2 9 # 23 30 *
+
+Output:
+1 Fri
+14 Thu
+15 Fri
+16 Sat
+26 Tue
+
+Example Input/Output 3:
+Input:
+* 3 10 17 24 31
+* 4 11 18 25 *
+* 5 12 19 26 *
+* 6 13 20 27 *
+* 7 14 21 28 *
+1 8 15 22 29 *
+2 9 16 23 30 *
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
