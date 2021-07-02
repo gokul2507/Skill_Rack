@@ -1,0 +1,60 @@
+Daily Test
+ 
+ProgramID- 13563
+
+Find Population - Year
+The program must accept the year of birth and the year of death of N persons as input. The program must print the population in the year 
+Y as the output. The value of Y is also passed as the input. If the year of death of a person is X, then that person must not be 
+included in the population of the year X.
+
+Boundary Condition(s):
+1 <= N <= 10^4
+1 <= Birth year < Death year <= 9999
+1 <= Y <= 9999
+
+Input Format:
+The first line contains N.
+The next N lines, each contains two integers representing the birth year and death year of a person.
+The (N+2)th line contains Y.
+
+Output Format:
+The first line contains the population in the year Y.
+
+Example Input/Output 1:
+Input:
+8
+2000 2021
+1947 1989
+1940 2011
+2001 2019
+1945 2000
+1975 2005
+2002 2020
+1960 1999
+2000
+
+Output:
+3
+
+Explanation:
+In the year 2000, the population is 3.
+2000 2021
+1940 2011
+1975 2005
+
+Example Input/Output 2:
+Input:
+7
+2006 2070
+1980 2041
+1985 2058
+1995 2017
+2004 2036
+2020 2100
+2021 2036
+2021
+
+Output:
+6
+
+Max Execution Time Limit: 50 millisecs
