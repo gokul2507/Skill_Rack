@@ -1,0 +1,32 @@
+Daily Challenge
+ 
+ProgramID- 13540
+
+Multiple Interfaces - Department and College
+The program must accept the name, department name and college name of a student as the input. The program must print the name, 
+department name and college name as shown in the Example Input/Output section. Please fill in the missing lines of code so that 
+the program runs successfully.
+
+Example Input/Output 1:
+Input:
+Hector
+ECE
+ABC College of Engineering
+
+Output:
+Name: Hector
+Department: ECE
+College: ABC College of Engineering
+
+Example Input/Output 2:
+Input:
+Kavin
+MECH
+KRR Institute of Technology
+
+Output:
+Name: Kavin
+Department: MECH
+College: KRR Institute of Technology
+
+Max Execution Time Limit: 50 millisecs

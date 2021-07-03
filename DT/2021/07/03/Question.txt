@@ -1,0 +1,61 @@
+Daily Test
+ 
+ProgramID- 13567
+
+Inverted Triangles in Diagonal Pattern
+The program must accept an integer N as the input. The program must print N inverted triangles of asterisks based on the following 
+conditions.
+- The program must print an inverted triangle of asterisks of size 2 in the first two lines.
+- Then the program must print an inverted triangle of asterisks of size 3 in the next 3 lines diagonally.
+- Then the program must print an inverted triangle of asterisks of size 4 in the next 4 lines diagonally.
+- Similarly, the program must print the remaining triangles diagonally as the output.
+- The program must print hyphens instead of empty spaces before each line.
+
+Boundary Condition(s):
+1 <= N <= 20
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The lines containing the N inverted triangles of asterisks as shown in the Example Input/Output section.
+
+Example Input/Output 1:
+Input:
+4
+
+Output:
+* *
+-*
+--* * *
+---* *
+----*
+-----* * * *
+------* * *
+-------* *
+--------*
+---------* * * * *
+----------* * * *
+-----------* * *
+------------* *
+-------------*
+
+Explanation:
+Here N = 4, so the output contains 4 inverted triangles of asterisks based on the given conditions.
+
+Example Input/Output 2:
+Input:
+3
+
+Output:
+* *
+-*
+--* * *
+---* *
+----*
+-----* * * *
+------* * *
+-------* *
+--------*
+
+Max Execution Time Limit: 50 millisecs
