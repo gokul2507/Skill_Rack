@@ -1,0 +1,66 @@
+Daily Test
+ 
+ProgramID- 13572
+
+function writeAdjacencyMatrixToFile
+The function/method writeAdjacencyMatrixToFile accepts three arguments - N, E and edges. N is an integer that represents the number of 
+nodes in a graph, E is an integer that represents the number of edges in the graph and edges is a 2-D array that represents the E edges
+(source and destination) of the graph.
+
+The function/method writeAdjacencyMatrixToFile must write the adjacency matrix to a file called adjacencymatrix.txt using the given 
+edges.
+
+Your task is to implement the function writeAdjacencyMatrixToFile so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+4 7
+1 2
+3 4
+1 3
+3 2
+3 1
+2 4
+4 1
+
+Output:
+Adjacency Matrix:
+0 1 1 0
+0 0 0 1
+1 1 0 1
+1 0 0 0
+
+Explanation:
+Here N = 4 and E = 7.
+The graph has 4 nodes and 7 edges.
+So the adjacency matrix of the graph is given below.
+0 1 1 0
+0 0 0 1
+1 1 0 1
+1 0 0 0
+In the above matrix, the integer 1 indicates that there an edge between the corresponding nodes.
+
+Example Input/Output 2:
+Input:
+5 9
+1 2
+5 4
+4 5
+4 1
+5 1
+1 5
+4 3
+4 2
+2 4
+
+Output:
+Adjacency Matrix:
+0 1 0 0 1
+0 0 0 1 0
+0 0 0 0 0
+1 1 1 0 1
+1 0 0 1 0
+
+Max Execution Time Limit: 50 millisecs

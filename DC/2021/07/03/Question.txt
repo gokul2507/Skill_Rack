@@ -1,0 +1,68 @@
+Daily Challenge
+ 
+ProgramID- 13565
+
+Keyboard - Continuously Used Row
+There are three rows in a keyboard containing the alphabets. The alphabets in each row are given as the input. The program also accepts 
+a string S which is typed using the keyboard. The program must print the row in which the most number of alphabets typed continuously. 
+If there are two or more such rows, then the program must print them in the order of their occurrence. If there is no such row, then 
+the program must print -1 as the output.
+
+Boundary Condition(s):
+1 <= Length of S <= 1000
+
+Input Format:
+The first three lines contain the three rows of the keyboard.
+The fourth line contains S.
+
+Output Format:
+The lines containing the string values or the first line contains -1 based on the given conditions.
+
+Example Input/Output 1:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+skillrack
+
+Output:
+asdfghjkl
+
+Explanation:
+Here S = skillrack.
+Two alphabets are typed continuously in the middle row (2).
+s and k
+l and l
+
+Example Input/Output 2:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+motion
+
+Output:
+qwertyuiop
+
+Example Input/Output 3:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+ice
+
+Output:
+-1
+
+Example Input/Output 4:
+Input:
+qwertyuiop
+asdfghjkl
+zxcvbnm
+google
+
+Output:
+qwertyuiop
+asdfghjkl
+
+Max Execution Time Limit: 50 millisecs
