@@ -1,0 +1,88 @@
+Daily Test
+ 
+ProgramID- 13574
+
+Time Left: 00:13:49
+Schedule Doctor Appointment
+The program must accept the start time and end time representing the visiting slot of a doctor. Then the program accepts N appointment 
+requests from N patients. The doctor consultation duration of each patient is 30 minutes. For each request, the program must validate 
+the request and print the output based on the following conditions.
+- If there are no appointments scheduled in the given slot, then the appointment must be scheduled and the program must print 
+"Appointment Scheduled Successfully" as the output.
+- Else the program must print "Failed" as the output.
+
+Your task is to define the class Doctor so that the program runs successfully.
+
+Note: The time will be in 24-hr format HH:MM.
+
+Example Input/Output 1:
+Input:
+10:00 13:30
+11
+10:00
+10:15
+09:45
+13:40
+10:30
+11:01
+11:30
+11:31
+13:02
+12:58
+13:29
+
+Output:
+10:00 Appointment Scheduled Successfully
+10:15 Failed
+09:45 Failed
+13:40 Failed
+10:30 Appointment Scheduled Successfully
+11:01 Appointment Scheduled Successfully
+11:30 Failed
+11:31 Appointment Scheduled Successfully
+13:02 Failed
+12:58 Appointment Scheduled Successfully
+13:29 Failed
+
+Explanation:
+The doctor's visiting slot is 10:00 to 13:30.
+1st request: 10:00 -> No appointments scheduled in the slot. So "Appointment Scheduled Successfully" is printed.
+2nd request: 10:15 -> Already an appointment is scheduled. So "Failed" is printed.
+3rd request: 09:45 -> It is not present in the doctor's visiting slot. So "Failed" is printed.
+4th request: 13:40 -> It is not present in the doctor's visiting slot. So "Failed" is printed.
+5th request: 10:30 -> No appointments scheduled in the slot. So "Appointment Scheduled Successfully" is printed.
+6th request: 11:01 -> No appointments scheduled in the slot. So "Appointment Scheduled Successfully" is printed.
+7th request: 11:30 -> Already an appointment is scheduled. So "Failed" is printed.
+8th request: 11:31 -> No appointments scheduled in the slot. So "Appointment Scheduled Successfully" is printed.
+9th request: 13:02 -> It is not present in the doctor's visiting slot. So "Failed" is printed.
+10th request: 12:58 -> No appointments scheduled in the slot. So "Appointment Scheduled Successfully" is printed.
+11th request: 13:29 -> It is not present in the doctor's visiting slot. So "Failed" is printed.
+
+Example Input/Output 2:
+Input:
+18:00 21:00
+10
+17:00
+17:30
+17:59
+18:01
+21:00
+21:01
+20:59
+20:29
+20:30
+20:31
+
+Output:
+17:00 Failed
+17:30 Failed
+17:59 Failed
+18:01 Appointment Scheduled Successfully
+21:00 Failed
+21:01 Failed
+20:59 Failed
+20:29 Appointment Scheduled Successfully
+20:30 Failed
+20:31 Failed
+
+Max Execution Time Limit: 50 millisecs
