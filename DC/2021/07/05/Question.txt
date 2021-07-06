@@ -1,0 +1,28 @@
+Daily Challenge
+ 
+ProgramID- 13577
+
+Java - Python - 022
+Please convert the following Java code to Python so that the Python program executes successfully passing the test cases.
+ 
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Set<Integer> numSet = new TreeSet<>();
+        while (sc.hasNextLine()) {
+            List<Integer> numList = Arrays.stream(sc.nextLine().trim().split("\\s+"))
+                    .map(Integer::valueOf)
+                    .collect(Collectors.toList());
+            numSet.addAll(numList);
+        }
+        for (int num : numSet) {
+            System.out.print(num + " ");
+        }
+    }
+}
+
+Max Execution Time Limit: 50 millisecs
