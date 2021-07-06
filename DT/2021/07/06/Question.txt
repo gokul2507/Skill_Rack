@@ -1,0 +1,53 @@
+Daily Test
+ 
+ProgramID- 13555
+
+function concatEveryTwoWords
+The function/method concatEveryTwoWords accepts an argument str representing a string value which contains multiple words.
+
+The function/method concatEveryTwoWords must return an array of string values representing the concatenate of every two words in the 
+given string str.
+Note: The number of words in the given string str is always even.
+
+Your task is to implement the function concatEveryTwoWords so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+typedef struct BoundedArray
+{
+    int SIZE;
+    char **words;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+Pen Pencil Water bottle school uniform Rain Water
+
+Output:
+Words:
+PenPencil
+Waterbottle
+schooluniform
+RainWater
+
+Explanation:
+Here the given string is Pen Pencil Water bottle school uniform Rain Water.
+After concatenating every two words in the given string, the words become
+PenPencil
+Waterbottle
+schooluniform
+RainWater
+
+Example Input/Output 2:
+Input:
+bat ball Apple Mango Blue berry
+
+Output:
+Words:
+batball
+AppleMango
+Blueberry
+
+Max Execution Time Limit: 50 millisecs
