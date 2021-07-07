@@ -1,0 +1,65 @@
+Daily Challenge
+ 
+ProgramID- 13578
+
+V and Inverted V - Combined Pattern
+The program must accept a string S as the input. The program must print the characters in the string S based on the following conditions.
+- The characters in the string S must be printed in V-shape and inverted V-shape in (L+1)/2 lines as shown in the Example Input/Output 
+section, where L is the length of the string.
+- The asterisks must be printed instead of the empty spaces in the pattern.
+Note: The length of S is always odd.
+
+Boundary Condition(s):
+3 <= Length of S <= 99
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first (L+1)/2 lines contain the combined pattern as shown in the Example Input/Output section.
+
+Example Input/Output 1:
+Input:
+skillrack
+
+Output:
+s***l***k
+*k*l*r*c*
+**i***a**
+*k*l*r*c*
+s***l***k
+
+Explanation:
+Here the string S = skillrack.
+The V pattern of the string is given below.
+s*******k
+*k*****c*
+**i***a**
+***l*r***
+****l****
+The inverted V pattern of the string is given below.
+****l****
+***l*r***
+**i***a**
+*k*****c*
+s*******k
+The combined pattern(V and Inverted V) is given below.
+s***l***k
+*k*l*r*c*
+**i***a**
+*k*l*r*c*
+s***l***k
+
+Example Input/Output 2:
+Input:
+ABCDEFGHIJK
+
+Output:
+A****F****K
+*B**E*G**J*
+**CD***HI**
+**CD***HI**
+*B**E*G**J*
+A****F****K
+
+Max Execution Time Limit: 50 millisecs
