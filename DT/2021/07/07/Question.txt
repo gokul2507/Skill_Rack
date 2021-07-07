@@ -1,0 +1,28 @@
+Daily Test
+ 
+ProgramID- 13585
+
+C - Python - 023
+Please convert the following C code to Python so that the Python program executes successfully passing the test cases.
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[1001], printStr[1001];
+    while(scanf("%[^\n\r]\n\r", str) == 1)
+    {
+        if(sscanf(str, "%[^0-9]", printStr) == 0)
+        {
+            printf("-1\n");
+        }
+        else
+        {
+            printf("%s\n", printStr);
+        }
+    }
+    return 0;
+}
+
+Max Execution Time Limit: 50 millisecs
