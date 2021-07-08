@@ -1,0 +1,66 @@
+Daily Challenge
+ 
+ProgramID- 13576
+
+Video Game Playing Sessions
+A boy plays a video game in a time slot based on the following condition.
+- In the given time slot, he plays the game for X minutes, then he takes a break for Y minutes, then he plays the game for X minutes, 
+then he takes a break for Y minutes, and so on. For the last playing session, he only plays the video game if there are X minutes in 
+the given slot.
+The time slot and the values of X, Y are passed as the input. The program must print all the playing sessions(start time and end time) 
+in which the boy plays the video game as the output. If there is no playing session, then the program must print -1.
+
+Note: The time will be in 24-hr format HH:MM.
+
+Boundary Condition(s):
+1 <= X, Y <= 500
+
+Input Format:
+The first line contains the time slot(start time and end time) separated by a space.
+The second line contains X and Y separated by a space.
+
+Output Format:
+The lines contain the playing sessions or the first line contains -1.
+
+Example Input/Output 1:
+Input:
+10:00 14:00
+45 15
+
+Output:
+10:00 - 10:45
+11:00 - 11:45
+12:00 - 12:45
+13:00 - 13:45
+
+Explanation:
+The time slot given to the boy is 10:00 and 14:00.
+Here X = 45 minutes and Y = 15 minutes.
+10:00 - 10:45 (1st Playing session)
+He takes a break from 10:45 to 11:00.
+11:00 - 11:45 (2nd Playing session)
+He takes a break from 11:45 to 12:00.
+12:00 - 12:45 (3rd Playing session)
+He takes a break from 12:45 to 13:00.
+13:00 - 13:45 (4th Playing session)
+He takes a break from 13:45 to 14:00.
+
+Example Input/Output 2:
+Input:
+10:00 14:00
+60 10
+
+Output:
+10:00 - 11:00
+11:10 - 12:10
+12:20 - 13:20
+
+Example Input/Output 3:
+Input:
+15:30 16:00
+40 10
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
