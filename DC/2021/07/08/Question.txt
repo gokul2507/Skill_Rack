@@ -1,0 +1,59 @@
+Daily Challenge
+ 
+ProgramID- 13571
+
+function printStudents with Varargs
+The program must accept the name and the marks in maths, physics, chemistry of 4 students as the input. The program must print the output 
+based on the following conditions.
+- The program must print the name and the total marks of the first student.
+- Then the program must print the name and the total marks of the first 2 students.
+- Then the program must print the name and the total marks of the first 3 students.
+- Then the program must print the name and the total marks of the all 4 students.
+Please fill in the missing lines of code so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+Hector 99 80 80
+Gavin 75 75 75
+Rachel 80 85 79
+Oliver 89 81 90
+
+Output:
+Hector 259
+Hector 259
+Gavin 225
+Hector 259
+Gavin 225
+Rachel 244
+Hector 259
+Gavin 225
+Rachel 244
+Oliver 260
+
+Explanation:
+The total marks of the first student Hector is 259 (99+80+80).
+The total marks of the second student Gavin is 225 (75+75+75).
+The total marks of the third student Rachel is 244 (80+85+79).
+The total marks of the fourth student Oliver is 260 (89+81+90).
+So the name and the total marks of the four students are printed based on the given conditions.
+
+Example Input/Output 2:
+Input:
+Rajesh 75 80 77
+Deepa 82 93 87
+Jhanvi 95 99 100
+Pravin 82 90 90
+
+Output:
+Rajesh 232
+Rajesh 232
+Deepa 262
+Rajesh 232
+Deepa 262
+Jhanvi 294
+Rajesh 232
+Deepa 262
+Jhanvi 294
+Pravin 262
+
+Max Execution Time Limit: 50 millisecs
