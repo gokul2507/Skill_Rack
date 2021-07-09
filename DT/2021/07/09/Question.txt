@@ -1,0 +1,65 @@
+Daily Test
+ 
+ProgramID- 13584
+
+Shop - Add Item or Order Item
+The program must accept N queries that represent queries to a shop. Each query contains the query type, the name of an item and the 
+quantity. For each query, the program must process the query and print the output based on the following condition.
+Query type (+): The program must add the given item to shop along with the quantity.
+Query type (-): If the shop can accept the delivery order, then the program must print the string value "Ordered Successfully" and the 
+items must be shipped from the shop. Else the program must print the string value "Failed" as the output.
+
+Your task is to define the class Shop so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+10
++ Pencil 5
++ Pen 4
+- Pencil 2
++ NoteBook 3
+- Pen 5
++ NoteBook 3
+- Eraser 2
+- NoteBook 3
+- NoteBook 1
++ Eraser 10
+
+Output:
+Ordered Successfully
+Failed
+Failed
+Ordered Successfully
+Ordered Successfully
+
+Explanation:
+Here N = 10.
+Query 1: + Pencil 5. So 5 Pencils are added to the shop.
+Query 2: + Pen 4. So 4 Pens are added to the shop.
+Query 3: - Pencil 2. The shop can accept the delivery order. So Ordered Successfully is printed.
+Query 4: + NoteBook 3. So 3 NoteBooks are added to the shop.
+Query 5: - Pen 5. The shop cannot accept the delivery order (only 4 Pens in the shop). So Failed is printed.
+Query 6: + NoteBook 3. So 3 NoteBooks are added to the shop.
+Query 7: - Eraser 2. The shop cannot accept the delivery order (No Erasers in the shop). So Failed is printed.
+Query 8: - NoteBook 3. The shop can accept the delivery order. So Ordered Successfully is printed.
+Query 9: - NoteBook 1. The shop can accept the delivery order. So Ordered Successfully is printed.
+Query 10: + Eraser 10. So 10 Erasers are added to the shop.
+
+Example Input/Output 2:
+Input:
+7
+- Paper 5
++ Eraser 6
++ Paper 4
+- Eraser 5
+- Eraser 2
++ Paper 1
+- Paper 5
+
+Output:
+Failed
+Ordered Successfully
+Failed
+Ordered Successfully
+
+Max Execution Time Limit: 50 millisecs
