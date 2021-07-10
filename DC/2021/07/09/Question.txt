@@ -1,0 +1,57 @@
+Daily Challenge
+ 
+ProgramID- 13586
+
+String Repeat Pattern
+The program must accept two string values S1 and S2 as the input. The string S1 contains only alphabets and the string S2 contains only 
+nonzero digits. The program must print the output based on the following conditions.
+- For each digit D in S2, the program must print the first P alphabets of the first string D times, where P represents the position of 
+the digit D in S2.
+
+Note: Both S1 and S2 have the same length.
+
+Boundary Condition(s):
+1 <= Length of S1, S2 <= 100
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The first L lines(where L is the length of S1) contain the alphabets of S1 based on the given conditions.
+
+Example Input/Output 1:
+Input:
+asdf
+4921
+
+Output:
+aaaa
+asasasasasasasasas
+asdasd
+asdf
+
+Explanation:
+Here S1 = asdf and S2 = 4921.
+a -> a is printed 4 times.
+asasasasasasasasas -> as is printed 9 times.
+asdasd -> asd is printed 2 times.
+asdf -> asdf is printed once.
+
+Example Input/Output 2:
+Input:
+SkillRack
+132498454
+
+Output:
+S
+SkSkSk
+SkiSki
+SkilSkilSkilSkil
+SkillSkillSkillSkillSkillSkillSkillSkillSkill
+SkillRSkillRSkillRSkillRSkillRSkillRSkillRSkillR
+SkillRaSkillRaSkillRaSkillRa
+SkillRacSkillRacSkillRacSkillRacSkillRac
+SkillRackSkillRackSkillRackSkillRack
+
+Max Execution Time Limit: 50 millisecs

@@ -1,57 +1,64 @@
 Daily Challenge
  
-ProgramID- 13586
+ProgramID- 13587
 
-String Repeat Pattern
-The program must accept two string values S1 and S2 as the input. The string S1 contains only alphabets and the string S2 contains only 
-nonzero digits. The program must print the output based on the following conditions.
-- For each digit D in S2, the program must print the first P alphabets of the first string D times, where P represents the position of 
-the digit D in S2.
-
-Note: Both S1 and S2 have the same length.
+Cities Count - Towers
+The program must accept a matrix of size R*C representing R*C cities. Each city may or may not have a cell phone tower. The presence of 
+a small tower is indicated by the letter S, the presence of a large tower is indicated by the letter L and the absence of a tower is 
+indicated by 0. The two types of the towers give the signal to the cities as given below.
+- A small tower will give the signal to the cities around the tower (only the nearest layer) and the city where the tower is installed.
+- A large tower will give the signal to the cities in the two nearest layers around the tower and the city where the tower is installed.
+The program must print the number of cities that receive the signal as the output.
 
 Boundary Condition(s):
-1 <= Length of S1, S2 <= 100
+2 <= R, C <= 50
 
 Input Format:
-The first line contains S1.
-The second line contains S2.
+The first line contains R and C separated by a space.
+The next R lines, each contains C characters separated by a space.
 
 Output Format:
-The first L lines(where L is the length of S1) contain the alphabets of S1 based on the given conditions.
+The first line contains an integer representing the number of cities that receive the signal.
 
 Example Input/Output 1:
 Input:
-asdf
-4921
+8 8
+0 0 0 0 0 0 0 0
+0 S 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 S 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 L 0 0
+0 0 0 0 0 0 0 0
+S 0 0 0 0 0 0 0
 
 Output:
-aaaa
-asasasasasasasasas
-asdasd
-asdf
+41
 
 Explanation:
-Here S1 = asdf and S2 = 4921.
-a -> a is printed 4 times.
-asasasasasasasasas -> as is printed 9 times.
-asdasd -> asd is printed 2 times.
-asdf -> asdf is printed once.
+Here R = 8 and C = 8.
+There are 3 small towers and 1 large tower.
+There are 41 cities that receive the signal from the towers.
+# # # 0 0 0 0 0
+# # # 0 0 0 0 0
+# # # 0 # # # 0
+0 0 0 # # # # #
+0 0 0 # # # # #
+0 0 0 # # # # #
+# # 0 # # # # #
+# # 0 # # # # #
+The hash symbol (#) indicates the city that receives the signal.
 
 Example Input/Output 2:
 Input:
-SkillRack
-132498454
+5 6
+0 S 0 0 0 0
+0 0 0 0 0 0
+S 0 0 0 0 S
+0 0 L 0 0 0
+0 0 0 0 0 0
 
 Output:
-S
-SkSkSk
-SkiSki
-SkilSkilSkilSkil
-SkillSkillSkillSkillSkillSkillSkillSkillSkill
-SkillRSkillRSkillRSkillRSkillRSkillRSkillRSkillR
-SkillRaSkillRaSkillRaSkillRa
-SkillRacSkillRacSkillRacSkillRacSkillRac
-SkillRackSkillRackSkillRackSkillRack
+26
 
 Max Execution Time Limit: 50 millisecs

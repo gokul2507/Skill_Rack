@@ -1,7 +1,22 @@
 import java.util.*;
  
 public class Hello {
-
+    class Shop{
+    HashMap<String,Integer> z;
+    public Shop(){
+        z=new HashMap<String,Integer>();
+    }
+    void addItem(String x,int y){
+        z.put(x,z.getOrDefault(x,0)+y);
+    }
+    boolean orderItem(String x,int y){
+        if(z.getOrDefault(x,0)>=y){
+            z.put(x,z.get(x)-y);
+            return 1==1;
+        }
+        return 1==0;
+    }
+}
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = Integer.parseInt(sc.nextLine().trim());
