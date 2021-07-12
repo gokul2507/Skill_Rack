@@ -1,0 +1,46 @@
+Daily Test
+ 
+ProgramID- 13606
+
+Word Expansion
+The program must accept a string S containing integers and words alternatively. The number of integers is always equal to the number of 
+words in the string S. For each integer X in the string S, the program must print the words that occur after the integer X in the string 
+X times as the output.
+
+Boundary Condition(s):
+2 <= Length of S <= 1000
+1 <= Each integer value in S <= 1000
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The lines containing the string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+4hi5hello
+
+Output:
+hi hello hi hello hi hello hi hello
+hello hello hello hello hello
+
+Explanation:
+Here the given string is 4hi5hello.
+There are 2 integers and 2 words in the given string.
+The 1st integer is 4, so the words hi hello are printed 4 times.
+The 2nd integer is 5, so the word hello is printed 5 times.
+Hence the output is
+hi hello hi hello hi hello hi hello
+hello hello hello hello hello
+
+Example Input/Output 2:
+Input:
+5cat2lion10rat
+
+Output:
+cat lion rat cat lion rat cat lion rat cat lion rat cat lion rat
+lion rat lion rat
+rat rat rat rat rat rat rat rat rat rat
+
+Max Execution Time Limit: 50 millisecs
