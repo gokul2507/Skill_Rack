@@ -1,0 +1,61 @@
+Daily Challenge
+ 
+ProgramID- 13595
+
+Generate Email ID - Company
+There are N employees in a company. The name and designation of the N employees are passed as the input. The domain name of the company 
+is also passed as the input. The program must generate an email ID for each employee based on the following conditions.
+- The email ID must be formed by concatenating the employee name, the employee designation and the domain name of the company as given 
+below.
+employeename.designation@domainname
+- All the alphabets in the email ID must be in lower case.
+Finally, the program must print the email ID of each employee as the output.
+
+Your task is to define the class Company so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+xyz.com
+5
+Babloo HR
+Deepa SDE
+Catherine HR
+Mambo ProjectLead
+Nancy SDE
+
+Output:
+babloo.hr@xyz.com
+deepa.sde@xyz.com
+catherine.hr@xyz.com
+mambo.projectlead@xyz.com
+nancy.sde@xyz.com
+
+Explanation:
+Here N = 5 and the domain name of the company is xyz.com.
+After concatenating the employee name, the designation and the domain name, the email ID's of the 5 employees are given below.
+babloo.hr@xyz.com
+deepa.sde@xyz.com
+catherine.hr@xyz.com
+mambo.projectlead@xyz.com
+nancy.sde@xyz.com
+
+Example Input/Output 2:
+Input:
+abcd.com
+6
+Kavin TE
+Jhanvi TeamLead
+Catherine SDE
+Hector HR
+Peter ProjectLead
+Anita SDE
+
+Output:
+kavin.te@abcd.com
+jhanvi.teamlead@abcd.com
+catherine.sde@abcd.com
+hector.hr@abcd.com
+peter.projectlead@abcd.com
+anita.sde@abcd.com
+
+Max Execution Time Limit: 50 millisecs
