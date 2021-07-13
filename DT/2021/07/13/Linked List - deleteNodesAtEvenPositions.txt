@@ -1,0 +1,44 @@
+Daily Test 
+
+ProgramID- 13617
+
+Linked List - deleteNodesAtEvenPositions
+The function/method deleteNodesAtEvenPositions accepts an argument head representing a pointer to the head of a singly linked list.
+
+The function/method deleteNodesAtEvenPositions must delete the nodes that occur in the even positions in the given singly linked list 
+and then return the revised head of the singly linked list.
+
+Your task is to implement the function deleteNodesAtEvenPositions so that it passes all the test cases.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again 
+in your code).
+struct Node
+{
+    int val;
+    struct Node *next;
+};
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5
+10 20 50 40 30
+
+Output:
+Revised Singly Linked List: 10 50 30
+
+Explanation:
+After deleting the nodes that occur in the even positions, the list becomes 10 -> 50 -> 30.
+Hence the output is
+10 50 30
+
+Example Input/Output 2:
+Input:
+6
+13 45 77 89 55 23
+
+Output:
+Revised Singly Linked List: 13 77 55
+
+Max Execution Time Limit: 50 millisecs
