@@ -1,0 +1,79 @@
+Daily Challenge
+ 
+ProgramID- 13616
+
+function findTotalMarks
+The function/method findTotalMarks accepts two arguments file1name and file2name representing the names of two text files. The first 
+file contains a list of student names. The second file contains the marks in three subjects of the students.
+
+The function/method findTotalMarks must find the total marks of each student and then modify the content of the first file by adding 
+the total marks after the name of each student.
+
+Your task is to implement the function findTotalMarks so that it passes all the test cases.
+
+Note:
+- Both the files have the same number of lines.
+- The length of each student's name must be less than or equal 30.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+students2021.txt
+marks2021.txt
+
+Output:
+Students and Total Marks:
+Hector 190
+Catherine 209
+Anitha 262
+Pravin 255
+
+Explanation:
+Here students2021.txt is present in the same folder where the program executes and the file contains the following 4 lines.
+Hector
+Catherine
+Anitha
+Pravin
+
+Here marks2021.txt is present in the same folder where the program executes and the file contains the following 4 lines.
+40 90 60
+54 60 95
+90 85 87
+87 99 69
+
+Example Input/Output 2:
+Input:
+namelist.txt
+marklist.txt
+
+Output:
+Students and Total Marks:
+Pravin 205
+Jhanvi 189
+Deepa 250
+Krishna 159
+Catherine 265
+Hector 215
+Mambo 209
+
+Explanation:
+Here namelist.txt is present in the same folder where the program executes and the file contains the following 7 lines.
+Pravin
+Jhanvi
+Deepa
+Krishna
+Catherine
+Hector
+Mambo
+
+Here marklist.txt is present in the same folder where the program executes and the file contains the following 7 lines.
+50 85 70
+65 60 64
+92 88 70
+54 50 55
+88 85 92
+70 90 55
+55 89 65
+
+Max Execution Time Limit: 50 millisecs
