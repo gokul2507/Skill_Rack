@@ -1,0 +1,90 @@
+Daily Test
+ 
+ProgramID- 13600
+
+String Vertical Alignment Game
+Two boys A and B play a string alignment game. The boy A gives two string values S1 and S2 to the boy B. The boy B writes the given two 
+string values vertically from top to bottom. Then the boy B must move the characters from the second string to the first string 
+horizontally only if there are spaces in the first string. And then the boy B must mark the empty spaces with asterisks. The string 
+values S1 and S2 are passed as the input to the program. The program must print the string values the boy B wrote as the output.
+
+Boundary Condition(s):
+1 <= Length of S1, S2 <= 1000
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The lines contain the string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+I want to become a doctor
+apple orange mango
+
+Output:
+Ia
+p*
+wp
+al
+ne
+t*
+o*
+tr
+oa
+n*
+bg
+ee
+c*
+om
+ma
+en
+g*
+ao
+**
+d*
+o*
+c*
+t*
+o*
+r*
+
+Explanation:
+S1 = I want to become a doctor
+S2 = apple orange mango
+So the given two string values are printed vertically based on the given conditions.
+
+Example Input/Output 2:
+Input:
+APPLE ORANGE MANGO
+I want to become a doctor
+
+Output:
+AI
+P*
+Pw
+La
+En
+t*
+O*
+Rt
+Ao
+N*
+Gb
+Ee
+c*
+Mo
+Am
+Ne
+G*
+Oa
+**
+d*
+o*
+c*
+t*
+o*
+r*
+
+Max Execution Time Limit: 50 millisecs
