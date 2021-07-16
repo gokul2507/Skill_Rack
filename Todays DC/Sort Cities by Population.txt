@@ -1,0 +1,61 @@
+Daily Challenge
+ 
+ProgramID- 13609
+
+Sort Cities by Population
+The program must accept the names of N cities as the input. The number of men and women in each city are also passed as the input. The 
+program must sort the cities in descending order based on the total population. If two or more cities have the same population, then 
+the program must sort those cities in descending order based on the number of men. If two or more cities have the same population and 
+the same number of men, then the program must sort those cities based on their names.
+
+Your task is to define the class City so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+5
+KRRCity 4000 3500
+HTechCity 5000 3300
+MGCity 3500 4000
+ABBCity 4000 3500
+YSKCity 3100 1900
+
+Output:
+HTechCity 5000 3300
+ABBCity 4000 3500
+KRRCity 4000 3500
+MGCity 3500 4000
+YSKCity 3100 1900
+
+Explanation:
+Here N = 5, the names of the 5 cities along with the number of men and women are given below.
+KRRCity 4000 3500
+HTechCity 5000 3300
+MGCity 3500 4000
+ABBCity 4000 3500
+YSKCity 3100 1900
+After sorting the cities based on the given conditions, the cities become
+HTechCity 5000 3300
+ABBCity 4000 3500
+KRRCity 4000 3500
+MGCity 3500 4000
+YSKCity 3100 1900
+
+Example Input/Output 2:
+Input:
+6
+RPCity 6200 5800
+SOGCity 1300 2100
+EKYCity 5000 8000
+GUDDCity 6200 5800
+EXLOCity 6500 5500
+MYNCity 2450 1950
+
+Output:
+EKYCity 5000 8000
+EXLOCity 6500 5500
+GUDDCity 6200 5800
+RPCity 6200 5800
+MYNCity 2450 1950
+SOGCity 1300 2100
+
+Max Execution Time Limit: 50 millisecs
