@@ -1,0 +1,9 @@
+h,m=map(int,input().split(":"))
+x=-int(input())%12
+t=m%5
+m=m//5
+h+=x
+h%=12
+m+=x
+m%=12
+print("%02d:%02d"%(h,m*5+t))
