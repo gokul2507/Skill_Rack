@@ -1,0 +1,55 @@
+Daily Challenge
+ 
+ProgramID- 13648
+
+function insertNodeAtMiddle
+The function/method insertNodeAtMiddle accepts two arguments - head and data. The head is a pointer to the head of the circular doubly 
+linked list(CDLL) and the data represents an integer value to be inserted in the middle of the CDLL.
+
+The function/method insertNodeAtMiddle must insert a node with the given data at the middle of the given CDLL and return the head of 
+the revised CDLL.
+
+Your task is to implement the function insertNodeAtMiddle so that it passes all the test cases.
+
+Note: The number of nodes in the given CDLL is always even.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again in 
+your code).
+
+struct Node
+{
+    int data;
+    struct Node *prev, *next;
+};
+
+Example Input/Output 1:
+Input:
+4
+37 91 77 22
+50
+
+Output:
+CDLL:
+37 91 50 77 22
+22 77 50 91 37
+
+Explanation:
+Here N = 4 and the given 4 integers are 37 91 77 22.
+After inserting the node with the data 50 at the middle of the CDLL, the CDLL becomes 37 91 50 77 22.
+Hence the output is
+CDLL:
+37 91 50 77 22
+22 77 50 91 37
+
+Example Input/Output 2:
+Input:
+6
+30 15 20 45 80 50
+70
+
+Output:
+CDLL:
+30 15 20 70 45 80 50
+50 80 45 70 20 15 30
+
+Max Execution Time Limit: 50 millisecs
