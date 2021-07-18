@@ -1,0 +1,53 @@
+Daily Test
+ 
+ProgramID- 13613
+
+Find Latest Date
+The program must accept M integers, N string values and Y integers as the input. The M integers represent the days in a month. The N 
+string values represent the names of the months (Jan, Feb, Mar, Apr, ... till Dec). The Y integers represent the years. The program 
+must print the latest date that can be formed using the given days, months and years. The date must be printed in the format DD-MMM-YYYY.
+
+Boundary Condition(s):
+1 <= M <= 31
+1 <= N <= 12
+1 <= Y <= 50
+
+Input Format:
+The first line contains M.
+The second line contains M integer values representing the days in a month.
+The third line contains N.
+The fourth line contains N string values representing the names of the months.
+The fifth line contains Y.
+The sixth line contains Y integer values representing the years.
+
+Output Format:
+The first line contains the latest date that can be formed using the given days, months and years in the format DD-MMM-YYYY.
+
+Example Input/Output 1:
+Input:
+5
+5 12 2 30 31
+2
+Feb Jan
+5
+2004 2019 1996 2021 2020
+
+Output:
+12-Feb-2021
+
+Explanation:
+The latest date that can be formed using the given days, months and years is 12-Feb-2021, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+5
+30 31 1 2 28
+4
+Apr Jul Dec Sep
+5
+2004 2019 1996 1947 2020
+
+Output:
+31-Dec-2020
+
+Max Execution Time Limit: 50 millisecs
