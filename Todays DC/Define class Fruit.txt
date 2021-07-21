@@ -1,0 +1,69 @@
+Daily Challenge
+ 
+ProgramID- 13625
+ 
+Define class Fruit
+The program must accept the name and quantity of N fruits as the input. The program must print the total number of fruits and the total 
+quantity as the output. The program must remove the Xth fruit from the given N fruits. The value of X is also passed as the input. Then 
+the program must print the name and quantity of each fruit separated by a colon. Finally, the program must print the total number of 
+fruits and the total quantity of the remaining fruits.
+
+Your task is to define the class Fruit so that the program runs successfully.
+
+The calling code Hello.py is given below.
+from fruit import Fruit
+
+N = int(input())
+fruits = []
+for ctr in range(N):
+    name, quantity = input().split()
+    fruit = Fruit(name, int(quantity))
+    fruits.append(fruit)
+print(Fruit.count)
+print(Fruit.totalQuantity)
+X = int(input())
+del fruits[X-1]
+for fruit in fruits:
+    print(fruit)
+print(Fruit.count)
+print(Fruit.totalQuantity)
+
+Example Input/Output 1:
+Input:
+4
+Apple 10
+Orange 5
+Mango 15
+Banana 4
+3
+
+Output:
+4
+34
+Apple : 10
+Orange : 5
+Banana : 4
+3
+19
+
+Example Input/Output 2:
+Input:
+5
+Avocado 5
+Papaya 3
+Strawberry 12
+Grapes 20
+Kiwi 8
+2
+
+Output:
+5
+48
+Avocado : 5
+Strawberry : 12
+Grapes : 20
+Kiwi : 8
+4
+45
+
+Max Execution Time Limit: 50 millisecs
