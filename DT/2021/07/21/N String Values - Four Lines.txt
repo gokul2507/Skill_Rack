@@ -1,0 +1,91 @@
+Daily Test
+ 
+ProgramID- 13651
+
+N String Values - Four Lines
+The program must accept N string values of equal length L (where L is always a multiple of 4) as the input. The program must print the 
+string values based on the following conditions.
+- The number of lines to be printed is 4 * N.
+- The number of characters to be printed in each line is (L / 2).
+- The program must divide each string into four substrings of equal length.
+- The first four lines contain the substrings of 1st and 2nd string values alternatively.
+- The next four lines contain the substrings of 3rd and 4th string values alternatively.
+- Similarly, the remaining lines are printed as the output.
+
+Note: The value of N is always even.
+
+Boundary Condition(s):
+2 <= N <= 100
+4 <= Length of each string <= 100
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+
+Output Format:
+The first 4 * N lines contain the string values based on the given conditions.
+
+Exactly Input/Output 1:
+Input:
+4
+PondLionNoteBook
+MarkBoysHeadBird
+crowdogseggscake
+roadmapsjunesilk
+
+Output:
+PondMark
+LionBoys
+NoteHead
+BookBird
+crowroad
+dogsmaps
+eggsjune
+cakesilk
+
+Explanation:
+Here N = 4.
+The length of each string, L = 16.
+The substrings of the 4 string values are given below.
+Pond Lion Note Book
+Mark Boys Head Bird
+crow dogs eggs cake
+road maps june silk
+
+The first four lines contain the substrings of the first two string values.
+PondMark
+LionBoys
+NoteHead
+BookBird
+
+The next four lines contain the substrings of the next two string values.
+crowroad
+dogsmaps
+eggsjune
+cakesilk
+
+Exactly Input/Output 2:
+Input:
+6
+abcdefghijkl
+ABCDEFGHIJKl
+MNOPQRSTUVWX
+mnopqrstuvwx
+123456789012
+AaBbCcDdEeFf
+
+Output:
+abcABC
+defDEF
+ghiGHI
+jklJKl
+MNOmno
+PQRpqr
+STUstu
+VWXvwx
+123AaB
+456bCc
+789DdE
+012eFf
+
+Max Execution Time Limit: 50 millisecs
