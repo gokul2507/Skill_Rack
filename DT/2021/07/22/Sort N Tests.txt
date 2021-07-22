@@ -1,0 +1,56 @@
+Daily Test
+ 
+ProgramID- 13792
+
+Sort N Tests
+N tests are scheduled for the students in a college. The program must accept the name, start time and duration of the N tests as the 
+input. The program must sort the tests in chronological order based on the start time. If two or more tests scheduled at the same time, 
+then the program must sort those tests in ascending order based on the duration. If two or more tests with the same duration and 
+scheduled at the same time, then the program must sort those tests based on their names.
+
+Your task is to define the class Test so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+5
+MathsTest2 10:30 45
+PhysicsTest 11:30 75
+EnglishTest 10:00 60
+MathsTest1 10:30 45
+ChemistryTest 10:30 30
+
+Output:
+EnglishTest 10:00 60
+ChemistryTest 10:30 30
+MathsTest1 10:30 45
+MathsTest2 10:30 45
+PhysicsTest 11:30 75
+
+Explanation:
+Here N = 5.
+After sorting the 5 tests based on the given conditions, the tests become
+EnglishTest 10:00 60
+ChemistryTest 10:30 30
+MathsTest1 10:30 45
+MathsTest2 10:30 45
+PhysicsTest 11:30 75
+
+Example Input/Output 2:
+Input:
+6
+AptitudeTest 09:30 30
+Maths3Test 10:00 120
+PrinciplesOfManagementTest 09:30 90
+Maths4Test 13:00 150
+EnvironmentalScienceTest 09:30 90
+CProgrammingTest 11:45 60
+
+Output:
+AptitudeTest 09:30 30
+EnvironmentalScienceTest 09:30 90
+PrinciplesOfManagementTest 09:30 90
+Maths3Test 10:00 120
+CProgrammingTest 11:45 60
+Maths4Test 13:00 150
+
+Max Execution Time Limit: 50 millisecs
