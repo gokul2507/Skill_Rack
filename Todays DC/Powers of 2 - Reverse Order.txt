@@ -1,0 +1,38 @@
+Daily Challenge
+ 
+ProgramID- 13631
+
+Powers of 2 - Reverse Order
+The program must accept an integer N as the input. The program must print the first N powers of 2 in the reverse order as the output. 
+Please fill in the blanks with code so that the program runs successfully.
+
+Boundary Condition(s):
+1 <= N <= 30
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first line contains the first N powers of 2 in the reverse order.
+
+Example Input/Output 1:
+Input:
+5
+
+Output:
+32 16 8 4 2
+
+Explanation:
+Here N=5.
+The first 5 powers of 2 are 2, 4, 8, 16 and 32.
+Hence the output is
+32 16 8 4 2
+
+Example Input/Output 2:
+Input:
+12
+
+Output:
+4096 2048 1024 512 256 128 64 32 16 8 4 2
+
+Max Execution Time Limit: 50 millisecs
