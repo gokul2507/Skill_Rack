@@ -1,0 +1,74 @@
+Daily Test
+ 
+ProgramID- 13603
+
+Sorting String Values - Custom Order
+The program must accept N string values and a string S containing only lower case alphabets as the input. The program must sort the N 
+string values based on the order of the alphabets in the string S. Finally, the program must print the N sorted string values as the 
+output.
+
+Note: The string S always contains 26 unique lower case alphabets.
+
+Boundary Condition(s):
+1 <= N <= 1000
+1 <= Length of each string <= 100
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a string value.
+The (N+2)th line contains S.
+
+Output Format:
+The first N lines, each contains a string value.
+
+Example Input/Output 1:
+Input:
+4
+honey
+apple
+orange
+angle
+jilomefdunqzpgctakhywsxbvr
+
+Output:
+orange
+angle
+apple
+honey
+
+Explanation:
+Here N = 4 and S = jilomefdunqzpgctakhywsxbvr.
+So the given 4 string values are sorted based on the order of the alphabets in the string S.
+orange
+angle
+apple
+honey
+
+Example Input/Output 2:
+Input:
+10
+one
+two
+three
+four
+five
+tiger
+fox
+deer
+twins
+ticket
+nopqrstuvwxyzabcdefghijklm
+
+Output:
+one
+two
+twins
+three
+ticket
+tiger
+deer
+four
+fox
+five
+
+Max Execution Time Limit: 50 millisecs
