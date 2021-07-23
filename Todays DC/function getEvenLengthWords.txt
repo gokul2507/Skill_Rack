@@ -1,0 +1,51 @@
+Daily Challenge
+ 
+ProgramID- 13589
+
+function getEvenLengthWords
+The function/method getEvenLengthWords accepts an argument str representing a string value. The string str contains multiple words.
+
+The function/method getEvenLengthWords must return an array of string values representing the even length words in the string str. 
+If there is no such word, then the function must return an array of size 1 with the string value "-1".
+
+Your task is to implement the function getEvenLengthWords so that the program runs successfully.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    char **words;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+number one two four five eight eleven
+
+Output:
+Even Length Words:
+number
+four
+five
+eleven
+
+Explanation:
+Here the given string is number one two four five eight eleven.
+The even length words in the string are given below.
+number
+four
+five
+eleven
+
+Example Input/Output 2:
+Input:
+tiger biscuit water
+
+Output:
+Even Length Words:
+-1
+
+Max Execution Time Limit: 50 millisecs
