@@ -1,0 +1,31 @@
+Daily Challenge
+ 
+ProgramID- 13661
+
+C - Java - 029
+Please convert the following C code to Java so that the Java program executes successfully passing the test cases.
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[101], words[10001];
+    int rowCount = 0, sum = 0, index = 0;
+    while(scanf("%s\n", str) == 1)
+    {
+        rowCount++;
+        if(rowCount & 1)
+        {
+            index += sprintf(words+index, "%s ", str);
+        }
+        else
+        {
+            sum += atoi(str);
+        }
+    }
+    printf("%s\n%d", words, sum);
+    return 0;
+}
+
+Max Execution Time Limit: 50 millisecs
