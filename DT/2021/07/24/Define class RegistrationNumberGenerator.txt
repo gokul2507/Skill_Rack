@@ -1,0 +1,92 @@
+Daily Test
+ 
+ProgramID- 13591
+
+Define class RegistrationNumberGenerator
+A school conducts the admission camp for the students. The school approves N students for admission and gives the registration number 
+to each student. The year and section of each student are passed as the input. The program must generate the registration for each student based on the following conditions.
+- The length of the registration number must be 8.
+- The format of the registration must be YYYYSNNN, where YYYY represents the year, S represents the section and NNN represents the serial
+number of the student.
+- In each year and section, the serial number of the students always starts from 001.
+Finally, the program must print the registration numbers of the N students as the output.
+
+Your task is to define the class RegistrationNumberGenerator so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+9
+2021 A
+2021 A
+2021 B
+2021 A
+2020 C
+2020 C
+2020 A
+2020 C
+2020 C
+
+Output:
+2021A001
+2021A002
+2021B001
+2021A003
+2020C001
+2020C002
+2020A001
+2020C003
+2020C004
+
+Explanation:
+There are 3 students in the 2021 - A section.
+2021A001
+2021A002
+2021A003
+There is only 1 student in the 2021 - B section.
+2021B001
+There are 4 students in the 2020 - C section.
+2020C001
+2020C002
+2020C003
+2020C004
+There is only 1 student in the 2020 - A section.
+2020A001
+So the registration numbers are printed in the order of their occurrence.
+
+Example Input/Output 2:
+Input:
+15
+2018 E
+2018 E
+2018 E
+2018 E
+2018 E
+2018 E
+2020 A
+2020 B
+2020 C
+2020 D
+2020 E
+2019 C
+2019 C
+2019 A
+2019 A
+
+Output:
+2018E001
+2018E002
+2018E003
+2018E004
+2018E005
+2018E006
+2020A001
+2020B001
+2020C001
+2020D001
+2020E001
+2019C001
+2019C002
+2019A001
+2019A002
+
+Max Execution Time Limit: 50 millisecs
