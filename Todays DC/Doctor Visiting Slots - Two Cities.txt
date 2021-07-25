@@ -1,0 +1,96 @@
+Daily Challenge
+ 
+ProgramID- 13580
+
+Doctor Visiting Slots - Two Cities
+A doctor has a hospital in two different cities A and B. The doctor visits the hospital in city A for M days continuously, then he 
+visits the hospital in city B for N days continuously. Similarly, the doctor visits the hospitals in the two cities alternatively in a 
+year Y. The values of M, N and Y are passed as the input. The program must print the output based on the following conditions.
+- The program must print the string value "City A:" followed by the doctor visiting slots in the city A.
+- Then the program must print the string value "City B:" followed by the doctor visiting slots in the city B.
+- At the end of the year, if the number of days remaining is less than the required days to visit the hospital, then the doctor visits 
+the hospital in the related city till the end of the year.
+
+Note: The format of the date in the doctor's visiting slot must be DD-MMM-YYYY, where MMM will be like Jan, Feb, Mar,.... till Dec.
+
+Boundary Condition(s):
+1 <= M, N <= 100
+1 <= Y <= 2500
+
+Input Format:
+The first line contains M and N separated by a space.
+The second line contains Y.
+
+Output Format:
+The lines containing the doctor's visiting slots as shown in the Example Input/Output section.
+
+Example Input/Output 1:
+Input:
+30 30
+2021
+
+Output:
+City A:
+01-Jan-2021 to 30-Jan-2021
+02-Mar-2021 to 31-Mar-2021
+01-May-2021 to 30-May-2021
+30-Jun-2021 to 29-Jul-2021
+29-Aug-2021 to 27-Sep-2021
+28-Oct-2021 to 26-Nov-2021
+27-Dec-2021 to 31-Dec-2021
+City B:
+31-Jan-2021 to 01-Mar-2021
+01-Apr-2021 to 30-Apr-2021
+31-May-2021 to 29-Jun-2021
+30-Jul-2021 to 28-Aug-2021
+28-Sep-2021 to 27-Oct-2021
+27-Nov-2021 to 26-Dec-2021
+
+Explanation:
+Here M=30, N=30 and Y=2021.
+The doctor visiting slots in the city A for the year 2021 is given below.
+01-Jan-2021 to 30-Jan-2021
+02-Mar-2021 to 31-Mar-2021
+01-May-2021 to 30-May-2021
+30-Jun-2021 to 29-Jul-2021
+29-Aug-2021 to 27-Sep-2021
+28-Oct-2021 to 26-Nov-2021
+27-Dec-2021 to 31-Dec-2021
+The doctor visiting slots in the city B for the year 2021 is given below.
+31-Jan-2021 to 01-Mar-2021
+01-Apr-2021 to 30-Apr-2021
+31-May-2021 to 29-Jun-2021
+30-Jul-2021 to 28-Aug-2021
+28-Sep-2021 to 27-Oct-2021
+27-Nov-2021 to 26-Dec-2021
+
+Example Input/Output 2:
+Input:
+20 17
+2019
+
+Output:
+City A:
+01-Jan-2019 to 20-Jan-2019
+07-Feb-2019 to 26-Feb-2019
+16-Mar-2019 to 04-Apr-2019
+22-Apr-2019 to 11-May-2019
+29-May-2019 to 17-Jun-2019
+05-Jul-2019 to 24-Jul-2019
+11-Aug-2019 to 30-Aug-2019
+17-Sep-2019 to 06-Oct-2019
+24-Oct-2019 to 12-Nov-2019
+30-Nov-2019 to 19-Dec-2019
+City B:
+21-Jan-2019 to 06-Feb-2019
+27-Feb-2019 to 15-Mar-2019
+05-Apr-2019 to 21-Apr-2019
+12-May-2019 to 28-May-2019
+18-Jun-2019 to 04-Jul-2019
+25-Jul-2019 to 10-Aug-2019
+31-Aug-2019 to 16-Sep-2019
+07-Oct-2019 to 23-Oct-2019
+13-Nov-2019 to 29-Nov-2019
+20-Dec-2019 to 31-Dec-2019
+
+Max Execution Time Limit: 50 millisecs
