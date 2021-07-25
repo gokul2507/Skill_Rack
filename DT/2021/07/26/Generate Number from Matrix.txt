@@ -1,0 +1,63 @@
+Daily Test
+ 
+ProgramID- 13599
+
+Generate Number from Matrix
+The program must accept an integer matrix of size 9*9 and an integer N as the input. The integer matrix contains only nonzero digits and 
+the integer N contains exactly 9 nonzero digits. For each column in the matrix, the program must form an integer by concatenating the 
+first X digits in the column, where X is the corresponding digit in the integer N. Finally, the program must print the sum S of the 
+resulting 9 integers as the output.
+
+Input Format:
+The first 9 lines, each contains 9 digits separated by a space.
+The 10th line contains N.
+
+Output Format:
+The first line contains S.
+
+Example Input/Output 1:
+Input:
+3 5 4 6 2 9 5 9 1
+4 9 9 3 9 3 6 5 2
+1 3 6 6 2 7 4 6 9
+8 1 3 2 9 2 7 8 4
+8 5 9 5 4 6 6 9 3
+8 4 6 1 8 2 7 6 4
+8 2 9 3 6 3 6 6 1
+9 5 5 8 5 6 2 6 5
+5 2 3 5 5 5 7 7 1
+234167258
+
+Output:
+22710327
+
+Explanation:
+Here N = 234167258.
+1st column -> 34
+2nd column -> 593
+3rd column -> 4963
+4th column -> 6
+5th column -> 292948
+6th column -> 9372623
+7th column -> 56
+8th column -> 95689
+9th column -> 12943415
+So the sum of 9 integers is 22710327.
+
+Example Input/Output 2:
+Input:
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+987987987
+
+Output:
+1519999995
+
+Max Execution Time Limit: 50 millisecs
