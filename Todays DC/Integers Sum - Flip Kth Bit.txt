@@ -1,0 +1,52 @@
+Daily Challenge
+ 
+ProgramID- 13639
+
+Integers Sum - Flip Kth Bit
+The program must accept N integers and an integer K as the input. For each integer X among the given N integers, the program must flip 
+the Kth bit from the end of the binary representation of X. If the number of bits in the binary representation of X is less than K, 
+then the program must not modify the integer X. Finally, the program must print the sum of the N revised integers as the output.
+
+Boundary Condition(s):
+1 <= N <= 1000
+1 <= Each integer value <= 10^5
+1 <= K <= 15
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+The third line contains K.
+
+Output Format:
+The first line contains the sum of the N revised integers.
+
+Example Input/Output 1:
+Input:
+4
+10 31 3 16
+3
+
+Output:
+64
+
+Explanation:
+The binary representation of 10 is 1010.
+After flipping the 3rd bit from the end, the 1st integer becomes 14 (1110).
+The binary representation of 31 is 11111.
+After flipping the 3rd bit from the end, the 2nd integer becomes 27 (11011).
+The binary representation of 3 is 11.
+The number of bits in the binary representation of 3 is 2, which is less than 3. So the 3rd integer remains the same.
+The binary representation of 16 is 10000.
+After flipping the 3rd bit from the end, the 4th integer becomes 20 (10100).
+So their sum is 64 (14 + 27 + 3 + 20).
+
+Example Input/Output 2:
+Input:
+8
+1 4 17 11 14 5 20 8
+4
+
+Output:
+72
+
+Max Execution Time Limit: 50 millisecs
