@@ -1,0 +1,85 @@
+Daily Test
+ 
+ProgramID- 13604
+
+function swapFileContent
+The function/method swapFileContent accepts two arguments file1name and file2name representing the names of two text files.
+
+The function/method swapFileContent must swap the contents in the given two files.
+
+Your task is to implement the function swapFileContent so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Note: The number of lines in both text files is always less than or equal to 100. The number of characters in each line is always less 
+than or equal to 100.
+
+Example Input/Output 1:
+Input:
+vegetables.txt
+fruits.txt
+
+Output:
+File vegetables.txt:
+tomato
+onion
+green chilli
+potato
+File fruits.txt:
+watermelon
+apple
+mango
+banana
+pineapple
+
+Explanation:
+Here vegetables.txt is present in the same folder where the program executes and the file contains the five lines.
+watermelon
+apple
+mango
+banana
+pineapple
+
+Here fruits.txt is present in the same folder where the program executes and the file contains the four lines.
+tomato
+onion
+green chilli
+potato
+
+Example Input/Output 2:
+Input:
+cars.txt
+bikes.txt
+
+Output:
+File cars.txt:
+Suzuki
+Honda Hyundai
+BMW Audi Benz
+Chevrolet KIA
+Tata Ford Renault Mahindra
+Skoda Jeep
+File bikes.txt:
+Royal Enfield
+Yamaha TVS
+Hero Honda Suzuki
+KTM Ducatti Aprilla
+Kawasaki BMW Jawa Benelli
+
+Explanation:
+Here cars.txt is present in the same folder where the program executes and the file contains the five lines.
+Royal Enfield
+Yamaha TVS
+Hero Honda Suzuki
+KTM Ducatti Aprilla
+Kawasaki BMW Jawa Benelli
+
+Here bikes.txt is present in the same folder where the program executes and the file contains the six lines.
+Suzuki
+Honda Hyundai
+BMW Audi Benz
+Chevrolet KIA
+Tata Ford Renault Mahindra
+Skoda Jeep
+
+Max Execution Time Limit: 50 millisecs
