@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
 void swapFileContent(char *file1name, char *file2name)
 {
-    
+    rename(file1name,"file1");
+    rename(file2name,file1name);
+    rename("file1",file2name);
 } // end of swapFileContent function
 void printFileContent(char *filename)
 {
@@ -27,4 +28,3 @@ int main()
     printFileContent(file2name);
     return 0;
 } // end of main function
-

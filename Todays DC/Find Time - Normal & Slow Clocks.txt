@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 13880
+
+Find Time - Normal & Slow Clocks
+There are clocks C1 and C2 hanging on a wall. Initially, both clocks show the same time T (HH:MM:SS). The clock C1 runs normally, while 
+clock C2 is slow. The second handle of the C2 clock moves 1 unit every K seconds. The program must accept the time T and the value of 
+K as the input. The program must print the times on the two clocks after X seconds as the output. The value of X is also passed the 
+input.
+
+Boundary Condition(s):
+2 <= K <= 60
+1 <= X <= 10^9
+
+Input Format:
+The first line contains the time T (in the format HH:MM:SS).
+The second line contains K and X separated by a space.
+
+Output Format:
+The first line contains the time in the clock C1 after X seconds.
+The second line contains the time in the clock C2 after X seconds.
+
+Example Input/Output 1:
+Input:
+10:05:15
+2 60
+
+Output:
+10:06:15
+10:05:45
+
+Explanation:
+Here T = 10:05:15 and X = 60 seconds.
+Initially, both clocks C1 and C2 show 10:05:15.
+After 60 seconds, the times on the two clocks are 10:06:15 and 10:05:45.
+
+Example Input/Output 2:
+Input:
+12:25:10
+4 31
+
+Output:
+12:25:41
+12:25:17
+
+Max Execution Time Limit: 50 millisecs
