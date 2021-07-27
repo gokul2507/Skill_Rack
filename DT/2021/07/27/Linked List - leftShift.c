@@ -46,8 +46,25 @@ struct Node* getNode(struct Node *head, int N)
     return ptr;
 }
  
-struct Node* leftShift(struct Node *head, int X)
+struct Node* leftShift(struct Node *head, int x)
 {
+      struct Node *temp=head;
+    struct Node *end=NULL;
+    int len=0;
+    while(temp){
+        end=temp;
+        temp=temp->next;
+        len++;
+    }
+    temp=end;
+    x=x%len;
+    while(x--){
+        temp->next=head;
+        temp=temp->next;
+        head=head->next;
+        temp->next=NULL;
+    }
+    return head;
 }
 int main()
 {
