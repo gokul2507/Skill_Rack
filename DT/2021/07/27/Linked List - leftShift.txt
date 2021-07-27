@@ -1,0 +1,50 @@
+Daily Test
+ 
+ProgramID- 13831
+
+Linked List - leftShift
+The function/method leftShift accepts two arguments head and X. The head is a pointer to the head of a singly linked list and X is an 
+integer.
+
+The function/method leftShift must rearrange the singly linked list by shifting the nodes X positions to the left. Then the function 
+must return the head of the revised singly linked list.
+
+Your task is to implement the function leftShift so that it passes all the test cases.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again 
+in your code).
+
+struct Node
+{
+    int val;
+    struct Node *next;
+};
+IMPORTANT:
+- Do not write the main() function as it is already defined.
+- You must not create any new nodes.
+
+Example Input/Output 1:
+Input:
+5
+10 20 30 40 50
+2
+
+Output:
+Singly Linked List: 30 40 50 10 20
+
+Explanation:
+Here N=5, X=2 and the given 5 integers in the list are 10 20 30 40 50.
+After shifting the nodes 2 positions to the left, the integers in the list become 30 40 50 10 20.
+Hence the output is
+Singly Linked List: 30 40 50 10 20
+
+Example Input/Output 2:
+Input:
+6
+12 45 78 56 89 23
+59073
+
+Output:
+Singly Linked List: 56 89 23 12 45 78
+
+Max Execution Time Limit: 50 millisecs
