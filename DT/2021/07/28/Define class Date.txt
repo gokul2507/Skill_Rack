@@ -1,0 +1,48 @@
+Daily Test
+ 
+ProgramID- 13743
+
+Define class Date
+The program must accept the day, month and year of a date as the input. The program must create a date D1 with the given year, the month 
+as "Jan" and the day as 1. Then the program must create another date D2 with the given year, month and the day as 1. Then the program 
+must create another date D3 with the given year, month and day. Finally, the program must print the dates D1, D2 and D3 in the format 
+DD-MMM-YYYY as the output.
+
+Your task is to define the class Date so that the program runs successfully.
+
+The calling code Hello.py is as given below.
+from date import Date
+
+day = int(input())
+month = input().strip()
+year = int(input())
+date1 = Date(year)
+date2 = Date(year, month)
+date3 = Date(year, month, day)
+print(date1)
+print(date2)
+print(date3)
+
+Example Input/Output 1:
+Input:
+15
+Mar
+2021
+
+Output:
+01-Jan-2021
+01-Mar-2021
+15-Mar-2021
+
+Example Input/Output 2:
+Input:
+8
+Nov
+975
+
+Output:
+01-Jan-0975
+01-Nov-0975
+08-Nov-0975
+
+Max Execution Time Limit: 50 millisecs
