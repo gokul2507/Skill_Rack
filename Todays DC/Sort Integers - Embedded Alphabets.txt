@@ -1,0 +1,44 @@
+Daily Challenge
+ 
+ProgramID- 13657
+
+Sort Integers - Embedded Alphabets
+The program must accept N integers as the input. Each integer contains a lower case alphabet. The program must sort the integers based 
+on the lower case alphabets. If two or more integers have the same alphabet, then the program must sort those integers in ascending 
+order. Finally, the program must print the sorted integers as the output.
+
+Boundary Condition(s):
+
+1 <= N <= 1000
+1 <= Each Integer value <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains N integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+4
+984b b14 20c0 662a
+
+Output:
+662 14 984 200
+
+Explanation:
+
+Here N = 4.
+The given 4 integers are 984b b14 20c0 662a.
+After sorting the integer values based on the given conditions, the integers become 662 14 984 200.
+
+Example Input/Output 2:
+Input:
+5
+12e2 98e e354 2e5 89e1
+
+Output:
+25 98 122 354 891
+
+Max Execution Time Limit: 50 millisecs
