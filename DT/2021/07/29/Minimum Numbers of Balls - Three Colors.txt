@@ -1,0 +1,55 @@
+Daily Test
+ 
+ProgramID- 13614
+
+Minimum Numbers of Balls - Three Colors
+There are N boxes arranged in a row. Each box contains certain number of red balls, green balls and blue balls. A boy wants to collect 
+minimum number of balls from the given N boxes based on the following conditions.
+- Exactly one color of balls must be picked from each box.
+- He cannot pick up balls of the same color from two adjacent boxes.
+The program must print the minimum number of balls that can be collected as the output.
+
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Number of balls in each color <= 1000
+
+Input Format:
+The first line contains N.
+The next N lines, each contains three integer values separated by a space.
+
+Output Format:
+The first line contains the minimum number of balls that can be collected.
+
+Example Input/Output 1:
+Input:
+4
+2 3 4
+1 5 6
+8 2 4
+6 5 1
+
+Output:
+7
+
+Explanation:
+The minimum number of balls that can be collected is 7.
+1st box - 3 green balls
+2nd box - 1 red ball
+3rd box - 2 green balls
+4th box - 1 blue ball
+
+Example Input/Output 2:
+Input:
+7
+1 9 7
+5 3 3
+9 3 5
+2 4 2
+3 6 3
+8 5 4
+8 7 6
+
+Output:
+23
+
+Max Execution Time Limit: 50 millisecs
