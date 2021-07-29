@@ -1,0 +1,49 @@
+Daily Challenge
+ 
+ProgramID- 13642
+
+Print Integers - Except Range
+
+The program must accept N integers and two integers X, Y as the input. For each integer K among the given N integers, the program must 
+print the integers from 1 to K except the integers from X to Y. Please fill in the blanks with code so that the program runs 
+successfully.
+
+Input Format:
+The first line contains N, X and Y separated by a space.
+The second line contains N integers separated by a space.
+
+Output Format:
+The first N lines containing the integer values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5 5 10
+20 3 10 8 15
+
+Output:
+1 2 3 4 11 12 13 14 15 16 17 18 19 20
+1 2 3
+1 2 3 4
+1 2 3 4
+1 2 3 4 11 12 13 14 15
+
+Explanation:
+Here N = 5, X = 5 and Y = 10.
+1st integer: 20 -> 1 2 3 4 11 12 13 14 15 16 17 18 19 20
+2nd integer: 3 -> 1 2 3
+3rd integer: 10 -> 1 2 3 4
+4th integer: 8 -> 1 2 3 4
+5th integer: 15 -> 1 2 3 4 11 12 13 14 15
+
+Example Input/Output 2:
+Input:
+4 10 20
+40 15 20 30
+
+Output:
+1 2 3 4 5 6 7 8 9 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9 21 22 23 24 25 26 27 28 29 30
+
+Max Execution Time Limit: 50 millisecs
