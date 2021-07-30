@@ -1,0 +1,29 @@
+Daily Test
+ 
+ProgramID- 13656
+
+C - Python - 028
+
+Please convert the following C code to Python so that the Python program executes successfully passing the test cases.
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char line[1001], str[101];
+    int index, offset;
+    while(scanf("%[^\n\r]\n\r", line) == 1)
+    {
+        index = 0;
+        while(sscanf(line+index, "%s%n ", str, &offset) == 1)
+        {
+            printf("%d ", printf("%s", str));
+            index += offset;
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+Max Execution Time Limit: 50 millisecs
