@@ -1,0 +1,43 @@
+Daily Challenge
+ 
+ProgramID- 13935
+
+function getBinaryRepresentation
+The function/method getBinaryRepresentation accepts an argument N representing a positive integer value.
+
+The function/method getBinaryRepresentation must return the binary representation of N as a doubly linked list (i.e., the function must 
+return the head of the resulting doubly linked list).
+
+Your task is to implement the function getBinaryRepresentation so that it passes all the test cases.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again in 
+your code).
+struct Node
+{
+    int val;
+    struct Node *prev, *next;
+};
+Example Input/Output 1:
+Input:
+10
+
+Output:
+DLL: 1 0 1 0
+Reverse DLL: 0 1 0 1
+
+Explanation:
+Here N = 10.
+The binary representation of 10 is 1010.
+The doubly linked list contains 1 0 1 0.
+
+Example Input/Output 2:
+Input:
+25
+
+Output:
+DLL: 1 1 0 0 1
+Reverse DLL: 1 0 0 1 1
+
+Max Execution Time Limit: 50 millisecs
