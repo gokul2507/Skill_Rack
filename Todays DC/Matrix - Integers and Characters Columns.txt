@@ -1,0 +1,68 @@
+Daily Challenge
+ 
+ProgramID- 13658
+
+Matrix - Integers and Characters Columns
+The program must accept a matrix of size R*C as the input. Each column of the matrix contains only integers or characters. The program 
+must print the output based on the following conditions.
+- For each column with integers, the program must print the sum of the integers in that column.
+- Then for each column with characters, the program must print the characters from bottom to top in that column.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Each integer value in the matrix <= 1000
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines contain the matrix.
+
+Output Format:
+The first line contains the integer values and the string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+4 5
+a 10 r e 8
+b 20 a n 7
+c 30 c o 6
+d 40 k n 50
+
+Output:
+100 71 dcba kcar none
+
+Explanation:
+Here R = 4, C = 5 and the matrix is given below.
+a 10 r e 8
+b 20 a n 7
+c 30 c o 6
+d 40 k n 50
+1st column: Characters from bottom to top -> dcba
+2nd column: Sum of integers -> 100
+3rd column: Characters from bottom to top -> kcar
+4th column: Characters from bottom to top -> none
+5th column: Sum of integers -> 71
+Hence the output is
+100 71 dcba kcar none
+
+Example Input/Output 2:
+Input:
+3 3
+10 12 20
+30 14 60
+40 16 80
+
+Output:
+80 42 160
+
+Example Input/Output 3:
+Input:
+4 4
+q p N R
+q C U n
+m u V C
+r N P c
+
+Output:
+rmqq NuCp PVUN cCnR
+
+Max Execution Time Limit: 50 millisecs
