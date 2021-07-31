@@ -1,0 +1,48 @@
+Daily Test
+ 
+ProgramID- 13615
+
+College Events - Student
+In a college, there are N events are planned in a day. The program must accept the start time and end time of each event as the input. 
+The program must print YES if a student is able to participate in all N events. Else the program must print NO as the output.
+Note: The start time and end time of the events are in 24-hour format HH:MM.
+
+Boundary Condition(s):
+1 <= N <= 100
+
+Input Format:
+The first line contains N.
+The next N lines, each containing the start time and the end time of each event separated by a space.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+4
+11:30 12:30
+17:00 18:00
+10:00 10:30
+12:00 13:30
+
+Output:
+NO
+
+Explanation:
+Here the student cannot participate in all 4 events as there is an overlap between the two events.
+11:30 12:30
+12:00 13:30
+So NO is printed as the output.
+
+Example Input/Output 2:
+Input:
+4
+16:15 17:00
+09:00 10:00
+15:00 16:15
+11:30 13:00
+
+Output:
+YES
+
+Max Execution Time Limit: 50 millisecs
