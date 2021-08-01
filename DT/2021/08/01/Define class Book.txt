@@ -1,0 +1,41 @@
+Daily Test
+ 
+ProgramID- 13741
+
+Define class Book
+There are N persons read a book. The total number of pages in the book is X. For each person, the program must accept the two integers 
+representing the page numbers(from, to) the person reads. The values of N and X are also passed as the input. The program must print 
+the most often read pages in the book in ascending order as the output.
+
+Your task is to define the class Book so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+4 100
+10 20
+45 60
+5 50
+15 25
+
+Output:
+Most often read pages: 15 16 17 18 19 20
+
+Explanation:
+Here X = 100, the total number of pages in the book is 100.
+The most often read(3 times) pages in the book are 15 16 17 18 19 20.
+
+Example Input/Output 2:
+Input:
+7 10
+1 10
+5 10
+1 8
+2 9
+4 7
+1 4
+1 2
+
+Output:
+Most often read pages: 2 4 5 6 7
+
+Max Execution Time Limit: 50 millisecs
