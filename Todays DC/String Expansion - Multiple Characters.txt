@@ -1,0 +1,52 @@
+Daily Challenge
+ 
+ProgramID- 13592
+
+String Expansion - Multiple Characters
+The program must accept a string S containing the integers and alphabets alternately. The number of integers is always equal to the 
+number of alphabets in the string S. For each integer X in the string S, the program must print the alphabets that occur after the 
+integer X in the string X times as the output.
+
+Boundary Condition(s):
+2 <= Length of S <= 100
+1 <= Each integer value in S <= 1000
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The lines containing the string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5A10B
+
+Output:
+ABABABABAB
+BBBBBBBBBB
+
+Explanation:
+Here S = 5A10B.
+There are 2 integers and 2 alphabets in the string S.
+5 AB -> ABABABABAB
+10 B -> BBBBBBBBBB
+
+Example Input/Output 2:
+Input:
+13k2y9m1P
+
+Output:
+kymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymP
+ymPymP
+mPmPmPmPmPmPmPmPmP
+P
+
+Explanation:
+Here S = 13k2y9m1P.
+There are 4 integers and 4 alphabets in the string S.
+13 kymP -> kymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymPkymP
+2 ymP -> ymPymP
+9 mP -> mPmPmPmPmPmPmPmPmP
+1 P -> P
+
+Max Execution Time Limit: 50 millisecs
