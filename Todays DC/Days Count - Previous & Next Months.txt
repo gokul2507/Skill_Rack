@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 13593
+
+Days Count - Previous & Next Months	
+The program must accept the date in the format DD-MMM-YYYY as the input. The program must print the number of days in the previous month 
+and the next month of the month MMM in the given date along with the name of the month and year as shown in the Example Input/Output 
+section.
+
+Input Format:
+The first line contains the date in the format DD-MMM-YYYY.
+
+Output Format:
+The first line contains the number of days in the previous month along with the name of the month and year.
+The second line contains the number of days in the next month along with the name of the month and year.
+
+Example Input/Output 1:
+Input:
+20-Jan-2020
+
+Output:
+December 2019 - 31 days
+February 2020 - 29 days
+
+Explanation:
+Here the given date is 20-Jan-2020.
+The previous month of Jan-2020 is December 2019 which contains 31 days.
+The next month of Jan-2020 is February 2020 which contains 29 days.
+
+Example Input/Output 2:
+Input:
+05-Aug-2021
+
+Output:
+July 2021 - 31 days
+September 2021 - 30 days
+
+Example Input/Output 3:
+Input:
+26-Dec-2004
+
+Output:
+November 2004 - 30 days
+January 2005 - 31 days
+
+Max Execution Time Limit: 50 millisecs
