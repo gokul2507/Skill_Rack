@@ -1,0 +1,67 @@
+Daily Test
+ 
+ProgramID- 13781
+
+Minimum Time To Reach Nth Room
+N rooms are constructed in a row, which are numbered from 1 to N. Each room has a door on the left side. A boy wants to reach the Nth 
+room starting from the 1st room. Every minute, the doors are open and close automatically. The program must accept N integers 
+representing the initial state of the N doors as the input. 0 indicates that the door is opened and 1 indicates that the door is 
+closed. The boy can cross any number of rooms in a minute if the doors of the rooms are opened. Else he must wait till the door opens. 
+The program must print the minimum number of minutes required to reach the Nth room as the output.
+
+Boundary Condition(s):
+1 <= N <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the minimum number of minutes required to reach the Nth room.
+
+Example Input/Output 1:
+Input:
+5
+1 0 1 1 0
+
+Output:
+4
+
+Explanation:
+Initial state of the 5 doors are 1 0 1 1 0.
+After 1 minute, the state of the 5 doors are 0 1 0 0 1.
+Now the boy can enter into the 1st room.
+After 2 minutes, the state of the 5 doors are 1 0 1 1 0.
+Now the boy can enter into the 2nd room.
+After 3 minutes, the state of the 5 doors are 0 1 0 0 1.
+Now the boy can enter into the 3rd and 4th rooms.
+After 4 minutes, the state of the 5 doors are 1 0 1 1 0.
+Now the boy can enter into the 5th room.
+So it takes the boy 4 minutes to enter the 5th room.
+Hence the output is 4.
+
+Example Input/Output 2:
+Input:
+10
+0 0 0 1 0 1 0 0 0 0
+
+Output:
+4
+
+Example Input/Output 3:
+Input:
+4
+0 0 0 0
+
+Output:
+0
+
+Example Input/Output 4:
+Input:
+4
+1 1 1 1
+
+Output:
+1
+
+Max Execution Time Limit: 50 millisecs
