@@ -1,0 +1,67 @@
+Daily Test
+ 
+ProgramID- 13778
+
+Merge Video Clips
+A video is created by merging N small video clips. The duration(MM:SS) of each video clip is passed as the input. The program must print 
+the total duration(HH:MM:SS) of the video created. Then the program must the print the time values at which the N-1 cuts occur in the 
+resulting video (i.e., the points where two small video clips are merged).
+
+Boundary Condition(s):
+2 <= N <= 50
+
+Input Format:
+The first line contains N.
+The next N lines, each contains the duration(MM:SS) of a small video clip.
+
+Output Format:
+The first line contains the string value "Total Duration: " followed by the total duration(HH:MM:SS) of the video created.
+The next N-1 lines contain the time values at which the N-1 cuts occur in the resulting video.
+
+Example Input/Output 1:
+Input:
+4
+05:30
+25:30
+40:15
+02:20
+
+Output:
+Total Duration: 01:13:35
+00:05:30
+00:31:00
+01:11:15
+
+Explanation:
+Here N = 4, the duration of the given 4 video clips are
+05:30
+25:30
+40:15
+02:20
+The total duration of the video created is 01:13:35. So Total Duration: 01:13:35 is printed.
+The time values at which the 3 cuts occur are given below.
+00:05:30
+00:31:00
+01:11:15
+
+Example Input/Output 2:
+Input:
+7
+08:34
+03:48
+01:57
+09:53
+05:56
+03:40
+10:39
+
+Output:
+Total Duration: 00:44:27
+00:08:34
+00:12:22
+00:14:19
+00:24:12
+00:30:08
+00:33:48
+
+Max Execution Time Limit: 50 millisecs
