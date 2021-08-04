@@ -1,0 +1,67 @@
+Daily Challenge
+ 
+ProgramID- 13826
+
+function getXthDiagonal
+The function/method getXthDiagonal accepts four arguments R, C, matrix and X. The integers R and C represent the size of the integer 
+matrix. The integer X represents the position of a top-left to bottom-right diagonal.
+
+The function/method getXthDiagonal must return an integer array containing the integers in the Xth top-left to bottom-right diagonal 
+of the given matrix. The top-left to bottom-right diagonals are numbered from the bottom-left cell of the matrix.
+
+Your task is to implement the function getXthDiagonal so that it passes all the test cases.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= X <= R+C-1
+
+Example Input/Output 1:
+Input:
+6 5
+89 56 81 32 15
+48 30 71 23 94
+39 28 18 75 14
+19 33 57 91 95
+93 70 80 59 60
+32 73 36 69 83
+7
+
+Output:
+Diagonal 7: 56 71 75 95
+
+Explanation:
+Here X = 7.
+The 7th top-left to bottom-right diagonal in the given matrix is highlighted below.
+89 56 81 32 15
+48 30 71 23 94
+39 28 18 75 14
+19 33 57 91 95
+93 70 80 59 60
+32 73 36 69 83
+So the integers in the diagonal are printed as the output.
+
+Example Input/Output 2:
+Input:
+5 8
+20 38 79 55 99 62 81 88
+59 30 65 45 15 36 89 27
+14 90 38 59 91 91 93 11
+12 83 37 47 18 11 95 72
+77 80 30 49 62 74 66 32
+3
+
+Output:
+Diagonal 3: 14 83 30
+
+Max Execution Time Limit: 50 millisecs

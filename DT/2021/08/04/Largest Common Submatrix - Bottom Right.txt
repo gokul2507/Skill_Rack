@@ -1,0 +1,82 @@
+
+Daily Test
+ 
+ProgramID- 13663
+
+Largest Common Submatrix - Bottom Right
+The program must accept two matrices A and B as the input. The size of the matrix A is M*N and the size of the matrix B is R*C. The 
+program must print the largest common square submatrix present at the bottom-right of the given two matrices. If there is no common 
+submatrix, then the program must print -1 as the output.
+
+Boundary Condition(s):
+2 <= M, N, R, C <= 50
+
+Input Format:
+The first line contains M and N separated by a space.
+The next M lines contain the matrix A.
+The (M+2)th line contains R and C separated by a space.
+The next R lines contain the matrix B.
+
+Output Format:
+The lines contain the largest common square submatrix at the bottom-right of the given two matrices or the first line contains -1.
+
+Example Input/Output 1:
+Input:
+6 5
+Y u P J J
+Z p B S A
+X f h y r
+R S A A A
+C W P P X
+U A P n j
+5 7
+d Q G h B S A
+O V X f h y r
+S A Q S A A A
+K k C W P P X
+D P U A P n j
+
+Output:
+f h y r
+S A A A
+W P P X
+A P n j
+
+Explanation:
+In the given two matrices, the largest possible square submatrix present at the bottom-right of the given two matrices are highlighted 
+below.
+
+Matrix A:
+Y u P J J
+Z p B S A
+X f h y r
+R S A A A
+C W P P X
+U A P n j
+
+Matrix B:
+d Q G h B S A
+O V X f h y r
+S A Q S A A A
+K k C W P P X
+D P U A P n j
+
+Example Input/Output 2:
+Input:
+6 6
+N m Q M M X
+H x X g n M
+Q Q j D N A
+w a c e S m
+G p a y B b
+G o Q i n T
+4 4
+j D N A
+c e S m
+a y B b
+Q i n e
+
+Output:
+-1
+
+Max Execution Time Limit: 50 millisecs
