@@ -1,0 +1,64 @@
+Daily Challenge
+ 
+ProgramID- 13666
+
+function insertLinkedList
+The function/method insertLinkedList accepts three arguments head1, head2 and K. The head1 is a pointer to the head of the first linked 
+list, head2 is a pointer to the head of the second linked list and the integer K represents the position of a node in the first linked 
+list.
+
+The function/method insertLinkedList must insert the second linked list after the Kth node in the first linked list and return the 
+revised head of the first linked list.
+
+Your task is to implement the function insertLinkedList so that it passes all the test cases.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again 
+in your code).
+
+struct Node
+{
+    int val;
+    struct Node *next;
+};
+
+Note: The value of K is always less than or equal to the number of nodes in the first linked list.
+
+IMPORTANT:
+- Do not write the main() function as it is already defined.
+- You must not create any new nodes.
+
+Example Input/Output 1:
+Input:
+5
+10 15 20 25 30
+4
+16 17 18 19
+2
+
+Output:
+Linked List:
+10 15 16 17 18 19 20 25 30
+
+Explanation:
+Here the value of K is 2.
+First linked list: 10 -> 15 -> 20 -> 25 -> 30.
+Second linked list: 16 -> 17 -> 18 -> 19.
+After inserting the second linked list after 2nd node in the first linked list, the list becomes
+10 -> 15 -> 16 -> 17 -> 18 -> 19 -> 20 -> 25 -> 30.
+Hence the output is
+Linked List:
+10 15 16 17 18 19 20 25 30
+
+Example Input/Output 2:
+Input:
+3
+67 2 24
+5
+43 84 48 62 72
+3
+
+Output:
+Linked List:
+67 2 24 43 84 48 62 72
+
+Max Execution Time Limit: 50 millisecs
