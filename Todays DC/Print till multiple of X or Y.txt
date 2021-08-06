@@ -1,0 +1,33 @@
+Daily Challenge
+ 
+ProgramID- 13646
+
+Print till multiple of X or Y
+The program must accept N integers and two integers X, Y as the input. For each integer K among the given N integers, the program must 
+print the integers from K to 1 if there is no multiple of X and Y. Else the program must print the integers from K to the multiple of 
+X or Y. Please fill in the missing lines of code so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+4 10 5
+29 14 35 4
+
+Output:
+29 28 27 26 25
+14 13 12 11 10
+35
+4 3 2 1
+
+Example Input/Output 2:
+Input:
+5 50 60
+135 110 20 55 70
+
+Output:
+135 134 133 132 131 130 129 128 127 126 125 124 123 122 121 120
+110 109 108 107 106 105 104 103 102 101 100
+20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+55 54 53 52 51 50
+70 69 68 67 66 65 64 63 62 61 60
+
+Max Execution Time Limit: 50 millisecs
