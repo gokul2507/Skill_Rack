@@ -1,0 +1,41 @@
+Daily Test
+ 
+ProgramID- 13857
+
+Digits - Custom Sorting
+The program must accept two string values S1 and S2 containing only digits as the input. The string S2 contains exactly 10 unique 
+digits. The program must sort the digits in S1 based on the order of 10 digits in S2. Then the program must print the revised string 
+S1 as the output.
+
+Boundary Condition(s):
+1 <= Length of S1 <= 100
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The first line contains the revised string S1.
+
+Example Input/Output 1:
+Input:
+1358719
+0219487563
+
+Output:
+1198753
+
+Explanation:
+S1 = 1358719 and S2 = 0219487563.
+After sorting the digits in S1 based on the order of 10 digits in S2, the string S1 becomes 1198753.
+So 1198753 is printed as the output.
+
+Example Input/Output 2:
+Input:
+220196034808762
+6732501984
+
+Output:
+667322200019884
+
+Max Execution Time Limit: 50 millisecs
