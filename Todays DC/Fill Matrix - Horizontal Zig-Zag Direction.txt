@@ -1,0 +1,67 @@
+Daily Challenge
+ 
+ProgramID- 13630
+ 
+Solved By 80 Users
+   SkillRack
+Fill Matrix - Horizontal Zig-Zag Direction
+The program must accept N integers and two integers R, C as the input. The program must form an integer matrix of size R*C based on the following conditions.
+- Initially, the matrix must be filled with zeroes.
+- Then the program must fill the matrix with the given integers in horizontal zig-zag direction starting from the bottom-right cell. If N is greater than R*C, then the program must refill the matrix in horizontal zig-zag direction starting from the bottom-right cell till all the given integers are used.
+Finally, the program must print the integer matrix as the output.
+
+Boundary Condition(s):
+1 <= N <= 10^4
+1 <= Each integer value <= 10^5
+2 <= R, C <= 50
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.7
+The third line contains R and C separated by a space.
+
+Output Format:
+The first R lines, each contains C integers separated by a space.
+
+Example Input/Output 1:
+Input:
+11
+10 20 30 40 11 22 33 44 50 60 70
+3 3
+
+Output:
+50 44 33
+40 11 22
+30 70 60
+
+Explanation:
+Here N = 10, R = 3 and C = 3.
+The size of the integer matrix is 3*3.
+After filling the matrix based on the given conditions, the matrix becomes
+50 44 33
+40 11 22
+30 70 60
+
+Example Input/Output 2:
+Input:
+25
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+4 3
+
+Output:
+22 23 24
+21 20 19
+16 17 18
+15 14 25
+
+Example Input/Output 3:
+Input:
+12
+1 2 3 4 10 20 30 40 11 22 33 44
+2 2
+
+Output:
+33 44
+22 11
+Max Execution Time Limit: 50 millisecs
+
