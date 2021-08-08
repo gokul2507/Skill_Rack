@@ -1,0 +1,63 @@
+Daily Challenge
+ 
+ProgramID- 13644
+
+Words Alignment - Top and Bottom
+The program must accept a string S containing multiple words as the input. The program must print the words based on the following 
+conditions.
+
+- The number of lines to be printed is equal to the length of the longest word among the given words.
+- The words in the given string S must be printed vertically in the order of their occurrence.
+- The words that occur in the odd positions must be aligned on the top side.
+- The words that occur in the even positions must be aligned on the bottom side.
+- The empty spaces above/below each string must be printed as asterisks.
+
+Boundary Condition(s):
+3 <= Length of S <= 1000
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The lines containing the string values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+
+bricks stones vegetables fruits grains
+
+Output:
+b*v*g
+r*e*r
+i*g*a
+c*e*i
+kstfn
+stars
+*obu*
+*nli*
+*eet*
+*sss*
+
+Explanation:
+Here the given string contains 5 words.
+The length of the longest word is 10. So the number of lines to be printed is 10.
+The words bricks, vegetables and grains are aligned on the top side.
+The words stones and fruits are aligned on the bottom side.
+
+Example Input/Output 2:
+Input:
+
+Monkey Crocodile Giraffe Kangaroo Squirrel Fox
+
+Output:
+MCG*S*
+oriKq*
+norau*
+kcani*
+eofgr*
+ydfar*
+*iereF
+*l*olo
+*e*o*x
+
+Max Execution Time Limit: 50 millisecs
