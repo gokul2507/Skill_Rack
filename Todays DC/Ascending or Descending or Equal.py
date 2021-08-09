@@ -1,0 +1,6 @@
+n=int(input())
+l=list(map(int,input().split()))
+z=len(set(l))
+if l==sorted(l) and z!=1:print("Ascending")
+elif l==sorted(l)[::-1] and z!=1:print("Descending")
+elif z==1:print("Equal")

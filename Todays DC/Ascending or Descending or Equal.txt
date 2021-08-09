@@ -1,0 +1,51 @@
+Daily Challenge
+
+ProgramID- 13972
+
+Ascending or Descending or Equal
+The program must accept an integer array of size N as the input. The integers in the given array are always sorted. The program must 
+print the output based on the following conditions.
+- If the given array is sorted in ascending order, then print "Ascending".
+- If the given array is sorted in descending order, then print "Descending".
+- If all the values in the given array are equal, then print "Equal".
+
+Boundary Condition(s):
+2 <= N <= 100
+1 <= Each integer value <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains a string value based the given conditions.
+
+Example Input/Output 1:
+Input:
+5
+10 10 20 25 39
+
+Output:
+Ascending
+
+Explanation:
+Here N = 5.
+The given 5 integers are sorted in ascending order. So Ascending is printed as the output.
+
+Example Input/Output 2:
+Input:
+6
+99 99 99 70 10 10
+
+Output:
+Descending
+
+Example Input/Output 3:
+Input:
+4
+50 50 50 50
+
+Output:
+Equal
+
+Max Execution Time Limit: 50 millisecs
