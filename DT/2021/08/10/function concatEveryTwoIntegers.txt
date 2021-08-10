@@ -1,0 +1,53 @@
+Daily Test
+ 
+ProgramID- 13897
+
+function concatEveryTwoIntegers
+The function/method concatEveryTwoIntegers accepts two arguments SIZE and arr. The integer SIZE represents the size of the integer 
+array arr.
+
+The function/method concatEveryTwoIntegers must form SIZE/2 integers by concatenating every two integers in the given array. Then the 
+function must return an integer array containing the SIZE/2 integers.
+
+Your task is to implement the function concatEveryTwoIntegers so that it passes all the test cases.
+
+Note: The number of integers in the given array is always even.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    long long int *arr;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Boundary Condition(s):
+2 <= SIZE <= 1000
+1 <= Each integer value <= 10^6
+
+Example Input/Output 1:
+Input:
+6
+12 100 56 99 7 6023
+
+Output:
+Array: 12100 5699 76023
+
+Explanation:
+Here the size of the array is 6 and the given 6 integers are 12, 100, 56, 99, 7 and 6023.
+After concatenating every two integers in the given array, the integers become 12100, 5699 and 76023.
+Hence the output is
+Array: 12100 5699 76023
+
+Example Input/Output 2:
+Input:
+4
+102654 98754 15 9878
+
+Output:
+Array: 10265498754 159878
+
+Max Execution Time Limit: 50 millisecs

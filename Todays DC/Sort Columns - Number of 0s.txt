@@ -1,0 +1,68 @@
+Daily Challenge
+ 
+ProgramID- 13731
+
+Sort Columns - Number of 0s
+The program must accept an integer matrix of size R*C as the input. The matrix contains only 0s and 1s. The program must sort the integers in each column of the matrix. Then the program must sort the columns based on the number of 0s in the columns of the matrix. Finally, the program must print the revised matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integer values separated by a space.
+
+Output Format:
+The first R lines contain the revised matrix.
+
+Example Input/Output 1:
+Input:
+6 5
+0 1 1 0 0
+0 1 0 0 1
+0 1 1 0 0
+1 1 0 0 1
+1 0 1 0 0
+0 0 0 0 0
+
+Output:
+0 0 0 0 0
+0 0 0 0 0
+1 0 0 0 0
+1 1 0 0 0
+1 1 1 1 0
+1 1 1 1 0
+
+Explanation:
+After sorting the integers in each column, the matrix becomes
+0 0 0 0 0
+0 0 0 0 0
+0 1 0 0 0
+0 1 1 0 0
+1 1 1 0 1
+1 1 1 0 1
+After sorting the columns based on the number of 0s, the matrix becomes
+0 0 0 0 0
+0 0 0 0 0
+1 0 0 0 0
+1 1 0 0 0
+1 1 1 1 0
+1 1 1 1 0
+
+Example Input/Output 2:
+Input:
+5 6
+1 0 1 1 0 1
+1 1 1 0 0 0
+0 0 1 0 1 1
+1 0 1 0 0 1
+0 1 1 1 1 1
+
+Output:
+1 0 0 0 0 0
+1 1 0 0 0 0
+1 1 1 0 0 0
+1 1 1 1 1 1
+1 1 1 1 1 1
+
+Max Execution Time Limit: 50 millisecs
