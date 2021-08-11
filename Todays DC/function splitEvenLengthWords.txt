@@ -1,0 +1,35 @@
+Daily Challenge
+ 
+ProgramID- 13970
+
+function splitEvenLengthWords
+The function/method splitEvenLengthWords accepts an argument str that represents a string value containing multiple words.
+
+The function/method splitEvenLengthWords must split each even length word into two equal halves in the given string. Then the function 
+must return a new string indicating the resulting string.
+
+Your task is to implement the function splitEvenLengthWords so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+Monday January Leapyear calendar day
+
+Output:
+String: Mon day January Leap year cale ndar day
+
+Explanation:
+Here the given string is Monday January Leapyear calendar day.
+The even length words in the given string are Monday, Leapyear and calendar.
+After dividing the even length words into two equal halves, the string becomes
+Mon day January Leap year cale ndar day
+
+Example Input/Output 2:
+Input:
+one two three four five
+
+Output:
+String: one two three fo ur fi ve
+
+Max Execution Time Limit: 50 millisecs

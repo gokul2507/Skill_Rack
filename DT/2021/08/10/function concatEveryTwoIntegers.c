@@ -9,7 +9,15 @@ typedef struct BoundedArray
  
 boundedArray* concatEveryTwoIntegers(int SIZE, int *arr)
 {
-    
+    boundedArray *bArr = malloc(sizeof(boundedArray));
+    bArr->arr=malloc(sizeof(long long int)*(SIZE/2));
+    bArr->SIZE=0;
+    for(int index=0;index<SIZE;index+=2){
+        char numStr[101];
+        sprintf(numStr,"%d%d",arr[index],arr[index+1]);
+        bArr->arr[bArr->SIZE++]=atoll(numStr);
+    }
+    return bArr;
 }
 
 int main()
