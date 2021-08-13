@@ -1,0 +1,76 @@
+Daily Challenge
+ 
+ProgramID- 13973
+
+Shift Subarrays
+
+The program must accept an integer array of size N and Q queries as the input. Each query contains two integers X, Y and a character 
+(L or R). The integers X and Y denote the starting and ending position of a subarray. For each query, the program must modify the array 
+by shifting integers in the specified subarray to the left or right by 1 position based on the specified character(L denotes the left 
+shift, R denotes the right shift). After processing each query, the program must print the modified array.
+
+Boundary Condition(s):
+2 <= N <= 100
+1 <= Each integer value <= 10^5
+1 <= Q <= 100
+1 <= X < Y <= N
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+The third line contains Q.
+The next Q lines, each contains two integers and a character separated by a space.
+
+Output Format:
+The first Q lines, each contains N integer values separated by a space.
+
+Example Input/Output 1:
+Input:
+10
+1 2 3 4 5 10 9 8 7 6
+3
+7 10 L
+3 8 R
+2 4 R
+
+Output:
+1 2 3 4 5 10 8 7 6 9
+1 2 7 3 4 5 10 8 6 9
+1 3 2 7 4 5 10 8 6 9
+
+Explanation:
+Here N = 10 and Q = 3.
+Query 1: The value of X is 7, the value of Y is 10 and the given character is L. So the integers in the subarray are shifted to the left 
+by 1 position.
+
+Now the array becomes 1 2 3 4 5 10 8 7 6 9.
+Query 2: The value of X is 3, the value of Y is 8 and the given character is R. So the integers in the subarray are shifted to the right 
+by 1 position.
+
+Now the array becomes 1 2 7 3 4 5 10 8 6 9.
+Query 3: The value of X is 2, the value of Y is 4 and the given character is R. So the integers in the subarray are shifted to the right 
+by 1 position.
+
+Now the array becomes 1 3 2 7 4 5 10 8 6 9.
+Hence the output is
+1 2 3 4 5 10 8 7 6 9
+1 2 7 3 4 5 10 8 6 9
+1 3 2 7 4 5 10 8 6 9
+
+Example Input/Output 2:
+Input:
+9
+25 36 6 18 15 51 95 78 90
+4
+1 3 L
+2 8 R
+6 9 R
+1 9 L
+
+Output:
+36 6 25 18 15 51 95 78 90
+36 78 6 25 18 15 51 95 90
+36 78 6 25 18 90 15 51 95
+78 6 25 18 90 15 51 95 36
+
+Max Execution Time Limit: 50 millisecs
