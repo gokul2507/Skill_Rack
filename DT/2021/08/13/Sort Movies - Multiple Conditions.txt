@@ -1,0 +1,57 @@
+Daily Test
+ 
+ProgramID- 13762
+
+Sort Movies - Multiple Conditions
+The program must accept the name, duration(HH:MM) and released year of N movies as the input. The program must sort the movies based on 
+the following conditions.
+- The program must sort the movies in descending order based on the released year.
+- If two or movies released in the same year, then the program must sort the movies in descending order based on the duration.
+- If two or movies have the same duration and released in the same year, then the program must sort the movies based on their names.
+
+Your task is to define the class Movie so that the program runs successfully.
+
+Example Input/Output 1:
+Input:
+5
+Aquaman 02:22 2018
+Joker 02:05 2019
+IronMan2 02:04 2010
+Aladdin 02:05 2019
+Venom 02:20 2018
+
+Output:
+Aladdin 02:05 2019
+Joker 02:05 2019
+Aquaman 02:22 2018
+Venom 02:20 2018
+IronMan2 02:04 2010
+
+Explanation:
+Here N=5
+After sorting the 5 movies based on the given conditions, the movies become
+Aladdin 02:05 2019
+Joker 02:05 2019
+Aquaman 02:22 2018
+Venom 02:20 2018
+IronMan2 02:04 2010
+
+Example Input/Output 2:
+Input:
+6
+BlackWidow 02:14 2021
+TheSuicideSquad 02:12 2021
+Mulan 02:14 2020
+JungleCruise 02:38 2021
+TheHost 02:05 2013
+TheKing'sMan 02:12 2021
+
+Output:
+JungleCruise 02:38 2021
+BlackWidow 02:14 2021
+TheKing'sMan 02:12 2021
+TheSuicideSquad 02:12 2021
+Mulan 02:14 2020
+TheHost 02:05 2013
+
+Max Execution Time Limit: 50 millisecs
