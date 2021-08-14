@@ -1,0 +1,43 @@
+Daily Test
+ 
+ProgramID- 13977
+
+function vowelEncryption
+The function/method vowelEncryption accepts an argument str representing a string value which contains only alphabets.
+
+The function/method vowelEncryption must encrypt the given string by replacing the consecutive vowels(one or more vowels) with their 
+count. Then the function must return the encrypted string.
+
+Your task is to implement the function vowelEncryption so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+eager
+
+Output:
+Original String: eager
+Encrypted String: 2g1r
+
+Explanation:
+Here the given string is eager.
+After replacing the consecutive vowels with their count, the string becomes 2g1r.
+
+Example Input/Output 2:
+Input:
+ZAbcdeioufghIOAabcd
+
+Output:
+Original String: ZAbcdeioufghIOAabcd
+Encrypted String: Z1bcd4fgh4bcd
+
+Example Input/Output 3:
+Input:
+kgooooooooooseee
+
+Output:
+Original String: kgooooooooooseee
+Encrypted String: kg10s3
+
+Max Execution Time Limit: 50 millisecs
