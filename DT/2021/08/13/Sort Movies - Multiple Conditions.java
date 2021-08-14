@@ -1,5 +1,30 @@
 import java.util.*;
- 
+
+class Movie implements Comparable<Movie>{
+    String n,r;
+    int t,y;
+    public Movie(String x,String y,int z){
+        String[] q=y.split(":");
+        this.n=x;
+        this.y=z;
+        this.r=y;
+        this.t=Integer.parseInt(q[0]+q[1]);
+    }
+    @Override
+    public int compareTo(Movie q){
+        if(this.y!=q.y){
+            return q.y-this.y;
+        }
+        if(this.t!=q.t)
+        return q.t-this.t;
+        return this.n.compareTo(q.n);
+    }
+    public String toString(){
+        return n+" "+this.r+" "+this.y;
+    }
+    
+}
+
 public class Hello {
 
     public static void main(String[] args) {
