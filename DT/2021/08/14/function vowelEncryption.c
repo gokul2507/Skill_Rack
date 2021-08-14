@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
+#include <string.h>
 char* vowelEncryption(char *str)
 {
     char *t=malloc(sizeof(str)*10000);
