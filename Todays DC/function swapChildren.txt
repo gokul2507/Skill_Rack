@@ -1,0 +1,79 @@
+Daily Challenge
+ 
+ProgramID- 13958
+
+function swapChildren
+The function/method swapChildren accepts two arguments root and X. The root is a pointer to the root node of a binary tree and X 
+represents the value of node in the binary tree.
+
+The function/method swapChildren must find the node with the value X in the given binary tree. If the node has two children, then the 
+function must swap the children of the node. Else the function must not modify the binary tree.
+
+Your task is to define the function swapChildren so that the program runs successfully.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again 
+in your code).
+struct Node
+{
+    int data;
+    struct Node *left, *right;
+};
+IMPORTANT:
+- Do not write the main() function and printPreorder(root) function as they are already defined.
+- Do not create any new nodes.
+
+Input Format:
+The first line contains N representing the number of nodes in the binary tree.
+The second line contains the value of the root node.
+The next N-1 lines, each contains the parent node's value, the child node's value and the position (L or R).
+The (N+2)th line contains X.
+
+Output Format:
+The first line contains the pre-order traversal of the given binary tree before swapping the children of the node with the value X.
+The second line contains the pre-order traversal of the given binary tree after swapping the children of the node with the value X.
+
+Example Input/Output 1:
+Input:
+9
+30
+30 10 L
+30 20 R
+10 40 L
+10 50 R
+20 60 L
+20 70 R
+60 80 R
+50 90 L
+20
+
+Output:
+Before Swap: 30 10 40 50 90 20 60 80 70
+After Swap: 30 10 40 50 90 20 70 60 80
+
+Explanation:
+The binary tree with 9 nodes is given below.
+ 
+The value of X is 20.
+The node 20 has two children 60 and 70.
+After swapping the children of the node 20, the modified binary tree is given below.
+ 
+
+Example Input/Output 2:
+Input:
+9
+30
+30 10 L
+30 20 R
+10 40 L
+10 50 R
+20 60 L
+20 70 R
+60 80 R
+50 90 L
+60
+
+Output:
+Before Swap: 30 10 40 50 90 20 60 80 70
+After Swap: 30 10 40 50 90 20 60 80 70
+
+Max Execution Time Limit: 50 millisecs

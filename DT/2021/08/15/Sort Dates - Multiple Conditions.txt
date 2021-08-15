@@ -1,0 +1,89 @@
+Daily Test
+ 
+ProgramID- 13840
+
+Sort Dates - Multiple Conditions
+N dates are passed as the input to the program. The date consists of the day of the month DD, the month MMM and the year YYYY in the 
+format DD-MMM-YYYY. The program must sort the N dates based on the following conditions.
+- The dates must be sorted based on the day DD.
+- If two or more dates have the same day, then the program must sort the dates based on the month MMM.
+- If two or more dates have the same day and month, then the program must sort the dates based on the year YYY.
+Finally, the program must print the N sorted dates as the output.
+
+Note: MMM will be like Jan, Feb, Mar,.... till Dec.
+
+Boundary Condition(s):
+2 <= N <= 50
+
+Input Format:
+The first line contains N.
+The next N lines, each contains a date in the format DD-MMM-YYYY.
+
+Output Format:
+The first N lines contain the N sorted dates.
+
+Example Input/Output 1:
+Input:
+10
+31-Jan-1990
+15-Jul-2021
+15-Feb-2011
+15-Sep-2009
+08-Aug-2019
+01-Dec-2050
+15-Jul-2019
+15-Jul-2010
+07-Mar-2019
+29-Feb-2000
+
+Output:
+01-Dec-2050
+07-Mar-2019
+08-Aug-2019
+15-Feb-2011
+15-Jul-2010
+15-Jul-2019
+15-Jul-2021
+15-Sep-2009
+29-Feb-2000
+31-Jan-1990
+
+Explanation:
+Here N = 10.
+After sorting the 10 dates based on the given conditions, the dates become
+01-Dec-2050
+07-Mar-2019
+08-Aug-2019
+15-Feb-2011
+15-Jul-2010
+15-Jul-2019
+15-Jul-2021
+15-Sep-2009
+29-Feb-2000
+31-Jan-1990
+
+Example Input/Output 2:
+Input:
+9
+15-Aug-1947
+04-Oct-1910
+15-Aug-2012
+10-Nov-1865
+04-Sep-1938
+07-Apr-1741
+15-Aug-2000
+02-Sep-2048
+01-Jan-1936
+
+Output:
+01-Jan-1936
+02-Sep-2048
+04-Sep-1938
+04-Oct-1910
+07-Apr-1741
+10-Nov-1865
+15-Aug-1947
+15-Aug-2000
+15-Aug-2012
+
+Max Execution Time Limit: 50 millisecs
