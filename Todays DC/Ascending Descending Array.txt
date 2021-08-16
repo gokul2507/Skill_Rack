@@ -1,0 +1,76 @@
+Daily Challenge
+ 
+ProgramID- 13969
+
+Ascending Descending Array
+Two arrays with size M and N are passed as the input. One of the arrays is sorted in ascending order and the other array is sorted in 
+descending order. The program must print the array sorted in ascending order and then the program must print the array sorted in 
+descending order. 
+
+If in both arrays all the elements are equal 
+- then print the array with the smaller value first.
+- if the values are also same then print the first array followed by the second array.
+
+Boundary Condition(s):
+2 <= M, N <= 100
+1 <= Each integer value <= 10^5
+
+Input Format:
+The first line contains M.
+The second line contains M integers separated by a space.
+The third line contains N.
+The fourth line contains N integers separated by a space.
+
+Output Format:
+The first two lines contain the integer values based on the given conditions.
+
+Example Input/Output 1:
+Input:
+4 
+10 10 9 5
+5
+10 10 15 25 80
+
+Output:
+10 10 15 25 80
+10 10 9 5
+
+Explanation:
+The first array is sorted in descending order.
+The second array is sorted in ascending order.
+So the second array is printed first and then the first array is printed.
+
+Example Input/Output 2:
+Input:
+5
+15 15 15 15 15
+4
+10 10 10 10
+
+Output:
+10 10 10 10
+15 15 15 15 15
+
+Example Input/Output 3:
+Input:
+5
+15 15 15 15 15
+4
+15 15 15 15
+
+Output:
+15 15 15 15 15
+15 15 15 15
+
+Example Input/Output 4:
+Input:
+4
+15 15 15 15
+5
+15 15 15 15 15
+
+Output:
+15 15 15 15
+15 15 15 15 15
+
+Max Execution Time Limit: 50 millisecs

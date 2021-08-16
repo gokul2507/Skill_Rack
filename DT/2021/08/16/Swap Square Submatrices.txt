@@ -1,0 +1,108 @@
+Daily Test
+ 
+ProgramID- 13653
+
+Swap Square Submatrices
+The program must accept a character matrix of size R*C, an odd integer X and the positions of two cells in the matrix as the input. The 
+positions of the given two cells represent the positions of the middle cell of the two square submatrices of size X*X (the submatrices 
+never overlap in the matrix). The program must swap the two submatrices within the given matrix. Finally, the program must print the 
+revised matrix as the output.
+Note: The value of X is always odd.
+
+Boundary Condition(s):
+6 <= R, C <= 50
+3 <= K <= 25
+
+Input Format:
+The first line contains R, C and K separated by a space.
+The next R lines, each contains C characters separated by a space.
+The (R+2)th line contains two integers representing the position of the middle cell of a submatrix.
+The (R+3)th line contains two integers representing the position of the middle cell of a submatrix.
+
+Output Format:
+The first R lines, each contains C characters separated by a space.
+
+Example Input/Output 1:
+Input:
+8 8 3
+A r M p y o K H
+N x B g K D w X
+q X r q x E N F
+R f S Q E x f p
+J x V d P a K q
+S l S b b H F W
+e g M C O J M M
+a y e V b f X S
+3 3
+7 5
+
+Output:
+A r M p y o K H
+N b b H K D w X
+q C O J x E N F
+R V b f E x f p
+J x V d P a K q
+S l S x B g F W
+e g M X r q M M
+a y e f S Q X S
+
+Explanation:
+The submatrix with the middle cell (3, 3) is highlighted below.
+A r M p y o K H
+N x B g K D w X
+q X r q x E N F
+R f S Q E x f p
+J x V d P a K q
+S l S b b H F W
+e g M C O J M M
+a y e V b f X S
+
+The submatrix with the middle cell (7, 5) is highlighted below.
+A r M p y o K H
+N x B g K D w X
+q X r q x E N F
+R f S Q E x f p
+J x V d P a K q
+S l S b b H F W
+e g M C O J M M
+a y e V b f X S
+
+After swapping the two submatrices, the matrix becomes
+A r M p y o K H
+N b b H K D w X
+q C O J x E N F
+R V b f E x f p
+J x V d P a K q
+S l S x B g F W
+e g M X r q M M
+a y e f S Q X S
+
+Example Input/Output 2:
+Input:
+10 10 5
+G i c A i h L h d m
+V R A y r Y a o q Q
+d n Y M n x J b J z
+j L l Q b D W r H Q
+U b p m u g o x h E
+C y U e O z e I l R
+o n H s h l F H v r
+F g t F W s t G z D
+V E I e q a y P Y C
+M z z Q T W i N i R
+8 3
+3 8
+
+Output:
+G i c A i C y U e O
+V R A y r o n H s h
+d n Y M n F g t F W
+j L l Q b V E I e q
+U b p m u M z z Q T
+h L h d m z e I l R
+Y a o q Q l F H v r
+x J b J z s t G z D
+D W r H Q a y P Y C
+g o x h E W i N i R
+
+Max Execution Time Limit: 50 millisecs
