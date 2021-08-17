@@ -1,0 +1,66 @@
+Daily Challenge
+ 
+ProgramID- 14014
+ 
+Solved By 314 Users
+   SkillRack
+Strings - Print Vertically
+The program must accept three string values S1, S2 and S3. S1 will be printed as the first row of a matrix. S2 and S3 will be printed vertically in the column where their first alphabets match with that of the alphabet in S1. If both S2 and S3 have same first alphabet then, S2 will be considered over S3. The output pattern must be as shown in the Example Input/Output section. Assume always S1 will have the starting alphabets of S2 and S3.
+
+Boundary Condition(s):
+2 <= Length of S1, S2, S3 <= 100
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+The third line contains S3.
+
+Output Format:
+The lines contain the pattern as shown in the Example Input/Output section.
+
+Example Input/Output 1:
+Input:
+volcano
+lowlying
+orange
+
+Output:
+volcano
+*ro****
+*aw****
+*nl****
+*gy****
+*ei****
+**n****
+**g****
+
+Explanation:
+Here S1 = volcano, the length of the string volcano is 7. So the pattern contains 7 columns.
+The value of S2 is lowlying and the value of S3 is orange.
+The maximum length among the lengths of two string values lowlying and orange is 8. So the pattern contains 8 rows.
+The first character of lowlying is l, which is the third character of volcano. So the string lowlying is filled vertically in 3rd column.
+The first character of orange is o, which is the second character of volcano. So the string orange is filled vertically in 2nd column.
+The empty spaces are filled with asterisks (*).
+Hence the output is
+volcano
+*ro****
+*aw****
+*nl****
+*gy****
+*ei****
+**n****
+**g****
+
+Example Input/Output 2:
+Input:
+butter
+toy
+task
+
+Output:
+butter
+**oa**
+**ys**
+***k**
+Max Execution Time Limit: 50 millisecs
+
