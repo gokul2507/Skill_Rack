@@ -1,0 +1,48 @@
+Daily Test
+ 
+ProgramID- 13987
+
+Find Missing Fibonacci Number
+The program must accept an array of N integers as the input. The integers in the array represents the Fibonacci series, but exactly one 
+Fibonacci number may be missing. The program must print the missing Fibonacci number in the given array as the output. If no Fibonacci 
+number is missing, then the program must print the largest Fibonacci number in the given array.
+
+Boundary Condition(s):
+3 <= N <= 40
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the missing Fibonacci number or the largest Fibonacci number in the given array.
+
+Example Input/Output 1:
+Input:
+8
+0 1 5 8 3 21 1 2
+
+Output:
+13
+
+Explanation:
+The missing Fibonacci number in the given series is highlighted below.
+0, 1, 1, 2, 3, 5, 8, 13, 21.
+
+Example Input/Output 2:
+Input:
+4
+144 21 89 34
+
+Output:
+55
+
+Example Input/Output 3:
+Input:
+9
+0 1 5 8 3 21 1 2 13
+
+Output:
+21
+
+Max Execution Time Limit: 50 millisecs

@@ -1,0 +1,86 @@
+Daily Challenge
+ 
+ProgramID- 13827
+
+function sortAndSplitWords
+
+The function/method sortAndSplitWords accepts two arguments file1name and file2name representing the names of two text files. Each file 
+contains a list of words.
+
+The function/method sortAndSplitWords must read all the words from the given two files. Then the function must sort the words. Finally, 
+the function must write the first half of the words in the first file and the second half of the words in the second file.
+
+Your task is to implement the function sortAndSplitWords so that it passes all the test cases.
+
+Note:
+- The maximum number of lines that can be in each file is 50.
+- The maximum length of each word in the two files is 50.
+- The total number of words in the two files is always even.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+fruits1.txt
+fruits2.txt
+
+Output:
+fruits1.txt:
+apple
+banana
+grapes
+guava
+fruits2.txt:
+mango
+orange
+strawberry
+watermelon
+
+Explanation:
+Here fruits1.txt is present in the same folder where the program executes and the file contains the following 3 lines.
+mango
+orange
+apple
+
+Here fruits2.txt is present in the same folder where the program executes and the file contains the following 5 lines.
+grapes
+banana
+watermelon
+guava
+strawberry
+
+Example Input/Output 2:
+Input:
+words1.txt
+words2.txt
+
+Output:
+words1.txt:
+Bag
+Chair
+Compass
+Divider
+Eraser
+words1.txt:
+NoteBook
+Pen
+Pencil
+Scale
+WaterBottle
+
+Explanation:
+Here words1.txt is present in the same folder where the program executes and the file contains the following 6 lines.
+Pen
+WaterBottle
+Scale
+Eraser
+Bag
+NoteBook
+
+Here words2.txt is present in the same folder where the program executes and the file contains the following 4 lines.
+Pencil
+Compass
+Divider
+Chair
+
+Max Execution Time Limit: 50 millisecs
