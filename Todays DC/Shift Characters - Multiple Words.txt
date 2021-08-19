@@ -1,0 +1,45 @@
+Daily Challenge
+ 
+ProgramID- 13967
+
+Shift Characters - Multiple Words
+The program must accept a string S containing multiple words and an integer K as the input. For each word in the given string, the 
+program must shift the characters to the right by K positions. The program must print the number of words that remain the same before 
+and after the shift. Then the program also must print the revised string as the output.
+
+Boundary Condition(s):
+1 <= Number of words in S <= 100
+1 <= Length of each word, K <= 100
+
+Input Format:
+The first line contains S.
+The second line contains K.
+
+Output Format:
+The first line contains the number of words that remain the same before and after the shift.
+The second line contains the revised string.
+
+Example Input/Output 1:
+Input:
+tiger Spider
+5
+
+Output:
+1
+tiger piderS
+
+Explanation:
+After shifting the characters to the right by 5 positions in each word, the string becomes
+tiger piderS
+Here only one word remains the same before and after the shift.
+
+Example Input/Output 2:
+Input:
+Pencil NoteBook Eraser Ruler Pen Table Ball Bag
+6
+
+Output:
+4
+Pencil teBookNo Eraser rRule Pen eTabl llBa Bag
+
+Max Execution Time Limit: 50 millisecs
