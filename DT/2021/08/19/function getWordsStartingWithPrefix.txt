@@ -1,0 +1,54 @@
+Daily Test
+ 
+ProgramID- 14118
+
+function getWordsStartingWithPrefix
+The function/method getWordsStartingWithPrefix accepts two arguments str and prefix representing two string values. The string str 
+contains multiple words.
+
+The function/method getWordsStartingWithPrefix must return an array of string values representing the words starting with the given 
+prefix in the string str. If there is no such word, then the function must return an array of size 1 with the string value "-1".
+
+Your task is to implement the function getWordsStartingWithPrefix so that the program runs successfully.
+
+The following structure is used to represent the boundedArray and is already defined in the default code (Do not write this definition 
+again in your code).
+
+typedef struct BoundedArray
+{
+    int SIZE;
+    char **words;
+} boundedArray;
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+once onscreen octal ontology online old
+on
+
+Output:
+Words starting with prefix on:
+once
+onscreen
+ontology
+online
+
+Explanation:
+Here the given string is "once onscreen octal ontology online old" and the prefix is "on".
+The words starting with the prefix on are given below.
+once
+onscreen
+ontology
+online
+
+Example Input/Output 2:
+Input:
+cat candle crow goat cow railcar
+car
+
+Output:
+Words starting with prefix car:
+-1
+
+Max Execution Time Limit: 50 millisecs
