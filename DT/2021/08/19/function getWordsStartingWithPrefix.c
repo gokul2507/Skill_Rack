@@ -8,10 +8,28 @@ typedef struct BoundedArray
 
 } boundedArray;
  
-boundedArray* getWordsStartingWithPrefix(char *str, char 
-    *prefix)
+boundedArray* getWordsStartingWithPrefix(char *str, char *prefix)
 {
-
+    boundedArray * ans = malloc(sizeof(boundedArray));
+    char * token = strtok(str," ");
+    ans->SIZE = 0 ;
+    ans->words = malloc(sizeof(char*)*1000);
+    int prefixLength = strlen(prefix);
+    while(token){
+        char temp[100];
+        strcpy(temp,token);
+        temp[prefixLength] = 0;
+        if(strcmp(temp,prefix)==0){
+            ans->words[ans->SIZE] = malloc(1000);
+            strcpy(ans->words[ans->SIZE++],token);
+        }
+        token = strtok(NULL," ");
+    }
+    if(!ans->SIZE){
+        ans->words[0] = malloc(sizeof(100));
+        strcpy(ans->words[ans->SIZE++] ,"-1");
+    }
+    return ans;
 }
 
 int main()
