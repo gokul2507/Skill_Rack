@@ -1,0 +1,52 @@
+Daily Challenge
+ 
+ProgramID- 13780
+
+function deleteAtMiddle
+The function/method deleteAtMiddle accepts an argument head. The head is a pointer to the head of a circular doubly linked list(CDLL).
+
+The function/method deleteAtMiddle must delete the middle node from the given circular doubly linked list and return the revised head. 
+If the circular doubly linked list contains only one node, then the function must delete the node and return NULL.
+
+Your task is to implement the function deleteAtMiddle so that it passes all the test cases.
+
+Note: The number of nodes in the given CDLL is always odd.
+
+The following structure is used to represent the Node and is already defined in the default code (Do not write this definition again in 
+your code).
+
+struct Node
+{
+    int data;
+    struct Node *prev, *next;
+};
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+5
+12 56 89 40 74
+
+Output:
+CDLL:
+12 56 40 74
+74 40 56 12
+
+Explanation:
+After deleting the middle node of the given CDLL, the CDLL becomes 12 56 40 74.
+Hence the output is
+CDLL:
+12 56 40 74
+74 40 56 12
+
+Example Input/Output 2:
+Input:
+7
+69 50 7 30 16 49 25
+
+Output:
+CDLL:
+69 50 7 16 49 25
+25 49 16 7 50 69
+
+Max Execution Time Limit: 50 millisecs

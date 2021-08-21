@@ -1,0 +1,46 @@
+Daily Test
+ 
+ProgramID- 14012
+
+Binary Matching
+The program must accept an integer X and N integers as the input. The given N integer values are always less than or equal to X. The 
+program must print the number of integers whose binary representations match the binary representation of X from the LSB(least 
+significant bit).
+
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Each integer value <= X < 2^31
+
+Input Format:
+The first line contains X and N separated by a space.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the number of integers whose binary representations match the binary representation of X from the LSB.
+
+Example Input/Output 1:
+Input:
+105 5
+41 10 9 13 1
+
+Output:
+3
+
+Explanation:
+Here X = 105.
+The binary representation of 105 = 1101001.
+The binary representation of 41 is 101001, which matches the binary representation of X from the LSB.
+The binary representation of 10 is 1010, which does not match the binary representation of X from the LSB.
+The binary representation of 9 is 1001, which matches the binary representation of X from the LSB.
+The binary representation of 13 is 1101, which does not match the binary representation of X from the LSB.
+The binary representation of 1 is 1, which matches the binary representation of X from the LSB.
+
+Example Input/Output 2:
+Input:
+180 6
+129 20 52 100 20 4
+
+Output:
+4
+
+Max Execution Time Limit: 50 millisecs
