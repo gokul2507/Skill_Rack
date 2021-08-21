@@ -75,23 +75,18 @@ struct Node* getNode(struct Node *head, int N)
 struct Node* deleteAtMiddle(struct Node *head)
 {
     if(head->next==head){
-        free(head);
-        return NULL;
-    }
-    else{
-        struct Node *t=head;
-        int l=0;
-        while(t->next!=head){
-            l++;
-            t=t->next;
-        }
-        t=getNode(head,l/2);
-        struct Node *m=t->next;
-        t->next->next->prev=t;
-        t->next=t->next->next;
-        free(m);
+        head=NULL;
         return head;
     }
+    struct Node *temp=head;
+    struct Node *tail=head->prev;
+    while(head!=tail){
+        head=head->next;
+        tail=tail->prev;
+    }
+    tail->next->prev=tail->prev;
+    head->prev->next=head->next;
+    return temp;
 }
 
 int main()
