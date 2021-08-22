@@ -1,0 +1,43 @@
+Daily Test
+ 
+ProgramID- 14148
+
+Evaluate Boolean Expression
+The program must accept a string S representing a boolean expression. The string S contains T, F, &, | and ^.
+T - True
+F - False
+& - Bitwise AND Operator
+| - Bitwise OR Operator
+^ - Bitwise XOR Operator
+The program must evaluate the given expression from left to right and print the result as the output.
+
+Boundary Condition(s):
+3 <= Length of S <= 99
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the result for the given boolean expression.
+
+Example Input/Output 1:
+Input:
+T|F^T|T&F
+
+Output:
+F
+
+Explanation:
+T|F^T|T&F -> T^T|T&F -> F|T&F -> T&F -> F
+
+Example Input/Output 2:
+Input:
+T|T&F^T
+
+Output:
+T
+
+Explanation:
+T|T&F^T -> T&F^T -> F^T -> T
+
+Max Execution Time Limit: 50 millisecs

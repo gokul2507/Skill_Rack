@@ -1,0 +1,68 @@
+Daily Challenge
+ 
+ProgramID- 13647
+
+Rotate Four Quadrants
+The program must accept an integer matrix of size R*C and an integer K as the input. The program must rotate the four quadrants within 
+the given matrix K times in the clockwise direction. Then the program must print the revised matrix as the output.
+Note: The values of R and C are always even.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Matrix element value <= 10^5
+1 <= K <= 100
+
+Input Format:
+The first line contains R and C separated by a space.
+The next R lines, each contains C integers separated by a space.
+The (R+2)th line contains K.
+
+Output Format:
+The first R lines, each contains C integers separated by a space.
+
+Example Input/Output 1:
+Input:
+4 4
+10 20 11 22
+30 40 33 44
+55 66 50 60
+77 88 70 80
+2
+
+Output:
+50 60 55 66
+70 80 77 88
+11 22 10 20
+33 44 30 40
+
+Explanation:
+Here K = 2.
+
+After the 1st rotation, the matrix becomes
+55 66 10 20
+77 88 30 40
+50 60 11 22
+70 80 33 44
+
+After the 2nd rotation, the matrix becomes
+50 60 55 66
+70 80 77 88
+11 22 10 20
+33 44 30 40
+
+Example Input/Output 2:
+Input:
+4 6
+14 11 20 72 41 96
+42 48 80 75 87 39
+28 54 73 61 25 44
+89 81 31 29 47 78
+7
+
+Output:
+72 41 96 61 25 44
+75 87 39 29 47 78
+14 11 20 28 54 73
+42 48 80 89 81 31
+
+Max Execution Time Limit: 50 millisecs
