@@ -1,0 +1,84 @@
+Daily Test
+ 
+ProgramID- 14149
+
+Matrix - Count Empty Cells
+The program must accept two integers R, C and Q queries as the input. Each query contains two integers X and Y. The program must form a 
+matrix of size R*C. For each query, the program must fill 1s in the Xth row and Yth column of the matrix. After each query, the program 
+must print the number of empty cells in the matrix as the output.
+
+Boundary Condition(s):
+2 <= R, C <= 50
+1 <= Q <= 50
+1 <= X <= R
+1 <= Y <= C
+
+Input Format:
+The first line contains R and C separated by a space.
+The second line contains Q.
+The next Q lines, each contains two integer values X and Y separated by a space.
+
+Output Format:
+The first Q lines, each contains an integer representing the number of empty cells in the matrix.
+
+Example Input/Output 1:
+Input:
+5 5
+3
+3 2
+4 4
+3 5
+
+Output:
+16
+9
+6
+
+Explanation:
+Here R = 5 and C = 5. So the size of the matrix is 5*5.
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+Each 0 represents an empty cell.
+
+After the 1st query (3, 2), the number of empty cells in the matrix is 16.
+0 1 0 0 0
+0 1 0 0 0
+1 1 1 1 1
+0 1 0 0 0
+0 1 0 0 0
+
+After the 2nd query (4, 4), the number of empty cells in the matrix is 9.
+0 1 0 1 0
+0 1 0 1 0
+1 1 1 1 1
+1 1 1 1 1
+0 1 0 1 0
+
+After the 3rd query (3, 5), the number of empty cells in the matrix is 6.
+0 1 0 1 1
+0 1 0 1 1
+1 1 1 1 1
+1 1 1 1 1
+0 1 0 1 1
+
+Example Input/Output 2:
+Input:
+4 5
+5
+1 1
+3 4
+1 2
+2 5
+3 1
+
+Output:
+12
+6
+4
+1
+1
+
+Max Execution Time Limit: 50 millisecs

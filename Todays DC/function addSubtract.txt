@@ -1,0 +1,32 @@
+Daily Challenge
+ 
+ProgramID- 14146
+
+function addSubtract
+
+The function/method addSubtract accepts an argument str. The string str contains integer values, where each integer is enclosed within a 
+pair of parentheses.
+
+The function/method addSubtract must add and subtract the integers alternatively in the given string. Then the function must return an 
+integer representing the result.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+(-5)(10)(3)(9)
+
+Output:
+11
+
+Explanation:
+(-5)(10)(3)(9) = -5 + 10 - 3 + 9 = 11
+
+Example Input/Output 2:
+Input:
+(1)(2)(3)
+
+Output:
+0
+
+Max Execution Time Limit: 50 millisecs
