@@ -1,0 +1,75 @@
+
+Daily Test
+ 
+ProgramID- 13899
+
+Maximum Events - Year and Month
+The program must accept the dates of N events as the input. The date consists of the day of the month DD, the month MMM and the year 
+YYYY in the format DD-MMM-YYYY. The program must print the output based on the following conditions.
+- The program must print the year in which the maximum number of events occurred. If the same maximum number of events occurred in two 
+or more years, then the program must print those years in chronological order.
+- The program must print the month in which the maximum number of events occurred. If the same maximum number of events occurred in two 
+or more months, then the program must print those months in chronological order.
+Note: The value of MMM will be like Jan, Feb, Mar, Apr, ... till Dec.
+
+Boundary Condition(s):
+2 <= N <= 100
+
+Input Format:
+The first line contains N.
+The next N lines contain the dates of N events (in the format DD-MMM-YYYY).
+
+Output Format:
+The first line contains the year(s) in which the maximum number of events occurred.
+The second line contains the month(s) in which the maximum number of events occurred.
+
+Example Input/Output 1:
+Input:
+10
+25-Feb-1990
+14-Mar-2021
+10-Feb-2011
+21-Sep-2019
+14-Mar-2021
+01-Dec-2009
+12-Mar-2019
+12-Aug-2010
+14-Mar-2019
+14-Feb-2009
+
+Output:
+2019
+Mar
+
+Explanation:
+Year -> Number of events
+1990 -> 1
+2009 -> 2
+2010 -> 1
+2011 -> 1
+2019 -> 3
+2021 -> 2
+The maximum number of events that occurred in the year 2019. So 2019 is printed.
+
+Month -> Number of events
+Feb -> 3
+Mar -> 4
+Aug -> 1
+Sep -> 1
+Dec -> 1
+The maximum number of events that occurred in the month Mar. So Mar is printed.
+
+Example Input/Output 2:
+Input:
+5
+20-Nov-2012
+21-Oct-2011
+22-Jun-2013
+23-Nov-2011
+24-Oct-2012
+
+Output:
+2011 2012
+Oct Nov
+
+Max Execution Time Limit: 50 millisecs
