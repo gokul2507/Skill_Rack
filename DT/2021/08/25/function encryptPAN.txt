@@ -1,0 +1,38 @@
+Daily Test
+ 
+ProgramID- 14156
+
+function encryptPAN
+The function/method encryptPAN accepts a string str representing the PAN number of a person.
+
+The function/method encryptPAN must encrypt the given PAN number based on the following conditions.
+1) Remove all the vowels.
+2) Insert an asterisk * before each consonant.
+3) Replace all upper case consonants with the corresponding lower case consonant in the reverse alphabetical order.
+Finally, the function must return a new string representing the encrypted PAN number.
+
+Your task is to implement the function encryptPAN so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+ABCDEF145R
+
+Output:
+Original PAN: ABCDEF145R
+Encrypted PAN: *z*y*x*w145*k
+
+Explanation:
+Here the given string is ABCDEF145R.
+After encrypting the given PAN number based on the given conditions, the PAN number becomes *z*y*x*w145*k.
+
+Example Input/Output 2:
+Input:
+pqrs55tuvYZ
+
+Output:
+Original PAN: pqrs55tuvYZ
+Encrypted PAN: *p*q*r*s55*t*v*c*b
+
+Max Execution Time Limit: 50 millisecs
