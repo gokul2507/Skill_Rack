@@ -1,0 +1,42 @@
+Daily Test
+ 
+ProgramID- 14162
+
+Sort Integers by Middle Digit
+The program must accept N integers as the input. Each integer contains an odd number of digits. The program must sort the integers 
+based on the middle digit. If two or more integers have the same middle digit, then the program must sort those integers in ascending 
+order.
+
+Boundary Condition(s):
+2 <= N <= 1000
+100 <= Each integer value <= 10^8
+
+Input Format:
+The first line contains N.
+The second line contains N integer values separated by a space.
+
+Output Format:
+The first line contains the N sorted integers separated by a space.
+
+Example Input/Output 1:
+Input:
+5
+82315 40215 70051 56103 20201
+
+Output:
+70051 56103 20201 40215 82315
+
+Explanation:
+Here N=5 and the given 5 integers are 82315, 40215, 70051, 56103 and 20201.
+After sorting the integers based on the middle digit, the integers become
+70051 56103 20201 40215 82315
+
+Example Input/Output 2:
+Input:
+6
+77344 572 994 583 130 7193942
+
+Output:
+130 77344 7193942 572 583 994
+
+Max Execution Time Limit: 50 millisecs
