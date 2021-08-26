@@ -1,0 +1,46 @@
+Daily Challenge
+ 
+ProgramID- 14019
+
+Substring - First Occurrence
+The program must accept two string values S1 and S2 as the input. The program must find the positions of the first occurrence of all 
+characters of S2 in S1. Then the program must print the characters in S1 from the minimum position to the maximum position among the 
+positions obtained.
+Note: All characters of S2 always occur at least once in S1.
+
+Boundary Condition(s):
+2 <= Length of S1 <= 1000
+2 <= Length of S2 <= 100
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The first line contains the characters in S1 from the minimum position to the maximum position among the positions obtained.
+
+Example Input/Output 1:
+Input:
+corporate
+oar
+
+Output:
+orpora
+
+Explanation:
+Here S1 = corporate, S2 = oar.
+The position of the first occurrence of o in the string S1 is 2.
+The position of the first occurrence of a in the string S1 is 7.
+The position of the first occurrence of r in the string S1 is 3.
+The characters from the 2nd position (minimum position) to the 7th position (maximum position) in S1 are o r p o r a.
+Hence orpora is printed as the output.
+
+Example Input/Output 2:
+Input:
+skillrack
+lak
+
+Output:
+killra
+
+Max Execution Time Limit: 50 millisecs
