@@ -1,0 +1,34 @@
+Daily Challenge
+ 
+ProgramID- 14153
+
+function countShoePairs
+The function/method countShoePairs accepts two arguments N and arr. The integer N represents the number of shoes in a shop. The integer 
+array arr represents the colours of the N shoes. All N shoes are the same size.
+
+The function/method countShoePairs must return an integer representing the number of matching pairs of shoes that are available.
+
+Your task is to implement the function countShoePairs so that the program runs successfully.
+
+IMPORTANT: Do not write the main() function as it is already defined.
+
+Example Input/Output 1:
+Input:
+9
+15 25 25 15 15 35 45 15 25
+
+Output:
+3
+
+Explanation:
+The 3 shoe pairs are (15, 15), (25, 25) and (15, 15).
+
+Example Input/Output 2:
+Input:
+4
+10 10 10 10
+
+Output:
+2
+
+Max Execution Time Limit: 50 millisecs

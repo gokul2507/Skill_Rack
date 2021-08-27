@@ -1,0 +1,40 @@
+Daily Test
+ 
+ProgramID- 14240
+
+Special Substrings Count
+The program must accept a string S as the input. The program must print the count of special substrings in S as the output. A special 
+substring is a substring in which all the characters are the same or all the characters are the same except middle character.
+
+Boundary Condition(s):
+1 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains an integer representing the count of special substrings in S.
+
+Example Input/Output 1:
+Input:
+abcbcdcc
+
+Output:
+12
+
+Explanation:
+The 12 special substrings are given below.
+a, b, c, b, c, d, c, c, cc, bcb, cbc, cdc
+
+Example Input/Output 2:
+Input:
+AAAABBCBB
+
+Output:
+19
+
+Explanation:
+The 19 special substrings are given below.
+A, A, A, A, B, B, C, B, B, AA, AA, AA, BB, BB, AAA, AAA, BCB, AAAA, BBCBB
+
+Max Execution Time Limit: 50 millisecs
