@@ -1,0 +1,50 @@
+Daily Challenge
+ 
+ProgramID- 14229
+
+Addition - Count Carries
+The program must accept two integers X and Y as the input. The program must print the number of carries generated when adding X and Y 
+as the output.
+
+Boundary Condition(s):
+1 <= X, Y <= 10^8
+
+Input Format:
+The first line contains X.
+The second line contains Y.
+
+Output Format:
+The first line contains an integer representing the number of carries generated when adding X and Y.
+
+Example Input/Output 1:
+Input:
+451
+349
+
+Output:
+2
+
+Explanation:
+Here X=451 and Y=349.
+The unit digits 1 and 9 are added. The carry is 1.
+Then 1 + the digits in tenth position = 1+5+4 = 10 and hence the carry is 1.
+Then 1 + the digits in hundredth position = 1+4+3 = 8 and hence NO carry.
+Total number of carries is 2, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+99
+190
+
+Output:
+1
+
+Example Input/Output 3:
+Input:
+99
+7
+
+Output:
+2
+
+Max Execution Time Limit: 50 millisecs
