@@ -1,0 +1,62 @@
+Daily Test
+ 
+ProgramID- 14017
+
+Replace Duplicates with Next Value
+The program must accept a string S containing only alphabets and digits as the input. The program must modify the string S based on the 
+following conditions.
+- The program must replace each duplicate character from left to right in the string with the next possible value such that there is no 
+duplicate character till that character.
+- All 26 English alphabets must be considered in a circular fashion(a, b, c, ... x, y, z, a, b, ...) by ignoring the case.
+- All 10 digits must be considered in a circular fashion(0, 1, 2, ... 8, 9, 0, 1, 2, ...).
+Finally, the program must print the revised string S as the output.
+
+Note:
+- The number of alphabets in the string is always less than or equal to 26.
+- The number of digits in the string is always less than or equal to 10.
+
+Boundary Condition(s):
+1 <= Length of S <= 36
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the revised string S.
+
+Example Input/Output 1:
+Input:
+Twenty5667
+
+Output:
+Twenuy5678
+
+Explanation:
+Here the given string is Twenty5667.
+The character 't' is a duplicate value (ignoring the case), so it is replaced with the next possible value 'u'.
+The character '6' (2nd occurrence) is a duplicate value, so it is replaced with the next possible value '7'.
+The character '7' is a duplicate value, so it is replaced with the next possible value '8'.
+After replacing all the duplicate characters, the revised string becomes Twenuy5678.
+
+Example Input/Output 2:
+Input:
+cHesS8880007
+
+Output:
+cHesT8901237
+
+Example Input/Output 3:
+Input:
+Frizz
+
+Output:
+Friza
+
+Example Input/Output 4:
+Input:
+SkillRACK
+
+Output:
+SkilmRACN
+
+Max Execution Time Limit: 50 millisecs
